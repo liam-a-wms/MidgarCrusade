@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
+	<section name="SynchronizeViewSettings">
+	</section>
 	<section name="ConfigureProjectWizard">
 		<item value="org.eclipse.egit.ui.internal.sharing.SharingWizard" key="selectedWizardId"/>
+	</section>
+	<section name="ImportPSFDialog">
 	</section>
 </section>

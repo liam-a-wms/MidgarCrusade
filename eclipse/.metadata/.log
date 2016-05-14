@@ -1632,3 +1632,124 @@ java.io.IOException: The process cannot access the file because another process 
 	at org.eclipse.jgit.api.AddCommand.call(AddCommand.java:226)
 	at org.eclipse.egit.ui.internal.staging.StagingView$49.run(StagingView.java:2552)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.equinox.security 1 0 2016-05-14 10:23:30.712
+!MESSAGE New keyring password generated. 
+
+!ENTRY org.eclipse.jsch.core 4 0 2016-05-14 10:26:08.401
+!MESSAGE An error occurred while loading the know hosts file C:\Users\Gaming\.ssh\known_hosts
+!STACK 0
+com.jcraft.jsch.JSchException: java.io.FileNotFoundException: C:\Users\Gaming\.ssh\known_hosts (The system cannot find the path specified)
+	at com.jcraft.jsch.KnownHosts.setKnownHosts(KnownHosts.java:63)
+	at com.jcraft.jsch.JSch.setKnownHosts(JSch.java:303)
+	at org.eclipse.jsch.internal.core.JSchCorePlugin.loadKnownHosts(JSchCorePlugin.java:117)
+	at org.eclipse.jsch.internal.core.JSchProvider.createSession(JSchProvider.java:41)
+	at org.eclipse.egit.core.EclipseSshSessionFactory.createDefaultJSch(EclipseSshSessionFactory.java:38)
+	at org.eclipse.jgit.transport.JschConfigSessionFactory.getJSch(JschConfigSessionFactory.java:247)
+	at org.eclipse.egit.core.EclipseSshSessionFactory.createSession(EclipseSshSessionFactory.java:46)
+	at org.eclipse.jgit.transport.JschConfigSessionFactory.createSession(JschConfigSessionFactory.java:175)
+	at org.eclipse.jgit.transport.JschConfigSessionFactory.getSession(JschConfigSessionFactory.java:109)
+	at org.eclipse.jgit.transport.SshTransport.getSession(SshTransport.java:136)
+	at org.eclipse.jgit.transport.TransportGitSsh$SshPushConnection.<init>(TransportGitSsh.java:322)
+	at org.eclipse.jgit.transport.TransportGitSsh.openPush(TransportGitSsh.java:167)
+	at org.eclipse.jgit.transport.PushProcess.execute(PushProcess.java:155)
+	at org.eclipse.jgit.transport.Transport.push(Transport.java:1250)
+	at org.eclipse.egit.core.op.PushOperation.run(PushOperation.java:189)
+	at org.eclipse.egit.ui.internal.push.ConfirmationPage$2.run(ConfirmationPage.java:209)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Caused by: java.io.FileNotFoundException: C:\Users\Gaming\.ssh\known_hosts (The system cannot find the path specified)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at com.jcraft.jsch.KnownHosts.setKnownHosts(KnownHosts.java:59)
+	... 16 more
+
+!ENTRY org.eclipse.egit.core 4 0 2016-05-14 10:26:27.012
+!MESSAGE An exception occurred during push on URI ssh://github.com/wakkytabbaky/FF7skills: ssh://github.com/wakkytabbaky/FF7skills: Auth fail
+!STACK 0
+org.eclipse.jgit.errors.TransportException: ssh://github.com/wakkytabbaky/FF7skills: Auth fail
+	at org.eclipse.jgit.transport.JschConfigSessionFactory.getSession(JschConfigSessionFactory.java:159)
+	at org.eclipse.jgit.transport.SshTransport.getSession(SshTransport.java:136)
+	at org.eclipse.jgit.transport.TransportGitSsh$SshPushConnection.<init>(TransportGitSsh.java:322)
+	at org.eclipse.jgit.transport.TransportGitSsh.openPush(TransportGitSsh.java:167)
+	at org.eclipse.jgit.transport.PushProcess.execute(PushProcess.java:155)
+	at org.eclipse.jgit.transport.Transport.push(Transport.java:1250)
+	at org.eclipse.egit.core.op.PushOperation.run(PushOperation.java:189)
+	at org.eclipse.egit.ui.internal.push.ConfirmationPage$2.run(ConfirmationPage.java:209)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Caused by: com.jcraft.jsch.JSchException: Auth fail
+	at com.jcraft.jsch.Session.connect(Session.java:512)
+	at org.eclipse.jgit.transport.JschConfigSessionFactory.getSession(JschConfigSessionFactory.java:116)
+	... 8 more
+
+!ENTRY org.eclipse.egit.core 4 0 2016-05-14 10:27:19.149
+!MESSAGE An exception occurred during push on URI ssh://git@github.com/wakkytabbaky/FF7skills.git: ssh://git@github.com/wakkytabbaky/FF7skills.git: Auth fail
+!STACK 0
+org.eclipse.jgit.errors.TransportException: ssh://git@github.com/wakkytabbaky/FF7skills.git: Auth fail
+	at org.eclipse.jgit.transport.JschConfigSessionFactory.getSession(JschConfigSessionFactory.java:159)
+	at org.eclipse.jgit.transport.SshTransport.getSession(SshTransport.java:136)
+	at org.eclipse.jgit.transport.TransportGitSsh$SshPushConnection.<init>(TransportGitSsh.java:322)
+	at org.eclipse.jgit.transport.TransportGitSsh.openPush(TransportGitSsh.java:167)
+	at org.eclipse.jgit.transport.PushProcess.execute(PushProcess.java:155)
+	at org.eclipse.jgit.transport.Transport.push(Transport.java:1250)
+	at org.eclipse.egit.core.op.PushOperation.run(PushOperation.java:189)
+	at org.eclipse.egit.ui.internal.push.ConfirmationPage$2.run(ConfirmationPage.java:209)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Caused by: com.jcraft.jsch.JSchException: Auth fail
+	at com.jcraft.jsch.Session.connect(Session.java:512)
+	at org.eclipse.jgit.transport.JschConfigSessionFactory.getSession(JschConfigSessionFactory.java:116)
+	... 8 more
+
+!ENTRY org.eclipse.egit.core 4 0 2016-05-14 10:27:51.311
+!MESSAGE An exception occurred during push on URI ssh://git@github.com/wakkytabbaky/FF7skills.git: ssh://git@github.com/wakkytabbaky/FF7skills.git: Auth fail
+!STACK 0
+org.eclipse.jgit.errors.TransportException: ssh://git@github.com/wakkytabbaky/FF7skills.git: Auth fail
+	at org.eclipse.jgit.transport.JschConfigSessionFactory.getSession(JschConfigSessionFactory.java:159)
+	at org.eclipse.jgit.transport.SshTransport.getSession(SshTransport.java:136)
+	at org.eclipse.jgit.transport.TransportGitSsh$SshPushConnection.<init>(TransportGitSsh.java:322)
+	at org.eclipse.jgit.transport.TransportGitSsh.openPush(TransportGitSsh.java:167)
+	at org.eclipse.jgit.transport.PushProcess.execute(PushProcess.java:155)
+	at org.eclipse.jgit.transport.Transport.push(Transport.java:1250)
+	at org.eclipse.egit.core.op.PushOperation.run(PushOperation.java:189)
+	at org.eclipse.egit.ui.internal.push.ConfirmationPage$2.run(ConfirmationPage.java:209)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Caused by: com.jcraft.jsch.JSchException: Auth fail
+	at com.jcraft.jsch.Session.connect(Session.java:512)
+	at org.eclipse.jgit.transport.JschConfigSessionFactory.getSession(JschConfigSessionFactory.java:116)
+	... 8 more
+
+!ENTRY org.eclipse.egit.core 4 0 2016-05-14 10:28:18.398
+!MESSAGE An exception occurred during push on URI ssh://git@github.com/wakkytabbaky/FF7skills: ssh://git@github.com/wakkytabbaky/FF7skills: Auth fail
+!STACK 0
+org.eclipse.jgit.errors.TransportException: ssh://git@github.com/wakkytabbaky/FF7skills: Auth fail
+	at org.eclipse.jgit.transport.JschConfigSessionFactory.getSession(JschConfigSessionFactory.java:159)
+	at org.eclipse.jgit.transport.SshTransport.getSession(SshTransport.java:136)
+	at org.eclipse.jgit.transport.TransportGitSsh$SshPushConnection.<init>(TransportGitSsh.java:322)
+	at org.eclipse.jgit.transport.TransportGitSsh.openPush(TransportGitSsh.java:167)
+	at org.eclipse.jgit.transport.PushProcess.execute(PushProcess.java:155)
+	at org.eclipse.jgit.transport.Transport.push(Transport.java:1250)
+	at org.eclipse.egit.core.op.PushOperation.run(PushOperation.java:189)
+	at org.eclipse.egit.ui.internal.push.ConfirmationPage$2.run(ConfirmationPage.java:209)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Caused by: com.jcraft.jsch.JSchException: Auth fail
+	at com.jcraft.jsch.Session.connect(Session.java:512)
+	at org.eclipse.jgit.transport.JschConfigSessionFactory.getSession(JschConfigSessionFactory.java:116)
+	... 8 more
+
+!ENTRY org.eclipse.egit.core 4 0 2016-05-14 10:28:32.983
+!MESSAGE An exception occurred during push on URI ssh://wakkytabbaky@github.com/wakkytabbaky/FF7skills: ssh://wakkytabbaky@github.com/wakkytabbaky/FF7skills: Auth fail
+!STACK 0
+org.eclipse.jgit.errors.TransportException: ssh://wakkytabbaky@github.com/wakkytabbaky/FF7skills: Auth fail
+	at org.eclipse.jgit.transport.JschConfigSessionFactory.getSession(JschConfigSessionFactory.java:159)
+	at org.eclipse.jgit.transport.SshTransport.getSession(SshTransport.java:136)
+	at org.eclipse.jgit.transport.TransportGitSsh$SshPushConnection.<init>(TransportGitSsh.java:322)
+	at org.eclipse.jgit.transport.TransportGitSsh.openPush(TransportGitSsh.java:167)
+	at org.eclipse.jgit.transport.PushProcess.execute(PushProcess.java:155)
+	at org.eclipse.jgit.transport.Transport.push(Transport.java:1250)
+	at org.eclipse.egit.core.op.PushOperation.run(PushOperation.java:189)
+	at org.eclipse.egit.ui.internal.push.ConfirmationPage$2.run(ConfirmationPage.java:209)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Caused by: com.jcraft.jsch.JSchException: Auth fail
+	at com.jcraft.jsch.Session.connect(Session.java:512)
+	at org.eclipse.jgit.transport.JschConfigSessionFactory.getSession(JschConfigSessionFactory.java:116)
+	... 8 more

@@ -1,0 +1,77 @@
+---- Minecraft Crash Report ----
+// Shall we play a game?
+
+Time: 5/13/16 1:04 PM
+Description: Unexpected error
+
+java.lang.Error: Unresolved compilation problem: 
+	The method syncCurrentPlayItem() from the type PlayerControllerMP is not visible
+
+	at mods.battlegear2.client.BattlegearClientTickHandeler.keyDown(BattlegearClientTickHandeler.java:110)
+	at cpw.mods.fml.common.eventhandler.ASMEventHandler_37_BattlegearClientTickHandeler_keyDown_ClientTickEvent.invoke(.dynamic)
+	at cpw.mods.fml.common.eventhandler.ASMEventHandler.invoke(ASMEventHandler.java:54)
+	at cpw.mods.fml.common.eventhandler.EventBus.post(EventBus.java:138)
+	at cpw.mods.fml.common.FMLCommonHandler.onPreClientTick(FMLCommonHandler.java:325)
+	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1668)
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1029)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:951)
+	at net.minecraft.client.main.Main.main(Main.java:164)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(Unknown Source)
+	at GradleStart.main(Unknown Source)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- System Details --
+Details:
+	Minecraft Version: 1.7.10
+	Operating System: Windows 7 (amd64) version 6.1
+	Java Version: 1.7.0_75, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 751754704 bytes (716 MB) / 1038876672 bytes (990 MB) up to 1038876672 bytes (990 MB)
+	JVM Flags: 3 total; -Xincgc -Xmx1024M -Xms1024M
+	AABB Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: MCP v9.05 FML v7.10.85.1230 Minecraft Forge 10.13.2.1230 18 mods loaded, 18 mods active
+	mcp{9.05} [Minecraft Coder Pack] (minecraft.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	FML{7.10.85.1230} [Forge Mod Loader] (forgeSrc-1.7.10-10.13.2.1230.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	Forge{10.13.2.1230} [Minecraft Forge] (forgeSrc-1.7.10-10.13.2.1230.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	CodeChickenCore{1.0.4.29} [CodeChicken Core] (minecraft.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	battlegear2{1.0} [battlegear2] (bin) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	battleclasses{0.0.2} [battleclasses] (bin) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	DynamicLights{1.3.8} [Dynamic Lights] (DynamicLights-1.7.10.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	DynamicLights_onFire{1.0.4} [Dynamic Lights Burning Entity Module] (DynamicLights-1.7.10.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	DynamicLights_creepers{1.0.4} [Dynamic Lights Creeper Module] (DynamicLights-1.7.10.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	DynamicLights_dropItems{1.0.8} [Dynamic Lights EntityItem Module] (DynamicLights-1.7.10.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	DynamicLights_entityClasses{1.0.1} [Dynamic Lights Entity Light Module] (DynamicLights-1.7.10.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	DynamicLights_mobEquipment{1.0.8} [Dynamic Lights Mob Equipment Light Module] (DynamicLights-1.7.10.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	DynamicLights_flameArrows{1.0.0} [Dynamic Lights Fiery Arrows Light Module] (DynamicLights-1.7.10.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	DynamicLights_floodLights{1.0.2} [Dynamic Lights Flood Light] (DynamicLights-1.7.10.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	DynamicLights_otherPlayers{1.0.8} [Dynamic Lights OtherPlayers Light Module] (DynamicLights-1.7.10.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	DynamicLights_thePlayer{1.1.4} [Dynamic Lights Player Light Module] (DynamicLights-1.7.10.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	Mantle{1.7.10-0.3.1.jenkins180} [Mantle] (Mantle-mc1.7.10-0.3.1.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	TConstruct{1.7.10-1.6.0.build611} [Tinkers' Construct] (TConstruct_mc1.7.10_1.6.0d40.1.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	Mantle Environment: Environment healthy.
+	TConstruct Environment: Environment healthy.
+	Launched Version: 1.7.10
+	LWJGL: 2.9.1
+	OpenGL: GeForce GTX 780/PCIe/SSE2 GL version 4.5.0 NVIDIA 359.00, NVIDIA Corporation
+	GL Caps: Using GL 1.3 multitexturing.
+Using framebuffer objects because OpenGL 3.0 is supported and separate blending is supported.
+Anisotropic filtering is supported and maximum anisotropy is 16.
+Shaders are available because OpenGL 2.1 is supported.
+
+	Is Modded: Definitely; Client brand changed to 'fml,forge'
+	Type: Client (map_client.txt)
+	Resource Packs: []
+	Current Language: English (US)
+	Profiler Position: N/A (disabled)
+	Vec3 Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	Anisotropic Filtering: Off (1)

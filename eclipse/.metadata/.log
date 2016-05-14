@@ -1,0 +1,1634 @@
+!SESSION 2016-05-13 12:37:28.759 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.7.0_75
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -data C:\Users\Gaming\Desktop\New folder (2)\New folder\eclipse -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-05-13 12:37:34.589
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Gaming'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2016-05-13 12:46:35.017
+!MESSAGE Internal Error
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/Minecraft/src/main/java/mods/battlegear2/client/BattlegearClientEvents.java' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:341)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:215)
+	at org.eclipse.core.internal.resources.Resource.findMaxProblemSeverity(Resource.java:1051)
+	at org.eclipse.jdt.ui.ProblemsLabelDecorator.getPackageErrorTicksFromMarkers(ProblemsLabelDecorator.java:337)
+	at org.eclipse.jdt.ui.ProblemsLabelDecorator.computeAdornmentFlags(ProblemsLabelDecorator.java:212)
+	at org.eclipse.jdt.internal.ui.viewsupport.TreeHierarchyLayoutProblemsDecorator.computePackageAdornmentFlags(TreeHierarchyLayoutProblemsDecorator.java:47)
+	at org.eclipse.jdt.internal.ui.viewsupport.TreeHierarchyLayoutProblemsDecorator.computeAdornmentFlags(TreeHierarchyLayoutProblemsDecorator.java:56)
+	at org.eclipse.jdt.internal.ui.packageview.PackageExplorerProblemsDecorator.computeAdornmentFlags(PackageExplorerProblemsDecorator.java:35)
+	at org.eclipse.jdt.ui.ProblemsLabelDecorator.decorateImage(ProblemsLabelDecorator.java:170)
+	at org.eclipse.jdt.internal.ui.viewsupport.JavaUILabelProvider.decorateImage(JavaUILabelProvider.java:134)
+	at org.eclipse.jdt.internal.ui.viewsupport.JavaUILabelProvider.getImage(JavaUILabelProvider.java:149)
+	at org.eclipse.jdt.internal.ui.packageview.PackageExplorerLabelProvider.getImage(PackageExplorerLabelProvider.java:140)
+	at org.eclipse.jface.viewers.DelegatingStyledCellLabelProvider.getImage(DelegatingStyledCellLabelProvider.java:195)
+	at org.eclipse.jface.viewers.DecoratingStyledCellLabelProvider.getImage(DecoratingStyledCellLabelProvider.java:173)
+	at org.eclipse.jface.viewers.DelegatingStyledCellLabelProvider.update(DelegatingStyledCellLabelProvider.java:121)
+	at org.eclipse.jface.viewers.DecoratingStyledCellLabelProvider.update(DecoratingStyledCellLabelProvider.java:136)
+	at org.eclipse.jface.viewers.ViewerColumn.refresh(ViewerColumn.java:154)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.doUpdateItem(AbstractTreeViewer.java:949)
+	at org.eclipse.jface.viewers.AbstractTreeViewer$UpdateItemSafeRunnable.run(AbstractTreeViewer.java:114)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.JFaceUtil$1.run(JFaceUtil.java:50)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:178)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.doUpdateItem(AbstractTreeViewer.java:1029)
+	at org.eclipse.jdt.internal.ui.viewsupport.ProblemTreeViewer.doUpdateItem(ProblemTreeViewer.java:73)
+	at org.eclipse.jdt.internal.ui.viewsupport.ResourceToItemsMapper.updateItem(ResourceToItemsMapper.java:75)
+	at org.eclipse.jdt.internal.ui.viewsupport.ResourceToItemsMapper.resourceChanged(ResourceToItemsMapper.java:63)
+	at org.eclipse.jdt.internal.ui.viewsupport.ProblemTreeViewer.handleLabelProviderChanged(ProblemTreeViewer.java:209)
+	at org.eclipse.jface.viewers.ContentViewer$1.labelProviderChanged(ContentViewer.java:99)
+	at org.eclipse.jface.viewers.BaseLabelProvider$1.run(BaseLabelProvider.java:72)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.JFaceUtil$1.run(JFaceUtil.java:50)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:178)
+	at org.eclipse.jface.viewers.BaseLabelProvider.fireLabelProviderChanged(BaseLabelProvider.java:69)
+	at org.eclipse.jface.viewers.DecoratingStyledCellLabelProvider$1.labelProviderChanged(DecoratingStyledCellLabelProvider.java:78)
+	at org.eclipse.jdt.ui.ProblemsLabelDecorator.fireProblemsChanged(ProblemsLabelDecorator.java:487)
+	at org.eclipse.jdt.ui.ProblemsLabelDecorator.access$0(ProblemsLabelDecorator.java:482)
+	at org.eclipse.jdt.ui.ProblemsLabelDecorator$1.problemsChanged(ProblemsLabelDecorator.java:462)
+	at org.eclipse.jdt.internal.ui.viewsupport.ProblemMarkerManager.runPendingUpdates(ProblemMarkerManager.java:241)
+	at org.eclipse.jdt.internal.ui.viewsupport.ProblemMarkerManager.access$0(ProblemMarkerManager.java:224)
+	at org.eclipse.jdt.internal.ui.viewsupport.ProblemMarkerManager$1.runInUIThread(ProblemMarkerManager.java:212)
+	at org.eclipse.ui.progress.UIJob$1.run(UIJob.java:97)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:136)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4147)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3764)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1438)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2016-05-13 12:46:35.019
+!MESSAGE Resource '/Minecraft/src/main/java/mods/battlegear2/client/BattlegearClientEvents.java' does not exist.
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2016-05-13 12:46:35.022
+!MESSAGE Internal Error
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/Minecraft/src/main/java/mods/battlegear2/client/BattlegearClientEvents.java' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:341)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:215)
+	at org.eclipse.core.internal.resources.Resource.findMaxProblemSeverity(Resource.java:1051)
+	at org.eclipse.jdt.ui.ProblemsLabelDecorator.getPackageErrorTicksFromMarkers(ProblemsLabelDecorator.java:337)
+	at org.eclipse.jdt.ui.ProblemsLabelDecorator.computeAdornmentFlags(ProblemsLabelDecorator.java:212)
+	at org.eclipse.jdt.internal.ui.viewsupport.TreeHierarchyLayoutProblemsDecorator.computePackageAdornmentFlags(TreeHierarchyLayoutProblemsDecorator.java:47)
+	at org.eclipse.jdt.internal.ui.viewsupport.TreeHierarchyLayoutProblemsDecorator.computeAdornmentFlags(TreeHierarchyLayoutProblemsDecorator.java:56)
+	at org.eclipse.jdt.internal.ui.packageview.PackageExplorerProblemsDecorator.computeAdornmentFlags(PackageExplorerProblemsDecorator.java:35)
+	at org.eclipse.jdt.ui.ProblemsLabelDecorator.decorateImage(ProblemsLabelDecorator.java:170)
+	at org.eclipse.jdt.internal.ui.viewsupport.JavaUILabelProvider.decorateImage(JavaUILabelProvider.java:134)
+	at org.eclipse.jdt.internal.ui.viewsupport.JavaUILabelProvider.getImage(JavaUILabelProvider.java:149)
+	at org.eclipse.jdt.internal.ui.packageview.PackageExplorerLabelProvider.getImage(PackageExplorerLabelProvider.java:140)
+	at org.eclipse.jface.viewers.DelegatingStyledCellLabelProvider.getImage(DelegatingStyledCellLabelProvider.java:195)
+	at org.eclipse.jface.viewers.DecoratingStyledCellLabelProvider.getImage(DecoratingStyledCellLabelProvider.java:173)
+	at org.eclipse.jface.viewers.DelegatingStyledCellLabelProvider.update(DelegatingStyledCellLabelProvider.java:121)
+	at org.eclipse.jface.viewers.DecoratingStyledCellLabelProvider.update(DecoratingStyledCellLabelProvider.java:136)
+	at org.eclipse.jface.viewers.ViewerColumn.refresh(ViewerColumn.java:154)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.doUpdateItem(AbstractTreeViewer.java:949)
+	at org.eclipse.jface.viewers.AbstractTreeViewer$UpdateItemSafeRunnable.run(AbstractTreeViewer.java:114)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.JFaceUtil$1.run(JFaceUtil.java:50)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:178)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.doUpdateItem(AbstractTreeViewer.java:1029)
+	at org.eclipse.jdt.internal.ui.viewsupport.ProblemTreeViewer.doUpdateItem(ProblemTreeViewer.java:73)
+	at org.eclipse.jdt.internal.ui.viewsupport.ResourceToItemsMapper.updateItem(ResourceToItemsMapper.java:75)
+	at org.eclipse.jdt.internal.ui.viewsupport.ResourceToItemsMapper.resourceChanged(ResourceToItemsMapper.java:63)
+	at org.eclipse.jdt.internal.ui.viewsupport.ProblemTreeViewer.handleLabelProviderChanged(ProblemTreeViewer.java:209)
+	at org.eclipse.jface.viewers.ContentViewer$1.labelProviderChanged(ContentViewer.java:99)
+	at org.eclipse.jdt.ui.ProblemsLabelDecorator.fireProblemsChanged(ProblemsLabelDecorator.java:487)
+	at org.eclipse.jdt.ui.ProblemsLabelDecorator.access$0(ProblemsLabelDecorator.java:482)
+	at org.eclipse.jdt.ui.ProblemsLabelDecorator$1.problemsChanged(ProblemsLabelDecorator.java:462)
+	at org.eclipse.jdt.internal.ui.viewsupport.ProblemMarkerManager.runPendingUpdates(ProblemMarkerManager.java:241)
+	at org.eclipse.jdt.internal.ui.viewsupport.ProblemMarkerManager.access$0(ProblemMarkerManager.java:224)
+	at org.eclipse.jdt.internal.ui.viewsupport.ProblemMarkerManager$1.runInUIThread(ProblemMarkerManager.java:212)
+	at org.eclipse.ui.progress.UIJob$1.run(UIJob.java:97)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:136)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4147)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3764)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1438)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2016-05-13 12:46:35.022
+!MESSAGE Resource '/Minecraft/src/main/java/mods/battlegear2/client/BattlegearClientEvents.java' does not exist.
+
+!ENTRY org.eclipse.jdt.core 4 4 2016-05-13 12:46:35.053
+!MESSAGE File not found: '/Minecraft/src/main/java/mods/battlegear2/Battlegear.java'
+!STACK 1
+org.eclipse.core.runtime.CoreException: File not found: C:\Users\Gaming\Desktop\New folder (2)\New folder\src\main\java\mods\battlegear2\Battlegear.java.
+	at org.eclipse.core.internal.filesystem.Policy.error(Policy.java:55)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:386)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:797)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:290)
+	at org.eclipse.jdt.internal.core.util.Util.getResourceContentsAsCharArray(Util.java:1188)
+	at org.eclipse.jdt.internal.core.CompilationUnit.getContents(CompilationUnit.java:649)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.parse(Parser.java:11286)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.parse(Parser.java:11258)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.dietParse(Parser.java:9673)
+	at org.eclipse.jdt.internal.compiler.parser.SourceTypeConverter.convert(SourceTypeConverter.java:126)
+	at org.eclipse.jdt.internal.compiler.parser.SourceTypeConverter.buildCompilationUnit(SourceTypeConverter.java:96)
+	at org.eclipse.jdt.internal.core.hierarchy.HierarchyResolver.accept(HierarchyResolver.java:151)
+	at org.eclipse.jdt.internal.compiler.lookup.LookupEnvironment.askForType(LookupEnvironment.java:178)
+	at org.eclipse.jdt.internal.compiler.lookup.PackageBinding.getTypeOrPackage(PackageBinding.java:201)
+	at org.eclipse.jdt.internal.compiler.lookup.CompilationUnitScope.findImport(CompilationUnitScope.java:468)
+	at org.eclipse.jdt.internal.compiler.lookup.CompilationUnitScope.findSingleImport(CompilationUnitScope.java:522)
+	at org.eclipse.jdt.internal.compiler.lookup.CompilationUnitScope.faultInImports(CompilationUnitScope.java:399)
+	at org.eclipse.jdt.internal.compiler.lookup.CompilationUnitScope.faultInTypes(CompilationUnitScope.java:447)
+	at org.eclipse.jdt.internal.core.hierarchy.HierarchyResolver.resolve(HierarchyResolver.java:825)
+	at org.eclipse.jdt.internal.core.hierarchy.HierarchyResolver.resolve(HierarchyResolver.java:628)
+	at org.eclipse.jdt.internal.core.hierarchy.HierarchyBuilder.buildSupertypes(HierarchyBuilder.java:116)
+	at org.eclipse.jdt.internal.core.hierarchy.IndexBasedHierarchyBuilder.build(IndexBasedHierarchyBuilder.java:136)
+	at org.eclipse.jdt.internal.core.hierarchy.TypeHierarchy.compute(TypeHierarchy.java:301)
+	at org.eclipse.jdt.internal.core.hierarchy.TypeHierarchy.refresh(TypeHierarchy.java:1268)
+	at org.eclipse.jdt.internal.core.CreateTypeHierarchyOperation.executeOperation(CreateTypeHierarchyOperation.java:90)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:729)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:789)
+	at org.eclipse.jdt.internal.core.SourceType.newSupertypeHierarchy(SourceType.java:744)
+	at org.eclipse.jdt.internal.core.SourceType.newSupertypeHierarchy(SourceType.java:696)
+	at org.eclipse.jdt.internal.corext.util.SuperTypeHierarchyCache.getTypeHierarchy(SuperTypeHierarchyCache.java:144)
+	at org.eclipse.jdt.internal.corext.util.SuperTypeHierarchyCache.getTypeHierarchy(SuperTypeHierarchyCache.java:96)
+	at org.eclipse.jdt.internal.corext.util.SuperTypeHierarchyCache.getMethodOverrideTester(SuperTypeHierarchyCache.java:105)
+	at org.eclipse.jdt.ui.OverrideIndicatorLabelDecorator.getOverrideIndicators(OverrideIndicatorLabelDecorator.java:171)
+	at org.eclipse.jdt.ui.OverrideIndicatorLabelDecorator.computeAdornmentFlags(OverrideIndicatorLabelDecorator.java:136)
+	at org.eclipse.jdt.ui.OverrideIndicatorLabelDecorator.decorate(OverrideIndicatorLabelDecorator.java:273)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:273)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:83)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:367)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:349)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:372)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:332)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: java.io.FileNotFoundException: C:\Users\Gaming\Desktop\New folder (2)\New folder\src\main\java\mods\battlegear2\Battlegear.java (The system cannot find the path specified)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:377)
+	... 41 more
+!SUBENTRY 1 org.eclipse.core.filesystem 4 271 2016-05-13 12:46:35.054
+!MESSAGE File not found: C:\Users\Gaming\Desktop\New folder (2)\New folder\src\main\java\mods\battlegear2\Battlegear.java.
+!STACK 0
+java.io.FileNotFoundException: C:\Users\Gaming\Desktop\New folder (2)\New folder\src\main\java\mods\battlegear2\Battlegear.java (The system cannot find the path specified)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:377)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:797)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:290)
+	at org.eclipse.jdt.internal.core.util.Util.getResourceContentsAsCharArray(Util.java:1188)
+	at org.eclipse.jdt.internal.core.CompilationUnit.getContents(CompilationUnit.java:649)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.parse(Parser.java:11286)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.parse(Parser.java:11258)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.dietParse(Parser.java:9673)
+	at org.eclipse.jdt.internal.compiler.parser.SourceTypeConverter.convert(SourceTypeConverter.java:126)
+	at org.eclipse.jdt.internal.compiler.parser.SourceTypeConverter.buildCompilationUnit(SourceTypeConverter.java:96)
+	at org.eclipse.jdt.internal.core.hierarchy.HierarchyResolver.accept(HierarchyResolver.java:151)
+	at org.eclipse.jdt.internal.compiler.lookup.LookupEnvironment.askForType(LookupEnvironment.java:178)
+	at org.eclipse.jdt.internal.compiler.lookup.PackageBinding.getTypeOrPackage(PackageBinding.java:201)
+	at org.eclipse.jdt.internal.compiler.lookup.CompilationUnitScope.findImport(CompilationUnitScope.java:468)
+	at org.eclipse.jdt.internal.compiler.lookup.CompilationUnitScope.findSingleImport(CompilationUnitScope.java:522)
+	at org.eclipse.jdt.internal.compiler.lookup.CompilationUnitScope.faultInImports(CompilationUnitScope.java:399)
+	at org.eclipse.jdt.internal.compiler.lookup.CompilationUnitScope.faultInTypes(CompilationUnitScope.java:447)
+	at org.eclipse.jdt.internal.core.hierarchy.HierarchyResolver.resolve(HierarchyResolver.java:825)
+	at org.eclipse.jdt.internal.core.hierarchy.HierarchyResolver.resolve(HierarchyResolver.java:628)
+	at org.eclipse.jdt.internal.core.hierarchy.HierarchyBuilder.buildSupertypes(HierarchyBuilder.java:116)
+	at org.eclipse.jdt.internal.core.hierarchy.IndexBasedHierarchyBuilder.build(IndexBasedHierarchyBuilder.java:136)
+	at org.eclipse.jdt.internal.core.hierarchy.TypeHierarchy.compute(TypeHierarchy.java:301)
+	at org.eclipse.jdt.internal.core.hierarchy.TypeHierarchy.refresh(TypeHierarchy.java:1268)
+	at org.eclipse.jdt.internal.core.CreateTypeHierarchyOperation.executeOperation(CreateTypeHierarchyOperation.java:90)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:729)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:789)
+	at org.eclipse.jdt.internal.core.SourceType.newSupertypeHierarchy(SourceType.java:744)
+	at org.eclipse.jdt.internal.core.SourceType.newSupertypeHierarchy(SourceType.java:696)
+	at org.eclipse.jdt.internal.corext.util.SuperTypeHierarchyCache.getTypeHierarchy(SuperTypeHierarchyCache.java:144)
+	at org.eclipse.jdt.internal.corext.util.SuperTypeHierarchyCache.getTypeHierarchy(SuperTypeHierarchyCache.java:96)
+	at org.eclipse.jdt.internal.corext.util.SuperTypeHierarchyCache.getMethodOverrideTester(SuperTypeHierarchyCache.java:105)
+	at org.eclipse.jdt.ui.OverrideIndicatorLabelDecorator.getOverrideIndicators(OverrideIndicatorLabelDecorator.java:171)
+	at org.eclipse.jdt.ui.OverrideIndicatorLabelDecorator.computeAdornmentFlags(OverrideIndicatorLabelDecorator.java:136)
+	at org.eclipse.jdt.ui.OverrideIndicatorLabelDecorator.decorate(OverrideIndicatorLabelDecorator.java:273)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:273)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:83)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:367)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:349)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:372)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:332)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.jdt.core 4 4 2016-05-13 12:46:35.056
+!MESSAGE File not found: '/Minecraft/src/main/java/mods/battlegear2/api/RenderItemBarEvent.java'
+!STACK 1
+org.eclipse.core.runtime.CoreException: File not found: C:\Users\Gaming\Desktop\New folder (2)\New folder\src\main\java\mods\battlegear2\api\RenderItemBarEvent.java.
+	at org.eclipse.core.internal.filesystem.Policy.error(Policy.java:55)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:386)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:797)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:290)
+	at org.eclipse.jdt.internal.core.util.Util.getResourceContentsAsCharArray(Util.java:1188)
+	at org.eclipse.jdt.internal.core.CompilationUnit.getContents(CompilationUnit.java:649)
+	at org.eclipse.jdt.internal.compiler.parser.SourceTypeConverter.getSource(SourceTypeConverter.java:639)
+	at org.eclipse.jdt.internal.compiler.parser.SourceTypeConverter.convertAnnotations(SourceTypeConverter.java:609)
+	at org.eclipse.jdt.internal.compiler.parser.SourceTypeConverter.convert(SourceTypeConverter.java:481)
+	at org.eclipse.jdt.internal.compiler.parser.SourceTypeConverter.convert(SourceTypeConverter.java:518)
+	at org.eclipse.jdt.internal.compiler.parser.SourceTypeConverter.convert(SourceTypeConverter.java:167)
+	at org.eclipse.jdt.internal.compiler.parser.SourceTypeConverter.buildCompilationUnit(SourceTypeConverter.java:96)
+	at org.eclipse.jdt.internal.core.hierarchy.HierarchyResolver.accept(HierarchyResolver.java:151)
+	at org.eclipse.jdt.internal.compiler.lookup.LookupEnvironment.askForType(LookupEnvironment.java:178)
+	at org.eclipse.jdt.internal.compiler.lookup.PackageBinding.getTypeOrPackage(PackageBinding.java:201)
+	at org.eclipse.jdt.internal.compiler.lookup.CompilationUnitScope.findImport(CompilationUnitScope.java:468)
+	at org.eclipse.jdt.internal.compiler.lookup.CompilationUnitScope.findSingleImport(CompilationUnitScope.java:522)
+	at org.eclipse.jdt.internal.compiler.lookup.CompilationUnitScope.faultInImports(CompilationUnitScope.java:399)
+	at org.eclipse.jdt.internal.compiler.lookup.CompilationUnitScope.faultInTypes(CompilationUnitScope.java:447)
+	at org.eclipse.jdt.internal.core.hierarchy.HierarchyResolver.resolve(HierarchyResolver.java:825)
+	at org.eclipse.jdt.internal.core.hierarchy.HierarchyResolver.resolve(HierarchyResolver.java:628)
+	at org.eclipse.jdt.internal.core.hierarchy.HierarchyBuilder.buildSupertypes(HierarchyBuilder.java:116)
+	at org.eclipse.jdt.internal.core.hierarchy.IndexBasedHierarchyBuilder.build(IndexBasedHierarchyBuilder.java:136)
+	at org.eclipse.jdt.internal.core.hierarchy.TypeHierarchy.compute(TypeHierarchy.java:301)
+	at org.eclipse.jdt.internal.core.hierarchy.TypeHierarchy.refresh(TypeHierarchy.java:1268)
+	at org.eclipse.jdt.internal.core.CreateTypeHierarchyOperation.executeOperation(CreateTypeHierarchyOperation.java:90)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:729)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:789)
+	at org.eclipse.jdt.internal.core.SourceType.newSupertypeHierarchy(SourceType.java:744)
+	at org.eclipse.jdt.internal.core.SourceType.newSupertypeHierarchy(SourceType.java:696)
+	at org.eclipse.jdt.internal.corext.util.SuperTypeHierarchyCache.getTypeHierarchy(SuperTypeHierarchyCache.java:144)
+	at org.eclipse.jdt.internal.corext.util.SuperTypeHierarchyCache.getTypeHierarchy(SuperTypeHierarchyCache.java:96)
+	at org.eclipse.jdt.internal.corext.util.SuperTypeHierarchyCache.getMethodOverrideTester(SuperTypeHierarchyCache.java:105)
+	at org.eclipse.jdt.ui.OverrideIndicatorLabelDecorator.getOverrideIndicators(OverrideIndicatorLabelDecorator.java:171)
+	at org.eclipse.jdt.ui.OverrideIndicatorLabelDecorator.computeAdornmentFlags(OverrideIndicatorLabelDecorator.java:136)
+	at org.eclipse.jdt.ui.OverrideIndicatorLabelDecorator.decorate(OverrideIndicatorLabelDecorator.java:273)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:273)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:83)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:367)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:349)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:372)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:332)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: java.io.FileNotFoundException: C:\Users\Gaming\Desktop\New folder (2)\New folder\src\main\java\mods\battlegear2\api\RenderItemBarEvent.java (The system cannot find the path specified)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:377)
+	... 42 more
+!SUBENTRY 1 org.eclipse.core.filesystem 4 271 2016-05-13 12:46:35.056
+!MESSAGE File not found: C:\Users\Gaming\Desktop\New folder (2)\New folder\src\main\java\mods\battlegear2\api\RenderItemBarEvent.java.
+!STACK 0
+java.io.FileNotFoundException: C:\Users\Gaming\Desktop\New folder (2)\New folder\src\main\java\mods\battlegear2\api\RenderItemBarEvent.java (The system cannot find the path specified)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:377)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:797)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:290)
+	at org.eclipse.jdt.internal.core.util.Util.getResourceContentsAsCharArray(Util.java:1188)
+	at org.eclipse.jdt.internal.core.CompilationUnit.getContents(CompilationUnit.java:649)
+	at org.eclipse.jdt.internal.compiler.parser.SourceTypeConverter.getSource(SourceTypeConverter.java:639)
+	at org.eclipse.jdt.internal.compiler.parser.SourceTypeConverter.convertAnnotations(SourceTypeConverter.java:609)
+	at org.eclipse.jdt.internal.compiler.parser.SourceTypeConverter.convert(SourceTypeConverter.java:481)
+	at org.eclipse.jdt.internal.compiler.parser.SourceTypeConverter.convert(SourceTypeConverter.java:518)
+	at org.eclipse.jdt.internal.compiler.parser.SourceTypeConverter.convert(SourceTypeConverter.java:167)
+	at org.eclipse.jdt.internal.compiler.parser.SourceTypeConverter.buildCompilationUnit(SourceTypeConverter.java:96)
+	at org.eclipse.jdt.internal.core.hierarchy.HierarchyResolver.accept(HierarchyResolver.java:151)
+	at org.eclipse.jdt.internal.compiler.lookup.LookupEnvironment.askForType(LookupEnvironment.java:178)
+	at org.eclipse.jdt.internal.compiler.lookup.PackageBinding.getTypeOrPackage(PackageBinding.java:201)
+	at org.eclipse.jdt.internal.compiler.lookup.CompilationUnitScope.findImport(CompilationUnitScope.java:468)
+	at org.eclipse.jdt.internal.compiler.lookup.CompilationUnitScope.findSingleImport(CompilationUnitScope.java:522)
+	at org.eclipse.jdt.internal.compiler.lookup.CompilationUnitScope.faultInImports(CompilationUnitScope.java:399)
+	at org.eclipse.jdt.internal.compiler.lookup.CompilationUnitScope.faultInTypes(CompilationUnitScope.java:447)
+	at org.eclipse.jdt.internal.core.hierarchy.HierarchyResolver.resolve(HierarchyResolver.java:825)
+	at org.eclipse.jdt.internal.core.hierarchy.HierarchyResolver.resolve(HierarchyResolver.java:628)
+	at org.eclipse.jdt.internal.core.hierarchy.HierarchyBuilder.buildSupertypes(HierarchyBuilder.java:116)
+	at org.eclipse.jdt.internal.core.hierarchy.IndexBasedHierarchyBuilder.build(IndexBasedHierarchyBuilder.java:136)
+	at org.eclipse.jdt.internal.core.hierarchy.TypeHierarchy.compute(TypeHierarchy.java:301)
+	at org.eclipse.jdt.internal.core.hierarchy.TypeHierarchy.refresh(TypeHierarchy.java:1268)
+	at org.eclipse.jdt.internal.core.CreateTypeHierarchyOperation.executeOperation(CreateTypeHierarchyOperation.java:90)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:729)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:789)
+	at org.eclipse.jdt.internal.core.SourceType.newSupertypeHierarchy(SourceType.java:744)
+	at org.eclipse.jdt.internal.core.SourceType.newSupertypeHierarchy(SourceType.java:696)
+	at org.eclipse.jdt.internal.corext.util.SuperTypeHierarchyCache.getTypeHierarchy(SuperTypeHierarchyCache.java:144)
+	at org.eclipse.jdt.internal.corext.util.SuperTypeHierarchyCache.getTypeHierarchy(SuperTypeHierarchyCache.java:96)
+	at org.eclipse.jdt.internal.corext.util.SuperTypeHierarchyCache.getMethodOverrideTester(SuperTypeHierarchyCache.java:105)
+	at org.eclipse.jdt.ui.OverrideIndicatorLabelDecorator.getOverrideIndicators(OverrideIndicatorLabelDecorator.java:171)
+	at org.eclipse.jdt.ui.OverrideIndicatorLabelDecorator.computeAdornmentFlags(OverrideIndicatorLabelDecorator.java:136)
+	at org.eclipse.jdt.ui.OverrideIndicatorLabelDecorator.decorate(OverrideIndicatorLabelDecorator.java:273)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:273)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:83)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:367)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:349)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:372)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:332)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.jdt.core 4 4 2016-05-13 12:46:35.058
+!MESSAGE File not found: '/Minecraft/src/main/java/mods/battlegear2/api/core/InventoryPlayerBattle.java'
+!STACK 1
+org.eclipse.core.runtime.CoreException: File not found: C:\Users\Gaming\Desktop\New folder (2)\New folder\src\main\java\mods\battlegear2\api\core\InventoryPlayerBattle.java.
+	at org.eclipse.core.internal.filesystem.Policy.error(Policy.java:55)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:386)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:797)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:290)
+	at org.eclipse.jdt.internal.core.util.Util.getResourceContentsAsCharArray(Util.java:1188)
+	at org.eclipse.jdt.internal.core.CompilationUnit.getContents(CompilationUnit.java:649)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.parse(Parser.java:11286)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.parse(Parser.java:11258)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.dietParse(Parser.java:9673)
+	at org.eclipse.jdt.internal.compiler.parser.SourceTypeConverter.convert(SourceTypeConverter.java:126)
+	at org.eclipse.jdt.internal.compiler.parser.SourceTypeConverter.buildCompilationUnit(SourceTypeConverter.java:96)
+	at org.eclipse.jdt.internal.core.hierarchy.HierarchyResolver.accept(HierarchyResolver.java:151)
+	at org.eclipse.jdt.internal.compiler.lookup.LookupEnvironment.askForType(LookupEnvironment.java:178)
+	at org.eclipse.jdt.internal.compiler.lookup.PackageBinding.getTypeOrPackage(PackageBinding.java:201)
+	at org.eclipse.jdt.internal.compiler.lookup.CompilationUnitScope.findImport(CompilationUnitScope.java:468)
+	at org.eclipse.jdt.internal.compiler.lookup.CompilationUnitScope.findSingleImport(CompilationUnitScope.java:522)
+	at org.eclipse.jdt.internal.compiler.lookup.CompilationUnitScope.faultInImports(CompilationUnitScope.java:399)
+	at org.eclipse.jdt.internal.compiler.lookup.CompilationUnitScope.faultInTypes(CompilationUnitScope.java:447)
+	at org.eclipse.jdt.internal.core.hierarchy.HierarchyResolver.resolve(HierarchyResolver.java:825)
+	at org.eclipse.jdt.internal.core.hierarchy.HierarchyResolver.resolve(HierarchyResolver.java:628)
+	at org.eclipse.jdt.internal.core.hierarchy.HierarchyBuilder.buildSupertypes(HierarchyBuilder.java:116)
+	at org.eclipse.jdt.internal.core.hierarchy.IndexBasedHierarchyBuilder.build(IndexBasedHierarchyBuilder.java:136)
+	at org.eclipse.jdt.internal.core.hierarchy.TypeHierarchy.compute(TypeHierarchy.java:301)
+	at org.eclipse.jdt.internal.core.hierarchy.TypeHierarchy.refresh(TypeHierarchy.java:1268)
+	at org.eclipse.jdt.internal.core.CreateTypeHierarchyOperation.executeOperation(CreateTypeHierarchyOperation.java:90)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:729)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:789)
+	at org.eclipse.jdt.internal.core.SourceType.newSupertypeHierarchy(SourceType.java:744)
+	at org.eclipse.jdt.internal.core.SourceType.newSupertypeHierarchy(SourceType.java:696)
+	at org.eclipse.jdt.internal.corext.util.SuperTypeHierarchyCache.getTypeHierarchy(SuperTypeHierarchyCache.java:144)
+	at org.eclipse.jdt.internal.corext.util.SuperTypeHierarchyCache.getTypeHierarchy(SuperTypeHierarchyCache.java:96)
+	at org.eclipse.jdt.internal.corext.util.SuperTypeHierarchyCache.getMethodOverrideTester(SuperTypeHierarchyCache.java:105)
+	at org.eclipse.jdt.ui.OverrideIndicatorLabelDecorator.getOverrideIndicators(OverrideIndicatorLabelDecorator.java:171)
+	at org.eclipse.jdt.ui.OverrideIndicatorLabelDecorator.computeAdornmentFlags(OverrideIndicatorLabelDecorator.java:136)
+	at org.eclipse.jdt.ui.OverrideIndicatorLabelDecorator.decorate(OverrideIndicatorLabelDecorator.java:273)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:273)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:83)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:367)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:349)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:372)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:332)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: java.io.FileNotFoundException: C:\Users\Gaming\Desktop\New folder (2)\New folder\src\main\java\mods\battlegear2\api\core\InventoryPlayerBattle.java (The system cannot find the path specified)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:377)
+	... 41 more
+!SUBENTRY 1 org.eclipse.core.filesystem 4 271 2016-05-13 12:46:35.058
+!MESSAGE File not found: C:\Users\Gaming\Desktop\New folder (2)\New folder\src\main\java\mods\battlegear2\api\core\InventoryPlayerBattle.java.
+!STACK 0
+java.io.FileNotFoundException: C:\Users\Gaming\Desktop\New folder (2)\New folder\src\main\java\mods\battlegear2\api\core\InventoryPlayerBattle.java (The system cannot find the path specified)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:377)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:797)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:290)
+	at org.eclipse.jdt.internal.core.util.Util.getResourceContentsAsCharArray(Util.java:1188)
+	at org.eclipse.jdt.internal.core.CompilationUnit.getContents(CompilationUnit.java:649)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.parse(Parser.java:11286)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.parse(Parser.java:11258)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.dietParse(Parser.java:9673)
+	at org.eclipse.jdt.internal.compiler.parser.SourceTypeConverter.convert(SourceTypeConverter.java:126)
+	at org.eclipse.jdt.internal.compiler.parser.SourceTypeConverter.buildCompilationUnit(SourceTypeConverter.java:96)
+	at org.eclipse.jdt.internal.core.hierarchy.HierarchyResolver.accept(HierarchyResolver.java:151)
+	at org.eclipse.jdt.internal.compiler.lookup.LookupEnvironment.askForType(LookupEnvironment.java:178)
+	at org.eclipse.jdt.internal.compiler.lookup.PackageBinding.getTypeOrPackage(PackageBinding.java:201)
+	at org.eclipse.jdt.internal.compiler.lookup.CompilationUnitScope.findImport(CompilationUnitScope.java:468)
+	at org.eclipse.jdt.internal.compiler.lookup.CompilationUnitScope.findSingleImport(CompilationUnitScope.java:522)
+	at org.eclipse.jdt.internal.compiler.lookup.CompilationUnitScope.faultInImports(CompilationUnitScope.java:399)
+	at org.eclipse.jdt.internal.compiler.lookup.CompilationUnitScope.faultInTypes(CompilationUnitScope.java:447)
+	at org.eclipse.jdt.internal.core.hierarchy.HierarchyResolver.resolve(HierarchyResolver.java:825)
+	at org.eclipse.jdt.internal.core.hierarchy.HierarchyResolver.resolve(HierarchyResolver.java:628)
+	at org.eclipse.jdt.internal.core.hierarchy.HierarchyBuilder.buildSupertypes(HierarchyBuilder.java:116)
+	at org.eclipse.jdt.internal.core.hierarchy.IndexBasedHierarchyBuilder.build(IndexBasedHierarchyBuilder.java:136)
+	at org.eclipse.jdt.internal.core.hierarchy.TypeHierarchy.compute(TypeHierarchy.java:301)
+	at org.eclipse.jdt.internal.core.hierarchy.TypeHierarchy.refresh(TypeHierarchy.java:1268)
+	at org.eclipse.jdt.internal.core.CreateTypeHierarchyOperation.executeOperation(CreateTypeHierarchyOperation.java:90)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:729)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:789)
+	at org.eclipse.jdt.internal.core.SourceType.newSupertypeHierarchy(SourceType.java:744)
+	at org.eclipse.jdt.internal.core.SourceType.newSupertypeHierarchy(SourceType.java:696)
+	at org.eclipse.jdt.internal.corext.util.SuperTypeHierarchyCache.getTypeHierarchy(SuperTypeHierarchyCache.java:144)
+	at org.eclipse.jdt.internal.corext.util.SuperTypeHierarchyCache.getTypeHierarchy(SuperTypeHierarchyCache.java:96)
+	at org.eclipse.jdt.internal.corext.util.SuperTypeHierarchyCache.getMethodOverrideTester(SuperTypeHierarchyCache.java:105)
+	at org.eclipse.jdt.ui.OverrideIndicatorLabelDecorator.getOverrideIndicators(OverrideIndicatorLabelDecorator.java:171)
+	at org.eclipse.jdt.ui.OverrideIndicatorLabelDecorator.computeAdornmentFlags(OverrideIndicatorLabelDecorator.java:136)
+	at org.eclipse.jdt.ui.OverrideIndicatorLabelDecorator.decorate(OverrideIndicatorLabelDecorator.java:273)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:273)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:83)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:367)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:349)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:372)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:332)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2016-05-13 12:46:49.632
+!MESSAGE Unable to create class 'org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor' from bundle '364'
+!STACK 0
+org.eclipse.e4.core.di.InjectionException: Java Model Exception: Java Model Status [[Working copy] BattlegearConfigGUI.java [in mods.battlegear2.client.gui [in src/main/java [in Minecraft]]] does not exist]
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:62)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:888)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:869)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.inject(InjectorImpl.java:120)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:337)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:258)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:162)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:104)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:73)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:55)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer.createWidget(ContributedPartRenderer.java:127)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:983)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:662)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:766)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$2(PartRenderingEngine.java:737)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$7.run(PartRenderingEngine.java:731)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:715)
+	at org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer.showTab(StackRenderer.java:1246)
+	at org.eclipse.e4.ui.workbench.renderers.swt.LazyStackRenderer$1.handleEvent(LazyStackRenderer.java:69)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler$1.run(UIEventHandler.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:187)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:156)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4734)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application$1.syncExec(E4Application.java:218)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.handleEvent(UIEventHandler.java:36)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:197)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:197)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:148)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:135)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:78)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:39)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:81)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:59)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:374)
+	at org.eclipse.e4.ui.model.application.ui.impl.ElementContainerImpl.setSelectedElement(ElementContainerImpl.java:171)
+	at org.eclipse.e4.ui.internal.workbench.ModelServiceImpl.showElementInWindow(ModelServiceImpl.java:488)
+	at org.eclipse.e4.ui.internal.workbench.ModelServiceImpl.bringToTop(ModelServiceImpl.java:454)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.delegateBringToTop(PartServiceImpl.java:705)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.bringToTop(PartServiceImpl.java:392)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.showPart(PartServiceImpl.java:1145)
+	at org.eclipse.ui.internal.WorkbenchPage.busyOpenEditor(WorkbenchPage.java:3210)
+	at org.eclipse.ui.internal.WorkbenchPage.access$23(WorkbenchPage.java:3125)
+	at org.eclipse.ui.internal.WorkbenchPage$9.run(WorkbenchPage.java:3107)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3102)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3066)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3056)
+	at org.eclipse.jdt.internal.ui.javaeditor.EditorUtility.openInEditor(EditorUtility.java:373)
+	at org.eclipse.jdt.internal.ui.javaeditor.EditorUtility.openInEditor(EditorUtility.java:179)
+	at org.eclipse.jdt.ui.actions.OpenAction.run(OpenAction.java:268)
+	at org.eclipse.jdt.ui.actions.OpenAction.run(OpenAction.java:233)
+	at org.eclipse.jdt.ui.actions.SelectionDispatchAction.dispatchRun(SelectionDispatchAction.java:275)
+	at org.eclipse.jdt.ui.actions.SelectionDispatchAction.run(SelectionDispatchAction.java:251)
+	at org.eclipse.jdt.internal.ui.packageview.PackageExplorerActionGroup.handleOpen(PackageExplorerActionGroup.java:376)
+	at org.eclipse.jdt.internal.ui.packageview.PackageExplorerPart$4.open(PackageExplorerPart.java:538)
+	at org.eclipse.ui.OpenAndLinkWithEditorHelper$InternalListener.open(OpenAndLinkWithEditorHelper.java:48)
+	at org.eclipse.jface.viewers.StructuredViewer$2.run(StructuredViewer.java:853)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.JFaceUtil$1.run(JFaceUtil.java:50)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:178)
+	at org.eclipse.jface.viewers.StructuredViewer.fireOpen(StructuredViewer.java:850)
+	at org.eclipse.jface.viewers.StructuredViewer.handleOpen(StructuredViewer.java:1142)
+	at org.eclipse.jface.viewers.StructuredViewer$6.handleOpen(StructuredViewer.java:1249)
+	at org.eclipse.jface.util.OpenStrategy.fireOpenEvent(OpenStrategy.java:278)
+	at org.eclipse.jface.util.OpenStrategy.access$2(OpenStrategy.java:272)
+	at org.eclipse.jface.util.OpenStrategy$1.handleEvent(OpenStrategy.java:313)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4353)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1061)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4172)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3761)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1438)
+Caused by: Java Model Exception: Java Model Status [[Working copy] BattlegearConfigGUI.java [in mods.battlegear2.client.gui [in src/main/java [in Minecraft]]] does not exist]
+	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:556)
+	at org.eclipse.jdt.internal.core.Openable.getUnderlyingResource(Openable.java:344)
+	at org.eclipse.jdt.internal.core.CompilationUnit.getUnderlyingResource(CompilationUnit.java:930)
+	at org.eclipse.wb.internal.core.editor.UndoManager.<init>(UndoManager.java:73)
+	at org.eclipse.wb.internal.core.editor.DesignPage$2.run(DesignPage.java:121)
+	at org.eclipse.wb.internal.core.utils.execution.ExecutionUtils.runRethrow(ExecutionUtils.java:119)
+	at org.eclipse.wb.internal.core.editor.DesignPage.initialize(DesignPage.java:118)
+	at org.eclipse.wb.internal.core.editor.multi.MultiMode.create(MultiMode.java:103)
+	at org.eclipse.wb.internal.core.editor.multi.MultiPagesMode.create(MultiPagesMode.java:85)
+	at org.eclipse.wb.internal.core.editor.multi.DesignerEditor.createPartControl(DesignerEditor.java:87)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.createPartControl(CompatibilityPart.java:141)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor.createPartControl(CompatibilityEditor.java:99)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.create(CompatibilityPart.java:327)
+	at sun.reflect.GeneratedMethodAccessor39.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
+	... 95 more
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2016-05-13 12:46:50.076
+!MESSAGE Internal Error
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/Minecraft/src/main/java/mods/battlegear2/client/gui/BattlegearConfigGUI.java' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:341)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:215)
+	at org.eclipse.core.internal.resources.Resource.findMaxProblemSeverity(Resource.java:1051)
+	at org.eclipse.jdt.ui.ProblemsLabelDecorator.getPackageErrorTicksFromMarkers(ProblemsLabelDecorator.java:337)
+	at org.eclipse.jdt.ui.ProblemsLabelDecorator.computeAdornmentFlags(ProblemsLabelDecorator.java:212)
+	at org.eclipse.jdt.internal.ui.viewsupport.TreeHierarchyLayoutProblemsDecorator.computePackageAdornmentFlags(TreeHierarchyLayoutProblemsDecorator.java:47)
+	at org.eclipse.jdt.internal.ui.viewsupport.TreeHierarchyLayoutProblemsDecorator.computeAdornmentFlags(TreeHierarchyLayoutProblemsDecorator.java:56)
+	at org.eclipse.jdt.internal.ui.packageview.PackageExplorerProblemsDecorator.computeAdornmentFlags(PackageExplorerProblemsDecorator.java:35)
+	at org.eclipse.jdt.ui.ProblemsLabelDecorator.decorateImage(ProblemsLabelDecorator.java:170)
+	at org.eclipse.jdt.internal.ui.viewsupport.JavaUILabelProvider.decorateImage(JavaUILabelProvider.java:134)
+	at org.eclipse.jdt.internal.ui.viewsupport.JavaUILabelProvider.getImage(JavaUILabelProvider.java:149)
+	at org.eclipse.jdt.internal.ui.packageview.PackageExplorerLabelProvider.getImage(PackageExplorerLabelProvider.java:140)
+	at org.eclipse.jface.viewers.DelegatingStyledCellLabelProvider.getImage(DelegatingStyledCellLabelProvider.java:195)
+	at org.eclipse.jface.viewers.DecoratingStyledCellLabelProvider.getImage(DecoratingStyledCellLabelProvider.java:173)
+	at org.eclipse.jface.viewers.DelegatingStyledCellLabelProvider.update(DelegatingStyledCellLabelProvider.java:121)
+	at org.eclipse.jface.viewers.DecoratingStyledCellLabelProvider.update(DecoratingStyledCellLabelProvider.java:136)
+	at org.eclipse.jface.viewers.ViewerColumn.refresh(ViewerColumn.java:154)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.doUpdateItem(AbstractTreeViewer.java:949)
+	at org.eclipse.jface.viewers.AbstractTreeViewer$UpdateItemSafeRunnable.run(AbstractTreeViewer.java:114)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.JFaceUtil$1.run(JFaceUtil.java:50)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:178)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.doUpdateItem(AbstractTreeViewer.java:1029)
+	at org.eclipse.jface.viewers.StructuredViewer$UpdateItemSafeRunnable.run(StructuredViewer.java:472)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.JFaceUtil$1.run(JFaceUtil.java:50)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:178)
+	at org.eclipse.jface.viewers.StructuredViewer.updateItem(StructuredViewer.java:2150)
+	at org.eclipse.jface.viewers.StructuredViewer.internalUpdate(StructuredViewer.java:2133)
+	at org.eclipse.jface.viewers.StructuredViewer.update(StructuredViewer.java:2071)
+	at org.eclipse.jface.viewers.ColumnViewer.update(ColumnViewer.java:540)
+	at org.eclipse.jface.viewers.StructuredViewer.update(StructuredViewer.java:2015)
+	at org.eclipse.jface.viewers.StructuredViewer.handleLabelProviderChanged(StructuredViewer.java:1182)
+	at org.eclipse.jdt.internal.ui.viewsupport.ProblemTreeViewer.handleLabelProviderChanged(ProblemTreeViewer.java:223)
+	at org.eclipse.jface.viewers.ContentViewer$1.labelProviderChanged(ContentViewer.java:99)
+	at org.eclipse.jface.viewers.BaseLabelProvider$1.run(BaseLabelProvider.java:72)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.JFaceUtil$1.run(JFaceUtil.java:50)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:178)
+	at org.eclipse.jface.viewers.BaseLabelProvider.fireLabelProviderChanged(BaseLabelProvider.java:69)
+	at org.eclipse.jface.viewers.DecoratingStyledCellLabelProvider$1.labelProviderChanged(DecoratingStyledCellLabelProvider.java:78)
+	at org.eclipse.ui.internal.decorators.DecoratorManager$1.run(DecoratorManager.java:446)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.DecoratorManager.fireListener(DecoratorManager.java:443)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$3.runInUIThread(DecorationScheduler.java:536)
+	at org.eclipse.ui.progress.UIJob$1.run(UIJob.java:97)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:136)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4147)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3764)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1438)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2016-05-13 12:46:50.076
+!MESSAGE Resource '/Minecraft/src/main/java/mods/battlegear2/client/gui/BattlegearConfigGUI.java' does not exist.
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2016-05-13 12:46:50.703
+!MESSAGE Internal Error
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/Minecraft/src/main/java/mods/battlegear2/client/gui/BattlegearConfigGUI.java' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:341)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:215)
+	at org.eclipse.core.internal.resources.Resource.findMaxProblemSeverity(Resource.java:1051)
+	at org.eclipse.jdt.ui.ProblemsLabelDecorator.getPackageErrorTicksFromMarkers(ProblemsLabelDecorator.java:337)
+	at org.eclipse.jdt.ui.ProblemsLabelDecorator.computeAdornmentFlags(ProblemsLabelDecorator.java:212)
+	at org.eclipse.jdt.internal.ui.viewsupport.TreeHierarchyLayoutProblemsDecorator.computePackageAdornmentFlags(TreeHierarchyLayoutProblemsDecorator.java:47)
+	at org.eclipse.jdt.internal.ui.viewsupport.TreeHierarchyLayoutProblemsDecorator.computeAdornmentFlags(TreeHierarchyLayoutProblemsDecorator.java:56)
+	at org.eclipse.jdt.internal.ui.packageview.PackageExplorerProblemsDecorator.computeAdornmentFlags(PackageExplorerProblemsDecorator.java:35)
+	at org.eclipse.jdt.ui.ProblemsLabelDecorator.decorateImage(ProblemsLabelDecorator.java:170)
+	at org.eclipse.jdt.internal.ui.viewsupport.JavaUILabelProvider.decorateImage(JavaUILabelProvider.java:134)
+	at org.eclipse.jdt.internal.ui.viewsupport.JavaUILabelProvider.getImage(JavaUILabelProvider.java:149)
+	at org.eclipse.jdt.internal.ui.packageview.PackageExplorerLabelProvider.getImage(PackageExplorerLabelProvider.java:140)
+	at org.eclipse.jface.viewers.DelegatingStyledCellLabelProvider.getImage(DelegatingStyledCellLabelProvider.java:195)
+	at org.eclipse.jface.viewers.DecoratingStyledCellLabelProvider.getImage(DecoratingStyledCellLabelProvider.java:173)
+	at org.eclipse.jface.viewers.DelegatingStyledCellLabelProvider.update(DelegatingStyledCellLabelProvider.java:121)
+	at org.eclipse.jface.viewers.DecoratingStyledCellLabelProvider.update(DecoratingStyledCellLabelProvider.java:136)
+	at org.eclipse.jface.viewers.ViewerColumn.refresh(ViewerColumn.java:154)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.doUpdateItem(AbstractTreeViewer.java:949)
+	at org.eclipse.jface.viewers.AbstractTreeViewer$UpdateItemSafeRunnable.run(AbstractTreeViewer.java:114)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.JFaceUtil$1.run(JFaceUtil.java:50)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:178)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.doUpdateItem(AbstractTreeViewer.java:1029)
+	at org.eclipse.jface.viewers.StructuredViewer$UpdateItemSafeRunnable.run(StructuredViewer.java:472)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.JFaceUtil$1.run(JFaceUtil.java:50)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:178)
+	at org.eclipse.jface.viewers.StructuredViewer.updateItem(StructuredViewer.java:2150)
+	at org.eclipse.jface.viewers.StructuredViewer.internalUpdate(StructuredViewer.java:2133)
+	at org.eclipse.jface.viewers.StructuredViewer.update(StructuredViewer.java:2071)
+	at org.eclipse.jface.viewers.ColumnViewer.update(ColumnViewer.java:540)
+	at org.eclipse.jface.viewers.StructuredViewer.update(StructuredViewer.java:2015)
+	at org.eclipse.jface.viewers.StructuredViewer.handleLabelProviderChanged(StructuredViewer.java:1182)
+	at org.eclipse.jdt.internal.ui.viewsupport.ProblemTreeViewer.handleLabelProviderChanged(ProblemTreeViewer.java:223)
+	at org.eclipse.jface.viewers.ContentViewer$1.labelProviderChanged(ContentViewer.java:99)
+	at org.eclipse.jface.viewers.BaseLabelProvider$1.run(BaseLabelProvider.java:72)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.JFaceUtil$1.run(JFaceUtil.java:50)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:178)
+	at org.eclipse.jface.viewers.BaseLabelProvider.fireLabelProviderChanged(BaseLabelProvider.java:69)
+	at org.eclipse.jface.viewers.DecoratingStyledCellLabelProvider$1.labelProviderChanged(DecoratingStyledCellLabelProvider.java:78)
+	at org.eclipse.ui.internal.decorators.DecoratorManager$1.run(DecoratorManager.java:446)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.DecoratorManager.fireListener(DecoratorManager.java:443)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$3.runInUIThread(DecorationScheduler.java:536)
+	at org.eclipse.ui.progress.UIJob$1.run(UIJob.java:97)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:136)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4147)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3764)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1438)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2016-05-13 12:46:50.703
+!MESSAGE Resource '/Minecraft/src/main/java/mods/battlegear2/client/gui/BattlegearConfigGUI.java' does not exist.
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2016-05-13 12:46:51.622
+!MESSAGE Internal Error
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/Minecraft/src/main/java/mods/battlegear2/client/gui/BattlegearConfigGUI.java' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:341)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:215)
+	at org.eclipse.core.internal.resources.Resource.findMaxProblemSeverity(Resource.java:1051)
+	at org.eclipse.jdt.ui.ProblemsLabelDecorator.getPackageErrorTicksFromMarkers(ProblemsLabelDecorator.java:337)
+	at org.eclipse.jdt.ui.ProblemsLabelDecorator.computeAdornmentFlags(ProblemsLabelDecorator.java:212)
+	at org.eclipse.jdt.internal.ui.viewsupport.TreeHierarchyLayoutProblemsDecorator.computePackageAdornmentFlags(TreeHierarchyLayoutProblemsDecorator.java:47)
+	at org.eclipse.jdt.internal.ui.viewsupport.TreeHierarchyLayoutProblemsDecorator.computeAdornmentFlags(TreeHierarchyLayoutProblemsDecorator.java:56)
+	at org.eclipse.jdt.internal.ui.packageview.PackageExplorerProblemsDecorator.computeAdornmentFlags(PackageExplorerProblemsDecorator.java:35)
+	at org.eclipse.jdt.ui.ProblemsLabelDecorator.decorateImage(ProblemsLabelDecorator.java:170)
+	at org.eclipse.jdt.internal.ui.viewsupport.JavaUILabelProvider.decorateImage(JavaUILabelProvider.java:134)
+	at org.eclipse.jdt.internal.ui.viewsupport.JavaUILabelProvider.getImage(JavaUILabelProvider.java:149)
+	at org.eclipse.jdt.internal.ui.packageview.PackageExplorerLabelProvider.getImage(PackageExplorerLabelProvider.java:140)
+	at org.eclipse.jface.viewers.DelegatingStyledCellLabelProvider.getImage(DelegatingStyledCellLabelProvider.java:195)
+	at org.eclipse.jface.viewers.DecoratingStyledCellLabelProvider.getImage(DecoratingStyledCellLabelProvider.java:173)
+	at org.eclipse.jface.viewers.DelegatingStyledCellLabelProvider.update(DelegatingStyledCellLabelProvider.java:121)
+	at org.eclipse.jface.viewers.DecoratingStyledCellLabelProvider.update(DecoratingStyledCellLabelProvider.java:136)
+	at org.eclipse.jface.viewers.ViewerColumn.refresh(ViewerColumn.java:154)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.doUpdateItem(AbstractTreeViewer.java:949)
+	at org.eclipse.jface.viewers.AbstractTreeViewer$UpdateItemSafeRunnable.run(AbstractTreeViewer.java:114)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.JFaceUtil$1.run(JFaceUtil.java:50)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:178)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.doUpdateItem(AbstractTreeViewer.java:1029)
+	at org.eclipse.jface.viewers.StructuredViewer$UpdateItemSafeRunnable.run(StructuredViewer.java:472)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.JFaceUtil$1.run(JFaceUtil.java:50)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:178)
+	at org.eclipse.jface.viewers.StructuredViewer.updateItem(StructuredViewer.java:2150)
+	at org.eclipse.jface.viewers.StructuredViewer.internalUpdate(StructuredViewer.java:2133)
+	at org.eclipse.jface.viewers.StructuredViewer.update(StructuredViewer.java:2071)
+	at org.eclipse.jface.viewers.ColumnViewer.update(ColumnViewer.java:540)
+	at org.eclipse.jface.viewers.StructuredViewer.update(StructuredViewer.java:2015)
+	at org.eclipse.jface.viewers.StructuredViewer.handleLabelProviderChanged(StructuredViewer.java:1182)
+	at org.eclipse.jdt.internal.ui.viewsupport.ProblemTreeViewer.handleLabelProviderChanged(ProblemTreeViewer.java:223)
+	at org.eclipse.jface.viewers.ContentViewer$1.labelProviderChanged(ContentViewer.java:99)
+	at org.eclipse.jface.viewers.BaseLabelProvider$1.run(BaseLabelProvider.java:72)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.JFaceUtil$1.run(JFaceUtil.java:50)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:178)
+	at org.eclipse.jface.viewers.BaseLabelProvider.fireLabelProviderChanged(BaseLabelProvider.java:69)
+	at org.eclipse.jface.viewers.DecoratingStyledCellLabelProvider$1.labelProviderChanged(DecoratingStyledCellLabelProvider.java:78)
+	at org.eclipse.ui.internal.decorators.DecoratorManager$1.run(DecoratorManager.java:446)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.DecoratorManager.fireListener(DecoratorManager.java:443)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$3.runInUIThread(DecorationScheduler.java:536)
+	at org.eclipse.ui.progress.UIJob$1.run(UIJob.java:97)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:136)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4147)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3764)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1438)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2016-05-13 12:46:51.623
+!MESSAGE Resource '/Minecraft/src/main/java/mods/battlegear2/client/gui/BattlegearConfigGUI.java' does not exist.
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2016-05-13 12:46:52.738
+!MESSAGE Internal Error
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/Minecraft/src/main/java/mods/battlegear2/client/gui/BattlegearConfigGUI.java' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:341)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:215)
+	at org.eclipse.core.internal.resources.Resource.findMaxProblemSeverity(Resource.java:1051)
+	at org.eclipse.jdt.ui.ProblemsLabelDecorator.getPackageErrorTicksFromMarkers(ProblemsLabelDecorator.java:337)
+	at org.eclipse.jdt.ui.ProblemsLabelDecorator.computeAdornmentFlags(ProblemsLabelDecorator.java:212)
+	at org.eclipse.jdt.internal.ui.viewsupport.TreeHierarchyLayoutProblemsDecorator.computePackageAdornmentFlags(TreeHierarchyLayoutProblemsDecorator.java:47)
+	at org.eclipse.jdt.internal.ui.viewsupport.TreeHierarchyLayoutProblemsDecorator.computeAdornmentFlags(TreeHierarchyLayoutProblemsDecorator.java:56)
+	at org.eclipse.jdt.internal.ui.packageview.PackageExplorerProblemsDecorator.computeAdornmentFlags(PackageExplorerProblemsDecorator.java:35)
+	at org.eclipse.jdt.ui.ProblemsLabelDecorator.decorateImage(ProblemsLabelDecorator.java:170)
+	at org.eclipse.jdt.internal.ui.viewsupport.JavaUILabelProvider.decorateImage(JavaUILabelProvider.java:134)
+	at org.eclipse.jdt.internal.ui.viewsupport.JavaUILabelProvider.getImage(JavaUILabelProvider.java:149)
+	at org.eclipse.jdt.internal.ui.packageview.PackageExplorerLabelProvider.getImage(PackageExplorerLabelProvider.java:140)
+	at org.eclipse.jface.viewers.DelegatingStyledCellLabelProvider.getImage(DelegatingStyledCellLabelProvider.java:195)
+	at org.eclipse.jface.viewers.DecoratingStyledCellLabelProvider.getImage(DecoratingStyledCellLabelProvider.java:173)
+	at org.eclipse.jface.viewers.DelegatingStyledCellLabelProvider.update(DelegatingStyledCellLabelProvider.java:121)
+	at org.eclipse.jface.viewers.DecoratingStyledCellLabelProvider.update(DecoratingStyledCellLabelProvider.java:136)
+	at org.eclipse.jface.viewers.ViewerColumn.refresh(ViewerColumn.java:154)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.doUpdateItem(AbstractTreeViewer.java:949)
+	at org.eclipse.jface.viewers.AbstractTreeViewer$UpdateItemSafeRunnable.run(AbstractTreeViewer.java:114)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.JFaceUtil$1.run(JFaceUtil.java:50)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:178)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.doUpdateItem(AbstractTreeViewer.java:1029)
+	at org.eclipse.jface.viewers.StructuredViewer$UpdateItemSafeRunnable.run(StructuredViewer.java:472)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.JFaceUtil$1.run(JFaceUtil.java:50)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:178)
+	at org.eclipse.jface.viewers.StructuredViewer.updateItem(StructuredViewer.java:2150)
+	at org.eclipse.jface.viewers.StructuredViewer.internalUpdate(StructuredViewer.java:2133)
+	at org.eclipse.jface.viewers.StructuredViewer.update(StructuredViewer.java:2071)
+	at org.eclipse.jface.viewers.ColumnViewer.update(ColumnViewer.java:540)
+	at org.eclipse.jface.viewers.StructuredViewer.update(StructuredViewer.java:2015)
+	at org.eclipse.jface.viewers.StructuredViewer.handleLabelProviderChanged(StructuredViewer.java:1182)
+	at org.eclipse.jdt.internal.ui.viewsupport.ProblemTreeViewer.handleLabelProviderChanged(ProblemTreeViewer.java:223)
+	at org.eclipse.jface.viewers.ContentViewer$1.labelProviderChanged(ContentViewer.java:99)
+	at org.eclipse.jface.viewers.BaseLabelProvider$1.run(BaseLabelProvider.java:72)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.JFaceUtil$1.run(JFaceUtil.java:50)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:178)
+	at org.eclipse.jface.viewers.BaseLabelProvider.fireLabelProviderChanged(BaseLabelProvider.java:69)
+	at org.eclipse.jface.viewers.DecoratingStyledCellLabelProvider$1.labelProviderChanged(DecoratingStyledCellLabelProvider.java:78)
+	at org.eclipse.ui.internal.decorators.DecoratorManager$1.run(DecoratorManager.java:446)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.DecoratorManager.fireListener(DecoratorManager.java:443)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$3.runInUIThread(DecorationScheduler.java:536)
+	at org.eclipse.ui.progress.UIJob$1.run(UIJob.java:97)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:136)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4147)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3764)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1438)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2016-05-13 12:46:52.738
+!MESSAGE Resource '/Minecraft/src/main/java/mods/battlegear2/client/gui/BattlegearConfigGUI.java' does not exist.
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2016-05-13 12:46:53.763
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.wb.internal.core.editor.DesignPage.dispose(DesignPage.java:140)
+	at org.eclipse.wb.internal.core.editor.multi.MultiMode.dispose(MultiMode.java:135)
+	at org.eclipse.wb.internal.core.editor.multi.DesignerEditor.dispose(DesignerEditor.java:147)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.invalidate(CompatibilityPart.java:225)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.destroy(CompatibilityPart.java:379)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:888)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:869)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.disposed(InjectorImpl.java:390)
+	at org.eclipse.e4.core.internal.di.Requestor.disposed(Requestor.java:143)
+	at org.eclipse.e4.core.internal.contexts.ContextObjectSupplier$ContextInjectionListener.update(ContextObjectSupplier.java:76)
+	at org.eclipse.e4.core.internal.contexts.TrackableComputationExt.update(TrackableComputationExt.java:107)
+	at org.eclipse.e4.core.internal.contexts.TrackableComputationExt.handleInvalid(TrackableComputationExt.java:70)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.dispose(EclipseContext.java:175)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.clearContext(PartRenderingEngine.java:974)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:954)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$3(PartRenderingEngine.java:862)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$8.run(PartRenderingEngine.java:857)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:841)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$1.handleEvent(PartRenderingEngine.java:160)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler$1.run(UIEventHandler.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:187)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:156)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4734)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application$1.syncExec(E4Application.java:218)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.handleEvent(UIEventHandler.java:36)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:197)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:197)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:148)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:135)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:78)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:39)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:81)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:59)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:374)
+	at org.eclipse.e4.ui.model.application.ui.impl.UIElementImpl.setToBeRendered(UIElementImpl.java:303)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.hidePart(PartServiceImpl.java:1281)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.hidePart(PartServiceImpl.java:1215)
+	at org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer.closePart(StackRenderer.java:1218)
+	at org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer.access$3(StackRenderer.java:1200)
+	at org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer$12.close(StackRenderer.java:1092)
+	at org.eclipse.swt.custom.CTabFolder.onMouse(CTabFolder.java:1874)
+	at org.eclipse.swt.custom.CTabFolder$1.handleEvent(CTabFolder.java:288)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4353)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1061)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4172)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3761)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1438)
+!SESSION 2016-05-13 12:49:35.952 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.7.0_75
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product C:\Users\Gaming\Desktop\New folder (2)\New folder\src\main\java\mods\battleclasses\packet\BattleClassesPacketGUITabSwitch.java
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product C:\Users\Gaming\Desktop\New folder (2)\New folder\src\main\java\mods\battleclasses\packet\BattleClassesPacketGUITabSwitch.java
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-05-13 12:49:45.176
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Gaming'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2016-05-13 12:49:49.585
+!MESSAGE Internal Error
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/Minecraft/src/main/java/mods/battleclasses/packet/BattleClassesPacketGUITabSwitch.java' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:341)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:215)
+	at org.eclipse.core.internal.resources.Resource.findMaxProblemSeverity(Resource.java:1051)
+	at org.eclipse.jdt.ui.ProblemsLabelDecorator.getPackageErrorTicksFromMarkers(ProblemsLabelDecorator.java:337)
+	at org.eclipse.jdt.ui.ProblemsLabelDecorator.computeAdornmentFlags(ProblemsLabelDecorator.java:212)
+	at org.eclipse.jdt.internal.ui.viewsupport.TreeHierarchyLayoutProblemsDecorator.computePackageAdornmentFlags(TreeHierarchyLayoutProblemsDecorator.java:47)
+	at org.eclipse.jdt.internal.ui.viewsupport.TreeHierarchyLayoutProblemsDecorator.computeAdornmentFlags(TreeHierarchyLayoutProblemsDecorator.java:56)
+	at org.eclipse.jdt.internal.ui.packageview.PackageExplorerProblemsDecorator.computeAdornmentFlags(PackageExplorerProblemsDecorator.java:35)
+	at org.eclipse.jdt.ui.ProblemsLabelDecorator.decorateImage(ProblemsLabelDecorator.java:170)
+	at org.eclipse.jdt.internal.ui.viewsupport.JavaUILabelProvider.decorateImage(JavaUILabelProvider.java:134)
+	at org.eclipse.jdt.internal.ui.viewsupport.JavaUILabelProvider.getImage(JavaUILabelProvider.java:149)
+	at org.eclipse.jdt.internal.ui.packageview.PackageExplorerLabelProvider.getImage(PackageExplorerLabelProvider.java:140)
+	at org.eclipse.jface.viewers.DelegatingStyledCellLabelProvider.getImage(DelegatingStyledCellLabelProvider.java:195)
+	at org.eclipse.jface.viewers.DecoratingStyledCellLabelProvider.getImage(DecoratingStyledCellLabelProvider.java:173)
+	at org.eclipse.jface.viewers.DelegatingStyledCellLabelProvider.update(DelegatingStyledCellLabelProvider.java:121)
+	at org.eclipse.jface.viewers.DecoratingStyledCellLabelProvider.update(DecoratingStyledCellLabelProvider.java:136)
+	at org.eclipse.jface.viewers.ViewerColumn.refresh(ViewerColumn.java:154)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.doUpdateItem(AbstractTreeViewer.java:949)
+	at org.eclipse.jface.viewers.AbstractTreeViewer$UpdateItemSafeRunnable.run(AbstractTreeViewer.java:114)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.JFaceUtil$1.run(JFaceUtil.java:50)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:178)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.doUpdateItem(AbstractTreeViewer.java:1029)
+	at org.eclipse.jdt.internal.ui.viewsupport.ProblemTreeViewer.doUpdateItem(ProblemTreeViewer.java:73)
+	at org.eclipse.jdt.internal.ui.viewsupport.ResourceToItemsMapper.updateItem(ResourceToItemsMapper.java:75)
+	at org.eclipse.jdt.internal.ui.viewsupport.ResourceToItemsMapper.resourceChanged(ResourceToItemsMapper.java:63)
+	at org.eclipse.jdt.internal.ui.viewsupport.ProblemTreeViewer.handleLabelProviderChanged(ProblemTreeViewer.java:209)
+	at org.eclipse.jface.viewers.ContentViewer$1.labelProviderChanged(ContentViewer.java:99)
+	at org.eclipse.jface.viewers.BaseLabelProvider$1.run(BaseLabelProvider.java:72)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.JFaceUtil$1.run(JFaceUtil.java:50)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:178)
+	at org.eclipse.jface.viewers.BaseLabelProvider.fireLabelProviderChanged(BaseLabelProvider.java:69)
+	at org.eclipse.jface.viewers.DecoratingStyledCellLabelProvider$1.labelProviderChanged(DecoratingStyledCellLabelProvider.java:78)
+	at org.eclipse.jdt.ui.ProblemsLabelDecorator.fireProblemsChanged(ProblemsLabelDecorator.java:487)
+	at org.eclipse.jdt.ui.ProblemsLabelDecorator.access$0(ProblemsLabelDecorator.java:482)
+	at org.eclipse.jdt.ui.ProblemsLabelDecorator$1.problemsChanged(ProblemsLabelDecorator.java:462)
+	at org.eclipse.jdt.internal.ui.viewsupport.ProblemMarkerManager.runPendingUpdates(ProblemMarkerManager.java:241)
+	at org.eclipse.jdt.internal.ui.viewsupport.ProblemMarkerManager.access$0(ProblemMarkerManager.java:224)
+	at org.eclipse.jdt.internal.ui.viewsupport.ProblemMarkerManager$1.runInUIThread(ProblemMarkerManager.java:212)
+	at org.eclipse.ui.progress.UIJob$1.run(UIJob.java:97)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:136)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4147)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3764)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1438)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2016-05-13 12:49:49.586
+!MESSAGE Resource '/Minecraft/src/main/java/mods/battleclasses/packet/BattleClassesPacketGUITabSwitch.java' does not exist.
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2016-05-13 12:49:49.590
+!MESSAGE Internal Error
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/Minecraft/src/main/java/mods/battleclasses/packet/BattleClassesPacketGUITabSwitch.java' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:341)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:215)
+	at org.eclipse.core.internal.resources.Resource.findMaxProblemSeverity(Resource.java:1051)
+	at org.eclipse.jdt.ui.ProblemsLabelDecorator.getPackageErrorTicksFromMarkers(ProblemsLabelDecorator.java:337)
+	at org.eclipse.jdt.ui.ProblemsLabelDecorator.computeAdornmentFlags(ProblemsLabelDecorator.java:212)
+	at org.eclipse.jdt.internal.ui.viewsupport.TreeHierarchyLayoutProblemsDecorator.computePackageAdornmentFlags(TreeHierarchyLayoutProblemsDecorator.java:47)
+	at org.eclipse.jdt.internal.ui.viewsupport.TreeHierarchyLayoutProblemsDecorator.computeAdornmentFlags(TreeHierarchyLayoutProblemsDecorator.java:56)
+	at org.eclipse.jdt.internal.ui.packageview.PackageExplorerProblemsDecorator.computeAdornmentFlags(PackageExplorerProblemsDecorator.java:35)
+	at org.eclipse.jdt.ui.ProblemsLabelDecorator.decorateImage(ProblemsLabelDecorator.java:170)
+	at org.eclipse.jdt.internal.ui.viewsupport.JavaUILabelProvider.decorateImage(JavaUILabelProvider.java:134)
+	at org.eclipse.jdt.internal.ui.viewsupport.JavaUILabelProvider.getImage(JavaUILabelProvider.java:149)
+	at org.eclipse.jdt.internal.ui.packageview.PackageExplorerLabelProvider.getImage(PackageExplorerLabelProvider.java:140)
+	at org.eclipse.jface.viewers.DelegatingStyledCellLabelProvider.getImage(DelegatingStyledCellLabelProvider.java:195)
+	at org.eclipse.jface.viewers.DecoratingStyledCellLabelProvider.getImage(DecoratingStyledCellLabelProvider.java:173)
+	at org.eclipse.jface.viewers.DelegatingStyledCellLabelProvider.update(DelegatingStyledCellLabelProvider.java:121)
+	at org.eclipse.jface.viewers.DecoratingStyledCellLabelProvider.update(DecoratingStyledCellLabelProvider.java:136)
+	at org.eclipse.jface.viewers.ViewerColumn.refresh(ViewerColumn.java:154)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.doUpdateItem(AbstractTreeViewer.java:949)
+	at org.eclipse.jface.viewers.AbstractTreeViewer$UpdateItemSafeRunnable.run(AbstractTreeViewer.java:114)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.JFaceUtil$1.run(JFaceUtil.java:50)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:178)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.doUpdateItem(AbstractTreeViewer.java:1029)
+	at org.eclipse.jdt.internal.ui.viewsupport.ProblemTreeViewer.doUpdateItem(ProblemTreeViewer.java:73)
+	at org.eclipse.jdt.internal.ui.viewsupport.ResourceToItemsMapper.updateItem(ResourceToItemsMapper.java:75)
+	at org.eclipse.jdt.internal.ui.viewsupport.ResourceToItemsMapper.resourceChanged(ResourceToItemsMapper.java:63)
+	at org.eclipse.jdt.internal.ui.viewsupport.ProblemTreeViewer.handleLabelProviderChanged(ProblemTreeViewer.java:209)
+	at org.eclipse.jface.viewers.ContentViewer$1.labelProviderChanged(ContentViewer.java:99)
+	at org.eclipse.jdt.ui.ProblemsLabelDecorator.fireProblemsChanged(ProblemsLabelDecorator.java:487)
+	at org.eclipse.jdt.ui.ProblemsLabelDecorator.access$0(ProblemsLabelDecorator.java:482)
+	at org.eclipse.jdt.ui.ProblemsLabelDecorator$1.problemsChanged(ProblemsLabelDecorator.java:462)
+	at org.eclipse.jdt.internal.ui.viewsupport.ProblemMarkerManager.runPendingUpdates(ProblemMarkerManager.java:241)
+	at org.eclipse.jdt.internal.ui.viewsupport.ProblemMarkerManager.access$0(ProblemMarkerManager.java:224)
+	at org.eclipse.jdt.internal.ui.viewsupport.ProblemMarkerManager$1.runInUIThread(ProblemMarkerManager.java:212)
+	at org.eclipse.ui.progress.UIJob$1.run(UIJob.java:97)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:136)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4147)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3764)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1438)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2016-05-13 12:49:49.590
+!MESSAGE Resource '/Minecraft/src/main/java/mods/battleclasses/packet/BattleClassesPacketGUITabSwitch.java' does not exist.
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2016-05-13 12:49:49.606
+!MESSAGE Internal Error
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/Minecraft/src/main/java/mods/battleclasses/packet/BattleClassesPacketGUITabSwitch.java' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:341)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:215)
+	at org.eclipse.core.internal.resources.Resource.findMaxProblemSeverity(Resource.java:1051)
+	at org.eclipse.jdt.ui.ProblemsLabelDecorator.getPackageErrorTicksFromMarkers(ProblemsLabelDecorator.java:337)
+	at org.eclipse.jdt.ui.ProblemsLabelDecorator.computeAdornmentFlags(ProblemsLabelDecorator.java:212)
+	at org.eclipse.jdt.internal.ui.viewsupport.TreeHierarchyLayoutProblemsDecorator.computePackageAdornmentFlags(TreeHierarchyLayoutProblemsDecorator.java:47)
+	at org.eclipse.jdt.internal.ui.viewsupport.TreeHierarchyLayoutProblemsDecorator.computeAdornmentFlags(TreeHierarchyLayoutProblemsDecorator.java:56)
+	at org.eclipse.jdt.internal.ui.packageview.PackageExplorerProblemsDecorator.computeAdornmentFlags(PackageExplorerProblemsDecorator.java:35)
+	at org.eclipse.jdt.ui.ProblemsLabelDecorator.decorateImage(ProblemsLabelDecorator.java:170)
+	at org.eclipse.jdt.internal.ui.viewsupport.JavaUILabelProvider.decorateImage(JavaUILabelProvider.java:134)
+	at org.eclipse.jdt.internal.ui.viewsupport.JavaUILabelProvider.getImage(JavaUILabelProvider.java:149)
+	at org.eclipse.jdt.internal.ui.packageview.PackageExplorerLabelProvider.getImage(PackageExplorerLabelProvider.java:140)
+	at org.eclipse.jface.viewers.DelegatingStyledCellLabelProvider.getImage(DelegatingStyledCellLabelProvider.java:195)
+	at org.eclipse.jface.viewers.DecoratingStyledCellLabelProvider.getImage(DecoratingStyledCellLabelProvider.java:173)
+	at org.eclipse.jface.viewers.DelegatingStyledCellLabelProvider.update(DelegatingStyledCellLabelProvider.java:121)
+	at org.eclipse.jface.viewers.DecoratingStyledCellLabelProvider.update(DecoratingStyledCellLabelProvider.java:136)
+	at org.eclipse.jface.viewers.ViewerColumn.refresh(ViewerColumn.java:154)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.doUpdateItem(AbstractTreeViewer.java:949)
+	at org.eclipse.jface.viewers.AbstractTreeViewer$UpdateItemSafeRunnable.run(AbstractTreeViewer.java:114)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.JFaceUtil$1.run(JFaceUtil.java:50)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:178)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.doUpdateItem(AbstractTreeViewer.java:1029)
+	at org.eclipse.jface.viewers.StructuredViewer$UpdateItemSafeRunnable.run(StructuredViewer.java:472)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.JFaceUtil$1.run(JFaceUtil.java:50)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:178)
+	at org.eclipse.jface.viewers.StructuredViewer.updateItem(StructuredViewer.java:2150)
+	at org.eclipse.jface.viewers.StructuredViewer.internalUpdate(StructuredViewer.java:2133)
+	at org.eclipse.jface.viewers.StructuredViewer.update(StructuredViewer.java:2071)
+	at org.eclipse.jface.viewers.ColumnViewer.update(ColumnViewer.java:540)
+	at org.eclipse.jface.viewers.StructuredViewer.update(StructuredViewer.java:2015)
+	at org.eclipse.jface.viewers.StructuredViewer.handleLabelProviderChanged(StructuredViewer.java:1182)
+	at org.eclipse.jdt.internal.ui.viewsupport.ProblemTreeViewer.handleLabelProviderChanged(ProblemTreeViewer.java:223)
+	at org.eclipse.jface.viewers.ContentViewer$1.labelProviderChanged(ContentViewer.java:99)
+	at org.eclipse.jface.viewers.BaseLabelProvider$1.run(BaseLabelProvider.java:72)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.JFaceUtil$1.run(JFaceUtil.java:50)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:178)
+	at org.eclipse.jface.viewers.BaseLabelProvider.fireLabelProviderChanged(BaseLabelProvider.java:69)
+	at org.eclipse.jface.viewers.DecoratingStyledCellLabelProvider$1.labelProviderChanged(DecoratingStyledCellLabelProvider.java:78)
+	at org.eclipse.ui.internal.decorators.DecoratorManager$1.run(DecoratorManager.java:446)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.DecoratorManager.fireListener(DecoratorManager.java:443)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$3.runInUIThread(DecorationScheduler.java:536)
+	at org.eclipse.ui.progress.UIJob$1.run(UIJob.java:97)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:136)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4147)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3764)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1438)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2016-05-13 12:49:49.607
+!MESSAGE Resource '/Minecraft/src/main/java/mods/battleclasses/packet/BattleClassesPacketGUITabSwitch.java' does not exist.
+
+!ENTRY org.eclipse.jdt.core 4 4 2016-05-13 12:50:10.296
+!MESSAGE JavaBuilder handling ImageBuilderInternalException while building: Minecraft
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:816)
+	at org.eclipse.jdt.internal.core.builder.IncrementalImageBuilder.findSourceFiles(IncrementalImageBuilder.java:581)
+	at org.eclipse.jdt.internal.core.builder.IncrementalImageBuilder.findSourceFiles(IncrementalImageBuilder.java:546)
+	at org.eclipse.jdt.internal.core.builder.IncrementalImageBuilder.findSourceFiles(IncrementalImageBuilder.java:497)
+	at org.eclipse.jdt.internal.core.builder.IncrementalImageBuilder.build(IncrementalImageBuilder.java:97)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildDeltas(JavaBuilder.java:267)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:195)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Contains: Could not delete '/Minecraft/bin/mods/battlegear2'.
+org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.delete(FileSystemResourceManager.java:351)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFolder(ResourceTree.java:352)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteFolder(ResourceTree.java:798)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1983)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:803)
+	at org.eclipse.jdt.internal.core.builder.IncrementalImageBuilder.findSourceFiles(IncrementalImageBuilder.java:581)
+	at org.eclipse.jdt.internal.core.builder.IncrementalImageBuilder.findSourceFiles(IncrementalImageBuilder.java:546)
+	at org.eclipse.jdt.internal.core.builder.IncrementalImageBuilder.findSourceFiles(IncrementalImageBuilder.java:497)
+	at org.eclipse.jdt.internal.core.builder.IncrementalImageBuilder.build(IncrementalImageBuilder.java:97)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildDeltas(JavaBuilder.java:267)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:195)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Contains: Problems encountered while deleting files.
+Contains: Could not delete: C:\Users\Gaming\Desktop\New folder (2)\New folder\bin\mods\battlegear2.
+!SUBENTRY 1 org.eclipse.core.resources 4 273 2016-05-13 12:50:10.296
+!MESSAGE Problems encountered while deleting resources.
+!SUBENTRY 2 org.eclipse.core.resources 4 273 2016-05-13 12:50:10.296
+!MESSAGE Could not delete '/Minecraft/bin/mods/battlegear2'.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.delete(FileSystemResourceManager.java:351)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFolder(ResourceTree.java:352)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteFolder(ResourceTree.java:798)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1983)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:803)
+	at org.eclipse.jdt.internal.core.builder.IncrementalImageBuilder.findSourceFiles(IncrementalImageBuilder.java:581)
+	at org.eclipse.jdt.internal.core.builder.IncrementalImageBuilder.findSourceFiles(IncrementalImageBuilder.java:546)
+	at org.eclipse.jdt.internal.core.builder.IncrementalImageBuilder.findSourceFiles(IncrementalImageBuilder.java:497)
+	at org.eclipse.jdt.internal.core.builder.IncrementalImageBuilder.build(IncrementalImageBuilder.java:97)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildDeltas(JavaBuilder.java:267)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:195)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Contains: Problems encountered while deleting files.
+Contains: Could not delete: C:\Users\Gaming\Desktop\New folder (2)\New folder\bin\mods\battlegear2.
+!SUBENTRY 3 org.eclipse.core.resources 4 273 2016-05-13 12:50:10.296
+!MESSAGE Problems encountered while deleting resources.
+!SUBENTRY 4 org.eclipse.core.filesystem 4 273 2016-05-13 12:50:10.296
+!MESSAGE Problems encountered while deleting files.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2016-05-13 12:50:10.296
+!MESSAGE Could not delete: C:\Users\Gaming\Desktop\New folder (2)\New folder\bin\mods\battlegear2.
+!SESSION 2016-05-13 12:56:14.679 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.7.0_75
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-05-13 12:56:20.641
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Gaming'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.jdt.core 4 4 2016-05-13 12:57:51.308
+!MESSAGE JavaBuilder handling ImageBuilderInternalException while building: Minecraft
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:816)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:115)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.build(BatchImageBuilder.java:47)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildAll(JavaBuilder.java:256)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:186)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Contains: Could not delete '/Minecraft/bin/mods'.
+org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.delete(FileSystemResourceManager.java:351)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFolder(ResourceTree.java:352)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteFolder(ResourceTree.java:798)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1983)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:803)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:115)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.build(BatchImageBuilder.java:47)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildAll(JavaBuilder.java:256)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:186)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Contains: Problems encountered while deleting files.
+Contains: Could not delete: C:\Users\Gaming\Desktop\New folder (2)\New folder\bin\mods\battleclasses.
+Contains: Could not delete: C:\Users\Gaming\Desktop\New folder (2)\New folder\bin\mods.
+!SUBENTRY 1 org.eclipse.core.resources 4 273 2016-05-13 12:57:51.309
+!MESSAGE Problems encountered while deleting resources.
+!SUBENTRY 2 org.eclipse.core.resources 4 273 2016-05-13 12:57:51.309
+!MESSAGE Could not delete '/Minecraft/bin/mods'.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.delete(FileSystemResourceManager.java:351)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFolder(ResourceTree.java:352)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteFolder(ResourceTree.java:798)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1983)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:803)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:115)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.build(BatchImageBuilder.java:47)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildAll(JavaBuilder.java:256)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:186)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Contains: Problems encountered while deleting files.
+Contains: Could not delete: C:\Users\Gaming\Desktop\New folder (2)\New folder\bin\mods\battleclasses.
+Contains: Could not delete: C:\Users\Gaming\Desktop\New folder (2)\New folder\bin\mods.
+!SUBENTRY 3 org.eclipse.core.resources 4 273 2016-05-13 12:57:51.309
+!MESSAGE Problems encountered while deleting resources.
+!SUBENTRY 4 org.eclipse.core.filesystem 4 273 2016-05-13 12:57:51.309
+!MESSAGE Problems encountered while deleting files.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2016-05-13 12:57:51.309
+!MESSAGE Could not delete: C:\Users\Gaming\Desktop\New folder (2)\New folder\bin\mods\battleclasses.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2016-05-13 12:57:51.309
+!MESSAGE Could not delete: C:\Users\Gaming\Desktop\New folder (2)\New folder\bin\mods.
+!SESSION 2016-05-13 16:10:57.329 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.7.0_75
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.core.resources 2 10035 2016-05-13 16:10:59.371
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-05-13 16:11:12.015
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Gaming'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2016-05-13 16:42:25.040 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.7.0_75
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-05-13 16:42:32.280
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Gaming'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2016-05-13 21:45:56.749 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.7.0_75
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.core.resources 2 10035 2016-05-13 21:46:00.066
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-05-13 21:46:13.555
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Gaming'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2016-05-13 22:27:17.388 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.7.0_75
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-05-13 22:27:24.075
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Gaming'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.jdt.core 4 4 2016-05-14 00:44:39.772
+!MESSAGE JavaBuilder handling ImageBuilderInternalException while building: Minecraft
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:816)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:115)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.build(BatchImageBuilder.java:47)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildAll(JavaBuilder.java:256)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildDeltas(JavaBuilder.java:272)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:195)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Contains: Could not delete '/Minecraft/bin/fr'.
+org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.delete(FileSystemResourceManager.java:351)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFolder(ResourceTree.java:352)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteFolder(ResourceTree.java:798)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1983)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:803)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:115)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.build(BatchImageBuilder.java:47)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildAll(JavaBuilder.java:256)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildDeltas(JavaBuilder.java:272)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:195)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Contains: Problems encountered while deleting files.
+Contains: Could not delete: C:\Users\Gaming\Desktop\New folder (2)\New folder\bin\fr\toss\common\world.
+Contains: Could not delete: C:\Users\Gaming\Desktop\New folder (2)\New folder\bin\fr\toss\common.
+Contains: Could not delete: C:\Users\Gaming\Desktop\New folder (2)\New folder\bin\fr\toss.
+Contains: Could not delete: C:\Users\Gaming\Desktop\New folder (2)\New folder\bin\fr.
+!SUBENTRY 1 org.eclipse.core.resources 4 273 2016-05-14 00:44:39.773
+!MESSAGE Problems encountered while deleting resources.
+!SUBENTRY 2 org.eclipse.core.resources 4 273 2016-05-14 00:44:39.773
+!MESSAGE Could not delete '/Minecraft/bin/fr'.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.delete(FileSystemResourceManager.java:351)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFolder(ResourceTree.java:352)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteFolder(ResourceTree.java:798)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1983)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:803)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:115)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.build(BatchImageBuilder.java:47)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildAll(JavaBuilder.java:256)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildDeltas(JavaBuilder.java:272)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:195)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Contains: Problems encountered while deleting files.
+Contains: Could not delete: C:\Users\Gaming\Desktop\New folder (2)\New folder\bin\fr\toss\common\world.
+Contains: Could not delete: C:\Users\Gaming\Desktop\New folder (2)\New folder\bin\fr\toss\common.
+Contains: Could not delete: C:\Users\Gaming\Desktop\New folder (2)\New folder\bin\fr\toss.
+Contains: Could not delete: C:\Users\Gaming\Desktop\New folder (2)\New folder\bin\fr.
+!SUBENTRY 3 org.eclipse.core.resources 4 273 2016-05-14 00:44:39.774
+!MESSAGE Problems encountered while deleting resources.
+!SUBENTRY 4 org.eclipse.core.filesystem 4 273 2016-05-14 00:44:39.774
+!MESSAGE Problems encountered while deleting files.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2016-05-14 00:44:39.774
+!MESSAGE Could not delete: C:\Users\Gaming\Desktop\New folder (2)\New folder\bin\fr\toss\common\world.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2016-05-14 00:44:39.774
+!MESSAGE Could not delete: C:\Users\Gaming\Desktop\New folder (2)\New folder\bin\fr\toss\common.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2016-05-14 00:44:39.774
+!MESSAGE Could not delete: C:\Users\Gaming\Desktop\New folder (2)\New folder\bin\fr\toss.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2016-05-14 00:44:39.774
+!MESSAGE Could not delete: C:\Users\Gaming\Desktop\New folder (2)\New folder\bin\fr.
+!SESSION 2016-05-14 09:53:51.906 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.7.0_75
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.core.resources 2 10035 2016-05-14 09:53:54.930
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-05-14 09:54:06.669
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Gaming'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2016-05-14 10:00:41.521 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.7.0_75
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.core.resources 2 10035 2016-05-14 10:00:45.373
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-05-14 10:00:49.777
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Gaming'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 4 0 2016-05-14 10:02:13.252
+!MESSAGE The process cannot access the file because another process has locked a portion of the file
+!STACK 0
+java.io.IOException: The process cannot access the file because another process has locked a portion of the file
+	at java.io.FileInputStream.read0(Native Method)
+	at java.io.FileInputStream.read(Unknown Source)
+	at org.eclipse.jgit.util.IO.readWholeStream(IO.java:216)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.possiblyFilteredInputStream(WorkingTreeIterator.java:384)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.getEntryContentLength(WorkingTreeIterator.java:559)
+	at org.eclipse.jgit.api.AddCommand.call(AddCommand.java:226)
+	at org.eclipse.egit.ui.internal.staging.StagingView$49.run(StagingView.java:2552)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.egit.ui 4 0 2016-05-14 10:02:49.598
+!MESSAGE The process cannot access the file because another process has locked a portion of the file
+!STACK 0
+java.io.IOException: The process cannot access the file because another process has locked a portion of the file
+	at java.io.FileInputStream.read0(Native Method)
+	at java.io.FileInputStream.read(Unknown Source)
+	at org.eclipse.jgit.util.IO.readWholeStream(IO.java:216)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.possiblyFilteredInputStream(WorkingTreeIterator.java:384)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.getEntryContentLength(WorkingTreeIterator.java:559)
+	at org.eclipse.jgit.api.AddCommand.call(AddCommand.java:226)
+	at org.eclipse.egit.ui.internal.staging.StagingView$49.run(StagingView.java:2552)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.egit.ui 4 0 2016-05-14 10:02:56.519
+!MESSAGE The process cannot access the file because another process has locked a portion of the file
+!STACK 0
+java.io.IOException: The process cannot access the file because another process has locked a portion of the file
+	at java.io.FileInputStream.read0(Native Method)
+	at java.io.FileInputStream.read(Unknown Source)
+	at org.eclipse.jgit.util.IO.readWholeStream(IO.java:216)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.possiblyFilteredInputStream(WorkingTreeIterator.java:384)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.getEntryContentLength(WorkingTreeIterator.java:559)
+	at org.eclipse.jgit.api.AddCommand.call(AddCommand.java:226)
+	at org.eclipse.egit.ui.internal.staging.StagingView$49.run(StagingView.java:2552)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)

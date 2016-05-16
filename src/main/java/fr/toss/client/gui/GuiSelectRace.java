@@ -26,9 +26,9 @@ public class GuiSelectRace extends GuiScreen {
 		
 		buttons = new GuiButton[7];
 		
-		buttons[0] = new GuiButton(42, this.width / 2 - 40, this.height / 4 - 4, 80, 20, ChatColor.RESET + I18n.format("Hume"));
+		buttons[0] = new GuiButton(42, this.width / 2 - 40, this.height / 2 - 88, 80, 20, ChatColor.RESET + I18n.format("Hume"));
 		
-		buttons[1] = new GuiButton(43, this.width / 2 - 40, this.height / 4 - 26, 80, 20, ChatColor.RESET + I18n.format("Moogle"));
+		buttons[1] = new GuiButton(43, this.width / 2 - 40, this.height / 2 - 66, 80, 20, ChatColor.RESET + I18n.format("Moogle"));
 		  
 		buttons[2] = new GuiButton(44, this.width / 2 - 40, this.height / 2 - 22, 80, 20, ChatColor.RESET + I18n.format("Viera"));
 		  
@@ -36,9 +36,9 @@ public class GuiSelectRace extends GuiScreen {
 		  
 		buttons[4] = new GuiButton(46, this.width / 2 - 40, this.height / 2 - 0, 80, 20, ChatColor.RESET + I18n.format("Nu Mou"));
 
-		buttons[5] = new GuiButton(47, this.width / 2 - 40, this.height + 0 + 1 - 102, 80, 20, ChatColor.RESET + I18n.format("Seeq"));
+		buttons[5] = new GuiButton(47, this.width / 2 - 40, this.height / 2 + 22, 80, 20, ChatColor.RESET + I18n.format("Seeq"));
 
-		buttons[6] = new GuiButton(48, this.width / 2 - 40, this.height +  0 + 1 - 80, 80, 20, ChatColor.RESET + I18n.format("Gria"));
+		buttons[6] = new GuiButton(48, this.width / 2 - 40, this.height / 2 + 44, 80, 20, ChatColor.RESET + I18n.format("Gria"));
 	    /*
 		buttons[7] = new GuiButton(49, this.width / 2 - 40, this.height +  0 + 1 - 132,80, 20, ChatColor.RESET + I18n.format("Hurdy"));
 

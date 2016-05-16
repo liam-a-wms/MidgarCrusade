@@ -115,13 +115,17 @@ public class GuiSelectRace extends GuiScreen {
 		String advices[];
     	if (b.id == 42)
     	{    		
+    		
+    		//The most populous race in Ivalice, there are a few places where humes have not made their mark. A well-rounded race, humes are equally suited to swordplay and magery.
+    		
+    		
     		description = new String[4];
     		advices = new String[4];
-    		race = ChatColor.RED + I18n.format("race.hume.slogan");
-    		description[0] = I18n.format("race.hume.line1");
-    		description[1] = I18n.format("race.hume.line2");
-    		description[2] = I18n.format("race.hume.line3");
-    		description[3] = I18n.format("race.hume.line4");
+    		race = ChatColor.RED + I18n.format("Hume");
+    		description[0] = I18n.format("The most populous race in Ivalice");
+    		description[1] = I18n.format("there are a few places where humes have not made their mark");
+    		description[2] = I18n.format("A well-rounded race");
+    		description[3] = I18n.format("humes are equally suited to swordplay and magery.");
     		advices[0] = ChatColor.GREEN + "+ " + I18n.format("stats.hp");
     		advices[1] = ChatColor.GREEN + "+ " + I18n.format("stats.strength");
     		advices[2] = ChatColor.GREEN + "+ " + I18n.format("stats.armor");

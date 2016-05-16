@@ -27,30 +27,29 @@ public class GuiSelectHumeClass extends GuiScreen {
 		buttons = new GuiButton[12];
 		
 		
-		buttons[0] = new GuiButton(48, this.width / 2 - 40, this.height  + 0 + 1 - 122,80, 20, ChatColor.RESET + I18n.format("classe.Thief"));
+		buttons[0] = new GuiButton(48, this.width / 2 - 40, this.height / 2 + 132,80, 20, ChatColor.RESET + I18n.format("classe.Thief"));
 		
-		buttons[1] = new GuiButton(49, this.width / 2 - 40, this.height + 0 + 1 - 144, 80, 20, ChatColor.RESET + I18n.format("classe.Blackmage"));
+		buttons[1] = new GuiButton(49, this.width / 2 - 40, this.height / 2 + 110, 80, 20, ChatColor.RESET + I18n.format("classe.Blackmage"));
 
-		buttons[2] = new GuiButton(50, this.width / 2 - 40, this.height + 0 + 1 - 166, 80, 20, ChatColor.RESET + I18n.format("classe.Archer"));
+		buttons[2] = new GuiButton(50, this.width / 2 - 40, this.height / 2 + 88, 80, 20, ChatColor.RESET + I18n.format("classe.Archer"));
 
-		buttons[3] = new GuiButton(51, this.width / 2 - 120, this.height + 0 + 1 - 188, 80, 20, ChatColor.RESET + I18n.format("classe.Paladin"));
+		buttons[3] = new GuiButton(51, this.width / 2 - 40, this.height / 2 + 66, 80, 20, ChatColor.RESET + I18n.format("classe.Paladin"));
 		
-		buttons[4] = new GuiButton(52, this.width / 2 - 120, this.height + 0 + 1 - 210, 80, 20, ChatColor.RESET + I18n.format("classe.Fighter"));
+		buttons[4] = new GuiButton(52, this.width / 2 - 40, this.height/ 2 + 44, 80, 20, ChatColor.RESET + I18n.format("classe.Fighter"));
 		
-		buttons[5] = new GuiButton(53, this.width / 2 - 40, this.height + 0 + 1 - 210, 80, 20, ChatColor.RESET + I18n.format("classe.Samurai"));
+		buttons[5] = new GuiButton(53, this.width / 2 - 40, this.height / 2 + 22, 80, 20, ChatColor.RESET + I18n.format("classe.Samurai"));
 
-		buttons[6] = new GuiButton(54, this.width / 2 - 40, this.height + 0 + 1 - 188, 80, 20, ChatColor.RESET + I18n.format("classe.Bluemage"));
+		buttons[6] = new GuiButton(54, this.width / 2 - 40, this.height / 2 - 0, 80, 20, ChatColor.RESET + I18n.format("classe.Bluemage"));
 
-		buttons[7] = new GuiButton(55, this.width / 2 - 120, this.height + 0 + 1 - 166, 80, 20, ChatColor.RESET + I18n.format("classe.Illusionist"));
+		buttons[7] = new GuiButton(55, this.width / 2 - 40, this.height / 2 - 22, 80, 20, ChatColor.RESET + I18n.format("classe.Illusionist"));
 
-		buttons[8] = new GuiButton(56, this.width / 2 - 120, this.height + 0 + 1 - 100, 80, 20, ChatColor.RESET + I18n.format("classe.Seer"));
+		buttons[8] = new GuiButton(56, this.width / 2 - 40, this.height / 2 - 44, 80, 20, ChatColor.RESET + I18n.format("classe.Seer"));
 		
-		buttons[9] = new GuiButton(57, this.width / 2 - 40, this.height + 0 + 1 - 100,80, 20, ChatColor.RESET + I18n.format("classe.Ninja"));
+		buttons[9] = new GuiButton(57, this.width / 2 - 40, this.height / 2 - 66,80, 20, ChatColor.RESET + I18n.format("classe.Ninja"));
 
-		
-		buttons[10] = new GuiButton(101, this.width / 2 - 120, this.height + 0 + 1 - 144, 80, 20, ChatColor.RESET + I18n.format("classe.Soldier"));
+		buttons[10] = new GuiButton(101, this.width / 2 - 40, this.height / 2 - 88, 80, 20, ChatColor.RESET + I18n.format("classe.Soldier"));
 
-		buttons[11] = new GuiButton(102, this.width / 2 - 120, this.height + 0 + 1 - 122, 80, 20, ChatColor.RESET + I18n.format("classe.Whitemage"));
+		buttons[11] = new GuiButton(102, this.width / 2 - 40, this.height / 2 - 110, 80, 20, ChatColor.RESET + I18n.format("classe.Whitemage"));
 
 		
 		for (GuiButton b : buttons)

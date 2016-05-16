@@ -18,7 +18,6 @@ import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import fr.toss.common.Main;
 import fr.toss.common.player.ClientPlayerBaseMagic;
-
 import fr.toss.common.player.classes.*;
 
 public class GuiIngameOverlay {
@@ -107,12 +106,12 @@ public class GuiIngameOverlay {
 		        	     || pm.getClasse() instanceof ClasseBishop|| pm.getClasse() instanceof ClasseTemplar|| pm.getClasse() instanceof ClasseSage
 		        	     || pm.getClasse() instanceof ClasseAlchemist|| pm.getClasse() instanceof ClasseArcanist|| pm.getClasse() instanceof ClasseScholar
 		        	     || pm.getClasse() instanceof ClasseGeomancer)
-	    		{
-	            	GuiUtils.drawTexturedModalRect(x, y + 15, 0, 0, 65, 13, 0);
-	    	    	GuiUtils.drawTexturedModalRect(x, y + 15, 0, 98, (int) (65.0f / pm.max_energy * pm.energy), 13, 0);
-	    	        font.drawStringWithShadow(health, 35 + x - font.getStringWidth(health) / 2, y + 17, Integer.MAX_VALUE);
-	        	}
-	    		else if (pm.getClasse() instanceof ClasseDragonslayer || pm.getClasse() instanceof ClasseRogue
+		        	{
+		            	GuiUtils.drawTexturedModalRect(x, y + 15, 0, 0, 65, 13, 0);
+		    	    	GuiUtils.drawTexturedModalRect(x, y + 15, 0, 98, (int) (65.0f / pm.max_energy * pm.energy), 13, 0);
+		    	        font.drawStringWithShadow(health, 35 + x - font.getStringWidth(health) / 2, y + 17, Integer.MAX_VALUE);
+		        	}
+		        	else if (pm.getClasse() instanceof ClasseDragonslayer || pm.getClasse() instanceof ClasseRogue
 		        		|| pm.getClasse() instanceof ClasseThief|| pm.getClasse() instanceof ClasseArcher
 		        		|| pm.getClasse() instanceof ClasseHunter|| pm.getClasse() instanceof ClasseNinja
 		        		|| pm.getClasse() instanceof ClasseAnimist|| pm.getClasse() instanceof ClasseFusilier
@@ -123,19 +122,16 @@ public class GuiIngameOverlay {
 		        		|| pm.getClasse() instanceof ClasseMasterMonk|| pm.getClasse() instanceof ClasseTrickster
 		        		|| pm.getClasse() instanceof ClasseBeastmaster|| pm.getClasse() instanceof ClasseRanger)
 		        	{
-	            	GuiUtils.drawTexturedModalRect(x, y + 15, 0, 28, 65, 13, 0);
-	    	    	GuiUtils.drawTexturedModalRect(x, y + 15, 130, 84, (int) (65.0f / pm.max_energy * pm.energy), 13, 0);
-	    	        font.drawStringWithShadow(health, 35 + x - font.getStringWidth(health) / 2, y + 17, Integer.MAX_VALUE);
-	        	}
-	        	else if (pm.getClasse() instanceof ClasseChampion)
-	        	{
-	            	GuiUtils.drawTexturedModalRect(x, y + 15, 0, 14, 65, 13, 0);
-	    	    	GuiUtils.drawTexturedModalRect(x, y + 15, 65, 70, (int) (65.0f / pm.max_energy * pm.energy), 13, 0);
-	    	        font.drawStringWithShadow(health, 35 + x - font.getStringWidth(health) / 2, y + 17, Integer.MAX_VALUE);
-	        	}
-	        	
-	        	else if (pm.getClasse() instanceof ClasseSoldier)
-	        	{
+		            	GuiUtils.drawTexturedModalRect(x, y + 15, 0, 28, 65, 13, 0);
+		    	    	GuiUtils.drawTexturedModalRect(x, y + 15, 130, 84, (int) (65.0f / pm.max_energy * pm.energy), 13, 0);
+		    	        font.drawStringWithShadow(health, 35 + x - font.getStringWidth(health) / 2, y + 17, Integer.MAX_VALUE);
+		        	}
+		        	else if (pm.getClasse() instanceof ClasseChampion|| pm.getClasse() instanceof ClasseSoldier|| pm.getClasse() instanceof ClasseFighter
+		        			|| pm.getClasse() instanceof ClasseSamurai|| pm.getClasse() instanceof ClasseWarrior|| pm.getClasse() instanceof ClasseDragoon
+		        			|| pm.getClasse() instanceof ClasseDefender|| pm.getClasse() instanceof ClasseGladiator|| pm.getClasse() instanceof ClasseBerserker
+		        			|| pm.getClasse() instanceof ClasseLanista|| pm.getClasse() instanceof ClasseViking|| pm.getClasse() instanceof ClasseRaptor
+		        			|| pm.getClasse() instanceof ClasseRavager)
+		        	{
 	            	GuiUtils.drawTexturedModalRect(x, y + 15, 0, 14, 65, 13, 0);
 	    	    	GuiUtils.drawTexturedModalRect(x, y + 15, 65, 70, (int) (65.0f / pm.max_energy * pm.energy), 13, 0);
 	    	        font.drawStringWithShadow(health, 35 + x - font.getStringWidth(health) / 2, y + 17, Integer.MAX_VALUE);

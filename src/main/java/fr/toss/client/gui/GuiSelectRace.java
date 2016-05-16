@@ -101,6 +101,13 @@ public class GuiSelectRace extends GuiScreen {
     @Override
     protected void actionPerformed(GuiButton b)
     {
+    	
+    	GuiGriaRaceInformation gui9;
+    	GuiSeeqRaceInformation gui8;
+    	GuiNuMouRaceInformation gui7;
+    	GuiBangaaRaceInformation gui6;
+    	GuiVieraRaceInformation gui5;
+    	GuiMoogleRaceInformation gui4;
 		GuiHumeRaceInformation gui3;
 		GuiRaceInformation gui2;
 		String race;
@@ -126,7 +133,7 @@ public class GuiSelectRace extends GuiScreen {
     	{
     		description = new String[5];
     		advices = new String[4];
-    		race = ChatColor.YELLOW + I18n.format("race.rogue.slogan");
+    		race = ChatColor.YELLOW + I18n.format("race.moogle.slogan");
     		description[0] = I18n.format("race.rogue.line1");
     		description[1] = I18n.format("race.rogue.line2");
     		description[2] = I18n.format("race.rogue.line3");
@@ -136,14 +143,14 @@ public class GuiSelectRace extends GuiScreen {
     		advices[1] = ChatColor.GREEN + "+ " + I18n.format("stats.agility");
     		advices[2] = ChatColor.RED + "- " + I18n.format("stats.mana");
     		advices[3] = ChatColor.RED + "- " + I18n.format("stats.clarity");
-    		gui2 = new GuiRaceInformation(race, description, advices, 1, 0, 180000000, 6);
-    		this.mc.displayGuiScreen(gui2);
+    		gui4 = new GuiMoogleRaceInformation(race, description, advices, 1, 0, 180000000, 6);
+    		this.mc.displayGuiScreen(gui4);
     	}
     	else if (b.id == 44)
     	{
     		description = new String[4];
     		advices = new String[4];
-    		race = ChatColor.DARK_PURPLE + I18n.format("race.necromancer.slogan");
+    		race = ChatColor.DARK_PURPLE + I18n.format("race.viera.slogan");
     		description[0] = I18n.format("race.necromancer.line1");
     		description[1] = I18n.format("race.necromancer.line2");
     		description[2] = I18n.format("race.necromancer.line3");
@@ -152,14 +159,14 @@ public class GuiSelectRace extends GuiScreen {
     		advices[1] = ChatColor.GREEN + "+ " + I18n.format("stats.clarity");
     		advices[2] = ChatColor.RED + "- " + I18n.format("stats.strength");
     		advices[3] = ChatColor.RED + "- " + I18n.format("stats.agility");
-    		gui2 = new GuiRaceInformation(race, description, advices, 2, 0, -100000000, 4);
-    		this.mc.displayGuiScreen(gui2);
+    		gui5 = new GuiVieraRaceInformation(race, description, advices, 2, 0, -100000000, 4);
+    		this.mc.displayGuiScreen(gui5);
     	}
     	else if (b.id == 45)
     	{
     		description = new String[4];
     		advices = new String[4];
-    		race = ChatColor.GOLD + I18n.format("race.Dragonslayer.slogan");
+    		race = ChatColor.GOLD + I18n.format("race.bangaa.slogan");
     		description[0] = I18n.format("race.Dragonslayer.line1");
     		description[1] = I18n.format("race.Dragonslayer.line2");
     		description[2] = I18n.format("race.Dragonslayer.line3");
@@ -168,14 +175,14 @@ public class GuiSelectRace extends GuiScreen {
     		advices[1] = ChatColor.GREEN + "+ " + I18n.format("stats.strength");
     		advices[2] = ChatColor.RED + "- " + I18n.format("stats.mana");
     		advices[3] = ChatColor.RED + "- " + I18n.format("stats.clarity");
-    		gui2 = new GuiRaceInformation(race, description, advices, 0, 1, 180000000, 2);
-    		this.mc.displayGuiScreen(gui2);
+    		gui6 = new GuiBangaaRaceInformation(race, description, advices, 0, 1, 180000000, 2);
+    		this.mc.displayGuiScreen(gui6);
     	}
     	else if (b.id == 46)
     	{
     		description = new String[4];
     		advices = new String[4];
-    		race = ChatColor.AQUA + I18n.format("race.mage.slogan");
+    		race = ChatColor.AQUA + I18n.format("race.NuMou.slogan");
     		description[0] = I18n.format("race.mage.line1");
     		description[1] = I18n.format("race.mage.line2");
     		description[2] = I18n.format("race.mage.line3");
@@ -184,14 +191,14 @@ public class GuiSelectRace extends GuiScreen {
     		advices[1] = ChatColor.GREEN + "+ " + I18n.format("stats.clarity");
     		advices[2] = ChatColor.GREEN + "+ " + I18n.format("stats.mana_regen");
     		advices[3] = ChatColor.RED + "- " + I18n.format("stats.strength");
-    		gui2 = new GuiRaceInformation(race, description, advices, 1, 1, Integer.MAX_VALUE, 5);
-    		this.mc.displayGuiScreen(gui2);
+    		gui7 = new GuiNuMouRaceInformation(race, description, advices, 1, 1, Integer.MAX_VALUE, 5);
+    		this.mc.displayGuiScreen(gui7);
     	}
     	else if (b.id == 47)
     	{
     		description = new String[3];
     		advices = new String[4];
-    		race = ChatColor.GRAY + I18n.format("race.Priest.slogan");
+    		race = ChatColor.GRAY + I18n.format("race.Seeq.slogan");
     		description[0] = I18n.format("race.Priest.line1");
     		description[1] = I18n.format("race.Priest.line2");
     		description[2] = I18n.format("race.Priest.line3");
@@ -199,14 +206,14 @@ public class GuiSelectRace extends GuiScreen {
     		advices[1] = ChatColor.GREEN + "+ " + I18n.format("stats.clarity");
     		advices[2] = ChatColor.GREEN + "+" + I18n.format("stats.mana_regen");
     		advices[3] = ChatColor.RED + "- " + I18n.format("stats.strength");
-    		gui2 = new GuiRaceInformation(race, description, advices, 2, 1, Integer.MAX_VALUE, 3);
-    		this.mc.displayGuiScreen(gui2);
+    		gui8 = new GuiSeeqRaceInformation(race, description, advices, 2, 1, Integer.MAX_VALUE, 3);
+    		this.mc.displayGuiScreen(gui8);
     	}
     	else if (b.id == 48)
     	{
     		description = new String[1];
     		advices = new String[4];
-    		race = ChatColor.WHITE + I18n.format("race.Thief.slogan");
+    		race = ChatColor.WHITE + I18n.format("race.Gria.slogan");
     		description[0] = I18n.format("race.Thief.line1");
     		//description[1] = I18n.format("race.Thief.line2");
     		//description[2] = I18n.format("race.Thief.line3");
@@ -214,68 +221,9 @@ public class GuiSelectRace extends GuiScreen {
     		advices[1] = ChatColor.GREEN + "+ " + I18n.format("stats.clarity");
     		advices[2] = ChatColor.GREEN + "+" + I18n.format("stats.mana_regen");
     		advices[3] = ChatColor.RED + "- " + I18n.format("stats.strength");
-    		gui2 = new GuiRaceInformation(race, description, advices, 3, 0, Integer.MAX_VALUE, 7);
-    		this.mc.displayGuiScreen(gui2);
+    		gui9 = new GuiGriaRaceInformation(race, description, advices, 3, 0, Integer.MAX_VALUE, 7);
+    		this.mc.displayGuiScreen(gui9);
     	}
-    	else if (b.id == 49)
-    	{
-    		description = new String[1];
-    		advices = new String[4];
-    		race = ChatColor.WHITE + I18n.format("race.Blackmage.slogan");
-    		description[0] = I18n.format("race.Blackmage.line1");
-    		//description[1] = I18n.format("race.Blackmage.line2");
-    		//description[2] = I18n.format("race.Blackmage.line3");
-    		advices[0] = ChatColor.GREEN + "+ " + I18n.format("stats.mana");
-    		advices[1] = ChatColor.GREEN + "+ " + I18n.format("stats.clarity");
-    		advices[2] = ChatColor.GREEN + "+" + I18n.format("stats.mana_regen");
-    		advices[3] = ChatColor.RED + "- " + I18n.format("stats.strength");
-    		gui2 = new GuiRaceInformation(race, description, advices, 0, 2, Integer.MAX_VALUE, 8);
-    		this.mc.displayGuiScreen(gui2);
-    	}
-    	else if (b.id == 50)
-    	{
-    		description = new String[1];
-    		advices = new String[4];
-    		race = ChatColor.WHITE + I18n.format("race.Archer.slogan");
-    		description[0] = I18n.format("race.Archer.line1");
-    		//description[1] = I18n.format("race.Archer.line2");
-    		//description[2] = I18n.format("race.Archer.line3");
-    		advices[0] = ChatColor.GREEN + "+ " + I18n.format("stats.mana");
-    		advices[1] = ChatColor.GREEN + "+ " + I18n.format("stats.clarity");
-    		advices[2] = ChatColor.GREEN + "+" + I18n.format("stats.mana_regen");
-    		advices[3] = ChatColor.RED + "- " + I18n.format("stats.strength");
-    		gui2 = new GuiRaceInformation(race, description, advices, 2, 1, Integer.MAX_VALUE, 9);
-    		this.mc.displayGuiScreen(gui2);
-    	}
-    	else if (b.id == 51)
-    	{
-    		description = new String[1];
-    		advices = new String[4];
-    		race = ChatColor.WHITE + I18n.format("race.Paladin.slogan");
-    		description[0] = I18n.format("race.Paladin.line1");
-    		//description[1] = I18n.format("race.Paladin.line2");
-    		//description[2] = I18n.format("race.Paladin.line3");
-    		advices[0] = ChatColor.GREEN + "+ " + I18n.format("stats.mana");
-    		advices[1] = ChatColor.GREEN + "+ " + I18n.format("stats.clarity");
-    		advices[2] = ChatColor.GREEN + "+" + I18n.format("stats.mana_regen");
-    		advices[3] = ChatColor.RED + "- " + I18n.format("stats.strength");
-    		gui2 = new GuiRaceInformation(race, description, advices, 2, 1, Integer.MAX_VALUE, 10);
-    		this.mc.displayGuiScreen(gui2);
-    	}
-    	else if (b.id == 52)
-    	{
-    		description = new String[1];
-    		advices = new String[4];
-    		race = ChatColor.WHITE + I18n.format("race.Fighter.slogan");
-    		description[0] = I18n.format("race.Fighter.line1");
-    		//description[1] = I18n.format("race.Fighter.line2");
-    		//description[2] = I18n.format("race.Fighter.line3");
-    		advices[0] = ChatColor.GREEN + "+ " + I18n.format("stats.mana");
-    		advices[1] = ChatColor.GREEN + "+ " + I18n.format("stats.clarity");
-    		advices[2] = ChatColor.GREEN + "+" + I18n.format("stats.mana_regen");
-    		advices[3] = ChatColor.RED + "- " + I18n.format("stats.strength");
-    		gui2 = new GuiRaceInformation(race, description, advices, 2, 1, Integer.MAX_VALUE, 11);
-    		this.mc.displayGuiScreen(gui2);
-    	}
+    	
         	}
     	}

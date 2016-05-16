@@ -1,13 +1,13 @@
 [
 {
-  "modid": "magiccrusade",
-  "name": "Magic Crusade",
-  "description": "Magic Crusade is RPG mod, made to be play online with friends.",
+  "modid": "midgarcrusade",
+  "name": "Midgar Crusade",
+  "description": "Midgar Crusade is a custom rendition of Magic Crusade which is made specifically for a server. The original mod Magic Crusade was made by Toss and Gelbar.",
   "version": "${version}",
   "mcversion": "${mcversion}",
   "url": "",
   "updateUrl": "",
-  "authorList": ["Toss, Gelbar"],
+  "authorList": ["wakkytabbaky, GhostMonk"],
   "credits": "Community",
   "logoFile": "",
   "screenshots": [],

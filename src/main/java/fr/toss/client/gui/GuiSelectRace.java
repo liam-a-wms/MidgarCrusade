@@ -26,7 +26,7 @@ public class GuiSelectRace extends GuiScreen {
 		
 		buttons = new GuiButton[7];
 		
-		buttons[0] = new GuiButton(42, this.width / 2 - 40, this.height / 4 - 4, 80, 20, ChatColor.RESET + I18n.format("Hum"));
+		buttons[0] = new GuiButton(42, this.width / 2 - 40, this.height / 4 - 4, 80, 20, ChatColor.RESET + I18n.format("Hume"));
 		
 		buttons[1] = new GuiButton(43, this.width / 2 - 40, this.height / 4 - 26, 80, 20, ChatColor.RESET + I18n.format("Moogle"));
 		  
@@ -101,6 +101,7 @@ public class GuiSelectRace extends GuiScreen {
     @Override
     protected void actionPerformed(GuiButton b)
     {
+		GuiHumeRaceInformation gui3;
 		GuiRaceInformation gui2;
 		String race;
 		String description[];
@@ -118,8 +119,8 @@ public class GuiSelectRace extends GuiScreen {
     		advices[1] = ChatColor.GREEN + "+ " + I18n.format("stats.strength");
     		advices[2] = ChatColor.GREEN + "+ " + I18n.format("stats.armor");
     		advices[3] = ChatColor.RED + "- " + I18n.format("stats.mana");
-    		gui2 = new GuiRaceInformation(race, description, advices, 0, 0, 190000000, 1);
-    		this.mc.displayGuiScreen(gui2);
+    		gui3 = new GuiHumeRaceInformation(race, description, advices, 0, 0, 190000000, 1);
+    		this.mc.displayGuiScreen(gui3);
     	}
     	else if (b.id == 43)
     	{

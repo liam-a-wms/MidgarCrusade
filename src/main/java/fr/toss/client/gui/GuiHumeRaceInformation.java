@@ -22,7 +22,7 @@ import fr.toss.common.packet.PacketSetClasse;
 import fr.toss.common.packet.PacketSetRace;
 import fr.toss.common.packet.Packets;
 
-public class GuiRaceInformation extends GuiScreen {
+public class GuiHumeRaceInformation extends GuiScreen {
 	
 	private String description[];
 	private String advices[];
@@ -33,7 +33,7 @@ public class GuiRaceInformation extends GuiScreen {
 	private int color;
 	private int race_id;
 
-	public GuiRaceInformation(String Race_name, String p_description[], String p_advices[], int px, int py, int p_color, int race_id)
+	public GuiHumeRaceInformation(String Race_name, String p_description[], String p_advices[], int px, int py, int p_color, int race_id)
 	{
 		super();
 		this.description = p_description;
@@ -105,7 +105,7 @@ public class GuiRaceInformation extends GuiScreen {
     protected void actionPerformed(GuiButton b)
     {
     	
-    	GuiSelectClass gui;
+    	GuiSelectHumeClass gui;
     	if (b.id == 42)
     	{
     		PacketSetRace packet;
@@ -116,7 +116,7 @@ public class GuiRaceInformation extends GuiScreen {
 				Main.getPlayerClient().init(this.race_id, race_id);
 			} catch (Exception e) {}
     		
-    		gui = new GuiSelectClass();
+    		gui = new GuiSelectHumeClass();
     		this.mc.displayGuiScreen(gui);
 			
     	}

@@ -62,7 +62,7 @@ public class GuiVieraRaceInformation extends GuiScreen {
     	int i = 0;
    
         this.drawGradientRect(0, 0, this.width, this.height, this.color, this.color - 200000000);
-    	this.drawCenteredString(this.fontRendererObj, this.classe + ChatColor.RESET, this.width / 2, 14, Integer.MAX_VALUE);
+    	this.drawCenteredString(this.fontRendererObj, this.race + ChatColor.RESET, this.width / 2, 14, Integer.MAX_VALUE);
 
 	    drawEntity(this.width / 2, this.height / 2, 28, 0, 0, this.mc.thePlayer);
 

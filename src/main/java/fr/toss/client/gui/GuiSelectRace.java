@@ -115,17 +115,14 @@ public class GuiSelectRace extends GuiScreen {
 		String advices[];
     	if (b.id == 42)
     	{    		
-    		
-    		//The most populous race in Ivalice, there are a few places where humes have not made their mark. A well-rounded race, humes are equally suited to swordplay and magery.
-    		
-    		
+    		   		
     		description = new String[4];
     		advices = new String[4];
-    		race = ChatColor.RED + I18n.format("Hume");
+    		race = ChatColor.WHITE + I18n.format("Hume");
     		description[0] = I18n.format("The most populous race in Ivalice");
     		description[1] = I18n.format("there are a few places where humes have not made their mark");
     		description[2] = I18n.format("A well-rounded race");
-    		description[3] = I18n.format("humes are equally suited to swordplay and magery.");
+    		description[3] = I18n.format("Humes are equally suited to swordplay and magery.");
     		advices[0] = ChatColor.GREEN + "+ " + I18n.format("stats.hp");
     		advices[1] = ChatColor.GREEN + "+ " + I18n.format("stats.strength");
     		advices[2] = ChatColor.GREEN + "+ " + I18n.format("stats.armor");
@@ -135,14 +132,14 @@ public class GuiSelectRace extends GuiScreen {
     	}
     	else if (b.id == 43)
     	{
-    		description = new String[5];
+    		description = new String[4];
     		advices = new String[4];
-    		race = ChatColor.YELLOW + I18n.format("race.moogle.slogan");
-    		description[0] = I18n.format("race.rogue.line1");
-    		description[1] = I18n.format("race.rogue.line2");
-    		description[2] = I18n.format("race.rogue.line3");
-    		description[3] = I18n.format("race.rogue.line4");
-    		description[4] = I18n.format("race.rogue.line5");
+    		race = ChatColor.WHITE + I18n.format("Moogle");
+    		description[0] = I18n.format("A fluffy pom-pom and bat-like wings set this race apart");
+    		description[1] = I18n.format("Their small stature lends itself to leaping out and surprising people, ");
+    		description[2] = I18n.format("in which they take great delight.");
+    		description[3] = I18n.format("With tiny and nimble hands, Moogles excel at a number of unusual Jobs.");
+    		
     		advices[0] = ChatColor.GREEN + "+ " + I18n.format("stats.hp");
     		advices[1] = ChatColor.GREEN + "+ " + I18n.format("stats.agility");
     		advices[2] = ChatColor.RED + "- " + I18n.format("stats.mana");
@@ -152,13 +149,13 @@ public class GuiSelectRace extends GuiScreen {
     	}
     	else if (b.id == 44)
     	{
-    		description = new String[4];
+    		description = new String[3];
     		advices = new String[4];
-    		race = ChatColor.DARK_PURPLE + I18n.format("race.viera.slogan");
-    		description[0] = I18n.format("race.necromancer.line1");
-    		description[1] = I18n.format("race.necromancer.line2");
-    		description[2] = I18n.format("race.necromancer.line3");
-    		description[3] = I18n.format("race.necromancer.line4");
+    		race = ChatColor.WHITE + I18n.format("Viera");
+    		description[0] = I18n.format("Members of this tall race with hair of spun silver are often called People of the Wood or Wood People.");
+    		description[1] = I18n.format("Viera are lithe of limb and tremendously quick");
+    		description[2] = I18n.format("Their slender bodies grant superior strength and skill.");
+    		
     		advices[0] = ChatColor.GREEN + "+ " + I18n.format("stats.mana");
     		advices[1] = ChatColor.GREEN + "+ " + I18n.format("stats.clarity");
     		advices[2] = ChatColor.RED + "- " + I18n.format("stats.strength");
@@ -168,13 +165,12 @@ public class GuiSelectRace extends GuiScreen {
     	}
     	else if (b.id == 45)
     	{
-    		description = new String[4];
+    		description = new String[3];
     		advices = new String[4];
-    		race = ChatColor.GOLD + I18n.format("race.bangaa.slogan");
-    		description[0] = I18n.format("race.Dragonslayer.line1");
-    		description[1] = I18n.format("race.Dragonslayer.line2");
-    		description[2] = I18n.format("race.Dragonslayer.line3");
-    		description[3] = I18n.format("race.Dragonslayer.line4");
+    		race = ChatColor.WHITE + I18n.format("Bangaa");
+    		description[0] = I18n.format("Scales cover the bodies of this reptilian race.");
+    		description[1] = I18n.format("Muscled and powerful, Bangaa are physically imposing.");
+    		description[2] = I18n.format("Their rough, bellicose temperament leads them to pursue mainly warrior-like Jobs.");
     		advices[0] = ChatColor.GREEN + "+ " + I18n.format("stats.agility");
     		advices[1] = ChatColor.GREEN + "+ " + I18n.format("stats.strength");
     		advices[2] = ChatColor.RED + "- " + I18n.format("stats.mana");
@@ -184,13 +180,12 @@ public class GuiSelectRace extends GuiScreen {
     	}
     	else if (b.id == 46)
     	{
-    		description = new String[4];
+    		description = new String[3];
     		advices = new String[4];
-    		race = ChatColor.AQUA + I18n.format("race.NuMou.slogan");
-    		description[0] = I18n.format("race.mage.line1");
-    		description[1] = I18n.format("race.mage.line2");
-    		description[2] = I18n.format("race.mage.line3");
-    		description[3] = I18n.format("race.mage.line4");
+    		race = ChatColor.WHITE + I18n.format("Nu Mou");
+    		description[0] = I18n.format("With a dog-like face and ears that drag along the ground, there is no mistaking a Nu Mou.");
+    		description[1] = I18n.format("Extremely intelligent, they make for powerful mages, but their frail bodies are ill suited for physical combat.");
+    		description[2] = I18n.format("Due to their high intelligence, they are suited to magic-related Jobs");
     		advices[0] = ChatColor.GREEN + "+ " + I18n.format("stats.mana");
     		advices[1] = ChatColor.GREEN + "+ " + I18n.format("stats.clarity");
     		advices[2] = ChatColor.GREEN + "+ " + I18n.format("stats.mana_regen");
@@ -200,12 +195,13 @@ public class GuiSelectRace extends GuiScreen {
     	}
     	else if (b.id == 47)
     	{
-    		description = new String[3];
+    		description = new String[4];
     		advices = new String[4];
-    		race = ChatColor.GRAY + I18n.format("race.Seeq.slogan");
-    		description[0] = I18n.format("race.Priest.line1");
-    		description[1] = I18n.format("race.Priest.line2");
-    		description[2] = I18n.format("race.Priest.line3");
+    		race = ChatColor.WHITE + I18n.format("Seeq");
+    		description[0] = I18n.format("A portly, porcine race with stubby legs");
+    		description[1] = I18n.format("one would not expect a Seeq to be quick,");
+    		description[2] = I18n.format("yet few can match their speed");
+    		description[3] = I18n.format("Though dim-witted and unscrupulous, their knowledge of battle is formidable.");
     		advices[0] = ChatColor.GREEN + "+ " + I18n.format("stats.mana");
     		advices[1] = ChatColor.GREEN + "+ " + I18n.format("stats.clarity");
     		advices[2] = ChatColor.GREEN + "+" + I18n.format("stats.mana_regen");
@@ -217,10 +213,10 @@ public class GuiSelectRace extends GuiScreen {
     	{
     		description = new String[1];
     		advices = new String[4];
-    		race = ChatColor.WHITE + I18n.format("race.Gria.slogan");
-    		description[0] = I18n.format("race.Thief.line1");
-    		//description[1] = I18n.format("race.Thief.line2");
-    		//description[2] = I18n.format("race.Thief.line3");
+    		race = ChatColor.WHITE + I18n.format("Gria");
+    		description[0] = I18n.format("Wings of a dragon and powerful tail distinguish this unique race.");
+    		description[1] = I18n.format("Outwardly small, some may even say cute, Gria make vicious foes in battle.");
+    		description[2] = I18n.format("They have a fierce and competitive spirit.");
     		advices[0] = ChatColor.GREEN + "+ " + I18n.format("stats.mana");
     		advices[1] = ChatColor.GREEN + "+ " + I18n.format("stats.clarity");
     		advices[2] = ChatColor.GREEN + "+" + I18n.format("stats.mana_regen");

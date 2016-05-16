@@ -80,7 +80,7 @@ public class ServerPlayerBaseMagic extends ServerPlayerBase
 			data = PLAYER_DATA.get(this.player.getCommandSenderName());
 			this.level = data.level;
 			this.experience = data.experience;
-			this.race =data.race;
+			this.race = data.race;
 			this.classe = data.classe;
 			this.exp_to_next_level = this.level * 20 * (this.level + 1);
 		    this.player.getEntityAttribute(SharedMonsterAttributes.maxHealth).setBaseValue(0.5d * (this.level - 1) + 20.0d);
@@ -90,7 +90,7 @@ public class ServerPlayerBaseMagic extends ServerPlayerBase
 		}
 	}
 	
-	/** Appelez lorsque le joueur redefinit sa classe */
+	/**Call when the player redefines its class */
 	public void init(int p_classe)
 	{
 		
@@ -101,6 +101,8 @@ public class ServerPlayerBaseMagic extends ServerPlayerBase
 		this.player.getEntityAttribute(SharedMonsterAttributes.maxHealth).setBaseValue(0.5d * (this.level - 1) + 20.0d + this.endurance / 10);
 	    this.player.setHealth(this.getPlayer().getMaxHealth());
 	}
+	
+	
 	
 	 @Override
 	 public void onUpdate()

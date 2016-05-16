@@ -119,7 +119,7 @@ public class ClientPlayerBaseMagic extends ClientPlayerBase
 		this.exp_to_next_level = this.level * 20 * (this.level + 1);
 		this.energy = this.max_energy;
 		
-		if (packet.race_id == 0)
+		if (packet.classe_id == 0)
 			Minecraft.getMinecraft().displayGuiScreen(new GuiSelectRace());
 	}
 	

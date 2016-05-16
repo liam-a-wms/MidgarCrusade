@@ -42,10 +42,10 @@ public class ClientProxy extends CommonProxy
     	FMLCommonHandler.instance().bus().register(soundHandler);
     	MinecraftForge.EVENT_BUS.register(soundHandler);
     	
-    	this.handle_version();
+    	
 	}
 	
-    static void handle_version()
+   /* static void handle_version()
     {
         URL 			url;
         BufferedReader 	in;
@@ -66,5 +66,4 @@ public class ClientProxy extends CommonProxy
         	GuiIngameOverlay.DELAY_INFO = 20000;
         	Main.log("Le mod n'est pas à jour");
         }
-	}
-}
+	*/}

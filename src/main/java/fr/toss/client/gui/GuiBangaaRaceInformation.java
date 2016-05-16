@@ -105,7 +105,7 @@ public class GuiBangaaRaceInformation extends GuiScreen {
     protected void actionPerformed(GuiButton b)
     {
     	
-    	GuiSelectClass gui;
+    	GuiSelectBangaaClass gui;
     	if (b.id == 42)
     	{
     		PacketSetRace packet;
@@ -116,7 +116,7 @@ public class GuiBangaaRaceInformation extends GuiScreen {
 				Main.getPlayerClient().init(this.race_id, race_id);
 			} catch (Exception e) {}
     		
-    		gui = new GuiSelectClass();
+    		gui = new GuiSelectBangaaClass();
     		this.mc.displayGuiScreen(gui);
 			
     	}

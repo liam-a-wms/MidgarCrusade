@@ -317,7 +317,7 @@ public class GuiSelectHumeClass extends GuiScreen {
         	advices[1] = ChatColor.GREEN + "+ " + I18n.format("stats.clarity");
         	advices[2] = ChatColor.GREEN + "+ " + I18n.format("stats.mana_regen");
         	advices[3] = ChatColor.RED + "- " + I18n.format("stats.strength");
-        	gui = new GuiClasseInformation(classe, description, advices, 1, 1, Integer.MAX_VALUE, 61);
+        	gui = new GuiClasseInformation(classe, description, advices, 1, 1, Integer.MAX_VALUE, 63);
         	this.mc.displayGuiScreen(gui);
         		
         	}

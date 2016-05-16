@@ -104,7 +104,7 @@ public class Race implements IRace {
 		return (new RaceUnknown());
 	}
 	
-	public static int getIdFromClasse(Race race)
+	public static int getIdFromRace(Race race)
 	{
 
 		if (race instanceof RaceHume)

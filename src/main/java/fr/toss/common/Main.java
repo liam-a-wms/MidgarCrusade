@@ -11,6 +11,7 @@ import net.minecraft.client.entity.EntityPlayerSP;
 import net.minecraft.client.resources.I18n;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.EntityPlayerMP;
+import net.minecraftforge.common.MinecraftForge;
 import api.player.client.IClientPlayerAPI;
 import api.player.server.IServerPlayerAPI;
 import cpw.mods.fml.common.Loader;
@@ -60,6 +61,7 @@ public class Main
 	@EventHandler
     public void 		serverLoad(FMLServerStartingEvent event)
     {
+		
     	CommandLoader.load(event);
     }
    

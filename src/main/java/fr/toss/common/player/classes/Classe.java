@@ -310,6 +310,8 @@ public class Classe implements IClasse {
 				return (new ClasseWhitemage());
 			case 62 :
 				return (new ClasseSpellblade());
+			case 63 :
+				return (new ClasseWhitemage2());
 		}
 		return (new ClasseFarmer());
 	}

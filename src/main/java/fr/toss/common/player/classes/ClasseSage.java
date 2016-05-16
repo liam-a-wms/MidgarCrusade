@@ -2,12 +2,7 @@ package fr.toss.common.player.classes;
 
 import net.minecraft.util.ResourceLocation;
 import fr.toss.common.command.ChatColor;
-import fr.toss.common.player.spells.mage.ArcanaPillow_5;
-import fr.toss.common.player.spells.mage.ConeFeu_1;
-import fr.toss.common.player.spells.mage.FieldDestruction_4;
-import fr.toss.common.player.spells.mage.Fireball_6;
-import fr.toss.common.player.spells.mage.FreezeCube_2;
-import fr.toss.common.player.spells.mage.Transfert_3;
+import fr.toss.common.player.spells.sage.*;
 
 public class ClasseSage extends Classe {
 	
@@ -33,12 +28,14 @@ public class ClasseSage extends Classe {
 	public void defineClasseSpells()
 	{	
 		this.CLASSE_SPELL.clear();
-		this.CLASSE_SPELL.add(new ConeFeu_1());
-		this.CLASSE_SPELL.add(new FreezeCube_2());
-		this.CLASSE_SPELL.add(new Transfert_3());
-		this.CLASSE_SPELL.add(new FieldDestruction_4());
-		this.CLASSE_SPELL.add(new ArcanaPillow_5());
-		this.CLASSE_SPELL.add(new Fireball_6());
+		this.CLASSE_SPELL.add(new Gigaflare_1());
+		this.CLASSE_SPELL.add(new Aero_1());
+		this.CLASSE_SPELL.add(new Water_1());
+		this.CLASSE_SPELL.add(new Bio_1());
+		this.CLASSE_SPELL.add(new Ultimastaff_1());
+		this.CLASSE_SPELL.add(new Esunaga_1());
+		this.CLASSE_SPELL.add(new Blindshot_1());
+		
 	}
 	
 	@Override

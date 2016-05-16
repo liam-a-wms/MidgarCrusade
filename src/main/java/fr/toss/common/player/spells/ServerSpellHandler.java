@@ -8,16 +8,20 @@ import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.monster.EntityMob;
 import net.minecraft.entity.passive.EntityWolf;
 import net.minecraft.entity.player.EntityPlayerMP;
+import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.entity.projectile.EntityArrow;
+import net.minecraft.entity.projectile.EntityFireball;
 import net.minecraft.entity.projectile.EntityLargeFireball;
 import net.minecraft.entity.projectile.EntitySmallFireball;
 import net.minecraft.entity.projectile.EntityWitherSkull;
 import net.minecraft.init.Blocks;
+import net.minecraft.init.Items;
 import net.minecraft.item.ItemBow;
 import net.minecraft.item.ItemStack;
 import net.minecraft.pathfinding.PathEntity;
 import net.minecraft.potion.Potion;
 import net.minecraft.potion.PotionEffect;
+import net.minecraft.util.ChatComponentText;
 import net.minecraft.util.DamageSource;
 import net.minecraft.world.World;
 import fr.toss.common.entity.EntitySummonZombie;
@@ -51,6 +55,69 @@ public class ServerSpellHandler {
 		}
 	}
 	
+	
+	public static void handle_selfheal(PacketSpellToServer message, World world)
+	{
+		Entity e;
+		
+		e = world.getEntityByID(message.data);
+		if (e instanceof EntityLivingBase && !(e instanceof EntityMob))
+		{
+			
+			((EntityLivingBase)e).heal(1 + message.data2 /  30 );//	30 for endurance 1 heart more
+		
+			
+		}
+		}
+		
+	public static void handle_warcry(PacketSpellToServer message, World world)
+	{
+		Entity e;
+		
+		e = world.getEntityByID(message.data);
+		if (e instanceof EntityLivingBase && !(e instanceof EntityMob))
+		{
+			((EntityLivingBase)e).addPotionEffect(new PotionEffect(Potion.resistance.id, 100,6)); //30 clarity pour 1 coeur en plus
+		}
+	}
+	
+	
+	public static void handle_nurse(PacketSpellToServer message, World world)
+	{
+		Entity e;
+		
+		e = world.getEntityByID(message.data);
+		if (e instanceof EntityLivingBase && !(e instanceof EntityMob))
+			
+			if (e.isBurning())
+				e.extinguish();
+			if (e instanceof EntityLivingBase)
+			{
+				if (((EntityLivingBase) e).isPotionActive(Potion.blindness))
+					((EntityLivingBase) e).removePotionEffect(Potion.blindness.id);
+				if (((EntityLivingBase) e).isPotionActive(Potion.poison))
+					((EntityLivingBase) e).removePotionEffect(Potion.poison.id);
+				if (((EntityLivingBase) e).isPotionActive(Potion.digSlowdown))
+					((EntityLivingBase) e).removePotionEffect(Potion.digSlowdown.id);
+				if (((EntityLivingBase) e).isPotionActive(Potion.confusion))
+					((EntityLivingBase) e).removePotionEffect(Potion.confusion.id);
+				if (((EntityLivingBase) e).isPotionActive(Potion.hunger))
+					((EntityLivingBase) e).removePotionEffect(Potion.hunger.id);
+				if (((EntityLivingBase) e).isPotionActive(Potion.blindness))
+					((EntityLivingBase) e).removePotionEffect(Potion.blindness.id);
+				if (((EntityLivingBase) e).isPotionActive(Potion.moveSlowdown))
+					((EntityLivingBase) e).removePotionEffect(Potion.moveSlowdown.id);
+				if (((EntityLivingBase) e).isPotionActive(Potion.wither))
+					((EntityLivingBase) e).removePotionEffect(Potion.wither.id);
+				if (((EntityLivingBase) e).isPotionActive(Potion.weakness))
+					((EntityLivingBase) e).removePotionEffect(Potion.weakness.id);
+			((EntityLivingBase)e).heal(3.0f + message.data2 / 30); //30 clarity pour 1 coeur en plus
+		
+	}
+			}
+	
+	
+	
 	/** Effet du soin du Mage */
 	public static void handle_heal_zone(PacketSpellToServer message, World world)
 	{
@@ -63,6 +130,91 @@ public class ServerSpellHandler {
 		}
 	}
 	
+	public static void handle_Cure(PacketSpellToServer message, World world)
+	{
+		Entity e;
+		
+		e = world.getEntityByID(message.data);
+		if (e instanceof EntityLivingBase && !(e instanceof EntityMob))
+		{
+			((EntityLivingBase)e).heal(3.0f + message.data2 / 30); //30 clarity pour 1 coeur en plus
+		}
+	}
+	
+	public static void handle_Cura(PacketSpellToServer message, World world)
+	{
+		Entity e;
+		
+		e = world.getEntityByID(message.data);
+		if (e instanceof EntityLivingBase && !(e instanceof EntityMob))
+		{
+			((EntityLivingBase)e).heal(6.0f + message.data2 / 30); //30 clarity pour 1 coeur en plus
+		}
+	}
+	
+	public static void handle_Curaga(PacketSpellToServer message, World world)
+	{
+		Entity e;
+		
+		e = world.getEntityByID(message.data);
+		if (e instanceof EntityLivingBase && !(e instanceof EntityMob))
+		{
+			((EntityLivingBase)e).heal(9.0f + message.data2 / 30); //30 clarity pour 1 coeur en plus
+		}
+	}
+	
+	
+	public static void handle_berserk_zone(PacketSpellToServer message, World world)
+	{
+		Entity e;
+		
+		e = world.getEntityByID(message.data);
+		if (e instanceof EntityLivingBase && !(e instanceof EntityMob))
+		{
+			
+			((EntityLivingBase)e).addPotionEffect(new PotionEffect(Potion.damageBoost.id,100, 10)); //30 clarity pour 1 coeur en plus
+			((EntityLivingBase)e).addPotionEffect(new PotionEffect(Potion.moveSpeed.id, 200, 4)); //30 clarity pour 1 coeur en plus
+			
+			
+		}
+		}
+		
+	
+	public static void handle_defender(PacketSpellToServer message, World world)
+	{
+		Entity e;
+		
+		e = world.getEntityByID(message.data);
+		if (e instanceof EntityLivingBase && !(e instanceof EntityMob))
+		{
+			
+			((EntityLivingBase)e).addPotionEffect(new PotionEffect(Potion.resistance.id,100, 10)); //30 clarity pour 1 coeur en plus
+			
+			
+		}
+		}
+	
+	
+	
+	public static void handle_cleanse(PacketSpellToServer message, World world)
+	{
+		Entity e;
+		
+		e = world.getEntityByID(message.data);
+		if (e != null)
+		{
+			if (e.isBurning())
+				e.extinguish();
+			if (e instanceof EntityLivingBase)
+			{
+				if (((EntityLivingBase) e).isPotionActive(Potion.blindness))
+					((EntityLivingBase) e).removePotionEffect(Potion.blindness.id);
+				if (((EntityLivingBase) e).isPotionActive(Potion.poison))
+					((EntityLivingBase) e).removePotionEffect(Potion.poison.id);
+	
+			}
+		}
+			}
 	/** Effet de Purification du Mage */
 	public static void handle_purification(PacketSpellToServer message, World world)
 	{
@@ -98,6 +250,87 @@ public class ServerSpellHandler {
 		}
 	}
 
+	public static void handle_attackboost(PacketSpellToServer message, World world)
+	{
+Entity e;
+		
+		e = world.getEntityByID(message.data);
+		if (e instanceof EntityLivingBase && !(e instanceof EntityMob))
+		{
+			
+			((EntityLivingBase)e).addPotionEffect(new PotionEffect(Potion.damageBoost.id,60, 10)); //30 clarity pour 1 coeur en plus;
+	
+		}
+	}
+	
+	
+	public static void handle_unburdensoul(PacketSpellToServer message, World world, EntityPlayerMP sender)
+	{
+		Entity e;
+		
+		e = world.getEntityByID(message.data);
+		if (e != null)
+		{
+			if (e.isBurning())
+				e.extinguish();
+			if (e instanceof EntityLivingBase)
+			{
+				if (((EntityLivingBase) e).isPotionActive(Potion.blindness))
+					((EntityLivingBase) e).removePotionEffect(Potion.blindness.id);
+				if (((EntityLivingBase) e).isPotionActive(Potion.poison))
+					((EntityLivingBase) e).removePotionEffect(Potion.poison.id);
+				if (((EntityLivingBase) e).isPotionActive(Potion.digSlowdown))
+					((EntityLivingBase) e).removePotionEffect(Potion.digSlowdown.id);
+				if (((EntityLivingBase) e).isPotionActive(Potion.confusion))
+					((EntityLivingBase) e).removePotionEffect(Potion.confusion.id);
+				if (((EntityLivingBase) e).isPotionActive(Potion.hunger))
+					((EntityLivingBase) e).removePotionEffect(Potion.hunger.id);
+				if (((EntityLivingBase) e).isPotionActive(Potion.blindness))
+					((EntityLivingBase) e).removePotionEffect(Potion.blindness.id);
+				if (((EntityLivingBase) e).isPotionActive(Potion.moveSlowdown))
+					((EntityLivingBase) e).removePotionEffect(Potion.moveSlowdown.id);
+				if (((EntityLivingBase) e).isPotionActive(Potion.wither))
+					((EntityLivingBase) e).removePotionEffect(Potion.wither.id);
+				if (((EntityLivingBase) e).isPotionActive(Potion.weakness))
+					((EntityLivingBase) e).removePotionEffect(Potion.weakness.id);
+				((EntityLivingBase) e).addPotionEffect(new PotionEffect(Potion.moveSpeed.id, 40, 2));
+				((EntityLivingBase)e).heal(40.0f + message.data2 / 30); //30 clarity pour 1 coeur en plus
+				sender.addPotionEffect(new PotionEffect(Potion.harm.id, 200, 40));
+			}		
+		}
+	}
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	public static void handle_quickenbuff(PacketSpellToServer message, World world)
+	{
+		Entity e;
+		
+		e = world.getEntityByID(message.data);
+		if (e instanceof EntityLivingBase)
+		{
+			((EntityLivingBase)e).addPotionEffect(new PotionEffect(Potion.moveSpeed.id, 200, 1));
+			//((EntityLivingBase)e).addPotionEffect(new PotionEffect(Potion.Haste.id, 200, 1));
+			
+		}
+	}
+	
+	
+	
+	
+	
+	
+	
+	
 	/** Effet de Buff du Mage */
 	public static void handle_buff(PacketSpellToServer message, World world)
 	{
@@ -129,6 +362,20 @@ public class ServerSpellHandler {
 		}
 	}
 
+	public static void handle_lifebond(PacketSpellToServer message, World world, EntityPlayerMP sender)
+	{
+		Entity e;
+		
+		e = world.getEntityByID(message.data);
+		if (e instanceof EntityLivingBase)
+		{
+			((EntityLivingBase)e).heal(4.0f + (message.data2 / 40));
+			sender.addPotionEffect(new PotionEffect(Potion.harm.id, 2, 4));
+		}
+	}
+
+
+	
 	/** Drain du necromancer */
 	public static void handle_drain(PacketSpellToServer message, World world, EntityPlayerMP sender)
 	{
@@ -142,6 +389,35 @@ public class ServerSpellHandler {
 		}
 	}
 
+	
+	
+	
+	
+	public static void handle_drainspeed(PacketSpellToServer message, World world, EntityPlayerMP sender)
+	{
+		Entity e;
+		
+		e = world.getEntityByID(message.data);
+		if (e instanceof EntityLivingBase)
+		{
+			((EntityLivingBase)e).addPotionEffect(new PotionEffect(Potion.moveSlowdown.id, 60, 99));
+			sender.addPotionEffect(new PotionEffect(Potion.moveSpeed.id, 60, 5));
+		}
+	}
+	
+	public static void handle_drainattack(PacketSpellToServer message, World world)
+	{
+		Entity e;
+		
+		e = world.getEntityByID(message.data);
+		if (e instanceof EntityLivingBase)
+		{
+			((EntityLivingBase)e).addPotionEffect(new PotionEffect(Potion.weakness.id, 60, 4));
+			
+		}
+	}
+	
+	
 	public static void handle_holyshield(PacketSpellToServer message, World world)
 	{
 		Entity e;
@@ -166,6 +442,62 @@ public class ServerSpellHandler {
 			((EntityLivingBase)e).addPotionEffect(new PotionEffect(Potion.weakness.id, 200, 1));
 		}		
 	}
+	
+	public static void handle_shotroot(World world, EntityPlayerMP sender)
+	{
+        EntityArrow entityarrow;
+        
+        entityarrow = new EntityArrow(world, sender, 2.0F)
+        {
+        	@Override
+            public void onUpdate()
+            {
+            	super.onUpdate();
+            	
+            	List list;
+            	
+            	list = this.worldObj.getEntitiesWithinAABBExcludingEntity(this, this.boundingBox.expand(0.2f, 0.2f, 0.2f));
+            	for (int i = 0; i < list.size(); i++)
+            	{
+            		if (list.get(i) instanceof EntityLivingBase)
+            			((EntityLivingBase)list.get(i)).addPotionEffect(new PotionEffect(Potion.moveSlowdown.id, 100, 10000));
+            		    
+            	}
+            	}
+            
+        };
+        world.spawnEntityInWorld(entityarrow);
+	}
+	
+	
+	public static void handle_shotblind(World world, EntityPlayerMP sender)
+	{
+        EntityArrow entityarrow;
+        
+        entityarrow = new EntityArrow(world, sender, 2.0F)
+        {
+        	@Override
+            public void onUpdate()
+            {
+            	super.onUpdate();
+            	
+            	List list;
+            	
+            	list = this.worldObj.getEntitiesWithinAABBExcludingEntity(this, this.boundingBox.expand(0.2f, 0.2f, 0.2f));
+            	for (int i = 0; i < list.size(); i++)
+            	{
+            		if (list.get(i) instanceof EntityLivingBase)
+            			((EntityLivingBase)list.get(i)).addPotionEffect(new PotionEffect(Potion.blindness.id, 100, 100));
+            		    
+            	}
+            	}
+            
+        };
+        world.spawnEntityInWorld(entityarrow);
+	}
+	
+	
+	
 	
 	
 	public static void handle_shockwave(PacketSpellToServer message, World world, EntityPlayerMP sender)
@@ -204,6 +536,19 @@ public class ServerSpellHandler {
         };
         world.spawnEntityInWorld(entityarrow);
 	}
+	
+	
+	
+	
+	
+	
+	
+	
+	   		
+            	
+         	
+	
+	
 	
 	/** Poison shot du Dragon slayer */
 	public static void handle_frozenshot(World world, EntityPlayerMP sender)
@@ -348,6 +693,60 @@ public class ServerSpellHandler {
 			sender.worldObj.spawnEntityInWorld(e[i]);
 	}
 	
+	public static void handle_saintcross(PacketSpellToServer message, World world, EntityPlayerMP sender)
+	{
+		Entity e;
+		
+		e = world.getEntityByID(message.data);
+		if (e != null)
+		{
+			
+			if (e instanceof EntityLivingBase)
+				((EntityLivingBase)e).attackEntityFrom(DamageSource.magic, 2);
+		}
+	}
+	
+	public static void handle_gigaflare(PacketSpellToServer message, World world, EntityPlayerMP sender)
+	{
+		Entity e;
+		
+		e = world.getEntityByID(message.data);
+		if (e != null)
+		{
+			
+			if (e instanceof EntityLivingBase)
+				((EntityLivingBase)e).attackEntityFrom(DamageSource.magic, 20);
+		}
+	}
+	
+	public static void handle_bio(PacketSpellToServer message, World world, EntityPlayerMP sender)
+	{
+		Entity e;
+		
+		e = world.getEntityByID(message.data);
+		if (e != null)
+		{
+			
+			if (e instanceof EntityLivingBase)
+				((EntityLivingBase)e).attackEntityFrom(DamageSource.magic, 2);
+			((EntityLivingBase)e).addPotionEffect(new PotionEffect(Potion.poison.id, 100, 3));
+		
+		}
+	}
+	
+	
+	public static void handle_wildswing(PacketSpellToServer message, World world, EntityPlayerMP sender)
+	{
+		Entity e;
+		
+		e = world.getEntityByID(message.data);
+		if (e != null)
+		{
+			
+			if (e instanceof EntityLivingBase)
+				((EntityLivingBase)e).attackEntityFrom(DamageSource.magic, 2);
+		}
+	}
 	
 
 	/** Fireland du necromancer */
@@ -419,6 +818,26 @@ public class ServerSpellHandler {
 		}
 	}
 
+	
+	public static void handle_rush(PacketSpellToServer message, World world, EntityPlayerMP sender)
+	{
+		Entity e;
+		
+		e = world.getEntityByID(message.data);
+		if (e != null)
+		{
+			if (e instanceof EntityLivingBase)
+			{
+				e.attackEntityFrom(DamageSource.causePlayerDamage(sender), 4 + message.data2);
+				
+					
+			}
+		}
+	}
+	
+	
+	
+	
 	public static void handle_conefeu(PacketSpellToServer message, World world, EntityPlayerMP sender)
 	{
 		Entity e;
@@ -537,4 +956,522 @@ public class ServerSpellHandler {
         world.spawnEntityInWorld(fireball);
         fireball.setVelocity(fireball.motionX * 1.5f, fireball.motionY, fireball.motionZ * 1.5f);
 	}
+
+	
+	public static void handle_windslash(World world, EntityPlayerMP sender)
+	{
+		float a;
+		float b;
+		float c;
+		
+		a = (float) sender.getLookVec().xCoord;
+		b = (float) sender.getLookVec().yCoord;
+		c = (float) sender.getLookVec().zCoord;
+    	EntityLargeFireball fireball = new EntityLargeFireball(world, sender.posX + a, sender.posY + b, sender.posZ + c, a, b, c);
+        fireball.posY = sender.posY + (double)(sender.height / 2.0F) + 0.5D;
+        world.spawnEntityInWorld(fireball);
+        fireball.setVelocity(fireball.motionX * 1.5f, fireball.motionY, fireball.motionZ * 1.5f);
+	}
+
+	
+	
+	public static void handle_holyblade(World world, EntityPlayerMP sender)
+	{
+		float a;
+		float b;
+		float c;
+		
+		a = (float) sender.getLookVec().xCoord;
+		b = (float) sender.getLookVec().yCoord;
+		c = (float) sender.getLookVec().zCoord;
+		EntityFireball fireball = new EntityLargeFireball(world, sender.posX + a, sender.posY + b, sender.posZ + c, a, b, c);
+	    fireball.posY = sender.posY + (double)(sender.height / 2.0F) + 0.5D;
+	    world.spawnEntityInWorld(fireball);
+	    fireball.setVelocity(fireball.motionX * 1.5f, fireball.motionY, fireball.motionZ * 1.5f);
+	}
+
+		
+		
+public static void handle_airrender(World world, EntityPlayerMP sender)
+{
+	float a;
+	float b;
+	float c;
+	
+	a = (float) sender.getLookVec().xCoord;
+	b = (float) sender.getLookVec().yCoord;
+	c = (float) sender.getLookVec().zCoord;
+	EntityFireball fireball = new EntityLargeFireball(world, sender.posX + a, sender.posY + b, sender.posZ + c, a, b, c);
+    fireball.posY = sender.posY + (double)(sender.height / 2.0F) + 0.5D;
+    world.spawnEntityInWorld(fireball);
+    fireball.setVelocity(fireball.motionX * 1.5f, fireball.motionY, fireball.motionZ * 1.5f);
 }
+
+public static void handle_auroblast(World world, EntityPlayerMP sender)
+{
+	float a;
+	float b;
+	float c;
+	
+	a = (float) sender.getLookVec().xCoord;
+	b = (float) sender.getLookVec().yCoord;
+	c = (float) sender.getLookVec().zCoord;
+	EntityFireball fireball = new EntityLargeFireball(world, sender.posX + a, sender.posY + b, sender.posZ + c, a, b, c);
+    fireball.posY = sender.posY + (double)(sender.height / 2.0F) + 0.5D;
+    world.spawnEntityInWorld(fireball);
+    fireball.setVelocity(fireball.motionX * 1.5f, fireball.motionY, fireball.motionZ * 1.5f);
+    EntityFireball fireball2 = new EntityLargeFireball(world, sender.posX + a + 4, sender.posY + b, sender.posZ + c, a, b, c);
+    fireball.posY = sender.posY + (double)(sender.height / 2.0F) + 0.5D;
+    world.spawnEntityInWorld(fireball2);
+    fireball.setVelocity(fireball.motionX * 1.5f, fireball.motionY, fireball.motionZ * 1.5f);
+    EntityFireball fireball3 = new EntityLargeFireball(world, sender.posX - a - 4, sender.posY + b, sender.posZ + c, a, b, c);
+    fireball.posY = sender.posY + (double)(sender.height / 2.0F) + 0.5D;
+    world.spawnEntityInWorld(fireball3);
+    fireball.setVelocity(fireball.motionX * 1.5f, fireball.motionY, fireball.motionZ * 1.5f);
+}
+
+
+
+public static void handle_backdraft(World world, EntityPlayerMP sender)
+{
+	float a;
+	float b;
+	float c;
+	
+	a = (float) sender.getLookVec().xCoord;
+	b = (float) sender.getLookVec().yCoord;
+	c = (float) sender.getLookVec().zCoord;
+	EntityLargeFireball fireball = new EntityLargeFireball(world, sender.posX + a, sender.posY + b, sender.posZ + c, a, b, c);
+    fireball.posY = sender.posY + (double)(sender.height / 2.0F) + 0.5D;
+    world.spawnEntityInWorld(fireball);
+    fireball.setVelocity(fireball.motionX * 1.5f, fireball.motionY, fireball.motionZ * 1.5f);
+    sender.addPotionEffect(new PotionEffect(Potion.harm.id, 1, 1));
+}
+
+public static void handle_swordroot(World world, EntityPlayerMP sender)
+{
+    EntityArrow entityarrow;
+    
+    entityarrow = new EntityArrow(world, sender, 2.0F)
+    {
+    	@Override
+        public void onUpdate()
+        {
+        	super.onUpdate();
+        	
+        	List list;
+        	
+        	list = this.worldObj.getEntitiesWithinAABBExcludingEntity(this, this.boundingBox.expand(0.2f, 0.2f, 0.2f));
+        	for (int i = 0; i < list.size(); i++)
+        	{
+        		if (list.get(i) instanceof EntityLivingBase)
+        			((EntityLivingBase)list.get(i)).addPotionEffect(new PotionEffect(Potion.moveSlowdown.id, 100, 10000));
+        		    
+        	}
+        	}
+        
+    };
+    world.spawnEntityInWorld(entityarrow);
+}
+
+public static void handle_swordconfuse(World world, EntityPlayerMP sender)
+{
+    EntityArrow entityarrow;
+    
+    entityarrow = new EntityArrow(world, sender, 2.0F)
+    {
+    	@Override
+        public void onUpdate()
+        {
+        	super.onUpdate();
+        	
+        	List list;
+        	
+        	list = this.worldObj.getEntitiesWithinAABBExcludingEntity(this, this.boundingBox.expand(0.2f, 0.2f, 0.2f));
+        	for (int i = 0; i < list.size(); i++)
+        	{
+        		if (list.get(i) instanceof EntityLivingBase)
+        			((EntityLivingBase)list.get(i)).addPotionEffect(new PotionEffect(Potion.confusion.id, 100, 10000));
+        		    
+        	}
+        	}
+        
+    };
+    world.spawnEntityInWorld(entityarrow);
+}
+
+
+public static void handle_ringtoss(World world, EntityPlayerMP sender)
+{
+    EntityArrow entityarrow;
+    
+    entityarrow = new EntityArrow(world, sender, 2.0F)
+    {
+    	@Override
+        public void onUpdate()
+        {
+        	super.onUpdate();
+        	
+        	List list;
+        	
+        	list = this.worldObj.getEntitiesWithinAABBExcludingEntity(this, this.boundingBox.expand(0.2f, 0.2f, 0.2f));
+        	for (int i = 0; i < list.size(); i++)
+        	{
+        		if (list.get(i) instanceof EntityLivingBase)
+        		((EntityLivingBase)list.get(i)).addPotionEffect(new PotionEffect(Potion.moveSlowdown.id, 100, 10000));
+        		((EntityLivingBase)list.get(i)).addPotionEffect(new PotionEffect(Potion.jump.id, 100, 130));
+        		((EntityLivingBase)list.get(i)).extinguish();
+        		((EntityLivingBase)list.get(i)).addPotionEffect(new PotionEffect(Potion.resistance.id, 100, 1000));
+        		((EntityLivingBase)list.get(i)).addPotionEffect(new PotionEffect(Potion.fireResistance.id, 100, 1000));
+    		    
+        	}
+        	}
+        
+    };
+    world.spawnEntityInWorld(entityarrow);
+}
+
+
+
+
+
+
+public static void handle_molotov(World world, EntityPlayerMP sender)
+{
+    EntityArrow entityarrow;
+    
+    entityarrow = new EntityArrow(world, sender, 2.0F)
+    {
+    	@Override
+        public void onUpdate()
+        {
+        	super.onUpdate();
+        	
+        	List list;
+        	
+        	list = this.worldObj.getEntitiesWithinAABBExcludingEntity(this, this.boundingBox.expand(0.2f, 0.2f, 0.2f));
+        	for (int i = 0; i < list.size(); i++)
+        	{
+        		if (list.get(i) instanceof EntityLivingBase)
+        		((EntityLivingBase)list.get(i)).addPotionEffect(new PotionEffect(Potion.damageBoost.id, 100, 10000));
+        		((EntityLivingBase)list.get(i)).addPotionEffect(new PotionEffect(Potion.moveSpeed.id, 100, 10000));
+        		((EntityLivingBase)list.get(i)).setFire(60);
+    		    
+        	}
+        	}
+        
+    };
+    world.spawnEntityInWorld(entityarrow);
+}
+
+
+
+public static void handle_weapontoss(World world, EntityPlayerMP sender)
+{
+    EntityArrow entityarrow;
+    
+    entityarrow = new EntityArrow(world, sender, 2.0F)
+    {
+    	@Override
+        public void onUpdate()
+        {
+        	super.onUpdate();
+        	
+        	List list;
+        	
+        	list = this.worldObj.getEntitiesWithinAABBExcludingEntity(this, this.boundingBox.expand(0.2f, 0.2f, 0.2f));
+        	for (int i = 0; i < list.size(); i++)
+        	{
+        		if (list.get(i) instanceof EntityLivingBase)
+        			((EntityLivingBase)list.get(i)).addPotionEffect(new PotionEffect(Potion.harm.id, 1, 1));
+        		}
+        	}
+        
+    };
+    world.spawnEntityInWorld(entityarrow);
+}
+
+
+public static void handle_ballconfuse(World world, EntityPlayerMP sender)
+{
+    EntityArrow entityarrow;
+    
+    entityarrow = new EntityArrow(world, sender, 2.0F)
+    {
+    	@Override
+        public void onUpdate()
+        {
+        	super.onUpdate();
+        	
+        	List list;
+        	
+        	list = this.worldObj.getEntitiesWithinAABBExcludingEntity(this, this.boundingBox.expand(0.2f, 0.2f, 0.2f));
+        	for (int i = 0; i < list.size(); i++)
+        	{
+        		if (list.get(i) instanceof EntityLivingBase)
+        			((EntityLivingBase)list.get(i)).addPotionEffect(new PotionEffect(Potion.confusion.id, 100, 10000));
+        		    
+        	}
+        	}
+        
+    };
+    world.spawnEntityInWorld(entityarrow);
+}
+
+
+public static void handle_swordslow(World world, EntityPlayerMP sender)
+{
+    EntityArrow entityarrow;
+    
+    entityarrow = new EntityArrow(world, sender, 2.0F)
+    {
+    	@Override
+        public void onUpdate()
+        {
+        	super.onUpdate();
+        	
+        	List list;
+        	
+        	list = this.worldObj.getEntitiesWithinAABBExcludingEntity(this, this.boundingBox.expand(0.2f, 0.2f, 0.2f));
+        	for (int i = 0; i < list.size(); i++)
+        	{
+        		if (list.get(i) instanceof EntityLivingBase)
+        			((EntityLivingBase)list.get(i)).addPotionEffect(new PotionEffect(Potion.moveSlowdown.id, 100, 100));
+        		    ((EntityLivingBase)list.get(i)).attackEntityFrom(DamageSource.drown, 2);
+        	}
+        	}
+        
+    };
+    world.spawnEntityInWorld(entityarrow);
+}
+
+public static void handle_swordberserk(World world, EntityPlayerMP sender)
+{
+    EntityArrow entityarrow;
+    
+    entityarrow = new EntityArrow(world, sender, 2.0F)
+    {
+    	@Override
+        public void onUpdate()
+        {
+        	super.onUpdate();
+        	
+        	List list;
+        	
+        	list = this.worldObj.getEntitiesWithinAABBExcludingEntity(this, this.boundingBox.expand(0.2f, 0.2f, 0.2f));
+        	for (int i = 0; i < list.size(); i++)
+        	{
+        		if (list.get(i) instanceof EntityLivingBase)
+        			((EntityLivingBase)list.get(i)).addPotionEffect(new PotionEffect(Potion.damageBoost.id,100, 10));
+        		    ((EntityLivingBase)list.get(i)).attackEntityFrom(DamageSource.magic, 20);
+        		    ((EntityLivingBase)list.get(i)).addPotionEffect(new PotionEffect(Potion.moveSpeed.id, 200, 4));
+        		    
+        	}
+        	}
+        
+    };
+    world.spawnEntityInWorld(entityarrow);
+}
+
+
+public static void handle_swordpoison(World world, EntityPlayerMP sender)
+{
+    EntityArrow entityarrow;
+    
+    entityarrow = new EntityArrow(world, sender, 2.0F)
+    {
+    	@Override
+        public void onUpdate()
+        {
+        	super.onUpdate();
+        	
+        	List list;
+        	
+        	list = this.worldObj.getEntitiesWithinAABBExcludingEntity(this, this.boundingBox.expand(0.2f, 0.2f, 0.2f));
+        	for (int i = 0; i < list.size(); i++)
+        	{
+        		if (list.get(i) instanceof EntityLivingBase)
+        			((EntityLivingBase)list.get(i)).addPotionEffect(new PotionEffect(Potion.poison.id, 100, 2));
+        	}
+        }
+    };
+    world.spawnEntityInWorld(entityarrow);
+}
+
+public static void handle_swordblind(World world, EntityPlayerMP sender)
+{
+    EntityArrow entityarrow;
+    
+    entityarrow = new EntityArrow(world, sender, 2.0F)
+    {
+    	@Override
+        public void onUpdate()
+        {
+        	super.onUpdate();
+        	
+        	List list;
+        	
+        	list = this.worldObj.getEntitiesWithinAABBExcludingEntity(this, this.boundingBox.expand(0.2f, 0.2f, 0.2f));
+        	for (int i = 0; i < list.size(); i++)
+        	{
+        		if (list.get(i) instanceof EntityLivingBase)
+        			((EntityLivingBase)list.get(i)).addPotionEffect(new PotionEffect(Potion.blindness.id, 100, 100));
+        		    
+        	}
+        	}
+        
+    };
+    world.spawnEntityInWorld(entityarrow);
+}
+
+
+
+
+public static void handle_fire(World world, EntityPlayerMP sender)
+{
+	float a;
+	float b;
+	float c;
+	
+	a = (float) sender.getLookVec().xCoord;
+	b = (float) sender.getLookVec().yCoord;
+	c = (float) sender.getLookVec().zCoord;
+	EntityLargeFireball fireball = new EntityLargeFireball(world, sender.posX + a, sender.posY + b, sender.posZ + c, a, b, c);
+    fireball.posY = sender.posY + (double)(sender.height / 2.0F) + 0.5D;
+    world.spawnEntityInWorld(fireball);
+    fireball.setVelocity(fireball.motionX * 1.5f, fireball.motionY, fireball.motionZ * 1.5f);
+}
+
+public static void handle_fira(World world, EntityPlayerMP sender)
+{
+	float a;
+	float b;
+	float c;
+	
+	a = (float) sender.getLookVec().xCoord;
+	b = (float) sender.getLookVec().yCoord;
+	c = (float) sender.getLookVec().zCoord;
+	EntityLargeFireball fireball = new EntityLargeFireball(world, sender.posX + a, sender.posY + b, sender.posZ + c, a, b, c);
+    fireball.posY = sender.posY + (double)(sender.height / 2.0F) + 0.5D;
+    world.spawnEntityInWorld(fireball);
+    fireball.setVelocity(fireball.motionX * 1.5f, fireball.motionY, fireball.motionZ * 1.5f);
+}
+
+
+public static void handle_firaga(World world, EntityPlayerMP sender)
+{
+	float a;
+	float b;
+	float c;
+	
+	a = (float) sender.getLookVec().xCoord;
+	b = (float) sender.getLookVec().yCoord;
+	c = (float) sender.getLookVec().zCoord;
+	EntityLargeFireball fireball = new EntityLargeFireball(world, sender.posX + a, sender.posY + b, sender.posZ + c, a, b, c);
+    fireball.posY = sender.posY + (double)(sender.height / 2.0F) + 0.5D;
+    world.spawnEntityInWorld(fireball);
+    fireball.setVelocity(fireball.motionX * 1.5f, fireball.motionY, fireball.motionZ * 1.5f);
+}
+
+public static void handle_thunder(PacketSpellToServer message, World world, EntityPlayerMP sender)
+{
+Entity e;
+	
+	e = world.getEntityByID(message.data);
+	if (e != null)
+	{
+		if (e instanceof EntityLivingBase)
+		{
+			e.attackEntityFrom(DamageSource.causePlayerDamage(sender), 3 + message.data2);
+			}
+	}
+}
+
+public static void handle_thundara(PacketSpellToServer message, World world, EntityPlayerMP sender)
+{
+Entity e;
+	
+	e = world.getEntityByID(message.data);
+	if (e != null)
+	{
+		if (e instanceof EntityLivingBase)
+		{
+			e.attackEntityFrom(DamageSource.causePlayerDamage(sender), 6 + message.data2);
+			
+		}
+	}
+}
+
+public static void handle_thundaga(PacketSpellToServer message, World world, EntityPlayerMP sender)
+{
+Entity e;
+	
+	e = world.getEntityByID(message.data);
+	if (e != null)
+	{
+		if (e instanceof EntityLivingBase)
+		{
+			e.attackEntityFrom(DamageSource.causePlayerDamage(sender), 9 + message.data2);
+			
+		}
+	}
+}
+
+public static void handle_blizzard(PacketSpellToServer message, World world, EntityPlayerMP sender)
+{
+	Entity e;
+	
+	e = world.getEntityByID(message.data);
+	if (e != null)
+	{
+		if (e instanceof EntityLivingBase)
+		{
+			e.attackEntityFrom(DamageSource.causePlayerDamage(sender), 3 + message.data2);
+			((EntityLivingBase) e).addPotionEffect(new PotionEffect(Potion.moveSlowdown.id, 120, 1));
+		}
+	}
+}
+
+public static void handle_blizzara(PacketSpellToServer message, World world, EntityPlayerMP sender)
+{
+	Entity e;
+	
+	e = world.getEntityByID(message.data);
+	if (e != null)
+	{
+		if (e instanceof EntityLivingBase)
+		{
+			e.attackEntityFrom(DamageSource.causePlayerDamage(sender), 6 + message.data2);
+			((EntityLivingBase) e).addPotionEffect(new PotionEffect(Potion.moveSlowdown.id, 120, 1));
+		}
+	}
+}
+
+public static void handle_blizzaga(PacketSpellToServer message, World world, EntityPlayerMP sender)
+{
+	Entity e;
+	
+	e = world.getEntityByID(message.data);
+	if (e != null)
+	{
+		if (e instanceof EntityLivingBase)
+		{
+			e.attackEntityFrom(DamageSource.causePlayerDamage(sender), 9 + message.data2);
+			((EntityLivingBase) e).addPotionEffect(new PotionEffect(Potion.moveSlowdown.id, 120, 1));
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+	}
+	
+		
+	
+

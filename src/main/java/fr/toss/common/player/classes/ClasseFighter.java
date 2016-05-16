@@ -8,6 +8,7 @@ import fr.toss.common.player.spells.champion.EarthShield_5;
 import fr.toss.common.player.spells.champion.Grab_4;
 import fr.toss.common.player.spells.champion.Ironskin_3;
 import fr.toss.common.player.spells.champion.Shockwave_2;
+import fr.toss.common.player.spells.fighter.*;
 
 public class ClasseFighter extends Classe {
 	
@@ -34,12 +35,12 @@ public class ClasseFighter extends Classe {
 	{	
 		this.CLASSE_SPELL.clear();
 
-		this.CLASSE_SPELL.add(new Charge_1());
-		this.CLASSE_SPELL.add(new Ironskin_3());
-		this.CLASSE_SPELL.add(new Grab_4());
-		this.CLASSE_SPELL.add(new Shockwave_2());
-		this.CLASSE_SPELL.add(new EarthShield_5());
-		this.CLASSE_SPELL.add(new Arena_6());
+		this.CLASSE_SPELL.add(new Rush_1());
+		this.CLASSE_SPELL.add(new Wildswing_1());
+		this.CLASSE_SPELL.add(new Airrender_1());
+		this.CLASSE_SPELL.add(new Auroblast_1());
+		this.CLASSE_SPELL.add(new Backdraft_1());
+		
 	}
 	
 	@Override

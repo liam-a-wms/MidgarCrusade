@@ -20,7 +20,7 @@ public class ClasseCannoneer extends Classe {
 	@Override
 	public String getName() 
 	{
-		return I18n.format("classe.Cannoneer");
+		return I18n.format("Cannoneer");
 	}
 
 	@Override

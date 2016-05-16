@@ -25,13 +25,7 @@ import cpw.mods.fml.relauncher.SideOnly;
 import fr.toss.client.gui.GuiClasseInformation;
 import fr.toss.common.Main;
 import fr.toss.common.player.ClientPlayerBaseMagic;
-import fr.toss.common.player.classes.ClasseChampion;
-import fr.toss.common.player.classes.ClasseMage;
-import fr.toss.common.player.classes.ClasseNecromancer;
-import fr.toss.common.player.classes.ClassePriest;
-import fr.toss.common.player.classes.ClasseDragonslayer;
-import fr.toss.common.player.classes.ClasseRogue;
-import fr.toss.common.player.classes.ClasseSoldier;
+import fr.toss.common.player.classes.*;
 
 public class GuiIngameOverlay {
 	
@@ -89,8 +83,10 @@ public class GuiIngameOverlay {
 				
 	        this.mc.mcProfiler.startSection("healthBar");
 	        
-	        	if (pm.getClasse() != null)
-		    		health = pm.getClasse().getName() + " Lvl. " + pm.level;
+	        	if  
+	        		(pm.getRace() != null)
+	        		
+	        		health = pm.getRace().getName() + pm.getClasse().getName() + " Lvl. " + pm.level ;
 	        	else
 		    		health = " Lvl. " + pm.level;
 
@@ -116,13 +112,29 @@ public class GuiIngameOverlay {
 
 	    		health = (int) pm.energy + "/" + (int) pm.max_energy;
 	
-	        	if (pm.getClasse() instanceof ClasseNecromancer || pm.getClasse() instanceof ClasseMage || pm.getClasse() instanceof ClassePriest)
+	        	if (pm.getClasse() instanceof ClasseNecromancer || pm.getClasse() instanceof ClasseMage || pm.getClasse() instanceof ClassePriest
+	        	     || pm.getClasse() instanceof ClasseBlackmage|| pm.getClasse() instanceof ClasseBluemage|| pm.getClasse() instanceof ClasseGreenMage
+	        	     || pm.getClasse() instanceof ClasseTimeMage|| pm.getClasse() instanceof ClasseRedMage|| pm.getClasse() instanceof ClasseWhitemage
+	        	     || pm.getClasse() instanceof ClassePaladin|| pm.getClasse() instanceof ClasseIllusionist|| pm.getClasse() instanceof ClasseSeer
+	        	     || pm.getClasse() instanceof ClasseSummoner|| pm.getClasse() instanceof ClasseElementalist|| pm.getClasse() instanceof ClasseSpellblade
+	        	     || pm.getClasse() instanceof ClasseBishop|| pm.getClasse() instanceof ClasseTemplar|| pm.getClasse() instanceof ClasseSage
+	        	     || pm.getClasse() instanceof ClasseAlchemist|| pm.getClasse() instanceof ClasseArcanist|| pm.getClasse() instanceof ClasseScholar
+	        	     || pm.getClasse() instanceof ClasseGeomancer)
 	        	{
 	            	GuiUtils.drawTexturedModalRect(x, y + 15, 0, 0, 65, 13, 0);
 	    	    	GuiUtils.drawTexturedModalRect(x, y + 15, 0, 98, (int) (65.0f / pm.max_energy * pm.energy), 13, 0);
 	    	        font.drawStringWithShadow(health, 35 + x - font.getStringWidth(health) / 2, y + 17, Integer.MAX_VALUE);
 	        	}
-	        	else if (pm.getClasse() instanceof ClasseDragonslayer || pm.getClasse() instanceof ClasseRogue)
+	        	else if (pm.getClasse() instanceof ClasseDragonslayer || pm.getClasse() instanceof ClasseRogue
+	        		|| pm.getClasse() instanceof ClasseThief|| pm.getClasse() instanceof ClasseArcher
+	        		|| pm.getClasse() instanceof ClasseHunter|| pm.getClasse() instanceof ClasseNinja
+	        		|| pm.getClasse() instanceof ClasseAnimist|| pm.getClasse() instanceof ClasseFusilier
+	        		|| pm.getClasse() instanceof ClasseJuggler|| pm.getClasse() instanceof ClasseTinker
+	        		|| pm.getClasse() instanceof ClasseFlintlock|| pm.getClasse() instanceof ClasseFencer
+	        		|| pm.getClasse() instanceof ClasseAssassin|| pm.getClasse() instanceof ClasseSniper
+	        		|| pm.getClasse() instanceof ClasseWhiteMonk|| pm.getClasse() instanceof ClasseCannoneer
+	        		|| pm.getClasse() instanceof ClasseMasterMonk|| pm.getClasse() instanceof ClasseTrickster
+	        		|| pm.getClasse() instanceof ClasseBeastmaster|| pm.getClasse() instanceof ClasseRanger)
 	        	{
 	            	GuiUtils.drawTexturedModalRect(x, y + 15, 0, 28, 65, 13, 0);
 	    	    	GuiUtils.drawTexturedModalRect(x, y + 15, 130, 84, (int) (65.0f / pm.max_energy * pm.energy), 13, 0);
@@ -181,6 +193,11 @@ public class GuiIngameOverlay {
 	        }
 		}
 	        this.mc.getTextureManager().bindTexture(Gui.icons);
+	        
+	       
+	        
+	        
+	        
 	}
 
 }

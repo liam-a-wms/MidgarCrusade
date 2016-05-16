@@ -2,6 +2,7 @@ package fr.toss.common.player.classes;
 
 import net.minecraft.util.ResourceLocation;
 import fr.toss.common.command.ChatColor;
+import fr.toss.common.player.spells.blackmage.*;
 import fr.toss.common.player.spells.mage.ArcanaPillow_5;
 import fr.toss.common.player.spells.mage.ConeFeu_1;
 import fr.toss.common.player.spells.mage.FieldDestruction_4;
@@ -19,7 +20,7 @@ public class ClasseBlackmage extends Classe {
 	@Override
 	public String getName() 
 	{
-		return "BlackMage";
+		return "Black Mage";
 	}
 
 	@Override
@@ -33,12 +34,21 @@ public class ClasseBlackmage extends Classe {
 	public void defineClasseSpells()
 	{	
 		this.CLASSE_SPELL.clear();
-		this.CLASSE_SPELL.add(new ConeFeu_1());
-		this.CLASSE_SPELL.add(new FreezeCube_2());
-		this.CLASSE_SPELL.add(new Transfert_3());
-		this.CLASSE_SPELL.add(new FieldDestruction_4());
-		this.CLASSE_SPELL.add(new ArcanaPillow_5());
-		this.CLASSE_SPELL.add(new Fireball_6());
+		this.CLASSE_SPELL.add(new Fire_1());
+		this.CLASSE_SPELL.add(new Fira_1());
+		this.CLASSE_SPELL.add(new Firaga_1());
+		this.CLASSE_SPELL.add(new Thunder_1());
+		this.CLASSE_SPELL.add(new Thunder_1());
+		this.CLASSE_SPELL.add(new Thunder_1());
+		this.CLASSE_SPELL.add(new Blizzard_1());
+		this.CLASSE_SPELL.add(new Blizzara_1());
+		this.CLASSE_SPELL.add(new Blizzaga_1());
+		
+		
+		
+		
+		
+		
 	}
 	
 	@Override

@@ -19,7 +19,7 @@ public class ClasseGreenMage extends Classe {
 	@Override
 	public String getName() 
 	{
-		return "GreenMage";
+		return "Green Mage";
 	}
 
 	@Override

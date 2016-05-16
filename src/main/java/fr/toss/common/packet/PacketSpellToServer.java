@@ -145,6 +145,104 @@ public class PacketSpellToServer implements IMessage {
 				ServerSpellHandler.handle_vision(sender);
 			else if(message.spell_id == 55)
 				ServerSpellHandler.handle_boots(sender);
+			else if (message.spell_id == 56)
+				ServerSpellHandler.handle_drainspeed(message, world, sender);
+			else if (message.spell_id == 57)
+				ServerSpellHandler.handle_berserk_zone(message, world);
+			else if (message.spell_id == 58)
+				ServerSpellHandler.handle_drainattack(message, world);
+			else if (message.spell_id == 59)
+				ServerSpellHandler.handle_selfheal(message, world);
+			else if (message.spell_id == 60)
+				ServerSpellHandler.handle_Cure(message, world);
+			else if (message.spell_id == 61)
+				ServerSpellHandler.handle_Cura(message, world);
+			else if (message.spell_id == 62)
+				ServerSpellHandler.handle_Curaga(message, world);
+			else if (message.spell_id == 63)
+				ServerSpellHandler.handle_cleanse(message, world);
+			else if (message.spell_id == 64)
+				ServerSpellHandler.handle_shotroot(world, sender);
+			else if (message.spell_id == 65)
+				ServerSpellHandler.handle_attackboost(message, world);
+			else if (message.spell_id == 66)
+				ServerSpellHandler.handle_shotblind(world, sender);
+			else if (message.spell_id == 67)
+				ServerSpellHandler.handle_lifebond(message, world, sender);
+			else if (message.spell_id == 68)
+				ServerSpellHandler.handle_rush(message, world, sender);
+			else if (message.spell_id == 69)
+				ServerSpellHandler.handle_wildswing(message, world, sender);
+			else if (message.spell_id == 70)
+				ServerSpellHandler.handle_airrender(world, sender);
+			else if (message.spell_id == 71)
+				ServerSpellHandler.handle_auroblast(world, sender);
+			else if (message.spell_id == 72)
+				ServerSpellHandler.handle_backdraft(world, sender);
+			else if (message.spell_id == 73)
+				ServerSpellHandler.handle_swordroot(world, sender);
+			else if (message.spell_id == 74)
+				ServerSpellHandler.handle_swordconfuse(world, sender);
+			else if (message.spell_id == 75)
+				ServerSpellHandler.handle_windslash(world, sender);
+			else if (message.spell_id == 76)
+				ServerSpellHandler.handle_swordslow(world, sender);
+			else if (message.spell_id == 77)
+				ServerSpellHandler.handle_swordberserk(world, sender);
+			else if (message.spell_id == 78)
+				ServerSpellHandler.handle_unburdensoul(message, world, sender);
+			else if (message.spell_id == 79)
+				ServerSpellHandler.handle_blizzard(message, world, sender);
+			else if (message.spell_id == 80)
+				ServerSpellHandler.handle_blizzara(message, world, sender);
+			else if (message.spell_id == 81)
+				ServerSpellHandler.handle_blizzaga(message, world, sender);
+			else if (message.spell_id == 82)
+				ServerSpellHandler.handle_thunder(message, world, sender);
+			else if (message.spell_id == 83)
+				ServerSpellHandler.handle_thundara(message, world, sender);
+			else if (message.spell_id == 84)
+				ServerSpellHandler.handle_thundaga(message, world, sender);
+			else if (message.spell_id == 85)
+				ServerSpellHandler.handle_fire(world, sender);
+			else if (message.spell_id == 86)
+				ServerSpellHandler.handle_fira(world, sender);
+			else if (message.spell_id == 87)
+				ServerSpellHandler.handle_firaga(world, sender);
+			else if (message.spell_id == 88)
+				ServerSpellHandler.handle_swordpoison(world, sender);
+			else if (message.spell_id == 89)
+				ServerSpellHandler.handle_swordblind(world, sender);
+			else if (message.spell_id == 90)
+				ServerSpellHandler.handle_quickenbuff(message, world);
+			else if (message.spell_id == 91)
+				ServerSpellHandler.	handle_ballconfuse(world, sender);
+			else if (message.spell_id == 91)
+				ServerSpellHandler.	handle_molotov(world, sender);
+			else if (message.spell_id == 92)
+				ServerSpellHandler.	handle_ringtoss(world, sender);
+			else if (message.spell_id == 92)
+				ServerSpellHandler.	handle_weapontoss(world, sender);
+			else if (message.spell_id == 93)
+				ServerSpellHandler.handle_nurse(message, world);
+			else if (message.spell_id == 94)
+				ServerSpellHandler.handle_defender(message, world);
+			else if (message.spell_id == 95)
+				ServerSpellHandler.handle_saintcross(message, world, sender);
+			else if (message.spell_id == 96)
+				ServerSpellHandler.handle_holyblade(world, sender);
+			else if (message.spell_id == 97)
+				ServerSpellHandler.handle_gigaflare(message, world, sender);
+			else if (message.spell_id == 98)
+				ServerSpellHandler.handle_bio(message, world, sender);
+			
+			
+			
+			
+			
+			
+			
+			
 			
 			return (null);
 		}

@@ -16,6 +16,7 @@ public class KeyBindings {
 
     public static KeyBinding KEY_SELECT_CLASSE;
 
+    public static KeyBinding KEY_SELECT_RACE;
     public static KeyBinding KEY_SPELLS[];
 
     
@@ -33,8 +34,11 @@ public class KeyBindings {
         KEY_SELECT_CLASSE = new KeyBinding("key.select_classe", Keyboard.KEY_I, "key.categories.magiccrusade");
         ClientRegistry.registerKeyBinding(KEY_SELECT_CLASSE);
         
-        KEY_SPELLS = new KeyBinding[8];
-        for (int i = 0; i < 8; i++)
+        KEY_SELECT_RACE = new KeyBinding("key.select_race", Keyboard.KEY_U, "key.categories.magiccrusade");
+        ClientRegistry.registerKeyBinding( KEY_SELECT_RACE);
+       
+        KEY_SPELLS = new KeyBinding[10];
+        for (int i = 0; i < 10; i++)
         {
         	KEY_SPELLS[i] = new KeyBinding("key.spells_" + i, Keyboard.KEY_NUMPAD1 + i, "key.categories.magiccrusade");
             ClientRegistry.registerKeyBinding(KEY_SPELLS[i]);

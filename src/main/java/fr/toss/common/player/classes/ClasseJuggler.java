@@ -3,6 +3,7 @@ package fr.toss.common.player.classes;
 import net.minecraft.client.resources.I18n;
 import net.minecraft.util.ResourceLocation;
 import fr.toss.common.command.ChatColor;
+import fr.toss.common.player.spells.juggler.*;
 import fr.toss.common.player.spells.rogue.Critic_1;
 import fr.toss.common.player.spells.rogue.FeatherFalling_6;
 import fr.toss.common.player.spells.rogue.Invisible_3;
@@ -20,7 +21,7 @@ public class ClasseJuggler extends Classe {
 	@Override
 	public String getName() 
 	{
-		return I18n.format("classe.Juggler");
+		return I18n.format("Juggler");
 	}
 
 	@Override
@@ -34,12 +35,12 @@ public class ClasseJuggler extends Classe {
 	public void defineClasseSpells()
 	{	
 		this.CLASSE_SPELL.clear();
-		this.CLASSE_SPELL.add(new Critic_1());
-		this.CLASSE_SPELL.add(new Speed_2());
-		this.CLASSE_SPELL.add(new Invisible_3());
-		this.CLASSE_SPELL.add(new Poison_4());
-		this.CLASSE_SPELL.add(new Vision_5());
-		this.CLASSE_SPELL.add(new FeatherFalling_6());
+		this.CLASSE_SPELL.add(new Smiletoss_1 ());
+		this.CLASSE_SPELL.add(new Molotovcocktail_1());
+		this.CLASSE_SPELL.add(new Ringtoss_1());
+		this.CLASSE_SPELL.add(new Weapontoss_1());
+		this.CLASSE_SPELL.add(new Balltoss_1());
+		
 	}
 	
 	@Override

@@ -20,7 +20,7 @@ public class ClasseFencer extends Classe {
 	@Override
 	public String getName() 
 	{
-		return I18n.format("classe.Fencer");
+		return I18n.format("Fencer");
 	}
 
 	@Override

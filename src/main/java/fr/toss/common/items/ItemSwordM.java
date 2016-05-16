@@ -21,6 +21,7 @@ public class ItemSwordM extends ItemSword {
 	public float mana;
 	public float endurance;
 	public float mana_regeneration;
+	public float holy;
 	public boolean hasEffect;
 
 	public ItemSwordM(ToolMaterial material)
@@ -53,6 +54,8 @@ public class ItemSwordM extends ItemSword {
     		list.add(ChatColor.GREEN + "+ " + this.clarity + " Clarity");
     	if (this.mana_regeneration != 0)
     		list.add(ChatColor.GREEN + "+ " + this.mana_regeneration + " Mana Regen.");
+    	if (this.holy != 0)
+    		list.add(ChatColor.GREEN + "+ " + this.holy + " Holy Damage.");
     }
     
     
@@ -65,6 +68,12 @@ public class ItemSwordM extends ItemSword {
 	public ItemSwordM setAgility(float i)
 	{
 		this.agility = i;
+		return (this);
+	}
+	
+	public ItemSwordM setholy(float i)
+	{
+		this.holy = i;
 		return (this);
 	}
 	

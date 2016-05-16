@@ -14,6 +14,7 @@ public class CommandTeleport implements ICommand
 {
 	private List aliases;
 	
+	@SuppressWarnings("rawtypes")
 	public CommandTeleport()
 	{
 		this.aliases = new ArrayList();

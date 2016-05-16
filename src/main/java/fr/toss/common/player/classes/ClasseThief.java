@@ -20,7 +20,7 @@ public class ClasseThief extends Classe {
 	@Override
 	public String getName() 
 	{
-		return I18n.format("classe.thief");
+		return I18n.format("Thief");
 	}
 
 	@Override

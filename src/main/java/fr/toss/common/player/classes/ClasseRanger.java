@@ -3,6 +3,8 @@ package fr.toss.common.player.classes;
 import net.minecraft.client.resources.I18n;
 import net.minecraft.util.ResourceLocation;
 import fr.toss.common.command.ChatColor;
+import fr.toss.common.player.spells.ranger.Invisible_1;
+import fr.toss.common.player.spells.ranger.Lifebond_1;
 import fr.toss.common.player.spells.rogue.Critic_1;
 import fr.toss.common.player.spells.rogue.FeatherFalling_6;
 import fr.toss.common.player.spells.rogue.Invisible_3;
@@ -20,7 +22,7 @@ public class ClasseRanger extends Classe {
 	@Override
 	public String getName() 
 	{
-		return I18n.format("classe.Ranger");
+		return I18n.format("Ranger");
 	}
 
 	@Override
@@ -34,12 +36,11 @@ public class ClasseRanger extends Classe {
 	public void defineClasseSpells()
 	{	
 		this.CLASSE_SPELL.clear();
-		this.CLASSE_SPELL.add(new Critic_1());
-		this.CLASSE_SPELL.add(new Speed_2());
-		this.CLASSE_SPELL.add(new Invisible_3());
-		this.CLASSE_SPELL.add(new Poison_4());
-		this.CLASSE_SPELL.add(new Vision_5());
-		this.CLASSE_SPELL.add(new FeatherFalling_6());
+		
+		this.CLASSE_SPELL.add(new Lifebond_1());
+		this.CLASSE_SPELL.add(new Invisible_1());
+		
+		
 	}
 	
 	@Override

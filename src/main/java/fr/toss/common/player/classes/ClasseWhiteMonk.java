@@ -20,7 +20,7 @@ public class ClasseWhiteMonk extends Classe {
 	@Override
 	public String getName() 
 	{
-		return I18n.format("classe.WhiteMonk");
+		return I18n.format("White Monk");
 	}
 
 	@Override

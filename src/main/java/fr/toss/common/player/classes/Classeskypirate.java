@@ -19,7 +19,7 @@ public class Classeskypirate extends Classe {
 	@Override
 	public String getName() 
 	{
-		return "skypirate";
+		return "Sky Pirate";
 	}
 
 	@Override

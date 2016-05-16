@@ -2,12 +2,8 @@ package fr.toss.common.player.classes;
 
 import net.minecraft.util.ResourceLocation;
 import fr.toss.common.command.ChatColor;
-import fr.toss.common.player.spells.mage.ArcanaPillow_5;
-import fr.toss.common.player.spells.mage.ConeFeu_1;
-import fr.toss.common.player.spells.mage.FieldDestruction_4;
-import fr.toss.common.player.spells.mage.Fireball_6;
-import fr.toss.common.player.spells.mage.FreezeCube_2;
-import fr.toss.common.player.spells.mage.Transfert_3;
+
+import fr.toss.common.player.spells.paladin.*;
 
 public class ClassePaladin extends Classe {
 	
@@ -33,13 +29,14 @@ public class ClassePaladin extends Classe {
 	public void defineClasseSpells()
 	{	
 		this.CLASSE_SPELL.clear();
-		this.CLASSE_SPELL.add(new ConeFeu_1());
-		this.CLASSE_SPELL.add(new FreezeCube_2());
-		this.CLASSE_SPELL.add(new Transfert_3());
-		this.CLASSE_SPELL.add(new FieldDestruction_4());
-		this.CLASSE_SPELL.add(new ArcanaPillow_5());
-		this.CLASSE_SPELL.add(new Fireball_6());
-	}
+		this.CLASSE_SPELL.add(new Defender_1());
+		this.CLASSE_SPELL.add(new Holyblade_1());
+		this.CLASSE_SPELL.add(new Nurse_1());
+		this.CLASSE_SPELL.add(new Saintcross_1());
+		this.CLASSE_SPELL.add(new Warcry_1());
+		this.CLASSE_SPELL.add(new Sanctify_1());
+		this.CLASSE_SPELL.add(new Cover_1());
+		}
 	
 	@Override
 	public EnumType getType() 

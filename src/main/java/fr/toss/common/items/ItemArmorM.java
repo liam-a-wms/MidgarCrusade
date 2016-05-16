@@ -18,6 +18,7 @@ public class ItemArmorM extends ItemArmor {
 	public float mana;
 	public float endurance;
 	public float mana_regeneration;
+	public float holy;
 	public boolean hasEffect;
 
 	public ItemArmorM(ArmorMaterial material, int render_index, int armor_type)
@@ -59,6 +60,8 @@ public class ItemArmorM extends ItemArmor {
     		list.add(ChatColor.GREEN + "+ " + this.clarity + " Clarity");
     	if (this.mana_regeneration != 0)
     		list.add(ChatColor.GREEN + "+ " + this.mana_regeneration + " Mana Regen.");
+    	if (this.holy != 0)
+    		list.add(ChatColor.GREEN + "+ " + this.holy + " Holy damage");
     }
 	
 	public ItemArmorM setAgility(float i)
@@ -94,6 +97,12 @@ public class ItemArmorM extends ItemArmor {
 	public ItemArmorM setManaRegen(float f)
 	{
 		this.mana_regeneration = f;
+		return (this);
+	}
+	
+	public ItemArmorM setholy(float i)
+	{
+		this.holy = i;
 		return (this);
 	}
 	

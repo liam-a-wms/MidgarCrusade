@@ -32,7 +32,8 @@ public class ServerPlayerBaseMagic extends ServerPlayerBase
 	public boolean 	is_poisonned; //voleur
 	
 	public double	dungeon_location[]; //coordonnée du dernier portial pris
-
+	
+	public int      race;
 	public int 		classe;
 	public int 		level;
 	public int 		experience;
@@ -79,6 +80,7 @@ public class ServerPlayerBaseMagic extends ServerPlayerBase
 			data = PLAYER_DATA.get(this.player.getCommandSenderName());
 			this.level = data.level;
 			this.experience = data.experience;
+			this.race =data.race;
 			this.classe = data.classe;
 			this.exp_to_next_level = this.level * 20 * (this.level + 1);
 		    this.player.getEntityAttribute(SharedMonsterAttributes.maxHealth).setBaseValue(0.5d * (this.level - 1) + 20.0d);
@@ -91,6 +93,7 @@ public class ServerPlayerBaseMagic extends ServerPlayerBase
 	/** Appelez lorsque le joueur redefinit sa classe */
 	public void init(int p_classe)
 	{
+		
 		this.classe = p_classe;
 		this.level = 1;
 		this.experience = 0;
@@ -166,6 +169,7 @@ public class ServerPlayerBaseMagic extends ServerPlayerBase
 	public void readEntityFromNBT(net.minecraft.nbt.NBTTagCompound nbt)
 	{
 		 super.readEntityFromNBT(nbt);
+		 this.race = nbt.getInteger("race");
 		 this.classe = nbt.getInteger("classe");
 		 this.level = nbt.getInteger("level"); 
 		 this.experience = nbt.getInteger("experience"); 
@@ -178,6 +182,7 @@ public class ServerPlayerBaseMagic extends ServerPlayerBase
 	 public void writeEntityToNBT(net.minecraft.nbt.NBTTagCompound nbt)
 	 {
 		 super.writeEntityToNBT(nbt);
+		 nbt.setInteger("race", this.race); 
 		 nbt.setInteger("classe", this.classe); 
 		 nbt.setInteger("level", this.level); 
 		 nbt.setInteger("experience", this.experience); 
@@ -251,6 +256,10 @@ public class ServerPlayerBaseMagic extends ServerPlayerBase
 			return this.classe;
 		}
 
+		public int getRace()
+		{
+			return this.race;
+		}
 		/** Retournes le niveau de classe du joeuur */
 		public int getLevel() 
 		{

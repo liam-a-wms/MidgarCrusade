@@ -31,6 +31,7 @@ public class GuiStats extends GuiScreen {
 	public int mana;
 	public float clarity;
 	public float mana_regen;
+	public float holy;
 
 	@Override
 	public void initGui()
@@ -42,7 +43,7 @@ public class GuiStats extends GuiScreen {
 		
 		pm = Main.getPlayerClient();
 		endurance = 0;
-		lines = new LineStat[6];
+		lines = new LineStat[7];
 		spells = new Spell_slot[this.pm.getClasse().CLASSE_SPELL.size()];
 		
 		for (int i = 0; i < 4; i++)
@@ -58,6 +59,7 @@ public class GuiStats extends GuiScreen {
 					endurance += ((ItemArmorM)item).endurance;
 					mana_regen += ((ItemArmorM)item).mana_regeneration;
 					mana += ((ItemArmorM)item).mana;
+					holy += ((ItemArmorM)item).holy;
 				}
 			}
 		}
@@ -72,6 +74,7 @@ public class GuiStats extends GuiScreen {
 				endurance += ((ItemSwordM)item).endurance;
 				mana_regen += ((ItemSwordM)item).mana_regeneration;
 				mana += ((ItemSwordM)item).mana;
+				holy += ((ItemSwordM)item).holy;
 			}
 		}
 		
@@ -98,6 +101,10 @@ public class GuiStats extends GuiScreen {
 		color = this.mana_regen > 0 ? "" + ChatColor.GREEN : "" + ChatColor.WHITE;
 		str = "- " + ChatColor.UNDERLINE + "Mana per sec.:" + ChatColor.RESET + " " + color + ((5 + this.mana_regen) * 20);
 		lines[5] = new LineStat(str, this.mana_regen, "Mana regen.");
+		
+		color = this.holy > 0 ? "" + ChatColor.GREEN : "" + ChatColor.WHITE;
+		str = "- " + ChatColor.UNDERLINE + "Holy Damage.:" + ChatColor.RESET + " " + color + ((5 + this.holy) * 25);
+		lines[6] = new LineStat(str, this.holy, "Holy Damage.");
 		
 		for (int i = 0; i < this.lines.length; i++)
 		{

@@ -3,7 +3,7 @@ package fr.toss.common.player.classes;
 import net.minecraft.util.ResourceLocation;
 import fr.toss.common.command.ChatColor;
 import fr.toss.common.player.spells.mage.ArcanaPillow_5;
-import fr.toss.common.player.spells.mage.ConeFeu_1;
+import fr.toss.common.player.spells.illusionist.*;
 import fr.toss.common.player.spells.mage.FieldDestruction_4;
 import fr.toss.common.player.spells.mage.Fireball_6;
 import fr.toss.common.player.spells.mage.FreezeCube_2;
@@ -33,13 +33,14 @@ public class ClasseIllusionist extends Classe {
 	public void defineClasseSpells()
 	{	
 		this.CLASSE_SPELL.clear();
-		this.CLASSE_SPELL.add(new ConeFeu_1());
-		this.CLASSE_SPELL.add(new FreezeCube_2());
-		this.CLASSE_SPELL.add(new Transfert_3());
-		this.CLASSE_SPELL.add(new FieldDestruction_4());
-		this.CLASSE_SPELL.add(new ArcanaPillow_5());
-		this.CLASSE_SPELL.add(new Fireball_6());
-	}
+		this.CLASSE_SPELL.add(new Deluge_1());
+		this.CLASSE_SPELL.add(new Freezeblink_1());
+		this.CLASSE_SPELL.add(new Prominence_1());
+		this.CLASSE_SPELL.add(new Rockfall_1());
+		this.CLASSE_SPELL.add(new Starcross_1());
+		this.CLASSE_SPELL.add(new Tempest_1());
+		this.CLASSE_SPELL.add(new Wildtornado_1());
+		}
 	
 	@Override
 	public EnumType getType() 

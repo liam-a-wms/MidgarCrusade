@@ -30,6 +30,7 @@ public class Packets {
     	network.registerMessage(PacketGameStop.Handler.class, PacketGameStop.class, 11, Side.CLIENT);
     	network.registerMessage(PacketTogglePvp.Handler.class, PacketTogglePvp.class, 12, Side.CLIENT);
     	network.registerMessage(PacketBorders.Handler.class, PacketBorders.class, 13, Side.CLIENT);
+    	network.registerMessage(PacketSetRace.Handler.class, PacketSetRace.class, 14, Side.SERVER);
 	}
 
 }

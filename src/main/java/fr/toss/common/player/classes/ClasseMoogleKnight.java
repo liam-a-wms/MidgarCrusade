@@ -19,7 +19,7 @@ public class ClasseMoogleKnight extends Classe {
 	@Override
 	public String getName() 
 	{
-		return "MoogleKnight";
+		return "Moogle Knight";
 	}
 
 	@Override

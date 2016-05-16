@@ -42,12 +42,12 @@ spell.mage.transfert=Transfert
 spell.mage.arcane_pillow=Arcane pillow
 spell.mage.fireball=Fireball
 
-spell.ranger.explode_shot=Exploding Shot
-spell.ranger.magic_shot=Magical shot
-spell.ranger.poison_shot=Viper Shot
-spell.ranger.frozen_shot=Frozen Shot
-spell.ranger.wolves=Wolf summoning
-spell.ranger.refinement=Refinement
+spell.Dragonslayer.explode_shot=Exploding Shot
+spell.Dragonslayer.magic_shot=Magical shot
+spell.Dragonslayer.poison_shot=Viper Shot
+spell.Dragonslayer.frozen_shot=Frozen Shot
+spell.Dragonslayer.wolves=Wolf summoning
+spell.Dragonslayer.refinement=Refinement
 
 spell.champion.arena=Arena
 spell.champion.charge=Charge
@@ -71,6 +71,108 @@ spell.priest.healzone=Zone healing
 spell.priest.holyshield=Holyshield
 spell.priest.holy_explosion=Holy Explosion
 
+//Rage using classes
+
+spell.Soldier.rendspeed=Rend Speed
+spell.Soldier.berserk=Provoke
+spell.soldier.drainattack=Rend Power
+spell.soldier.heal=Heal
+
+spell.fighter.airrender=Air Render 
+spell.fighter.auroblast=Auroblast
+spell.fighter.backdraft=Backdraft 
+spell.fighter.rush=Rush 
+spell.fighter.wildswing=Wildswing 
+
+spell.samurai.bladerush=Blade Rush
+spell.samurai.hoarfrostblade= Hoarfrost Blade
+spell.samurai.shimmeringblade=Shimmering Blade
+spell.samurai.skyfuryblade=Skyfury Blade
+spell.samurai.unburdensoul=Unburdensoul
+spell.samurai.windslash=Windslash
+
+spell.gladiator.rush=Rush
+spell.gladiator.wildswing=Wildswing
+spell.gladiator.firesoul=Fire Soul
+spell.gladiator.thunderassault=Thunder Assault
+spell.gladiator.blizzardtackle=Blizzard Tackle
+spell.gladiator.ultimasword=Ultima Sword
+
+//Mana using classes
+
+spell.whitemage.cleanse=Cleanse
+spell.whitemage.cure=Cure
+spell.whitemage.cura=Cura
+spell.whitemage.curaga=Curaga
+
+spell.blackmage.fire=fire
+spell.blackmage.fira=fira
+spell.blackmage.firaga=firaga
+spell.blackmage.thunder=Thunder
+spell.blackmage.thundara=Thundera
+spell.blackmage.thundaga=Thundaga
+spell.blackmage.blizzard=Blizzard
+spell.blackmage.blizzara=Blizzara
+spell.blackmage.blizzaga=Blizzaga
+
+spell.spellblade.confusionblade=Confusion Blade
+spell.spellblade.stunblade=Stun Blade
+spell.spellblade.slowblade=Slow Blade
+spell.spellblade.sleepblade=Sleep Blade
+spell.spellblade.poisonblade=Poison Blade
+spell.spellblade.doomblade=Doom Blade
+spell.spellblade.oilblade=Oil Blade
+spell.spellblade.maimblade=Maim Blade
+
+spell.paladin.defender=Defender
+spell.paladin.holyblade=Holy Blade
+spell.paladin.nurse=Nurse
+spell.paladin.saintcross=Saint Cross
+spell.paladin.sanctify=Sanctify
+spell.paladin.warcry=Warcry
+spell.paladin.cover=Cover
+
+spell.sage.aero=Aero
+spell.sage.water=Water
+spell.sage.blindshot=Blind Shot
+spell.sage.esunaga=Esunaga
+spell.sage.gigaflare=Gigaflare
+spell.sage.ultimastaff=Ultima Staff
+spell.sage.bio=Bio
+
+spell.illusionist.starcross=Star Cross
+spell.illusionist.stardust=Star Dust
+spell.illusionist.deluge=Deluge
+spell.illusionist.rockfall=Rock Fall
+spell.illusionist.wildtornado=Wild Tornado
+spell.illusionist.freezeblink=Freeze Blink
+spell.illusionist.prominence=Prominence
+spell.illusionist.tempest=Tempest
+
+
+
+
+
+
+
+
+
+
+// Energy using classes
+
+
+spell.archer.immobilizeshot=Immobilize Shot
+spell.archer.powershot=Power Shot
+spell.archer.blindshot=Blinding Shot
+
+spell.ranger.lifebond=Lifebond
+spell.ranger.invisible=Invisibility
+
+spell.juggler.ringtoss=Ring Toss
+spell.juggler.balltoss=Ball Toss
+spell.juggler.molotov=Molotov Cocktail
+spell.juggler.weapontoss=Weapon Toss
+spell.juggler.smiletoss=Smile Toss
 
 
 #   LANG SPELL DESCRIPTION
@@ -87,16 +189,16 @@ spell.mage.freeze_cube.line2=
 spell.mage.transfert.line1=
 spell.mage.transfert.line2=
 
-spell.ranger.explode_shot.line1=
-spell.ranger.explode_shot.line2=
-spell.ranger.magic_shot.line1=
-spell.ranger.magic_shot.line2=
-spell.ranger.poison_shot.line1=
-spell.ranger.poison_shot.line2=
-spell.ranger.wolves.line1=
-spell.ranger.wolves.line2=
-spell.ranger.refinement.line1=
-spell.ranger.refinement.line2=
+spell.Dragonslayer.explode_shot.line1=
+spell.Dragonslayer.explode_shot.line2=
+spell.Dragonslayer.magic_shot.line1=
+spell.Dragonslayer.magic_shot.line2=
+spell.Dragonslayer.poison_shot.line1=
+spell.Dragonslayer.poison_shot.line2=
+spell.Dragonslayer.wolves.line1=
+spell.Dragonslayer.wolves.line2=
+spell.Dragonslayer.refinement.line1=
+spell.Dragonslayer.refinement.line2=
 
 spell.champion.arena.line1=
 spell.champion.arena.line2=
@@ -140,6 +242,15 @@ spell.priest.holy_explosion.line1=
 spell.priest.holy_explosion.line2=
 
 
+#RACES
+race.hume=Hume
+
+
+
+
+
+
+
 #   LANG CLASSE
 classe.choose=Choose a classe to get more informations about it
 
@@ -165,11 +276,11 @@ classe.necromancer.line2=In a group, he has to deal damages to mobs
 classe.necromancer.line3=He has to stay back and hit with his spells.
 classe.necromancer.line4=He can also summons monsters to help him.
 
-classe.priest=Priest
-classe.priest.slogan=The Priest, tranquil mind
-classe.priest.line1=A spriritual classe, which consist in healing
-classe.priest.line2=and buffing players. In group, you have to stay
-classe.priest.line3=behind and keep your allies alive and buffed.
+classe.Priest=Priest
+classe.Priest.slogan=The Priest, tranquil mind
+classe.Priest.line1=A spriritual classe, which consist in healing
+classe.Priest.line2=and buffing players. In group, you have to stay
+classe.Priest.line3=behind and keep your allies alive and buffed.
             
 classe.mage=Mage
 classe.mage.slogan=The Mage
@@ -178,21 +289,242 @@ classe.mage.line2=It spells can also burn or slow the ennemi
 classe.mage.line3=You have to stay away from ennemis
 classe.mage.line4=to deal damages without being hitten
 
-classe.ranger=Dragon Slayer
-classe.ranger.slogan=The Ranger
-classe.ranger.line1=A strong damage dealer classe.
-classe.ranger.line2=He hits ennemis with his powerful bow.
-classe.ranger.line3=He also have spells (based on arrows) and
-classe.ranger.line4=he can summons wolves
+classe.Dragonslayer=Dragon Slayer
+classe.Dragonslayer.slogan=The Ranger
+classe.Dragonslayer.line1=A strong damage dealer classe.
+classe.Dragonslayer.line2=He hits ennemis with his powerful bow.
+classe.Dragonslayer.line3=He also have spells (based on arrows) and
+classe.Dragonslayer.line4=he can summons wolves
             
-classe.ranger=Soldier
-classe.ranger.slogan=Marine Force one
-classe.ranger.line1=A strong damage dealer classe.
-classe.ranger.line2=He hits enemies with his powerful sword.
-classe.ranger.line3=He also have spells and
-classe.ranger.line4=he is awesome
+// Custom classes here
 
 
+
+// BIG COPY PASTED HERE NEED TO GO THROUGH THEM
+
+classe.Soldier=Soldier
+classe.Soldier.slogan=Class Incomplete
+classe.Soldier.line1=Class Incomplete, expect bugs, missing spells, and other problems
+ 
+classe.Fighter=Fighter
+classe.Fighter.slogan=Class Incomplete
+classe.Fighter.line1=Class Incomplete, expect bugs, missing spells, and other problems
+ 
+classe.Samurai=Samurai
+classe.Samurai.slogan=Class Incomplete
+classe.Samurai.line1=Class Incomplete, expect bugs, missing spells, and other problems
+ 
+classe.Warrior=Warrior
+classe.Warrior.slogan=Class Incomplete
+classe.Warrior.line1=Class Incomplete, expect bugs, missing spells, and other problems
+ 
+classe.Dragoon=Dragoon
+classe.Dragoon.slogan=Class Incomplete
+classe.Dragoon.line1=Class Incomplete, expect bugs, missing spells, and other problems
+ 
+classe.Defender=Defender
+classe.Defender.slogan=Class Incomplete
+classe.Defender.line1=Class Incomplete, expect bugs, missing spells, and other problems
+ 
+classe.Gladiator=Gladiator
+classe.Gladiator.slogan=Class Incomplete
+classe.Gladiator.line1=Class Incomplete, expect bugs, missing spells, and other problems
+ 
+classe.Berserker=Berserker
+classe.Berserker.slogan=Class Incomplete
+classe.Berserker.line1=Class Incomplete, expect bugs, missing spells, and other problems
+ 
+classe.Lanista=Lanista
+classe.Lanista.slogan=Class Incomplete
+classe.Lanista.line1=Class Incomplete, expect bugs, missing spells, and other problems
+ 
+classe.Viking=Viking
+classe.Viking.slogan=Class Incomplete
+classe.Viking.line1=Class Incomplete, expect bugs, missing spells, and other problems
+ 
+classe.Raptor=Raptor
+classe.Raptor.slogan=Class Incomplete
+classe.Raptor.line1=Class Incomplete, expect bugs, missing spells, and other problems
+ 
+classe.Ravager=Ravager
+classe.Ravager.slogan=Class Incomplete
+classe.Ravager.line1=Class Incomplete, expect bugs, missing spells, and other problems
+ 
+classe.Whitemage=White Mage
+classe.Whitemage.slogan=Class Incomplete
+classe.Whitemage.line1=Class Incomplete, expect bugs, missing spells, and other problems
+ 
+classe.Blackmage=Black Mage
+classe.Blackmage.slogan=Class Incomplete
+classe.Blackmage.line1=Class Incomplete, expect bugs, missing spells, and other problems
+ 
+classe.Paladin=Paladin
+classe.Paladin.slogan=Class Incomplete
+classe.Paladin.line1=Class Incomplete, expect bugs, missing spells, and other problems
+ 
+classe.Bluemage=Blue Mage
+classe.Bluemage.slogan=Class Incomplete
+classe.Bluemage.line1=Class Incomplete, expect bugs, missing spells, and other problems
+ 
+classe.Illusionist=Illusionist
+classe.Illusionist.slogan=Class Incomplete
+classe.Illusionist.line1=Class Incomplete, expect bugs, missing spells, and other problems
+ 
+classe.Seer=Seer
+classe.Seer.slogan=Class Incomplete
+classe.Seer.line1=Class Incomplete, expect bugs, missing spells, and other problems
+ 
+classe.TimeMage=Time Mage
+classe.TimeMage.slogan=Class Incomplete
+classe.TimeMage.line1=Class Incomplete, expect bugs, missing spells, and other problems
+ 
+classe.Summoner=Summoner
+classe.Summoner.slogan=Class Incomplete
+classe.Summoner.line1=Class Incomplete, expect bugs, missing spells, and other problems
+ 
+classe.Elementalist=Elementalist
+classe.Elementalist.slogan=Class Incomplete
+classe.Elementalist.line1=Class Incomplete, expect bugs, missing spells, and other problems
+ 
+classe.RedMage=Red Mage
+classe.RedMage.slogan=Class Incomplete
+classe.RedMage.line1=Class Incomplete, expect bugs, missing spells, and other problems
+ 
+classe.GreenMage=Green Mage
+classe.GreenMage.slogan=Class Incomplete
+classe.GreenMage.line1=Class Incomplete, expect bugs, missing spells, and other problems
+ 
+classe.Spellblade=Spellblade
+classe.Spellblade.slogan=Class Incomplete
+classe.Spellblade.line1=Class Incomplete, expect bugs, missing spells, and other problems
+ 
+classe.Bishop=Bishop
+classe.Bishop.slogan=Class Incomplete
+classe.Bishop.line1=Class Incomplete, expect bugs, missing spells, and other problems
+ 
+classe.Templar=Templar
+classe.Templar.slogan=Class Incomplete
+classe.Templar.line1=Class Incomplete, expect bugs, missing spells, and other problems
+ 
+classe.Sage=Sage
+classe.Sage.slogan=Class Incomplete
+classe.Sage.line1=Class Incomplete, expect bugs, missing spells, and other problems
+ 
+classe.Alchemist=Alchemist
+classe.Alchemist.slogan=Class Incomplete
+classe.Alchemist.line1=Class Incomplete, expect bugs, missing spells, and other problems
+ 
+classe.Arcanist=Arcanist
+classe.Arcanist.slogan=Class Incomplete
+classe.Arcanist.line1=Class Incomplete, expect bugs, missing spells, and other problems
+ 
+classe.Scholar=Scholar
+classe.Scholar.slogan=Class Incomplete
+classe.Scholar.line1=Class Incomplete, expect bugs, missing spells, and other problems
+ 
+classe.Geomancer=Geomancer
+classe.Geomancer.slogan=Class Incomplete
+classe.Geomancer.line1=Class Incomplete, expect bugs, missing spells, and other problems
+ 
+classe.Thief=Thief
+classe.Thief.slogan=Class Incomplete
+classe.Thief.line1=Class Incomplete, expect bugs, missing spells, and other problems
+ 
+classe.Archer=Archer
+classe.Archer.slogan=Class Incomplete
+classe.Archer.line1=Class Incomplete, expect bugs, missing spells, and other problems
+ 
+classe.Hunter=Hunter
+classe.Hunter.slogan=Class Incomplete
+classe.Hunter.line1=Class Incomplete, expect bugs, missing spells, and other problems
+ 
+classe.Ninja=Ninja
+classe.Ninja.slogan=Class Incomplete
+classe.Ninja.line1=Class Incomplete, expect bugs, missing spells, and other problems
+ 
+classe.Animist=Animist
+classe.Animist.slogan=Class Incomplete
+classe.Animist.line1=Class Incomplete, expect bugs, missing spells, and other problems
+ 
+classe.Fusilier=Fusilier
+classe.Fusilier.slogan=Class Incomplete
+classe.Fusilier.line1=Class Incomplete, expect bugs, missing spells, and other problems
+ 
+classe.Juggler=Juggler
+classe.Juggler.slogan=Class Incomplete
+classe.Juggler.line1=Class Incomplete, expect bugs, missing spells, and other problems
+ 
+classe.Tinker=Tinker
+classe.Tinker.slogan=Class Incomplete
+classe.Tinker.line1=Class Incomplete, expect bugs, missing spells, and other problems
+ 
+classe.Flintlock=Flintlock
+classe.Flintlock.slogan=Class Incomplete
+classe.Flintlock.line1=Class Incomplete, expect bugs, missing spells, and other problems
+ 
+classe.Fencer=Fencer
+classe.Fencer.slogan=Class Incomplete
+classe.Fencer.line1=Class Incomplete, expect bugs, missing spells, and other problems
+ 
+classe.Assassin=Assassin
+classe.Assassin.slogan=Class Incomplete
+classe.Assassin.line1=Class Incomplete, expect bugs, missing spells, and other problems
+ 
+classe.Sniper=Sniper
+classe.Sniper.slogan=Class Incomplete
+classe.Sniper.line1=Class Incomplete, expect bugs, missing spells, and other problems
+ 
+classe.WhiteMonk=White Monk
+classe.WhiteMonk.slogan=Class Incomplete
+classe.WhiteMonk.line1=Class Incomplete, expect bugs, missing spells, and other problems
+ 
+classe.Cannoneer=Cannoneer
+classe.Cannoneer.slogan=Class Incomplete
+classe.Cannoneer.line1=Class Incomplete, expect bugs, missing spells, and other problems
+ 
+classe.MasterMonk=Master Monk
+classe.MasterMonk.slogan=Class Incomplete
+classe.MasterMonk.line1=Class Incomplete, expect bugs, missing spells, and other problems
+ 
+classe.Trickster=Trickster
+classe.Trickster.slogan=Class Incomplete
+classe.Trickster.line1=Class Incomplete, expect bugs, missing spells, and other problems
+ 
+classe.Beastmaster=Beastmaster
+classe.Beastmaster.slogan=Class Incomplete
+classe.Beastmaster.line1=Class Incomplete, expect bugs, missing spells, and other problems
+ 
+classe.Ranger=Ranger
+classe.Ranger.slogan=Class Incomplete
+classe.Ranger.line1=Class Incomplete, expect bugs, missing spells, and other problems
+
+classe.ChocoboKnight=Chocobo Knight
+classe.ChocoboKnight.slogan=Class Incomplete
+classe.ChocoboKnight.line1=Class Incomplete, expect bugs, missing spells, and other problems
+
+classe.MoogleKnight=Moogle Knight
+classe.MoogleKnight.slogan=Class Incomplete
+classe.MoogleKnight.line1=Class Incomplete, expect bugs, missing spells, and other problems
+
+classe.skypirate=Sky Pirate
+classe.skypirate.slogan=Class Incomplete
+classe.skypirate.line1=Class Incomplete, expect bugs, missing spells, and other problems
+
+classe.Dancer=Dancer
+classe.Dancer.slogan=Class Incomplete
+classe.Dancer.line1=Class Incomplete, expect bugs, missing spells, and other problems
+
+classe.Heritor=Heritor
+classe.Heritor.slogan=Class Incomplete
+classe.Heritor.line1=Class Incomplete, expect bugs, missing spells, and other problems
+
+classe.Agent=Agent
+classe.Agent.slogan=Class Incomplete
+classe.Agent.line1=Class Incomplete, expect bugs, missing spells, and other problems
+
+classe.Bard=Bard
+classe.Bard.slogan=Class Incomplete
+classe.Bard.line1=Class Incomplete, expect bugs, missing spells, and other problems
 
 
 #   Creative tabs
@@ -240,6 +572,7 @@ achievement.magic_staff.desc=Find one of the three Magic staff
 #   KEY BINDS
 key.categories.magiccrusade=-- Magic Crusade --
 key.select_classe=Classe Selection
+
 key.group=Group Gui
 key.stats=Player Screen
 key.spells_0=Spell 1

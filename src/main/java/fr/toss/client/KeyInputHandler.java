@@ -9,6 +9,7 @@ import cpw.mods.fml.relauncher.SideOnly;
 import fr.toss.client.gui.GuiCreateGroup;
 import fr.toss.client.gui.GuiGroup;
 import fr.toss.client.gui.GuiSelectClass;
+import fr.toss.client.gui.GuiSelectRace;
 import fr.toss.client.gui.GuiStats;
 import fr.toss.common.Main;
 import fr.toss.common.command.ChatColor;
@@ -30,6 +31,10 @@ public class KeyInputHandler {
         }
         else if(KeyBindings.KEY_SELECT_CLASSE.isPressed())
         	Minecraft.getMinecraft().displayGuiScreen(new GuiSelectClass());
+       
+        else if(KeyBindings.KEY_SELECT_RACE.isPressed())
+        	Minecraft.getMinecraft().displayGuiScreen(new GuiSelectRace());
+        
         else if(KeyBindings.KEY_STATS.isPressed())
         {
         	if (Main.getPlayerClient().classe != null)

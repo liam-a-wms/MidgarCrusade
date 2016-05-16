@@ -20,7 +20,7 @@ public class ClasseFlintlock extends Classe {
 	@Override
 	public String getName() 
 	{
-		return I18n.format("classe.Flintlock");
+		return I18n.format("Flintlock");
 	}
 
 	@Override

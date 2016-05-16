@@ -109,7 +109,7 @@ public class GuiClasseInformation extends GuiScreen {
     		packet = new PacketSetClasse(this.classe_id);
     		Packets.network.sendToServer(packet);
     		try {
-				Main.getPlayerClient().init(this.classe_id);
+				Main.getPlayerClient().init(this.classe_id, classe_id);
 			} catch (Exception e) {}
     		
     		

@@ -9,6 +9,7 @@ import api.player.client.ClientPlayerAPI;
 import api.player.client.ClientPlayerBase;
 import fr.toss.client.event.SoundEventM;
 import fr.toss.client.gui.GuiSelectClass;
+import fr.toss.client.gui.GuiSelectRace;
 import fr.toss.common.Main;
 import fr.toss.common.command.ChatColor;
 import fr.toss.common.items.ItemArmorM;
@@ -21,12 +22,14 @@ import fr.toss.common.player.classes.ClasseNecromancer;
 import fr.toss.common.player.classes.ClassePriest;
 import fr.toss.common.player.classes.ClasseDragonslayer;
 import fr.toss.common.player.classes.ClasseRogue;
+import fr.toss.common.player.race.Race;
 import fr.toss.common.player.spells.Spell;
 
 public class ClientPlayerBaseMagic extends ClientPlayerBase
 {
 	public Item armor[];
 
+	public Race race;
 	public Classe classe;
 	public int level;
 	public int experience;
@@ -43,6 +46,7 @@ public class ClientPlayerBaseMagic extends ClientPlayerBase
 	public float strength;
 	public float agility;
 	public float endurance;
+	public float holy;
 	public double hp;
 	
 	public long last_hit;
@@ -57,6 +61,7 @@ public class ClientPlayerBaseMagic extends ClientPlayerBase
 	/** definit la classe à partir de son ID  */
 	public void initPlayer(PacketLogIn packet)
 	{
+		this.race = Race.getRace(packet.race_id);
 		this.experience = packet.current_experience;
 		this.classe = Classe.getClasse(packet.classe_id);
 		this.max_energy = this.classe.getMaxEnergy();
@@ -65,12 +70,13 @@ public class ClientPlayerBaseMagic extends ClientPlayerBase
 		this.exp_to_next_level = this.level * 20 * (this.level + 1);
 		this.energy = this.max_energy;
 		
-		if (packet.classe_id == 0)
-			Minecraft.getMinecraft().displayGuiScreen(new GuiSelectClass());
+		if (packet.race_id == 0)
+			Minecraft.getMinecraft().displayGuiScreen(new GuiSelectRace());
 	}
 	
-	public void init(int p_classe) throws InstantiationException, IllegalAccessException
+	public void init(int p_classe,int i_race) throws InstantiationException, IllegalAccessException
 	{
+		this.race = Race.getRace(i_race);
 		this.classe = Classe.getClasse(p_classe);
 		if (this.classe != null)
 		{
@@ -85,6 +91,7 @@ public class ClientPlayerBaseMagic extends ClientPlayerBase
 			this.strength = 0;
 			this.agility = 0;
 			this.endurance = 0;
+			this.holy = 0;
 		}
 	}
 	
@@ -147,6 +154,7 @@ public class ClientPlayerBaseMagic extends ClientPlayerBase
 						 this.strength += ((ItemArmorM)item).strength;
 						 this.agility += ((ItemArmorM)item).agility;
 						 this.max_energy += ((ItemArmorM)item).mana;
+						 this.holy += ((ItemArmorM)item).holy;
 						 this.energy_regen += ((ItemArmorM)item).mana_regeneration;
 					 }
 					 this.armor[i] = item;
@@ -160,6 +168,7 @@ public class ClientPlayerBaseMagic extends ClientPlayerBase
 					 this.endurance -= ((ItemArmorM)this.armor[i]).endurance;
 					 this.strength -= ((ItemArmorM)this.armor[i]).strength;
 					 this.agility -= ((ItemArmorM)this.armor[i]).agility;
+					 this.holy -= ((ItemArmorM)this.armor[i]).holy;
 					 this.max_energy -= ((ItemArmorM)this.armor[i]).mana;
 					 this.energy_regen -= ((ItemArmorM)this.armor[i]).mana_regeneration;
 				 }
@@ -179,6 +188,7 @@ public class ClientPlayerBaseMagic extends ClientPlayerBase
 					 this.endurance += ((ItemSwordM)item).endurance;
 					 this.strength += ((ItemSwordM)item).strength;
 					 this.agility += ((ItemSwordM)item).agility;
+					 this.holy += ((ItemSwordM)item).holy;
 					 if (this.getClasse() instanceof ClasseNecromancer || this.getClasse() instanceof ClasseMage)
 						 this.max_energy += ((ItemSwordM)item).mana;
 					 this.energy_regen += ((ItemSwordM)item).mana_regeneration;
@@ -194,6 +204,7 @@ public class ClientPlayerBaseMagic extends ClientPlayerBase
 				 this.endurance -= ((ItemSwordM)this.armor[4]).endurance;
 				 this.strength -= ((ItemSwordM)this.armor[4]).strength;
 				 this.agility -= ((ItemSwordM)this.armor[4]).agility;
+				 this.holy -= ((ItemSwordM)this.armor[4]).holy;
 				 if (this.getClasse() instanceof ClasseNecromancer || this.getClasse() instanceof ClasseMage)
 					 this.max_energy -= ((ItemSwordM)this.armor[4]).mana;
 				 this.energy_regen -= ((ItemSwordM)this.armor[4]).mana_regeneration;
@@ -240,6 +251,12 @@ public class ClientPlayerBaseMagic extends ClientPlayerBase
 		}
 	}
 
+	public Race getRace()
+	{
+		return (this.race);
+	}
+
+	
 	/** Retournes la classe du joueur */
 	public Classe getClasse()
 	{

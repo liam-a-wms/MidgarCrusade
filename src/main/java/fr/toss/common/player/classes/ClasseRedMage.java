@@ -19,7 +19,7 @@ public class ClasseRedMage extends Classe {
 	@Override
 	public String getName() 
 	{
-		return "RedMage";
+		return "Red Mage";
 	}
 
 	@Override

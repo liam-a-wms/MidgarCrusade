@@ -3,6 +3,7 @@ package fr.toss.common.player.classes;
 import net.minecraft.client.resources.I18n;
 import net.minecraft.util.ResourceLocation;
 import fr.toss.common.command.ChatColor;
+import fr.toss.common.player.spells.archer.*;
 import fr.toss.common.player.spells.rogue.Critic_1;
 import fr.toss.common.player.spells.rogue.FeatherFalling_6;
 import fr.toss.common.player.spells.rogue.Invisible_3;
@@ -20,7 +21,7 @@ public class ClasseArcher extends Classe {
 	@Override
 	public String getName() 
 	{
-		return I18n.format("classe.Archer");
+		return I18n.format("Archer");
 	}
 
 	@Override
@@ -34,9 +35,9 @@ public class ClasseArcher extends Classe {
 	public void defineClasseSpells()
 	{	
 		this.CLASSE_SPELL.clear();
-		this.CLASSE_SPELL.add(new Critic_1());
-		this.CLASSE_SPELL.add(new Speed_2());
-		this.CLASSE_SPELL.add(new Invisible_3());
+		this.CLASSE_SPELL.add(new Immobilizeshot_1());
+		this.CLASSE_SPELL.add(new Powershot_1());
+		this.CLASSE_SPELL.add(new Blindshot_1());
 		this.CLASSE_SPELL.add(new Poison_4());
 		this.CLASSE_SPELL.add(new Vision_5());
 		this.CLASSE_SPELL.add(new FeatherFalling_6());

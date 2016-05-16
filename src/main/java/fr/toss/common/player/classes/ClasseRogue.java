@@ -20,7 +20,7 @@ public class ClasseRogue extends Classe {
 	@Override
 	public String getName() 
 	{
-		return I18n.format("classe.rogue");
+		return I18n.format("rogue");
 	}
 
 	@Override

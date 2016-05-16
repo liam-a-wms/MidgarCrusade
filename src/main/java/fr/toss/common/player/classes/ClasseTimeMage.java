@@ -19,7 +19,7 @@ public class ClasseTimeMage extends Classe {
 	@Override
 	public String getName() 
 	{
-		return "TimeMage";
+		return "Time Mage";
 	}
 
 	@Override

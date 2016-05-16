@@ -57,6 +57,23 @@ public abstract class Spell {
 	}
 	
 	
+	
+	public List getEntitiesAround2(double range, boolean includePlayer)
+	{
+		EntityPlayer thePlayer = player.getPlayer();
+		List list;
+		Entity e = this.getLookingEntity(30.0d);;
+		
+	
+		if (e != null)
+			list = e.worldObj.getEntitiesWithinAABB(Entity.class, e.boundingBox.expand(range, range, range));
+		else
+			list = thePlayer.worldObj.getEntitiesWithinAABBExcludingEntity(e, thePlayer.boundingBox.expand(range, range, range));
+		
+		
+		return (list);
+	}
+
 	public List getEntitiesAround(double range, boolean includePlayer)
 	{
 		EntityPlayer thePlayer = player.getPlayer();
@@ -70,6 +87,7 @@ public abstract class Spell {
 		return (list);
 	}
 
+	
 	
 	public Entity getLookingEntity(double range)
 	{
@@ -113,6 +131,51 @@ public abstract class Spell {
 		return (null);
 	}
 
+	public Entity getLookingEntity2(double range)
+	{
+		EntityPlayer thePlayer = player.getPlayer();
+		List list = thePlayer.worldObj.getEntitiesWithinAABBExcludingEntity(thePlayer, thePlayer.boundingBox.expand(range, range, range));
+		Entity entity;
+		
+		if (list != null)
+		{
+			for (int i = 0; i < list.size(); i++)
+			{
+				entity = (Entity)list.get(i);
+
+		                if (!entity.isDead)
+		                {
+		             	   if(entity instanceof EntityLivingBase)
+		             	   {
+		             		   Vec3 vec3d;
+		             		   Vec3 vec3d1;
+		             		   double d;
+		             		   double d1;
+		             		   double a;
+		             		   double b;
+		             		   double c;
+		             		   
+		             		   vec3d = thePlayer.getLook(1.0F).normalize();
+		             		   vec3d1 = Vec3.createVectorHelper(entity.posX - thePlayer.posX, (entity.boundingBox.minY + (double)(entity.height / 2.0F)) - (thePlayer.posY + (double)thePlayer.getEyeHeight()), entity.posZ - thePlayer.posZ);
+		             		   d = vec3d1.lengthVector();
+		             		   vec3d1 = vec3d1.normalize();
+		             		   d1 = vec3d.dotProduct(vec3d1);
+		             	       if (d1 > 1.0D - 0.025000000000000001D / d)
+		             	       {
+		             	    	   System.out.println("Looking at " + entity);
+		             	    	   return (entity);
+		             	       }
+		             	   }
+	             	   
+	                	}     
+			}
+		}
+		return (null);
+	}
+	
+	
+	
+	
 	public String[] getDescription() 
 	{
 		return null;

@@ -14,7 +14,7 @@ import fr.toss.common.packet.PacketLogIn;
 import fr.toss.common.player.ClientPlayerBaseMagic;
 import fr.toss.common.player.classes.Classe;
 import fr.toss.common.player.classes.ClasseNecromancer;
-import fr.toss.common.player.classes.ClasseWhitemage;
+import fr.toss.common.player.classes.ClasseWhitemageViera;
 import fr.toss.common.player.classes.*;
 import fr.toss.common.player.race.*;
 import fr.toss.common.player.spells.Spell;
@@ -40,11 +40,37 @@ public class KeyInputHandler {
 
  if(KeyBindings.KEY_SELECT_CLASSE.isPressed())
 
- {	{ if (pm.getClasse() instanceof ClasseWhitemage2 )
+ {	{ if (pm.getClasse() instanceof ClasseWhitemageHume|| pm.getClasse() instanceof ClasseSoldier
+		 || pm.getClasse() instanceof ClasseThiefHume|| pm.getClasse() instanceof ClasseBlackmageHume
+		 || pm.getClasse() instanceof ClasseArcherHume|| pm.getClasse() instanceof ClassePaladin
+		 || pm.getClasse() instanceof ClasseFighter|| pm.getClasse() instanceof ClasseHunterHume
+		 || pm.getClasse() instanceof ClasseSamurai|| pm.getClasse() instanceof ClasseBluemage
+		 || pm.getClasse() instanceof ClasseIllusionistHume|| pm.getClasse() instanceof ClasseSeer
+		 || pm.getClasse() instanceof ClasseNinja)
 	Minecraft.getMinecraft().displayGuiScreen(new GuiSelectHumeClass());
  		}
  
- 		{ if (pm.getClasse() instanceof ClasseWhitemage )
+ {	 if (pm.getClasse() instanceof ClasseAnimist|| pm.getClasse() instanceof ClasseThiefMoogle
+		 || pm.getClasse() instanceof ClasseBlackmageMoogle|| pm.getClasse() instanceof ClasseMoogleKnight
+		 || pm.getClasse() instanceof ClasseFusilier|| pm.getClasse() instanceof ClasseJuggler
+		 || pm.getClasse() instanceof ClasseTinker|| pm.getClasse() instanceof ClasseTimeMageMoogle
+		 || pm.getClasse() instanceof ClasseChocoboKnight|| pm.getClasse() instanceof ClasseFlintlock)
+		 
+	Minecraft.getMinecraft().displayGuiScreen(new GuiSelectMoogleClass());
+ 		}
+ 
+ {	 if (pm.getClasse() instanceof ClasseAnimist|| pm.getClasse() instanceof ClasseThiefMoogle
+		 || pm.getClasse() instanceof ClasseBlackmageMoogle|| pm.getClasse() instanceof ClasseMoogleKnight
+		 || pm.getClasse() instanceof ClasseFusilier|| pm.getClasse() instanceof ClasseJuggler
+		 || pm.getClasse() instanceof ClasseTinker|| pm.getClasse() instanceof ClasseTimeMageMoogle
+		 || pm.getClasse() instanceof ClasseChocoboKnight|| pm.getClasse() instanceof ClasseFlintlock)
+		 
+	Minecraft.getMinecraft().displayGuiScreen(new GuiSelectMoogleClass());
+ 		}
+ 
+ 
+ 
+ 		{ if (pm.getClasse() instanceof ClasseWhitemageViera )
 		Minecraft.getMinecraft().displayGuiScreen(new GuiSelectVieraClass());
     }
  		 
@@ -84,6 +110,7 @@ public class KeyInputHandler {
 	        	}
         	}
         }
+ }
     }
 
-}
+

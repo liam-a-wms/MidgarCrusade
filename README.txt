@@ -1,3 +1,9 @@
+--------------------Objectives List--------------------
+[ ] Overhaul Class GUI & Implement Card Idea
+[ ] 
+[ ] 
+[ ] 
+[ ] 
 -------------------------------------------
 Source installation information for modders
 -------------------------------------------

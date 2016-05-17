@@ -1,5 +1,5 @@
 -------------------------------------------
-              Objectives List
+                          Objectives List
 -------------------------------------------
 [ ] Overhaul Class GUI & Implement Card Select Idea (This is a wakky job)
 [ ] Skills Unlock After Specif Wepon Is Used To Cast Spell X Amount Of Times ("AP To Master")
@@ -7,7 +7,8 @@
 [ ] 
 [ ] 
 ----------------------------------------------------------------
-            WIP Class Spell List
+                          WIP Class Spell List
+----------------------------------------------------------------
 Key Code
 [O] = Finished 100%
 [X] = Currently Unknown How To Code

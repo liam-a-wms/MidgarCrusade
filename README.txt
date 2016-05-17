@@ -13,6 +13,7 @@ Key Code
 [O] = Finished 100%
 [X] = Currently Unknown How To Code
 [W] = Work In Progress/Half Finished/Missing Values
+[T] = Finished , values need tinkering to be balanced
 ----------------------------------------------------------------
                           Soldier
 http://finalfantasy.wikia.com/wiki/Soldier_%28Tactics_A2%29

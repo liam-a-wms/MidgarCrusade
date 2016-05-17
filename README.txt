@@ -1,6 +1,6 @@
--------------------------------------------
+----------------------------------------------------------------
                           Objectives List
--------------------------------------------
+----------------------------------------------------------------
 [ ] Overhaul Class GUI & Implement Card Select Idea (This is a wakky job)
 [ ] Skills Unlock After Specif Wepon Is Used To Cast Spell X Amount Of Times ("AP To Master")
 [ ] Add an accurary stat in that affects all spells and weapons or find code that allows to hit or miss by random %

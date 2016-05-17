@@ -3,8 +3,8 @@
 -------------------------------------------
 [ ] Overhaul Class GUI & Implement Card Select Idea (This is a wakky job)
 [ ] Skills Unlock After Specif Wepon Is Used To Cast Spell X Amount Of Times ("AP To Master")
-[ ] 
-[ ] 
+[ ] Add an accurary stat in that affects all spells and weapons or find code that allows to hit or miss by random %
+[ ] Add in elemental damage types and implement extra damage
 [ ] 
 ----------------------------------------------------------------
                           WIP Class Spell List
@@ -13,43 +13,47 @@ Key Code
 [O] = Finished 100%
 [X] = Currently Unknown How To Code
 [W] = Work In Progress/Half Finished/Missing Values
-[T] = Finished , values need tinkering to be balanced
+[T] = Finished , values need tinkering to be balanced, + spell lvls
+[N] unable to code at point missing required value / stat
+[E] Finished buts need an entity to fire + value tinkering ( currently using fireball or arrow)
+[H] 50% know how to code need missing stat / code etc
+[ ] if left blank have not started that class / looked at spells for them yet
 ----------------------------------------------------------------
                           Soldier
 http://finalfantasy.wikia.com/wiki/Soldier_%28Tactics_A2%29
 ----------------------------------------------------------------
-[ ] First Aid
-[ ] Rend Power
-[ ] Rend Magick
-[ ] Rend MP
-[ ] Rend Speed
-[ ] Mug Gil 
-[ ] Provoke
-[ ] Gauge
+[T] First Aid
+[T] Rend Power
+[X] Rend Magick
+[X] Rend MP
+[T] Rend Speed
+[X] Mug Gil 
+[T] Provoke
+[X ] Gauge -- will need clarification on what you want done with this
 ----------------------------------------------------------------
                           Fighter
 http://finalfantasy.wikia.com/wiki/Fighter_%28Tactics_A2%29
 ----------------------------------------------------------------
-[ ] Rush
-[ ] Wild Swing 
-[ ] Beat Down
-[ ] Blitz
-[ ] Air Render
-[ ] Aurablast
-[ ] Air Blast
-[ ] Back Draft
+[W] Rush , needs knockback
+[T] Wild Swing 
+[N] Beat Down
+[N] Blitz
+[E] Air Render
+[E] Aurablast
+[X] Air Blast
+[E ] Back Draft
 ----------------------------------------------------------------
                           Samurai
 http://finalfantasy.wikia.com/wiki/Parivir_%28Tactics_A2%29
 ----------------------------------------------------------------
-[ ] Wind Slash
-[ ] Iai Blow
-[ ] Blade Bash
-[ ] Shimmering Blade
-[ ] Hoarfrost Blade
-[ ] Skyfury Blade
-[ ] Lifethread Blade
-[ ] Unburden Soul
+[E] Wind Slash
+[H] Iai Blow
+[T] Blade Bash
+[T] Shimmering Blade
+[H] Hoarfrost Blade
+[H] Skyfury Blade
+[H] Lifethread Blade
+[H] Unburden Soul
 ----------------------------------------------------------------
                           Warrior
 http://finalfantasy.wikia.com/wiki/Warrior_%28Tactics_A2%29
@@ -90,14 +94,14 @@ http://finalfantasy.wikia.com/wiki/Defender_%28Tactics_A2%29
                           Gladiator
 http://finalfantasy.wikia.com/wiki/Gladiator_%28Tactics_A2%29
 ----------------------------------------------------------------
-[ ] Rush
-[ ] Wild Swing
-[ ] Beat Down
-[ ] Blitz
-[ ] Fire Soul
-[ ] Thunder Assault
-[ ] Blizzard Tackle
-[ ] Ultima Sword
+[W] Rush ----needs knockback
+[O] Wild Swing
+[X] Beat Down
+[X] Blitz
+[E] Fire Soul
+[E] Thunder Assault
+[E] Blizzard Tackle
+[E] Ultima Sword
 ----------------------------------------------------------------
                           Berserker
 http://finalfantasy.wikia.com/wiki/Berserker_%28Tactics_A2%29
@@ -162,39 +166,48 @@ http://finalfantasy.wikia.com/wiki/Ravager_%28Tactics_A2%29
                           White Mage
 http://finalfantasy.wikia.com/wiki/White_Mage_%28Tactics_A2%29
 ----------------------------------------------------------------
-[ ] Cure 	White Staff 	Recovers a decent amount of HP in an area. Deals damage to the undead. 	4 	100 	8
-[ ] Cura 	Healing Staff 	Recovers a great amount of HP in an area. Deals damage to the undead. 	4 	200 	14
-[ ] Curaga 	Spring Staff 	Recovers a very large amount of HP in an area. Deals damage to the undead. 	4 	300 	18
-[ ] Esuna 	Cleansing Staff 	Cure physical status ailments such as Blind and Poison in an area. 	4 	200 	12
-[ ] Raise 	Staff of Blessings 	Revive a KO'd ally with minimal health. Deals damage to the undead. 	4 	200 	10
-[ ] Arise 	Nirvana 	Revive a KO'd ally with all of their HP. Deals damage to the undead. 	4 	400 	20
-[ ] Reraise 	Cheer Staff 	Bestows Auto-Life. 	4 	400 	28
-[ ] Refresh 	
+[W] Cure 	White Staff 	Recovers a decent amount of HP in an area. Deals damage to the undead. 	4 	100 	8 ---- just need to apply dmg to undead
+
+[W] Cura 	Healing Staff 	Recovers a great amount of HP in an area. Deals damage to the undead. 	4 	200 	14 ---- just need to apply dmg to undead
+
+[W ] Curaga 	Spring Staff 	Recovers a very large amount of HP in an area. Deals damage to the undead. 	4 	300 	18 ---- just need to apply dmg to undead
+
+[O] Esuna 	Cleansing Staff 	Cure physical status ailments such as Blind and Poison in an area. 	4 	200 	12
+[X] Raise 	Staff of Blessings 	Revive a KO'd ally with minimal health. Deals damage to the undead. 	4 	200 	10
+[X] Arise 	Nirvana 	Revive a KO'd ally with all of their HP. Deals damage to the undead. 	4 	400 	20
+[X] Reraise 	Cheer Staff 	Bestows Auto-Life. 	4 	400 	28
+[O] Refresh 	
 ----------------------------------------------------------------
                           Black Mage
 http://finalfantasy.wikia.com/wiki/Black_Mage_%28Tactics_A2%29
 ----------------------------------------------------------------
-[ ] Fire 	Rod 	Fire damage. 	4 	100 	8
-[ ] Fira 	Firewheel Rod 	Strong Fire damage. 	4 	250 	14
-[ ] Firaga 	Flame Rod 	Heavy Fire damage. 	4 	350 	18
-[ ] Thunder 	Rod 	Lightning damage. 	4 	100 	8
-[ ] Thundara 	Thunder Rod 	Strong Lightning damage. 	4 	250 	14
-[ ] Thundaga 	Thor Rod 	Heavy Lightning damage. 	4 	350 	18
-[ ] Blizzard 	Rod 	Ice damage. 	4 	100 	8
-[ ] Blizzara 	Sleet Rod 	Strong Ice damage. 	4 	250 	14
-[ ] Blizzaga
+ALL black mage spells need a proper custom entity to fire, all using fireballs atm
+
+
+[E ] Fire 	Rod 	Fire damage. 	4 	100 	8
+[E ] Fira 	Firewheel Rod 	Strong Fire damage. 	4 	250 	14
+[E ] Firaga 	Flame Rod 	Heavy Fire damage. 	4 	350 	18
+[H] Thunder 	Rod 	Lightning damage. 	4 	100 	8
+[H] Thundara 	Thunder Rod 	Strong Lightning damage. 	4 	250 	14
+[H] Thundaga 	Thor Rod 	Heavy Lightning damage. 	4 	350 	18 
+[H] Blizzard 	Rod 	Ice damage. 	4 	100 	8
+[H] Blizzara 	Sleet Rod 	Strong Ice damage. 	4 	250 	14
+[H] Blizzaga
 ----------------------------------------------------------------
                           Paladin
 http://finalfantasy.wikia.com/wiki/Paladin_%28Tactics_A2%29
 ----------------------------------------------------------------
-[ ] Nurse 	Defender 	Recover HP and cure status ailments of the unit and surrounding units. 	All sides and self 	100 	—
-[ ] Defend 	Lionheart 	Raise Weapon Defense and Magick Resistance for one turn. 	Self 	200 	—
-[ ] Cover 	Save the Queen 	Covers a unit, allowing the user to take damage for the target until the user's next turn. 	4 
-[ ] Parley 	Barong 	Attempt to remove a unit from the battlefield. More successful when the target has lower HP. Does not
-[ ] Saint Cross 	Arch Sword 	Holy damage to surrounding units. 	All sides 	400 	10
-[ ] Holy Blade 	Excalibur 	Normal damage; Holy element. 	Weapon Range 	400 	22
-[ ] Sanctify 	Ogrenix 	Destroys undead. 	3 	250 	—
-[ ] War Cry
+[T] Nurse 	Defender 	Recover HP and cure status ailments of the unit and surrounding units. 	All sides and self 	100 	—
+[XN] Defend 	Lionheart 	Raise Weapon Defense and Magick Resistance for one turn. 	Self 	200 	—
+[O] Cover 	Save the Queen 	Covers a unit, allowing the user to take damage for the target until the user's next turn. 	4 
+[X] Parley 	Barong 	Attempt to remove a unit from the battlefield. More successful when the target has lower HP. --- Clarify
+
+parley to have a random chance to tp the target higher chance with lower hp to spawn ( or a certain number of blocks away(however that can cause wall suffocations ? if not this idea not sure how to implement
+
+[H] Saint Cross 	Arch Sword 	Holy damage to surrounding units. 	All sides 	400 	10
+[H] Holy Blade 	Excalibur 	Normal damage; Holy element. 	Weapon Range 	400 	22
+[W] Sanctify 	Ogrenix 	Destroys undead. 	3 	250 	—
+[O] War Cry
 ----------------------------------------------------------------
                           Blue Mage [Skip This For Now Too Many Spells]
 http://finalfantasy.wikia.com/wiki/Blue_Mage_%28Tactics_A2%29
@@ -223,14 +236,17 @@ http://finalfantasy.wikia.com/wiki/Blue_Mage_%28Tactics_A2%29
                           Illusionist
 http://finalfantasy.wikia.com/wiki/Illusionist_%28Tactics_A2%29
 ----------------------------------------------------------------
-[ ] Prominence 	Firewheel Rod 	Target All - Fire Damage. 	All foes 	250 	28
-[ ] Tempest 	Thunder Rod 	Target All - Lightning Damage. 	All foes 	250 	28
-[ ] Freezeblink 	Sleet Rod 	Target All - Ice Damage. 	All foes 	250 	28
-[ ] Star Cross 	Crown Scepter 	Target All - Holy Damage. 	All foes 	300 	28
-[ ] Stardust 	Stardust Rod 	Target All - Damage. 	All foes 	300 	28
-[ ] Deluge 	Chill Rod 	Target All - Water Damage. 	All foes 	250 	28
-[ ] Rockfall 	Terre Rod 	Target All - Earth Damage. 	All foes 	300 	28
-[ ] Wild Tornado
+
+All illusionist spells have acheived the desired result just missing the enviroment stats like holy, wind etc
+
+[O] Prominence 	Firewheel Rod 	Target All - Fire Damage. 	All foes 	250 	28
+[H] Tempest 	Thunder Rod 	Target All - Lightning Damage. 	All foes 	250 	28
+[H] Freezeblink 	Sleet Rod 	Target All - Ice Damage. 	All foes 	250 	28
+[H] Star Cross 	Crown Scepter 	Target All - Holy Damage. 	All foes 	300 	28
+[O] Stardust 	Stardust Rod 	Target All - Damage. 	All foes 	300 	28
+[w] Deluge 	Chill Rod 	Target All - Water Damage. 	All foes 	250 	28
+[H] Rockfall 	Terre Rod 	Target All - Earth Damage. 	All foes 	300 	28
+[H] Wild Tornado
 ----------------------------------------------------------------
                           Seer
 http://finalfantasy.wikia.com/wiki/Seer_%28Tactics_A2%29
@@ -307,14 +323,14 @@ http://finalfantasy.wikia.com/wiki/Green_Mage_%28Tactics_A2%29
                           Spellblade 
 http://finalfantasy.wikia.com/wiki/Spellblade_%28Tactics_A2%29
 ----------------------------------------------------------------
-[ ] Poison Blade 	Blood Sword 	Damage and may inflict Poison. 	Weapon range 	200 	8
-[ ] Oil Blade 	Broadsword 	Damage and may inflict Oil. 	Weapon range 	300 	8
-[ ] Sleep Blade 	Gale Sword 	Damage and may inflict Sleep. 	Weapon range 	250 	8
-[ ] Slow Blade 	Silver Sword 	Damage and may inflict Slow. 	Weapon range 	300 	8
-[ ] Confusion Blade 	Onion Sword 	Damage and may inflict Confuse. 	Weapon range 	300 	8
-[ ] Stun Blade 	Burglar Sword 	Damage and may inflict Immobilize. 	Weapon range 	200 	8
-[ ] Maim Blade 	Restorer 	Damage and may inflict Disable. 	Weapon range 	350 	8
-[ ] Doom Blade
+[E] Poison Blade 	Blood Sword 	Damage and may inflict Poison. 	Weapon range 	200 	8
+[X] Oil Blade 	Broadsword 	Damage and may inflict Oil. 	Weapon range 	300 	8
+[E] Sleep Blade 	Gale Sword 	Damage and may inflict Sleep. 	Weapon range 	250 	8
+[E] Slow Blade 	Silver Sword 	Damage and may inflict Slow. 	Weapon range 	300 	8
+[E] Confusion Blade 	Onion Sword 	Damage and may inflict Confuse. 	Weapon range 	300 	8
+[E] Stun Blade 	Burglar Sword 	Damage and may inflict Immobilize. 	Weapon range 	200 	8
+[H] Maim Blade 	Restorer 	Damage and may inflict Disable. 	Weapon range 	350 	8
+[H] Doom Blade
 ----------------------------------------------------------------
                           Bishop
 http://finalfantasy.wikia.com/wiki/Bishop_%28Tactics_A2%29
@@ -343,14 +359,14 @@ finalfantasy.wikia.com/wiki/Templar_(Tactics_A2)
                           Sage
 http://finalfantasy.wikia.com/wiki/Sage_%28Tactics_A2%29
 ----------------------------------------------------------------
-[ ] Blind 	Druid Mace 	Inflicts Blind. 	4 	150 	8
-[ ] Water 	Battle Mace 	Deals Water damage. 	3 	200 	14
-[ ] Aero 	Energy Mace 	Deals Wind damage. 	3 	200 	14
-[ ] Scathe 	Morning Star 	Heavy magic damage in a straight line. 	4 sq. line in front of user 	450 	32
-[ ] Esunaga 	Life Crosier 	Heals all status ailments of units in an area. 	4 	300 	24
-[ ] Gigaflare 	Lotus Mace 	Heavy area damage. 	3 	300 	32
-[ ] Bio 	Mandragora 	Area damage and may inflict Poison. 	3 	300 	18
-[ ] Ultima Blow
+[O] Blind 	Druid Mace 	Inflicts Blind. 	4 	150 	8
+[E] Water 	Battle Mace 	Deals Water damage. 	3 	200 	14
+[E] Aero 	Energy Mace 	Deals Wind damage. 	3 	200 	14
+[X] Scathe 	Morning Star 	Heavy magic damage in a straight line. 	4 sq. line in front of user 	450 	32
+[O] Esunaga 	Life Crosier 	Heals all status ailments of units in an area. 	4 	300 	24
+[T] Gigaflare 	Lotus Mace 	Heavy area damage. 	3 	300 	32
+[T] Bio 	Mandragora 	Area damage and may inflict Poison. 	3 	300 	18
+[T] Ultima Blow
 ----------------------------------------------------------------
                           Alchemist
 http://finalfantasy.wikia.com/wiki/Alchemist_%28Tactics_A2%29

@@ -472,66 +472,170 @@ http://finalfantasy.wikia.com/wiki/Animist_%28Tactics_A2%29
                         Fusilier
 finalfantasy.wikia.com/wiki/Fusilier_(Tactics_A2)
 ----------------------------------------------------------------
-
+[ ] Fireshot
+[ ] Boltshot
+[ ] Iceshot
+[ ] Confushot
+[ ] Charmshot
+[ ] Blindshot
+[ ] Silenceshot
+[ ] Stopshot 
 ----------------------------------------------------------------
                           Juggler
-
+http://finalfantasy.wikia.com/wiki/Juggler_%28Tactics_A2%29
 ----------------------------------------------------------------
-
+[ ] Weapon Toss
+[ ] Ring Toss
+[ ] Molotov Cocktail
+[ ] Ball Toss
+[ ] Dagger Toss
+[ ] Smile Toss
+[ ] Gil Toss
 ----------------------------------------------------------------
                           Tinker
-
+http://finalfantasy.wikia.com/wiki/Tinker_%28Tactics_A2%29
 ----------------------------------------------------------------
-
+[ ] Red Spring
+[ ] Blue Screw
+[ ] Green Gear
+[ ] Silver Disc
+[ ] Gold Battery
+[ ] Black Ingot
+[ ] Chroma Gem
+[ ] Gold Moogletron
 ----------------------------------------------------------------
                           Flintlock
-
+http://finalfantasy.wikia.com/wiki/Flintlock_%28Tactics_A2%29
 ----------------------------------------------------------------
-
+[ ] Prime
+[ ] Cure Cannon
+[ ] Protect Cannon
+[ ] Shell Cannon
+[ ] Ether Cannon
+[ ] Teleport Cannon
+[ ] Ether Boost
+[ ] Blowback
 ----------------------------------------------------------------
                           Fencer
-
+http://finalfantasy.wikia.com/wiki/Fencer_%28Tactics_A2%29
 ----------------------------------------------------------------
-
+[ ] Swarmstrike
+[ ] Shadowstick
+[ ] Checkmate
+[ ] Featherblow
+[ ] Swallowtail
+[ ] Manastrike
+[ ] Piercing Blow
+[ ] Nighthawk
 ----------------------------------------------------------------
                           Assassin
-
+http://finalfantasy.wikia.com/wiki/Assassin_%28Tactics_A2%29
 ----------------------------------------------------------------
-
+[ ] Shadowbind
+[ ] Last Breath
+[ ] Aphonia
+[ ] Nightmare
+[ ] Ague
+[ ] Rockseal
+[ ] Oblivion
+[ ] Ultima Masher
 ----------------------------------------------------------------
                           Sniper
-
+http://finalfantasy.wikia.com/wiki/Sniper_%28Tactics_A2%29
 ----------------------------------------------------------------
-
+[ ] Doubleshot
+[ ] Beso Toxico
+[ ] Death Sickle
+[ ] Vanish
+[ ] Marksman's Spite
+[ ] Armor Shot
+[ ] Weapon Shot
+[ ] Wallet Shot
 ----------------------------------------------------------------
                           White Monk
-
+http://finalfantasy.wikia.com/wiki/White_Monk_%28Tactics_A2%29
 ----------------------------------------------------------------
-
+[ ] Roundhouse
+[ ] Air Render
+[ ] Earth Render
+[ ] Aurablast
+[ ] Chakra
+[ ] Revive
+[ ] Exorcise
+[ ] Holy Sign
 ----------------------------------------------------------------
                           Cannoneer
-
+http://finalfantasy.wikia.com/wiki/Cannoneer_%28Tactics_A2%29
 ----------------------------------------------------------------
-
+[ ] Prime
+[ ] Foresight
+[ ] Buckshot
+[ ] Scope
+[ ] Mortar
+[ ] Target
+[ ] Potion Shell
+[ ] Ether Shell
 ----------------------------------------------------------------
                           Master Monk
-
+http://finalfantasy.wikia.com/wiki/Master_Monk_%28Tactics_A2%29
 ----------------------------------------------------------------
-
+[ ] Pummel
+[ ] Dark Fist
+[ ] Withering Strike
+[ ] Lifebane
+[ ] Holy Strike
+[ ] Cross-counter
+[ ] Inner Focus
+[ ] Rend Armor
 ----------------------------------------------------------------
                           Trickster
-
+http://finalfantasy.wikia.com/wiki/Trickster_%28Tactics_A2%29
 ----------------------------------------------------------------
-
+[ ] Snigger
+[ ] Suggestion
+[ ] Hypochondria
+[ ] Shadow of Doubt
+[ ] Charisma
+[ ] Traumatize
+[ ] Agitate
+[ ] Mug
 ----------------------------------------------------------------
-                          Beastmaster
-
+                          Beastmaster [Skip Too Many Skills]
+http://finalfantasy.wikia.com/wiki/Beastmaster_%28Tactics_A2%29
 ----------------------------------------------------------------
-
+[ ] Dreamhare
+[ ] Deadly Nightshade
+[ ] Baknamy
+[ ] Flan
+[ ] Lamia
+[ ] Wolf 	War
+[ ] Werewolf
+[ ] Shelling
+[ ] Headless
+[ ] Zombie
+[ ] Ghost
+[ ] Deathscythe
+[ ] Malboro
+[ ] Bomb
+[ ] Ahriman
+[ ] Floating Eye
+[ ] Sprite
+[ ] Antlion
+[ ] Cockatrice
+[ ] Drake
+[ ] Behemoth
 ----------------------------------------------------------------
                           Ranger
-
+http://finalfantasy.wikia.com/wiki/Ranger_%28Tactics_A2%29
 ----------------------------------------------------------------
+[ ] Sten Needle
+[ ] Silence Gas
+[ ] Leech
+[ ] Love Potion
+[ ] Mirror Items
+[ ] Camouflage
+[ ] Awareness
+[ ] Life Bond
 
 Undecided, 
 Moogle Knight

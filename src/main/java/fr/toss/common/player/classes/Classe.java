@@ -145,13 +145,13 @@ public class Classe implements IClasse {
 				return (new ClasseRogue());
 				
 			case 7 :
-				return (new ClasseThief());
+				return (new ClasseThiefMoogle());
 				
 			case 8 :
-				return (new ClasseBlackmage());
+				return (new ClasseBlackmageHume());
 				
 			case 9 :
-				return (new ClasseArcher());
+				return (new ClasseArcherHume());
 				
 			case 10 :
 				return (new ClassePaladin());
@@ -166,7 +166,7 @@ public class Classe implements IClasse {
 				return (new ClasseBluemage());
 				
 			case 14 :
-				return (new ClasseIllusionist());
+				return (new ClasseIllusionistHume());
 				
 			case 15 :
 				return (new ClasseSeer());
@@ -190,7 +190,7 @@ public class Classe implements IClasse {
 				return (new ClasseTinker());
 				
 			case 22 :
-				return (new ClasseTimeMage());
+				return (new ClasseTimeMageMoogle());
 				
 			case 23 :
 				return (new ClasseChocoboKnight());
@@ -280,7 +280,7 @@ public class Classe implements IClasse {
 				return (new ClasseRaptor());
 				
 			case 52 :
-				return (new ClasseHunter());
+				return (new ClasseHunterHume());
 				
 			case 53 :
 				return (new ClasseRavager());
@@ -307,12 +307,27 @@ public class Classe implements IClasse {
 				return (new ClasseSoldier());
 			
 			case 61 :
-				return (new ClasseWhitemage());
+				return (new ClasseWhitemageViera());
 			case 62 :
 				return (new ClasseSpellblade());
 			case 63 :
-				return (new ClasseWhitemage2());
-		}
+					return (new ClasseWhitemageHume());
+			case 64 : 
+					return (new ClasseWhitemageNuMou());
+			case 65 : 
+					return (new ClasseBlackmageMoogle());
+			case 66 : 
+					return (new ClasseThiefHume());
+			case 67 : 
+					return (new ClasseBlackmageNuMou());
+			case 68 : 
+					return (new ClasseArcherViera());
+			case 69 : 
+					return (new ClasseHunterGria());
+			case 70 : 
+					return (new ClasseIllusionistNuMou());
+			case 71 : 
+					return (new ClasseTimeMageNuMou());}
 		return (new ClasseFarmer());
 	}
 	
@@ -331,11 +346,11 @@ public class Classe implements IClasse {
 			return (5);
 		else if (classe instanceof ClasseRogue)
 			return (6);
-		else if (classe instanceof ClasseThief)
+		else if (classe instanceof ClasseThiefMoogle)
 			return (7);
-		else if (classe instanceof ClasseBlackmage)
+		else if (classe instanceof ClasseBlackmageHume)
 			return (8);
-		else if (classe instanceof ClasseArcher)
+		else if (classe instanceof ClasseArcherHume)
 			return (9);
 		else if (classe instanceof ClassePaladin)
 			return (10);
@@ -345,7 +360,7 @@ public class Classe implements IClasse {
 			return (12);
 		else if (classe instanceof ClasseBluemage)
 			return (13);
-		else if (classe instanceof ClasseIllusionist)
+		else if (classe instanceof ClasseIllusionistHume)
 			return (14);
 		else if (classe instanceof ClasseSeer)
 			return (15);
@@ -361,7 +376,7 @@ public class Classe implements IClasse {
 			return (20);
 		else if (classe instanceof ClasseTinker)
 			return (21);
-		else if (classe instanceof ClasseTimeMage)
+		else if (classe instanceof ClasseTimeMageMoogle)
 			return (22);
 		else if (classe instanceof ClasseChocoboKnight)
 			return (23);
@@ -421,7 +436,7 @@ public class Classe implements IClasse {
 			return (50);
 		else if (classe instanceof ClasseRaptor)
 			return (51);
-		else if (classe instanceof ClasseHunter)
+		else if (classe instanceof ClasseHunterHume)
 			return (52);
 		else if (classe instanceof ClasseRavager)
 			return (53);
@@ -439,10 +454,31 @@ public class Classe implements IClasse {
 			return (59);
 		else if (classe instanceof ClasseSoldier)
 			return (60);
-		else if (classe instanceof ClasseWhitemage)
+		else if (classe instanceof ClasseWhitemageViera)
 			return (61);
 		else if (classe instanceof ClasseSpellblade)
 			return (62);
+		else if (classe instanceof ClasseWhitemageHume)
+			return (63);
+		else if (classe instanceof ClasseWhitemageNuMou)
+			return (64);
+		else if (classe instanceof ClasseBlackmageMoogle)
+			return (65);
+		else if (classe instanceof ClasseThiefHume)
+			return (66);
+		else if (classe instanceof ClasseBlackmageNuMou)
+			return (67);
+		else if (classe instanceof ClasseArcherViera)
+			return (68);
+		else if (classe instanceof ClasseHunterGria)
+			return (69);
+		else if (classe instanceof ClasseIllusionistNuMou)
+			return (70);
+		else if (classe instanceof ClasseTimeMageNuMou)
+			return (71);
+		
+		
+		
 		else
 			return (0);
 	}

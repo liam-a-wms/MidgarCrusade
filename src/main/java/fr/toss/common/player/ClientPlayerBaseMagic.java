@@ -19,12 +19,14 @@ import fr.toss.common.player.classes.Classe;
 import fr.toss.common.player.classes.ClasseAlchemist;
 import fr.toss.common.player.classes.ClasseAnimist;
 import fr.toss.common.player.classes.ClasseArcanist;
-import fr.toss.common.player.classes.ClasseArcher;
+import fr.toss.common.player.classes.ClasseArcherHume;
 import fr.toss.common.player.classes.ClasseAssassin;
 import fr.toss.common.player.classes.ClasseBeastmaster;
 import fr.toss.common.player.classes.ClasseBerserker;
 import fr.toss.common.player.classes.ClasseBishop;
-import fr.toss.common.player.classes.ClasseBlackmage;
+import fr.toss.common.player.classes.ClasseBlackmageHume;
+import fr.toss.common.player.classes.ClasseBlackmageMoogle;
+import fr.toss.common.player.classes.ClasseBlackmageNuMou;
 import fr.toss.common.player.classes.ClasseBluemage;
 import fr.toss.common.player.classes.ClasseCannoneer;
 import fr.toss.common.player.classes.ClasseChampion;
@@ -38,8 +40,10 @@ import fr.toss.common.player.classes.ClasseFusilier;
 import fr.toss.common.player.classes.ClasseGeomancer;
 import fr.toss.common.player.classes.ClasseGladiator;
 import fr.toss.common.player.classes.ClasseGreenMage;
-import fr.toss.common.player.classes.ClasseHunter;
-import fr.toss.common.player.classes.ClasseIllusionist;
+import fr.toss.common.player.classes.ClasseHunterGria;
+import fr.toss.common.player.classes.ClasseHunterHume;
+import fr.toss.common.player.classes.ClasseIllusionistHume;
+import fr.toss.common.player.classes.ClasseIllusionistNuMou;
 import fr.toss.common.player.classes.ClasseJuggler;
 import fr.toss.common.player.classes.ClasseLanista;
 import fr.toss.common.player.classes.ClasseMage;
@@ -63,14 +67,18 @@ import fr.toss.common.player.classes.ClasseSoldier;
 import fr.toss.common.player.classes.ClasseSpellblade;
 import fr.toss.common.player.classes.ClasseSummoner;
 import fr.toss.common.player.classes.ClasseTemplar;
-import fr.toss.common.player.classes.ClasseThief;
-import fr.toss.common.player.classes.ClasseTimeMage;
+import fr.toss.common.player.classes.ClasseThiefHume;
+import fr.toss.common.player.classes.ClasseThiefMoogle;
+import fr.toss.common.player.classes.ClasseTimeMageMoogle;
+import fr.toss.common.player.classes.ClasseTimeMageNuMou;
 import fr.toss.common.player.classes.ClasseTinker;
 import fr.toss.common.player.classes.ClasseTrickster;
 import fr.toss.common.player.classes.ClasseViking;
 import fr.toss.common.player.classes.ClasseWarrior;
 import fr.toss.common.player.classes.ClasseWhiteMonk;
-import fr.toss.common.player.classes.ClasseWhitemage;
+import fr.toss.common.player.classes.ClasseWhitemageHume;
+import fr.toss.common.player.classes.ClasseWhitemageNuMou;
+import fr.toss.common.player.classes.ClasseWhitemageViera;
 import fr.toss.common.player.race.Race;
 import fr.toss.common.player.spells.Spell;
 
@@ -167,28 +175,31 @@ public class ClientPlayerBaseMagic extends ClientPlayerBase
 				this.energy--;
 		}
 		else if (this.classe instanceof ClasseNecromancer || this.classe instanceof ClasseMage || this.classe instanceof ClassePriest
-       	     || this.classe instanceof ClasseBlackmage|| this.classe instanceof ClasseBluemage|| this.classe instanceof ClasseGreenMage
-       	     || this.classe instanceof ClasseTimeMage|| this.classe instanceof ClasseRedMage|| this.classe instanceof ClasseWhitemage
-       	     || this.classe instanceof ClassePaladin|| this.classe instanceof ClasseIllusionist|| this.classe instanceof ClasseSeer
+       	     || this.classe instanceof ClasseBlackmageHume|| this.classe instanceof ClasseBluemage|| this.classe instanceof ClasseGreenMage
+       	     || this.classe instanceof ClasseTimeMageMoogle|| this.classe instanceof ClasseRedMage|| this.classe instanceof ClasseWhitemageViera
+       	     || this.classe instanceof ClassePaladin|| this.classe instanceof ClasseIllusionistHume|| this.classe instanceof ClasseSeer
        	     || this.classe instanceof ClasseSummoner|| this.classe instanceof ClasseElementalist|| this.classe instanceof ClasseSpellblade
        	     || this.classe instanceof ClasseBishop|| this.classe instanceof ClasseTemplar|| this.classe instanceof ClasseSage
        	     || this.classe instanceof ClasseAlchemist|| this.classe instanceof ClasseArcanist|| this.classe instanceof ClasseScholar
-       	     || this.classe instanceof ClasseGeomancer)
-		{
+       	     || this.classe instanceof ClasseGeomancer || this.classe instanceof ClasseWhitemageHume || this.classe instanceof ClasseWhitemageNuMou
+       	     || this.classe instanceof ClasseTimeMageNuMou || this.classe instanceof ClasseIllusionistNuMou || this.classe instanceof ClasseBlackmageMoogle
+       	     || this.classe instanceof ClasseBlackmageNuMou)
+       	{
 			if (this.energy < this.max_energy)
 				this.increase_energy(this.energy_regen);
 		}
 		else if (this.classe instanceof ClasseDragonslayer || this.classe instanceof ClasseRogue
-        		|| this.classe instanceof ClasseThief|| this.classe instanceof ClasseArcher
-        		|| this.classe instanceof ClasseHunter|| this.classe instanceof ClasseNinja
+        		|| this.classe instanceof ClasseThiefMoogle|| this.classe instanceof ClasseArcherHume
+        		|| this.classe instanceof ClasseHunterHume|| this.classe instanceof ClasseNinja
         		|| this.classe instanceof ClasseAnimist|| this.classe instanceof ClasseFusilier
         		|| this.classe instanceof ClasseJuggler|| this.classe instanceof ClasseTinker
         		|| this.classe instanceof ClasseFlintlock|| this.classe instanceof ClasseFencer
         		|| this.classe instanceof ClasseAssassin|| this.classe instanceof ClasseSniper
         		|| this.classe instanceof ClasseWhiteMonk|| this.classe instanceof ClasseCannoneer
         		|| this.classe instanceof ClasseMasterMonk|| this.classe instanceof ClasseTrickster
-        		|| this.classe instanceof ClasseBeastmaster|| this.classe instanceof ClasseRanger)
-		{
+        		|| this.classe instanceof ClasseBeastmaster|| this.classe instanceof ClasseRanger
+        		|| this.classe instanceof ClasseThiefHume || this.classe instanceof ClasseHunterGria)
+        	{
 			if (this.energy < this.getClasse().getMaxEnergy())
 				this.energy++;
 		}

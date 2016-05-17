@@ -293,7 +293,8 @@ public class ClientPlayerBaseMagic extends ClientPlayerBase
 		 }
 	}
 	
-	/** Lorsque le joueur monte d'un niveau */
+	/** 
+	When the player up a level */
 	public void onLevelUp()
 	{
 		this.experience = 0;
@@ -321,7 +322,8 @@ public class ClientPlayerBaseMagic extends ClientPlayerBase
 		return (this.level);
 	}
 	
-	/** Definit le niveau du joueur */
+	/** 
+	Defines the player's level*/
 	public void setLevel(int p_level)
 	{
 		if (p_level != this.level)
@@ -337,19 +339,22 @@ public class ClientPlayerBaseMagic extends ClientPlayerBase
 	}
 
 	
-	/** Retournes la classe du joueur */
+	/** 
+	Go back to class player */
 	public Classe getClasse()
 	{
 		return (this.classe);
 	}
 
-	/** Definit l'experience du joueur */
+	/** 
+	defines the experience of the player */
 	public void setCurrentExperience(int current_experience)
 	{
 		this.experience = current_experience;
 	}
 
-	/** Réduit l'energy du joueur */
+	/** 
+	deduct the player's energy */
 	public void decreaseEnergy(int cost)
 	{
 		this.energy -= cost;

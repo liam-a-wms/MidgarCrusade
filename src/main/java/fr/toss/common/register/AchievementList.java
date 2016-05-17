@@ -31,6 +31,6 @@ public class AchievementList {
 
 	public static void load()
 	{
-		AchievementPage.registerAchievementPage(new AchievementPage("Magic Crusade", DUNGEON, LOGING, ORC_SLAYER, NEW_DIMENSION, NEW_ITEMS, SILVER_PICKAXE, TITANIUM_STUFF, ETHERNIUM_SWORD, SULFURAS, MAGIC_STAFF));
+		AchievementPage.registerAchievementPage(new AchievementPage("Midgar Crusade", DUNGEON, LOGING, ORC_SLAYER, NEW_DIMENSION, NEW_ITEMS, SILVER_PICKAXE, TITANIUM_STUFF, ETHERNIUM_SWORD, SULFURAS, MAGIC_STAFF));
 	}
 }

@@ -211,7 +211,7 @@ public class GuiSelectRace extends GuiScreen {
     	}
     	else if (b.id == 48)
     	{
-    		description = new String[1];
+    		description = new String[3];
     		advices = new String[4];
     		race = ChatColor.WHITE + I18n.format("Gria");
     		description[0] = I18n.format("Wings of a dragon and powerful tail distinguish this unique race.");

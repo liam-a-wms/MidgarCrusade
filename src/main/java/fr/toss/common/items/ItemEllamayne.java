@@ -2,6 +2,7 @@ package fr.toss.common.items;
 
 import java.util.List;
 
+import net.minecraft.client.Minecraft;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
@@ -11,6 +12,7 @@ import net.minecraft.potion.PotionEffect;
 import net.minecraft.world.World;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
+import fr.toss.client.gui.GuiSelectHumeClass;
 import fr.toss.common.command.ChatColor;
 import fr.toss.common.register.EnumMaterial;
 
@@ -30,6 +32,7 @@ public class ItemEllamayne extends ItemSwordM {
      */
     public ItemStack onItemRightClick(ItemStack is, World w, EntityPlayer p)
     {
+    	
     	return (super.onItemRightClick(is, w, p));
     }
     

@@ -46,28 +46,35 @@ public class Blindshot_1 extends Spell {
 	{
 		return I18n.format("spell.archer.blindshot");
 	}
-
+	public boolean RandomBoolean(){
+	    return Math.random() < (1.8);
+	}
 	@Override
 	public boolean onUse()
 	{
+		RandomBoolean randomBoolean = new RandomBoolean();
+		
+        {
+		
 		EntityPlayer p;
 		
 		p = this.player.getPlayer();
 		if (p.getCurrentEquippedItem() != null)
 		{
-			if (p.getCurrentEquippedItem().getItem() instanceof ItemBow)
-			{
+				
+			 System.out.println(randomBoolean.getBoolean());
 				PacketSpellToServer packet;
 				
 				packet = new PacketSpellToServer(getUniqueID());
 				Packets.network.sendToServer(packet);
+				return (true);
 			}
 			else
 				player.getPlayer().addChatComponentMessage(new ChatComponentText(ChatColor.RED + "You must equip a bow for this." + ChatColor.RESET));
-		}
-		else
-			player.getPlayer().addChatComponentMessage(new ChatComponentText(ChatColor.RED + "You must equip a bow for this." + ChatColor.RESET));
 		
-		return (true);
+		
+		
 	}
+		return false;
+}
 }

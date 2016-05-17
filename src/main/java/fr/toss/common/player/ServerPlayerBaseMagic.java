@@ -96,7 +96,7 @@ public class ServerPlayerBaseMagic extends ServerPlayerBase
 		
 		this.classe = p_classe;
 		this.level = 1;
-		this.experience = 0;
+		this.experience = getExperience();
 		this.exp_to_next_level = this.level * 20 * (this.level + 1);
 		this.player.getEntityAttribute(SharedMonsterAttributes.maxHealth).setBaseValue(0.5d * (this.level - 1) + 20.0d + this.endurance / 10);
 	    this.player.setHealth(this.getPlayer().getMaxHealth());

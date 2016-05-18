@@ -5,6 +5,10 @@
 [ ] Skills Unlock After Specif Wepon Is Used To Cast Spell X Amount Of Times ("AP To Master")
 [ ] Add an accurary stat in that affects all spells and weapons or find code that allows to hit or miss by random %
 [ ] Add in elemental damage types and implement extra damage
+[ ] Add Increased elemental damage depending on envoroment like an ice spell does more damage in an ice biome
+[ ] Find a way to program a limitbreak/overdrive system
+[ ] Program support & reaction abilitys
+[ ] Add an accessories slot to GUI [baubles mod could be used for rings and accessories]
 [ ] 
 ----------------------------------------------------------------
                           WIP Class Spell List

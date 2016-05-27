@@ -242,14 +242,6 @@ spell.priest.holy_explosion.line1=
 spell.priest.holy_explosion.line2=
 
 
-#RACES
-race.hume.slogan=Hume
-race.hume.slogan
-
-
-
-
-
 #   LANG CLASSE
 classe.choose=Choose a classe to get more informations about it
 
@@ -571,7 +563,6 @@ achievement.magic_staff.desc=Find one of the three Magic staff
 #   KEY BINDS
 key.categories.magiccrusade=-- Magic Crusade --
 key.select_classe=Classe Selection
-
 key.group=Group Gui
 key.stats=Player Screen
 key.spells_0=Spell 1
@@ -754,3 +745,640 @@ entity.Chevalier.name=Chevalier
 entity.Crocotta.name=Crocotta
 entity.Libellule.name=Libellule
 entity.Belier.name=Aries
+
+
+
+
+
+
+
+item.Brewingstand.name=Brewing Stand
+item.Brewingstand.description= a copious brewing stand
+
+
+//------------------BONES-------------------//
+
+item.Phoenix_Feather.name=Phoenix Feather
+item.Phoenix_feather.description= a copious Phoenix_feather
+item.Aged_turtle_shell.name=Aged Turtle Shell
+item.Alraune_drill.name= Alraune Drill
+item.Ancient_turtle_shell.name=Ancient Turtle Shell
+item.Animal_bone.name=Animal Bone
+item.Battle_wyrm_carapace.name=Battle Wyrm Carapace
+item.Beast_lord_horn.name=Beast Lord Horn
+item.Blood_darkened_bone.name=Blood Darkened Bone
+item.Bomb_shell.name=Bomb Shell
+item.Bone_chips.name=Bone Chips
+item.Cod_scale.name=Cod Scale
+item.Coral_fragments.name=Coral Fragments
+item.Crooked_fang.name=Crooked Fang
+item.Dragon_bone.name=Dragon Bone
+item.Emperor_scale.name=Emperor Scale
+item.Fury_fragments.name=Fury Fragments
+item.Gimble_stalk.name=Gimble Stalk
+item.Great_serpent_fang.name=Great Serpent Fang
+item.Insect_husk.name=Insect Husk
+item.Iron_carapace.name=Iron Carapace
+item.Lamia_scale.name=Lamia Scale
+item.Mirror_scale.name=Mirror Scale
+item.Molting.name=Molting
+item.Pointed_horn.name=Pointed Horn
+item.Skull.name=Skull
+item.Spiral_incisor.name=Spiral Incisor
+item.Star_fragments.name=Star Fragments
+item.Sturdy_Bone.name=Sturdy Bone
+item.Vampyr_fang.name=Vampyr Fang
+item.Wyrm_carapace.name=Wyrm Carapace
+item.Wyvern_fang.name=Wyvern Fang
+item.Zingu_pearl.name=Zingu Pearl
+item.Zingu_pearl_shell.name=Zingu Pearl Shell
+
+//-------------------------------------------//
+
+
+//--------------CLOTH---------------------//
+
+item.Demon_feather.name=Demon Feather
+item.Wyvern_wing.name=Wyvern Wing
+item.Spider_silk.name=Spider Silk
+item.Rainbow_thread.name=Rainbow Thread
+item.Wind_slicer_pinion.name=Windslicer Pinion
+item.Black_thread.name=Black Thread
+item.White_thread.name=White Thread
+item.Fine_wool.name=Fine Wool
+item.Superior_silk_thread.name=Superior Silk Thread
+item.Velvet.name=Velvet
+item.Bat_wing.name=Bat Wing
+item.Dirty_wool.name=Dirty Wool
+item.Wool.name=Wool
+item.Aged_linen_thread.name=Aged Linen Thread
+item.Silk_thread.name=Silk Thread
+item.Soft_cotton.name=Soft Cotton
+item.Ahriman_wing.name=Ahriman Wing
+item.Small_feather.name=Small Feather
+item.Large_feather.name=Large Feather
+item.Giant_feather.name=Giant Feather
+
+//----------------------------------//
+
+//---------------FLORA----------//
+
+item.Flute_grass.name=Flute Grass
+item.Recall_grass.name=Recall Grass
+item.Scream_root.name=Scream Root
+item.Aurea_pollen.name=Aurea Pollen
+item.Malboro_flower.name=Malboro Flower
+item.Kalos.name=Kalos
+item.Gold_cap.name=Gold cap
+item.Magick_fruit.name=Magick Fruit
+item.Suspect_mushroom.name=Suspect Mushroom
+item.Spiral_vine.name=Spiral Vine
+item.Four_leaf_clover.name=Four Leaf Clover
+item.Leucojum.name=Leucojum
+item.Moon_bloom.name=Moon Bloom
+item.Hedychium.name=Hedychium
+item.Onion.name=Onion
+item.Hedychium_pollen.name=Hedychium Pollen
+item.Pearl_moss.name=Pearl Moss
+item.Tomato_stalk.name=Tomato Stalk
+item.Telak_flower.name=Telak Flower
+item.Silk_bloom.name=Silk Bloom
+item.Marriom_heather.name=Marriom Heather
+item.Prima_petal.name=Prima Petal
+item.Nepenthis.name=Nepenthis
+item.Whisper_weed.name=Whisper Weed
+item.Ladies_tresses.name=Ladies Tresses
+item.Power_fruit.name=Power Fruit
+item.Succulent_fruit.name=Succulent Fruit
+item.Cactus_fruit.name=Cactus Fruit
+item.Tiny_mushrooms.name=Tiny Mushrooms
+item.Faren_pollen.name=Faren Pollen
+item.Malboro_vine.name=Malboro Vine
+item.Sturdy_vine.name=Sturdy Vine
+item.Ball_moss.name=Moss Ball
+item.Pepper_grass.name=Pepper Grass
+
+//--------------------------------------//
+
+
+//----------MAGICITES----------------//
+item.Earth_crystal.name=Earth Crystal
+item.Fire_crystal.name=Fire Crystal
+item.Wind_crystal.name=Wind Crystal
+item.Water_crystal.name=Water Crystal
+item.Snow_crystal.name=Snow Crystal
+item.Storm_crystal.name=Storm Crystal
+item.Light_crystal.name=Light Crystal
+item.Dark_crystal.name=Dark Crystal
+item.Tarkov_crystal.name=Tarkov Crystal
+item.Body_ceffyl.name=Body Ceffyl
+item.Mind_ceffyl.name=Mind Ceffyl
+item.Soul_ceffyl.name=Soul Ceffyl
+item.High_arcana.name=High Arcana
+item.Low_arcana.name=Low Arcana
+item.Earth_stone.name=Earth Stone
+item.Wind_stone.name=Wind Stone
+item.Water_stone.name=Water Stone
+item.Fire_stone.name=Fire Stone
+item.Ice_stone.name=Ice Stone
+item.Storm_stone.name=Storm Stone
+item.Holy_stone.name=Holy Stone
+item.Dark_stone.name=Dark  Stone
+item.Earth_sigil.name=Earth  Sigil
+item.Wind_sigil.name=Wind  Sigil
+item.Water_sigil.name=Water  Sigil
+item.Fire_sigil.name=Fire  Sigil
+item.Ice_sigil.name=Ice  Sigil
+item.Storm_sigil.name=Storm Sigil
+
+//---------------------------------//
+
+
+
+//------------METALS---------------//
+
+item.Mythril.name=Mythril
+item.Scarletite.name=Scarletite
+item.Orichalcum.name=Orichalcum
+item.Einherjarium.name=Einherjarium
+item.Gold_chalice.name=Gold Chalice
+item.Bundle_of_needles.name=Bundle Of Needles
+item.Adamantite.name=Adamantite
+item.Crusite_alloy.name=Crusite Alloy
+item.Mysidia_alloy.name=Mysidia Alloy
+item.Gemsteel.name=Gemsteel
+item.Moon_ring.name=Moon Ring
+item.Zodiac_ore.name=Zodiac Ore
+item.Leestone.name=Leestone
+item.Adamant_alloy.name=Adamant Alloy
+item.Damascus.name=Damascus
+item.Zincatite.name=Zincatite
+item.Dipraeu_bronze.name=Dipraeu Bronze
+item.Platinum.name=Platinum
+item.Gun_gear.name=Gun Gear
+item.Cursed_coin.name=Cursed Coin
+item.Zinconium.name=Zinconium
+item.Xergis_tin.name=Xergis Tin
+item.Cruzle_brass.name=Cruzle Brass
+item.Gikhet_lead.name=Gikhet Lead
+item.Clock_gear.name=Clock Gear
+item.Trusty_frying_pan.name=Trusty Frying Pan
+item.Sanative_needle.name=Sanative Needle
+
+//-----------------------------------//
+
+
+//-------------PHILTRES----------//
+item.Putrid_liquid.name=Putrid Liquid
+item.Hero_tonic.name=Hero Tonic
+item.Fiends_blood.name=Fiends Blood
+item.Silver_liquid.name=Silver Liquid.
+item.Unpurified_ether.name=Unpurified Ether
+item.Crusader_tonic.name=Crusader Tonic
+item.Strange_liquid.name=Strange Liquid
+item.Aqua_gelac.name=Aqua Gelac
+item.Clear_sap.name=Clear Sap
+item.Sweet_sap.name=Sweet Sap
+item.Yellow_liquid.name=Yellow Liquid
+item.Foul_liquid.name=Foul Liquid
+item.Healing_water.name=Healing Water
+item.Malboro_wine.name=Malboro Wine
+item.Bitter_sap.name=Bitter Sap
+item.Green_liquid.name=Green Liquid
+item.Fresh_water.name=Fresh Water
+item.Cloudy_sap.name=Cloudy Sap
+//-----------------------------------------//
+
+
+//------Skins--------------------------//
+
+item.Prime_tanned_hide.name=Prime Tanned Hide
+item.Prime_pelt.name=Prime Pelt
+item.Pink_tail.name=Pink Tail
+item.Cockatrice_skin.name=Cockatrice Skin
+item.Tanned_beast_hide.name=Tanned Beast Hide
+item.Tyrant_hide.name=Tyrant Hide
+item.Quality_hide.name=Quality Hide
+item.Giant_tanned_hide.name=Giants Tanned Hide
+item.Tanned_tyrant_hide.name=Tanned Tyrant Hide
+item.Coeurl_pelt.name=Coeurl Pelt
+item.Quality_pelt.name=Quality Pelt
+item.Rabbit_tail.name=Rabbit Tail
+item.Tiger_hide.name=Tiger Hide
+item.Chocobo_skin.name=Chocobo Skin
+item.Rat_pelt.name=Rat Pelt
+item.Snake_skin.name=Snake Skin
+item.Tanned_hide.name=Tanned Hide
+item.Wolf_pelt.name=Wolf Pelt
+item.Rabbit_pelt.name=Rabbit Pelt
+item.Rat_tail.name=Rat Tail
+item.Bat_tail.name=Bat Tail
+//---------------------------//
+
+//----Timber---------------//
+
+item.Stradivari.name=Stradivari
+item.Strawood.name=Strawood
+item.Mahbeny.name=Mahbeny
+item.God_wood.name=God Wood.
+item.Quince.name=Quince
+item.Gurnat.name=Gurnat
+item.Kuraisle_boxwood.name=Kuraisle Boxwood
+item.Wyrm_twig.name=Wyrm Twig
+item.Divari_wood.name=Divari Wood
+item.Quality_lumber.name=Quality Lumber
+item.Kempas.name=Kempas
+item.Agathis.name=Agathis
+item.Red_geeps.name=Red Geeps
+item.Rose_branch.name=Rose Branch
+item.Pagoda_wood.name=Pagoda Wood
+item.Moon_wood.name=Moon Wood
+item.Danbuk_wood.name=Danbuk Wood.
+item.Cottonflue.name=Cottonflue
+item.Waltwood.name=Waltwood.
+item.Mape_wood.name=Mape Wood.
+item.Spruce.name=Spruce
+item.Birch.name=Birch
+
+
+//---------------------------------//
+
+
+
+//-----------Weapons--------------//
+
+item.weaponname.name=name
+
+
+
+
+
+//-----------FFTA Daggers--------------//
+item.Dagger.name=Dagger
+item.Jack_knife.name=Jack Knife
+item.Kard.name=Kard
+item.Scramasax.name=Scramasax
+item.Rondel.name=Rondel
+item.Kris.name=Kris
+item.Khukuri.name=Khukuri
+item.Zwill_blade.name=Zwillblade
+item.Sword_breaker.name=Swordbreaker
+item.Orichalcum_dirk.name=Orichalcum Dirk
+item.Cinquedea.name=Cinquedea
+item.Jambiya.name=Jambiya
+item.Tonberrian.name=Tonberrian
+item.Tiptaptwo.name=Tiptaptwo
+
+//-----------FFTA Swords--------------//
+item.Short_sword.name=Shortsword
+item.Broad_sword.name=Broadsword
+item.Buster_sword.name=Buster Sword
+item.Burglar_sword.name=Burglar Sword
+item.Silver_sword.name=Silver Sword
+item.Gale_sword.name=Gale Sword
+item.Blood_sword.name=Blood Sword
+item.Onion_sword.name=Onion Sword
+item.Restorer.name=Restorer
+item.Vitanova.name=Vitanova
+item.Chirijiraden.name=Chirijiraden
+
+//-----------FFTA Blades--------------//
+item.Iron_blade.name=Iron Blade
+item.Sweep_blade.name=Sweep Blade
+item.Shadow_blade.name=Shadow Blade
+item.Sun_blade.name=Sun Blade
+item.Atomos_blade.name=Atomos Blade
+item.Venus_blade.name=Venus Blade
+item.Pearl_blade.name=Pearl Blade
+item.Ogun_blade.name=Ogun Blade
+item.Flametongue.name=Flametongue
+item.Air_blade.name=Air Blade
+item.Icebrand.name=Icebrand
+item.Kwigon_blade.name=Kwigon Blade
+item.Paraiba_blade.name=Paraiba Blade
+item.Ebon_blade.name=Ebon Blade
+item.Adamant_blade.name=Adamant Blade
+item.Materia_blade.name=Materia Blade
+item.Ayvuir_red.name=Ayvuir Red
+item.Ayvuir_blue.name=Ayvuir Blue
+
+//-----------FFTA Sabers--------------//
+item.Light_saber.name=Light Saber
+item.Blue_saber.name=Blue Saber
+item.Shamshir.name=Shamshir
+item.Aqua_saber.name=Aqua Saber
+item.Harpe.name=Harpe
+item.Manganese_saber.name=Manganese Saber
+item.Talwar.name=Talwar
+item.Soul_saber.name=Soulsaber
+
+//-----------FFTA Knightswords--------------//
+item.Long_sword.name=Longsword
+item.Defender.name=Defender
+item.Apocalypse.name=Apocalypse
+item.Lionheart.name=Lionheart
+item.Ragnarok.name=Ragnarok
+item.Lohengrin.name=Lohengrin
+item.Save_the_queen.name=Save the Queen
+item.Arch_sword.name=Arch Sword
+item.Excalibur.name=Excalibur
+item.Sequencer.name=Sequencer
+item.Nagrarok.name=Nagrarok
+item.The_fallen_angel.name=The Fallen Angel
+
+//-----------FFTA Rapiers--------------//
+item.Battle_rapier.name=Battle Rapier
+item.Stinger.name=Stinger
+item.Estoc.name=Estoc
+item.Fleuret.name=Fleuret
+item.Scarlet_rapier.name=Scarlet Rapier
+item.Flamberge.name=Flamberge
+item.Silver_rapier.name=Silver Rapier
+item.Djinn_flyssa.name=Djinn Flyssa
+item.Joyeuse.name=Joyeuse
+item.Mage_masher.name=Mage Masher
+item.Colichemarde.name=Colichemarde
+item.Gupti_aga.name=Gupti Aga
+item.Madu.name=Madu
+item.Epee_prisme.name=Epee-prisme
+item.Diabolique.name=Diabolique
+item.Femme_fatale.name=Femme Fatale
+item.Wind_song_rapier.name=Windsong Rapier
+item.Last_letter.name=Last Letter
+
+//-----------FFTA Greatswords--------------//
+item.Barong.name=Barong
+item.Xanqbras.name=Xanqbras
+item.Dagriohm.name=Dagriohm
+item.Ancient_sword.name=Ancient Sword
+item.Diamond_sword.name=Diamond Sword
+item.Oblige.name=Oblige
+item.Hard_edge.name=Hardedge
+item.Ogrenix.name=Ogrenix
+item.Zwheihander.name=Zweihander
+item.Lua_breaker.name=Luabreaker
+item.Master_sword.name=Master Sword
+item.Vigilante.name=Vigilante
+item.Tournesol.name=Tournesol
+
+//-----------FFTA Broadswords--------------//
+item.Samson_sword.name=Samson Sword
+item.Falchion.name=Falchion
+item.Predator.name=Predator
+item.Stribog.name=Stribog
+item.El_cid.name=El-Cid
+item.Beast_sword.name=Beastsword
+item.Claymore.name=Claymore
+item.Vajra.name=Vajra
+item.Rhomphaia.name=Rhomphaia
+item.Estrella.name=Estrella
+
+//-----------FFTA Katanas--------------//
+item.Kunai.name=Kunai
+item.Murasame.name=Murasame
+item.Ashura.name=Ashura
+item.Osafune.name=Osafune
+item.Kotetsu.name=Kotetsu
+item.Kiku_ichimonji.name=Kiku-ichimonji
+item.Amanomurakumo.name=Ama-no-murakumo
+item.Nosada.name=Nosada
+item.Adazakura.name=Adazakura
+item.Ragetsu_denbu.name=Ragetsu-Denbu
+item.Masamune.name=Masamune
+item.Zanmato.name=Zanmato
+item.Sumihomura.name=Sumihomura
+item.Hyakushiki_masamune.name=Hyakushiki-Masamune
+
+//-----------FFTA Spears--------------//
+item.Short_spear.name=Short Spear
+item.Javelin.name=Javelin
+item.Lava_spear.name=Lava Spear
+item.Gae_bolg.name=Gae Bolg
+item.Ice_lance.name=Ice Lance
+item.Partisan.name=Partisan
+item.Kains_lance.name=Kain's Lance
+item.Trident.name=Trident
+item.Dragon_whisker.name=Dragon Whisker
+
+//-----------FFTA Axes--------------//
+item.Broad_axe.name=Broadaxe
+item.Slasher.name=Slasher
+item.Hammer_head.name=Hammerhead
+item.Francisca.name=Fransisca
+item.Great_axe.name=Greataxe
+item.Golden_axe.name=Golden Axe
+
+//-----------FFTA Rods--------------//
+item.Rod.name=Rod
+item.Fire_wheel_rod.name=Firewheel Rod
+item.Thunder_rod.name=Thunder Rod
+item.Sleet_rod.name=Sleet Rod
+item.Terre_rod.name=Terre Rod
+item.Force_rod.name=Force Rod
+item.Flame_rod.name=Flame Rod
+item.Thor_rod.name=Thor Rod
+item.Chill_rod.name=Chill Rod
+item.Stardust_rod.name=Stardust Rod
+item.Lilith_rod.name=Lilith Rod
+item.Bomb_arm.name=Bomb Arm
+item.Heretic_rod.name=Heretic Rod
+item.Crown_scepter.name=Crown Scepter
+
+//-----------FFTA Staves--------------//
+item.White_staff.name=White Staff
+item.Staff_of_protection.name=Staff of Protection
+item.Thunder_rod.name=Thunder Rod
+item.Judicers_staff.name=Judicer's Staff
+item.Healing_staff.name=Healing Staff
+item.Cleansing_staff.name=Cleansing Staff
+item.Staff_of_blessings.name=Staff of Blessings
+item.Serpent_staff.name=Serpent Staff
+item.Spring_staff.name=Spring Staff
+item.Pomegranate_staff.name=Pomegranate Staff
+item.Cheer_staff.name=Cheer Staff
+item.Staff_of_the_magi.name=Staff of the Magi
+item.Nirvana.name=Nirvana
+
+//-----------FFTA Poles--------------//
+item.Tonfa.name=Tonfa
+item.Cypress_pole.name=Cypress Pole
+item.Battle_bamboo.name=Battle Bamboo
+item.Sanjie_gun.name=Sanjiegun
+item.Zephyr_pole.name=Zephyr Pole
+item.Iron_pole.name=Iron Pole
+item.Esztam_baton.name=Esztam Baton
+item.Gokuu_pole.name=Gokuu Pole
+item.Fanatic.name=Fanatic
+item.Ivory_pole.name=Ivory Pole
+item.Eight_fluted_pole.name=Eight-Fluted Pole
+item.Whale_whisker.name=Whale Whisker
+
+//-----------FFTA Poles--------------//
+item.Leather_knuckles.name=Leather Knuckles
+item.Metal_knuckles.name=Metal Knuckles
+item.Rising_sun.name=Rising Sun
+item.Poison_knuckles.name=Poison Knuckles
+item.Dream_claws.name=Dream Claws
+item.Kaiser_knuckles.name=Kaiser Knuckles
+item.Cat_claws.name=Cat Claws
+item.Survivor.name=Survivor
+item.White_fangs.name=White Fangs
+item.Godhand.name=Godhand
+item.Tiger_fangs.name=Tiger Fangs
+item.Death_claws.name=Death Claws
+item.Magick_hands.name=Magick Hands
+item.Gleisburst.name=Gleisburst
+
+//-----------FFTA Instruments--------------//
+item.Lamia_harp.name=Lamia Harp
+item.Demon_bell.name=Demon Bell
+item.Glass_bell.name=Glass Bell
+item.War_trumpet.name=War Trumpet
+item.Conch_shell.name=Conch Shell
+item.Hurdy_gurdy.name=Hurdy-gurdy
+item.Black_quena.name=Black Quena
+item.Satyr_flute.name=Satyr Flute
+item.Faerie_harp.name=Faerie Harp
+item.Blue_leaf_flute.name=Blueleaf Flute
+item.Heal_chime.name=Heal Chime
+item.Frigid_viol.name=Frigid Viol
+item.Shining_lute.name=Shining Lute
+item.Brilliant_theorbo.name=Brilliant Theorbo
+item.Glass_harp.name=Glass Harp
+//-----------FFTA Hammers--------------//
+item.Iron_hammer.name=Iron Hammer
+item.War_hammer.name=War Hammer
+item.Sledge_hammer.name=Sledgehammer
+item.Mjolnir.name=Mjolnir
+
+//-----------FFTA Maces--------------//
+item.Battle_mace.name=Battle Mace
+item.Energy_mace.name=Energy Mace
+item.Druid_mace.name=Druid Mace
+item.Sage_crosier.name=Sage Crosier
+item.Life_crosier.name=Life Crosier
+item.Morning_star.name=Morning Star
+item.Mandragora.name=Mandragora
+item.Lotus_mace.name=Lotus Mace
+item.Scorpion_tail.name=Scorpion Tail
+item.Zeus_mace.name=Zeus Mace
+
+//-----------FFTA Books--------------//
+item.Battle_folio.name=Battle Folio
+item.Mage_manual.name=Mage Manual
+item.Urutan_annals.name=Urutan Annals
+item.The_arnath_glyphs.name=The Arnath Glyphs
+item.Enavia_chronicles.name=Enavia Chronicles
+item.Veil_of_wiyu.name=Veil of Wiyu
+item.Tome_of_ending.name=Tome of Ending
+item.Edaroya_scriptures.name=Edaroya Scriptures
+
+//-----------FFTA Bows--------------//
+item.Short_bow.name=Shortbow
+item.Long_bow.name=Longbow
+item.Char_bow.name=Char Bow
+item.Silver_bow.name=Silver Bow
+item.Thorn_bow.name=Thorn Bow
+item.Nail_bow.name=Nail Bow
+item.Artemis_bow.name=Artemis Bow
+item.Yoichi_bow.name=Yoichi Bow
+item.Target_bow.name=Target Bow
+item.Perseus_bow.name=Perseus Bow
+item.Crescent_bow.name=Crescent Bow
+item.Mal_bow.name=Malbow
+
+//-----------FFTA Greatbow--------------//
+item.Composite_bow.name=Composite Bow
+item.Wind_slash_bow.name=Windslash Bow
+item.Huntsmans_bow.name=Huntsman's Bow
+item.Cranequin_bow.name=Cranequin
+item.Twin_bow.name=Twin Bow
+item.Hunting_bow.name=Hunting Bow
+item.Elfin_bow.name=Elfin Bow
+item.Hades_bow.name=Hades Bow
+item.Nike_bow.name=Nike Bow
+item.Master_bow.name=Master Bow
+item.Marduk.name=Marduk
+item.Arbalest.name=Arbalest
+item.Gastrophetes.name=Gastrophetes
+item.Maxs_oath_bow.name=Max's Oathbow
+item.Seventh_heaven.name=Seventh Heaven
+
+//-----------FFTA Guns--------------//
+item.Gougmk29.name=Goug Mk 29
+item.Aiot_gun.name=Aiot Gun
+item.Silver_cannon.name=Silver Cannon
+item.Riot_gun.name=Riot Gun
+item.Chaos_rifle.name=Chaos Rifle
+item.Lost_gun.name=Lost Gun
+item.Giot_gun.name=Giot Gun
+item.Long_barrel.name=Longbarrel
+item.Outsider.name=Outsider
+item.Peace_maker.name=Peacemaker
+
+//-----------FFTA Hand-cannons--------------//
+item.Hand_cannon.name=Hand Cannon
+item.Omnis_cannon.name=Omnis Cannon
+item.Diklum.name=Diklum
+item.Supernal_ray.name=Supernal Ray
+item.Ligatur.name=Ligatur
+item.Brevis.name=Brevis
+item.Massive_bazooka.name=Massive Bazooka
+item.Guang_cannon.name=Guang Cannon
+item.Dromaeo.name=Dromaeo
+item.Rocket_punch.name=Rocket Punch
+
+//-----------FFTA Cards--------------//
+item.Four_of_spades.name=Four of Spades
+item.Eight_of_hearts.name=Eight of Hearts
+item.Queen_of_clubs.name=Queen of Clubs
+item.Jack_of_diamonds.name=Jack of Diamonds
+item.King_of_hearts.name=King of Hearts
+item.Ace_of_spades.name=Ace of Spades
+item.Two_of_clubs.name=Two of Clubs
+item.Six_of_diamonds.name=Six of Diamonds
+
+
+
+
+item.Joker.name=Joker
+
+
+itemGroup.Bones=Bones
+itemGroup.Cloth=Cloth
+itemGroup.Timber=Timber
+itemGroup.Metals=Metals
+itemGroup.Skins=Skins
+itemGroup.Philtres=Philtres
+itemGroup.Magicite=Magicite
+itemGroup.Weapons=Weapons
+itemGroup.Flora=Flora
+
+tile.Brewingstand=Brewing Stand
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

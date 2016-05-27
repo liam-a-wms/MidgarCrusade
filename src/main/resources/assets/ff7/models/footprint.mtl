@@ -1,0 +1,12 @@
+#
+# mtl file for footprint.obj obj file
+#
+
+newmtl World_Expansion02_doodads_generic_catwolftracks_catwolf_footprint_snow01_flipped.m2_Geoset_000
+illum 2
+Kd 1.000000 1.000000 1.000000
+Ka 0.250000 0.250000 0.250000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ns 0.000000
+map_Kd footprint_WOLF_TRACK_01.png

@@ -1,0 +1,32 @@
+# Blender MTL File: 'None'
+# Material Count: 3
+
+newmtl World_Expansion02_doodads_dalaran_tree_dalarantree_02.m2_Ge.011
+Ns 0.000000
+Ka 0.000000 0.000000 0.000000
+Kd 0.512000 0.512000 0.512000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\Users\Gaming\Documents\wow models\tree22_DALARAN_BUSH_GRASS_01.png
+
+newmtl World_Expansion02_doodads_dalaran_tree_dalarantree_02.m2_Ge.013
+Ns 0.000000
+Ka 0.000000 0.000000 0.000000
+Kd 0.512000 0.512000 0.512000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\Users\Gaming\Documents\wow models\tree22_DALARAN_BUSH_GRASS_01.png
+
+newmtl World_Expansion02_doodads_dalaran_tree_dalarantree_02.m2_Ge.014
+Ns 0.000000
+Ka 0.000000 0.000000 0.000000
+Kd 0.512000 0.512000 0.512000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\Users\Gaming\Documents\wow models\tree22_DALARAN_BUSH_GRASS_01.png

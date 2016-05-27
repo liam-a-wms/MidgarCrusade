@@ -1,17 +1,23 @@
 package fr.toss.common;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.net.URL;
+import java.lang.reflect.Field;
+import java.lang.reflect.Modifier;
+import java.util.Iterator;
 import java.util.List;
 
+import net.minecraft.block.Block;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.entity.EntityPlayerSP;
-import net.minecraft.client.resources.I18n;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.EntityPlayerMP;
+import net.minecraft.init.Items;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.crafting.CraftingManager;
+import net.minecraft.item.crafting.IRecipe;
+import net.minecraft.potion.Potion;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.common.config.Configuration;
 import api.player.client.IClientPlayerAPI;
 import api.player.server.IServerPlayerAPI;
 import cpw.mods.fml.common.Loader;
@@ -19,12 +25,25 @@ import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
+import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.event.FMLServerStartingEvent;
+import cpw.mods.fml.common.registry.EntityRegistry;
+import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
-import fr.toss.client.event.GuiIngameOverlay;
-import fr.toss.common.command.ChatColor;
+import fr.toss.FF7.ArmorRegistry;
+import fr.toss.FF7.BlockRegistry1;
+import fr.toss.FF7.Command;
+import fr.toss.FF7.ForgeEventHooksHandler;
+import fr.toss.FF7.ItemRegistry;
+import fr.toss.FF7.ItemRegistry1;
+import fr.toss.FF7.Potioneventhandlers;
+import fr.toss.FF7.reciperegister;
+import fr.toss.FF7.inits.PotionYourmod;
+import fr.toss.FF7.items.Helicopter;
+import fr.toss.FF7.items.PhoenixFeather;
+import fr.toss.FF7.projectiles.entities.EntityEnergyBall;
 import fr.toss.common.command.CommandLoader;
 import fr.toss.common.game.ServerMagic;
 import fr.toss.common.packet.Packets;
@@ -32,9 +51,24 @@ import fr.toss.common.player.ClientPlayerBaseMagic;
 import fr.toss.common.player.ServerPlayerBaseMagic;
 import fr.toss.common.world.dungeon.Dungeon;
 
-@Mod(name = "MagicCrusade", modid = "magiccrusade", version = "2.0.0")
+@Mod(modid=Main.MODID, name=Main.MODNAME, version=Main.MODVER)  //Tell forge "Oh hey, there's a new mod here to load."
+
 public class Main
 {
+
+	  //Set the ID of the mod (Should be lower case).
+    public static final String MODID = "ff7";
+    //Set the "Name" of the mod.
+    public static final String MODNAME = "ff7";
+    //Set the version of the mod.
+    public static final String MODVER = "0.0.0";
+
+	
+	
+	
+	
+	
+	
 	private static Main 		instance;
 	public static ServerMagic 	server;
 	public static int 			DIM_ID;
@@ -44,9 +78,169 @@ public class Main
 	public static CommonProxy 	proxy;
 	
 
+	 private static int BrewingstandID;
+	    public static Block Brewingstand;
+	    private static int FFanvilID;
+	    public static Block FFanvil;
+	    private static int Bush1ID;
+	    public static Block Bush1;
+	    private static int BookcaseID;
+	    public static Block Bookcase;
+	    private static int CauldronID;
+	    public static Block Cauldron;
+	    private static int  Chest1ID;
+	    public static Block  Chest1;
+	    private static int  Chest2ID;
+	    public static Block  Chest2;
+	    private static int  Chest3ID;
+	    public static Block  Chest3;
+	    private static int  Chest4ID;
+	    public static Block  Chest4;
+	    private static int  Chest5ID;
+	    public static Block  Chest5;
+	    private static int  Chest6ID;
+	    public static Block  Chest6;
+	    private static int  Chest7ID;
+	    public static Block  Chest7;
+	    private static int  Chest8ID;
+	    public static Block  Chest8;
+	    private static int HelicopterID;
+	    public static Block Helicopter;
+	    private static int  rustycrateID;
+	    public static Block  rustycrate;
+	    
+	    
+	    
+	    private static int PhoenixFeatherID;
+	    public static Item PhoenixFeather;
+	    public static boolean allowPFeather;
+	
+	
+	
+	
+	
+	
+	
+	
     @EventHandler
     public void 		preInit(FMLPreInitializationEvent event)
     {
+    	
+    	 Configuration config = new Configuration(event.getSuggestedConfigurationFile());
+ 	    System.out.println("Loaded config from " + event.getSuggestedConfigurationFile().getAbsolutePath());
+ 	    
+ 	    config.load();
+ 	
+ 	    allowPFeather = config.get("toggles", "PhoenixFeatherAllowed", true).getBoolean(true);
+ 	  
+
+ 	    config.save();
+ 	
+ 	    ItemRegistry1.customPotion = (new PotionYourmod(31, false, 0)).setIconIndex(0, 0).setPotionName("potion.customPotion");
+ 	  
+ 	    //------------------------------------------register items here -----------------------------------------------//
+ 	    
+ 	    if (allowPFeather)
+	        {
+	    	
+ 	    	PhoenixFeather = new PhoenixFeather(PhoenixFeatherID);
+ 	         GameRegistry.registerItem(PhoenixFeather, "PhoenixFeather");
+ 	    
+ 	    
+ 	   
+ 	    
+	        }
+ 	    //--------------------------------------------------------------------------------------------------------------//
+ 	    
+ 	    Potion[] potionTypes = null;
+
+     	for (Field f : Potion.class.getDeclaredFields()) {
+     	f.setAccessible(true);
+     	try {
+     	if (f.getName().equals("potionTypes") || f.getName().equals("p_i1573_1_.")) {
+     	Field modfield = Field.class.getDeclaredField("modifiers");
+     	modfield.setAccessible(true);
+     	modfield.setInt(f, f.getModifiers() & ~Modifier.FINAL);
+
+     	potionTypes = (Potion[])f.get(null);
+     	final Potion[] newPotionTypes = new Potion[256];
+     	System.arraycopy(potionTypes, 0, newPotionTypes, 0, potionTypes.length);
+     	f.set(null, newPotionTypes);
+     	}
+     	}
+     	catch (Exception e) {
+     	System.err.println("Severe error, please report this to the mod author:");
+     	System.err.println(e);
+     	}
+     	}
+
+     	MinecraftForge.EVENT_BUS.register(new Potioneventhandlers());
+     	
+ 	    //------------------------------------------register bones here ------------------------------------------------//
+ 	    
+     	/*   item= new item(item);
+ 	    GameRegistry.registerItem(item, "item"); */
+     	
+ 	    //-----------------------------------------------------------------------------------------------------------------------------//
+ 	    
+ 	    
+ 	 
+ 	   
+ 	    
+ 	    Brewingstand = new fr.toss.FF7.items.Brewingstand(BrewingstandID);
+  	    GameRegistry.registerBlock(Brewingstand, "Brewingstand");
+  	    FFanvil = new fr.toss.FF7.items.FFanvil(FFanvilID);
+ 	    GameRegistry.registerBlock(FFanvil, "FFanvil");
+ 	    Bush1 = new fr.toss.FF7.items.Bush1(Bush1ID);
+ 	    GameRegistry.registerBlock(Bush1, "Bush1");
+ 	    Bookcase = new fr.toss.FF7.items.Bookcase(BookcaseID);
+  	    GameRegistry.registerBlock(Bookcase, "Bookcase");
+  	    Cauldron = new fr.toss.FF7.items. Cauldron( CauldronID);
+ 	    GameRegistry.registerBlock( Cauldron, " Cauldron");
+  	    
+ 	    Chest1 = new fr.toss.FF7.items.Chest1( Chest1ID);
+ 	    GameRegistry.registerBlock( Chest1, " Chest1");
+ 	    Chest2 = new fr.toss.FF7.items.Chest2( Chest2ID);
+ 	    GameRegistry.registerBlock( Chest2, " Chest2");
+ 	    Chest3 = new fr.toss.FF7.items.Chest3( Chest3ID);
+ 	    GameRegistry.registerBlock( Chest3, " Chest3");
+ 	    Chest4 = new fr.toss.FF7.items.Chest4( Chest4ID);
+ 	    GameRegistry.registerBlock( Chest4, " Chest4");
+ 	    Chest5 = new fr.toss.FF7.items.Chest5( Chest5ID);
+ 	    GameRegistry.registerBlock( Chest5, " Chest5");
+ 	    Chest6 = new fr.toss.FF7.items.Chest6( Chest6ID);
+ 	    GameRegistry.registerBlock( Chest6, " Chest6");
+ 	    Chest7 = new fr.toss.FF7.items.Chest7( Chest7ID);
+ 	    GameRegistry.registerBlock( Chest7, " Chest7");
+ 	    Chest8 = new fr.toss.FF7.items.Chest8( Chest8ID);
+ 	    GameRegistry.registerBlock( Chest8, " Chest8");
+ 	    
+ 	    Helicopter = new Helicopter(HelicopterID);
+ 	    GameRegistry.registerBlock(Helicopter, "Helicopter");
+  	   
+ 	    
+ 	    rustycrate = new fr.toss.FF7.items.rustycrate(rustycrateID);
+  	    GameRegistry.registerBlock(rustycrate, "rustycrate");
+  	    
+ 	   
+ 	    int modEntityID = 0;
+ 	   
+ 	    EntityRegistry.registerModEntity(EntityEnergyBall.class, "Energyball", ++modEntityID, this, 64, 10, false);
+
+ 	   
+ 	    
+ 	    
+ 	    
+ 	    ItemRegistry.init();
+ 		
+ 		   BlockRegistry1.init();
+ 		   ArmorRegistry.init();
+ 		   ItemRegistry1.init();
+ 	    	 reciperegister.init();
+ 	    	 proxy.registerRenderers();
+
+    	
+    	
     	Packets.initialize();
     }
        
@@ -58,10 +252,36 @@ public class Main
     	proxy.load();
     }
 
+    @EventHandler
+    public void postInit(FMLPostInitializationEvent event)
+    {
+    	
+    	
+    	
+    	List<IRecipe> recipies = CraftingManager.getInstance().getRecipeList();
+    	
+		Iterator<IRecipe> remover = recipies.iterator();
+		
+		while (remover.hasNext())
+		{
+			ItemStack itemstack = remover.next().getRecipeOutput();
+			
+			if(itemstack != null && itemstack.getItem() == Items.brewing_stand)
+			{
+				remover.remove();
+			}
+		}
+			
+			
+		}
+    
+    
+    
 	@EventHandler
     public void 		serverLoad(FMLServerStartingEvent event)
     {
-		
+		  event.registerServerCommand(new Command());
+		    MinecraftForge.EVENT_BUS.register(new ForgeEventHooksHandler());
     	CommandLoader.load(event);
     }
    

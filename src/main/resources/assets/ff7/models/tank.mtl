@@ -1,0 +1,141 @@
+# Blender MTL File: 'None'
+# Material Count: 14
+
+newmtl C:\Users\Gaming\Desktop\New_folder\ffccdif_100
+Ns 92.156863
+Ka 0.000000 0.000000 0.000000
+Kd 0.512000 0.512000 0.512000
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\Users\Gaming\Desktop\Untitled.png
+
+newmtl C:\Users\Gaming\Desktop\New_folder\ffccdif_25
+Ns 92.156863
+Ka 0.000000 0.000000 0.000000
+Kd 0.512000 0.512000 0.512000
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\Users\Gaming\Desktop\Untitled.png
+
+newmtl C:\Users\Gaming\Desktop\New_folder\ffccdif_27
+Ns 92.156863
+Ka 0.000000 0.000000 0.000000
+Kd 0.512000 0.512000 0.512000
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\Users\Gaming\Desktop\Untitled.png
+
+newmtl C:\Users\Gaming\Desktop\New_folder\ffccdif_32
+Ns 92.156863
+Ka 0.000000 0.000000 0.000000
+Kd 0.512000 0.512000 0.512000
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\Users\Gaming\Desktop\Untitled.png
+
+newmtl C:\Users\Gaming\Desktop\New_folder\ffccdif_55
+Ns 92.156863
+Ka 0.000000 0.000000 0.000000
+Kd 0.512000 0.512000 0.512000
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\Users\Gaming\Desktop\Untitled.png
+
+newmtl C:\Users\Gaming\Desktop\New_folder\ffccdif_89
+Ns 92.156863
+Ka 0.000000 0.000000 0.000000
+Kd 0.512000 0.512000 0.512000
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\Users\Gaming\Desktop\Untitled.png
+
+newmtl C:\Users\Gaming\Desktop\New_folder\ffccdif_90
+Ns 92.156863
+Ka 0.000000 0.000000 0.000000
+Kd 0.512000 0.512000 0.512000
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\Users\Gaming\Desktop\Untitled.png
+
+newmtl C:\Users\Gaming\Desktop\New_folder\ffccdif_91
+Ns 92.156863
+Ka 0.000000 0.000000 0.000000
+Kd 0.512000 0.512000 0.512000
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\Users\Gaming\Desktop\Untitled.png
+
+newmtl C:\Users\Gaming\Desktop\New_folder\ffccdif_95
+Ns 92.156863
+Ka 0.000000 0.000000 0.000000
+Kd 0.512000 0.512000 0.512000
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\Users\Gaming\Desktop\Untitled.png
+
+newmtl C:\Users\Gaming\Desktop\New_folder\ffccdif_96
+Ns 92.156863
+Ka 0.000000 0.000000 0.000000
+Kd 0.512000 0.512000 0.512000
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\Users\Gaming\Desktop\Untitled.png
+
+newmtl C:\Users\Gaming\Desktop\New_folder\ffccdif_97
+Ns 92.156863
+Ka 0.000000 0.000000 0.000000
+Kd 0.512000 0.512000 0.512000
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\Users\Gaming\Desktop\Untitled.png
+
+newmtl C:\Users\Gaming\Desktop\New_folder\ffccdif_98
+Ns 92.156863
+Ka 0.000000 0.000000 0.000000
+Kd 0.512000 0.512000 0.512000
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\Users\Gaming\Desktop\Untitled.png
+
+newmtl C:\Users\Gaming\Desktop\New_folder\ffccdif_99
+Ns 92.156863
+Ka 0.000000 0.000000 0.000000
+Kd 0.512000 0.512000 0.512000
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\Users\Gaming\Desktop\Untitled.png
+
+newmtl Material
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2

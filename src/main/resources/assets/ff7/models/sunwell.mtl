@@ -1,0 +1,32 @@
+# Blender MTL File: 'None'
+# Material Count: 3
+
+newmtl World_Expansion01_doodads_sunwell_passivedoodads_sunwell_su.000
+Ns 0.000000
+Ka 0.000000 0.000000 0.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\Users\Gaming\Documents\wow models\sunwell_SUNWELL_REPLICA_03.png
+
+newmtl World_Expansion01_doodads_sunwell_passivedoodads_sunwell_su.002
+Ns 0.000000
+Ka 0.000000 0.000000 0.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\Users\Gaming\Documents\wow models\sunwell_SUNWELL_REPLICA_02.png
+
+newmtl World_Expansion01_doodads_sunwell_passivedoodads_sunwell_sunwel
+Ns 0.000000
+Ka 0.000000 0.000000 0.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\Users\Gaming\Documents\wow models\sunwell_SUNWELL_REPLICA_01.png

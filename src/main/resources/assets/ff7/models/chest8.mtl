@@ -1,0 +1,22 @@
+# Blender MTL File: 'None'
+# Material Count: 2
+
+newmtl World_Replaceabletextureprops_guild_guildchest_horde01.m2_G.000
+Ns 0.000000
+Ka 0.000000 0.000000 0.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\Users\Gaming\Documents\wow models\chest8_GUILDCHEST _HORDE_01.png
+
+newmtl World_Replaceabletextureprops_guild_guildchest_horde01.m2_G.002
+Ns 0.000000
+Ka 0.000000 0.000000 0.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\Users\Gaming\Documents\wow models\chest8_GUILDCHEST _HORDE_01.png

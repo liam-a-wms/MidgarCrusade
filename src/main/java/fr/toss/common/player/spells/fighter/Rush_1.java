@@ -56,7 +56,7 @@ public class Rush_1 extends Spell {
 	{
 		
 	
-Entity e;
+		Entity e;
 		
 		e = this.getLookingEntity(10.0d);
 		if (e != null)

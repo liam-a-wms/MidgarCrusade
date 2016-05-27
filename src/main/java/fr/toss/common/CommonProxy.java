@@ -73,4 +73,9 @@ public class CommonProxy {
     	FMLCommonHandler.instance().bus().register(obj);
     	MinecraftForge.EVENT_BUS.register(obj);
 	}
+
+
+	public void registerRenderers()
+	{
+	}
 }

@@ -4,7 +4,7 @@
 [ ] Overhaul Class GUI & Implement Card Select Idea (This is a wakky job) --- finished just waiting on some pngs (wakky)
 [ ] Skills Unlock After Specif Wepon Is Used To Cast Spell X Amount Of Times ("AP To Master")
 [ ] Add an accurary stat in that affects all spells and weapons -- have got the code done just havent implemented on spells etc(wakky)
-[ ] Add in elemental damage types and implement extra damage --- know how to code the elements just not the extra dmg yet(wakky)
+[ ] Add elemental dmg strength and weaknesses to classes --- gotta figure this one out to interact with code
 [ ] Add Increased elemental damage depending on envoroment like an ice spell does more damage in an ice biome
 [ ] Find a way to program a limitbreak/overdrive system
 [ ] Program support & reaction abilitys

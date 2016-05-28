@@ -1,7 +1,7 @@
 ----------------------------------------------------------------
                           Objectives List
 ----------------------------------------------------------------
-[ ] Overhaul Class GUI & Implement Card Select Idea (This is a wakky job) --- currently working on this (wakky)
+[ ] Overhaul Class GUI & Implement Card Select Idea (This is a wakky job) --- finished just waiting on some pngs (wakky)
 [ ] Skills Unlock After Specif Wepon Is Used To Cast Spell X Amount Of Times ("AP To Master")
 [ ] Add an accurary stat in that affects all spells and weapons -- have got the code done just havent implemented on spells etc(wakky)
 [ ] Add in elemental damage types and implement extra damage --- know how to code the elements just not the extra dmg yet(wakky)

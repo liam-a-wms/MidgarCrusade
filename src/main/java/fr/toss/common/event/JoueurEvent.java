@@ -99,8 +99,8 @@ public class JoueurEvent {
 		
 		if (pm != null)
 		{
-			 if (pm.getPlayer().worldObj.rand.nextInt(2) == 0)
-				 pm.travelToDimension(Main.DIM_ID, pm.getPlayer().dimension);
+			 if (pm.getPlayer().worldObj.rand.nextInt(2) == 0);
+				// pm.travelToDimension(Main.DIM_ID, pm.getPlayer().dimension);
 		}			 
     }
 
@@ -129,11 +129,32 @@ public class JoueurEvent {
 		float damages;
 		float strength;
 		float agility;
-		
+		float fire;
+		float ice;
+		float lightning;
+		float earth;
+		float wind;
+		float water;
+		float holy;
+		float shadow;
+		float magic;
+		float projectile;
+		float physical;
 		pm = Main.getPlayerServer(event.entityPlayer);
 		damages = 0;
 		strength = 0;
 		agility = 0;
+		fire = 0;
+		ice = 0;
+		lightning = 0;
+		earth = 0;
+		wind = 0;
+		water = 0;
+		holy = 0;
+		shadow = 0;
+		magic = 0;
+		projectile = 0;
+		physical = 0;
 		
 		if (pm != null)
 		{
@@ -148,7 +169,17 @@ public class JoueurEvent {
 					{
 						strength += ((ItemArmorM)item).strength;
 						agility += ((ItemArmorM)item).agility;
-					}
+						fire += ((ItemArmorM)item).fire;
+						ice += ((ItemArmorM)item).ice;
+						lightning += ((ItemArmorM)item).lightning;
+						earth += ((ItemArmorM)item).earth;
+						wind += ((ItemArmorM)item).wind;
+						water += ((ItemArmorM)item).water;
+						holy += ((ItemArmorM)item).holy;
+						shadow += ((ItemArmorM)item).shadow;
+						magic += ((ItemArmorM)item).magic;
+						projectile += ((ItemArmorM)item).projectile;
+						physical += ((ItemArmorM)item).physical;}
 				}
 			}
 			
@@ -159,10 +190,31 @@ public class JoueurEvent {
 					item = pm.getPlayer().inventory.getCurrentItem().getItem();
 					strength += ((ItemSwordM)item).strength;
 					agility += ((ItemSwordM)item).agility;
-				}
+					fire += ((ItemSwordM)item).fire;
+					ice += ((ItemSwordM)item).ice;
+					lightning += ((ItemSwordM)item).lightning;
+					earth += ((ItemSwordM)item).earth;
+					wind += ((ItemSwordM)item).wind;
+					water += ((ItemSwordM)item).water;
+					holy += ((ItemSwordM)item).holy;
+					shadow += ((ItemSwordM)item).shadow;
+					magic += ((ItemSwordM)item).magic;
+					projectile += ((ItemSwordM)item).projectile;
+					physical += ((ItemSwordM)item).physical;}
 			}
 			
-			damages += (strength / 20.0f);  //20 points d'attaque = 1 coeur
+			damages += (strength / 20.0f);  // 20 attack points = 1 heart
+			damages += (fire / 20.0f);  // 20 attack points = 1 heart
+			damages += (ice / 20.0f);  // 20 attack points = 1 heart
+			damages += (lightning / 20.0f);  // 20 attack points = 1 heart
+			damages += (earth / 20.0f);  // 20 attack points = 1 heart
+			damages += (wind / 20.0f);  // 20 attack points = 1 heart
+			damages += (water / 20.0f);  // 20 attack points = 1 heart
+			damages += (holy / 20.0f);  // 20 attack points = 1 heart
+			damages += (shadow / 20.0f);  // 20 attack points = 1 heart
+			damages += (magic / 20.0f);  // 20 attack points = 1 heart
+			damages += (projectile / 20.0f);  // 20 attack points = 1 heart
+			damages += (physical / 20.0f);  // 20 attack points = 1 heart
 
 			if (pm.classe == 6) //Rogue
 			{
@@ -176,7 +228,7 @@ public class JoueurEvent {
 				pm.is_poisonned = false;
 			}
 			
-			if (agility / 2 > world.rand.nextInt(100) && !event.entityLiving.isDead) // 1 point agility = 0.5% crit
+			if (agility / 2 > world.rand.nextInt(100) && !event.entityLiving.isDead) //1 point agility = 0.5% crit 
 			{
 				damages += ((float)pm.getPlayer().getEntityAttribute(SharedMonsterAttributes.attackDamage).getAttributeValue() * 0.5f);
 				world.getEntityTracker().func_151248_b(pm.getPlayer(), new S0BPacketAnimation(event.target, 4));

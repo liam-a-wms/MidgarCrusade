@@ -20,6 +20,7 @@ public class GuiStats extends GuiScreen {
 	
 	public static final ResourceLocation SPELLS = new ResourceLocation("magiccrusade:textures/gui/spells.png");
 	public static final ResourceLocation GUI = new ResourceLocation("magiccrusade:textures/gui/gui_stats.png");
+	public static final ResourceLocation GUI2 = new ResourceLocation("magiccrusade:textures/gui/gui_stats2.png");
 	
 	public ClientPlayerBaseMagic pm;
 	public LineStat lines[];
@@ -31,8 +32,19 @@ public class GuiStats extends GuiScreen {
 	public int mana;
 	public float clarity;
 	public float mana_regen;
+	
+	public float fire;
+	public float ice;
+	public float lightning;
+	public float earth;
+	public float wind;
+	public float water;
 	public float holy;
-
+	public float shadow;
+	public float magic;
+	public float projectile;
+	public float physical;
+	
 	@Override
 	public void initGui()
 	{
@@ -43,7 +55,7 @@ public class GuiStats extends GuiScreen {
 		
 		pm = Main.getPlayerClient();
 		endurance = 0;
-		lines = new LineStat[7];
+		lines = new LineStat[17];
 		spells = new Spell_slot[this.pm.getClasse().CLASSE_SPELL.size()];
 		
 		for (int i = 0; i < 4; i++)
@@ -59,7 +71,17 @@ public class GuiStats extends GuiScreen {
 					endurance += ((ItemArmorM)item).endurance;
 					mana_regen += ((ItemArmorM)item).mana_regeneration;
 					mana += ((ItemArmorM)item).mana;
+					fire += ((ItemArmorM)item).fire;
+					ice += ((ItemArmorM)item).ice;
+					lightning += ((ItemArmorM)item).lightning;
+					earth += ((ItemArmorM)item).earth;
+					wind += ((ItemArmorM)item).wind;
+					water += ((ItemArmorM)item).water;
 					holy += ((ItemArmorM)item).holy;
+					shadow += ((ItemArmorM)item).shadow;
+					magic += ((ItemArmorM)item).magic;
+					projectile += ((ItemArmorM)item).projectile; 
+					physical += ((ItemArmorM)item).physical;
 				}
 			}
 		}
@@ -74,7 +96,19 @@ public class GuiStats extends GuiScreen {
 				endurance += ((ItemSwordM)item).endurance;
 				mana_regen += ((ItemSwordM)item).mana_regeneration;
 				mana += ((ItemSwordM)item).mana;
+				fire += ((ItemSwordM)item).fire;
+				ice += ((ItemSwordM)item).ice;
+				lightning += ((ItemSwordM)item).lightning;
+				earth += ((ItemSwordM)item).earth;
+				wind += ((ItemSwordM)item).wind;
+				water += ((ItemSwordM)item).water;
 				holy += ((ItemSwordM)item).holy;
+				shadow += ((ItemSwordM)item).shadow;
+				magic += ((ItemSwordM)item).magic;
+				projectile += ((ItemSwordM)item).projectile;
+				physical += ((ItemSwordM)item).physical;
+				
+				
 			}
 		}
 		
@@ -102,9 +136,50 @@ public class GuiStats extends GuiScreen {
 		str = "- " + ChatColor.UNDERLINE + "Mana per sec.:" + ChatColor.RESET + " " + color + ((5 + this.mana_regen) * 20);
 		lines[5] = new LineStat(str, this.mana_regen, "Mana regen.");
 		
+		color = this.fire > 0 ? "" + ChatColor.GREEN : "" + ChatColor.WHITE;
+		str = "- " + ChatColor.UNDERLINE + "Fire Damage.:" + ChatColor.RESET + " " + color + ((5 + this.fire) * 25);
+		lines[6] = new LineStat(str, this.fire, "Fire");
+		
+		color = this.ice > 0 ? "" + ChatColor.GREEN : "" + ChatColor.WHITE;
+		str = "- " + ChatColor.UNDERLINE + "Water Damage.:" + ChatColor.RESET + " " + color + ((5 + this.ice) * 25);
+		lines[7] = new LineStat(str, this.ice, "Ice");
+		
+		color = this.lightning > 0 ? "" + ChatColor.GREEN : "" + ChatColor.WHITE;
+		str = "- " + ChatColor.UNDERLINE + "Lightning Damage.:" + ChatColor.RESET + " " + color + ((5 + this.lightning) * 25);
+		lines[8] = new LineStat(str, this.lightning, "lightning");
+		
+		color = this.earth > 0 ? "" + ChatColor.GREEN : "" + ChatColor.WHITE;
+		str = "- " + ChatColor.UNDERLINE + "Earth Damage.:" + ChatColor.RESET + " " + color + ((5 + this.earth) * 25);
+		lines[9] = new LineStat(str, this.earth, "earth");
+		
+		color = this.wind > 0 ? "" + ChatColor.GREEN : "" + ChatColor.WHITE;
+		str = "- " + ChatColor.UNDERLINE + "Wind Damage.:" + ChatColor.RESET + " " + color + ((5 + this.wind) * 25);
+		lines[10] = new LineStat(str, this.wind, "wind");
+		
+		color = this.water > 0 ? "" + ChatColor.GREEN : "" + ChatColor.WHITE;
+		str = "- " + ChatColor.UNDERLINE + "Water Damage.:" + ChatColor.RESET + " " + color + ((5 + this.water) * 25);
+		lines[11] = new LineStat(str, this.water, "water");
+		
 		color = this.holy > 0 ? "" + ChatColor.GREEN : "" + ChatColor.WHITE;
 		str = "- " + ChatColor.UNDERLINE + "Holy Damage.:" + ChatColor.RESET + " " + color + ((5 + this.holy) * 25);
-		lines[6] = new LineStat(str, this.holy, "Holy Damage.");
+		lines[12] = new LineStat(str, this.holy, "holy");
+		
+		color = this.shadow > 0 ? "" + ChatColor.GREEN : "" + ChatColor.WHITE;
+		str = "- " + ChatColor.UNDERLINE + "Shadow Damage.:" + ChatColor.RESET + " " + color + ((5 + this.shadow) * 25);
+		lines[13] = new LineStat(str, this.shadow, "shadow");
+				
+		color = this.magic > 0 ? "" + ChatColor.GREEN : "" + ChatColor.WHITE;
+		str = "- " + ChatColor.UNDERLINE + "Magic Damage.:" + ChatColor.RESET + " " + color + ((5 + this.magic) * 25);
+		lines[14] = new LineStat(str, this.magic, "magic");
+		
+		color = this.projectile > 0 ? "" + ChatColor.GREEN : "" + ChatColor.WHITE;
+		str = "- " + ChatColor.UNDERLINE + "Projectile Damage.:" + ChatColor.RESET + " " + color + ((5 + this.projectile) * 25);
+		lines[15] = new LineStat(str, this.projectile, "projectile");
+		
+		color = this.physical > 0 ? "" + ChatColor.GREEN : "" + ChatColor.WHITE;
+		str = "- " + ChatColor.UNDERLINE + "Physical Damage.:" + ChatColor.RESET + " " + color + ((5 + this.physical) * 25);
+		lines[16] = new LineStat(str, this.physical, "physical");
+		
 		
 		for (int i = 0; i < this.lines.length; i++)
 		{
@@ -154,6 +229,10 @@ public class GuiStats extends GuiScreen {
         
         this.mc.getTextureManager().bindTexture(GUI);
         this.drawTexturedModalRect(this.width / 2 - 128, 0, 0, 0, 256, 256);
+        this.mc.getTextureManager().bindTexture(GUI2);
+        this.drawTexturedModalRect(this.width / 2 - 128,this.height / 2 - 128, 0, 0, 256, 256);
+        this.mc.getTextureManager().bindTexture(GUI2);
+        this.drawTexturedModalRect(this.width / 2 - 128,this.height / 1 - 256, 0, 0, 256, 256);
         this.drawCenteredString(this.fontRendererObj, str, this.width / 2, 14, Integer.MAX_VALUE);
         str = ChatColor.YELLOW + "" + ChatColor.UNDERLINE  + "Level: " + this.pm.getLevel() + ChatColor.RESET;
         this.drawCenteredString(this.fontRendererObj, str, this.width / 2 - 26, 50, Integer.MAX_VALUE);

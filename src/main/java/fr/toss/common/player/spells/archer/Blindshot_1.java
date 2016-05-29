@@ -61,7 +61,7 @@ public class Blindshot_1 extends Spell {
 		p = this.player.getPlayer();
 		if (p.getCurrentEquippedItem() != null)
 		{
-				
+			if (p.getCurrentEquippedItem().getItem() instanceof ItemBow)
 			 System.out.println(randomBoolean.getBoolean());
 				PacketSpellToServer packet;
 				

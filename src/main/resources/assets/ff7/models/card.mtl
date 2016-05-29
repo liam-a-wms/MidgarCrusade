@@ -1,0 +1,22 @@
+# Blender MTL File: 'None'
+# Material Count: 2
+
+newmtl plastik_card1
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.743529 0.756078 0.746667
+Ks 0.033333 0.033333 0.033333
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\Users\Gaming\Documents\Back Of Card.png
+
+newmtl plastik_card2
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.743529 0.756078 0.746667
+Ks 0.033333 0.033333 0.033333
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\Users\Gaming\Documents\Back Of Card.png

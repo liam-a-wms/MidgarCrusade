@@ -1,5 +1,7 @@
 package fr.toss.FF7.armor;
 
+import java.util.Random;
+
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.entity.Entity;
 import net.minecraft.item.ItemArmor;
@@ -8,8 +10,9 @@ import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import fr.toss.FF7.ItemRegistry1;
 import fr.toss.common.Main;
+import fr.toss.common.items.ItemArmorM;
 
-public class Wygar extends ItemArmor
+public class Wygar extends ItemArmorM
 {
 	
 	public String textureName;
@@ -20,6 +23,14 @@ public class Wygar extends ItemArmor
 		setUnlocalizedName("Wygar");
 		 setCreativeTab(ItemRegistry1.FF7Armor);
 		this.setTextureName(Main.MODID + ":" + getUnlocalizedName());
+		Random rand = new Random();
+
+		int  n = rand.nextInt(50) + 1;
+		this.setClarity(n);
+		
+		
+		
+		
 	}
 
 	@Override

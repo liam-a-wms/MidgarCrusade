@@ -132,10 +132,8 @@ public class GuiClasseInformation extends GuiScreen {
     	}
     	else if (b.id == 43)
     	{
-    		GuiSelectRace gui;
     		
-    		gui = new GuiSelectRace();
-    		this.mc.displayGuiScreen(gui);
+    		this.mc.displayGuiScreen(null);
     	}
     }
     

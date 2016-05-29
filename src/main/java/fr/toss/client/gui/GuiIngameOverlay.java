@@ -105,7 +105,8 @@ public class GuiIngameOverlay {
 		        	     || pm.getClasse() instanceof ClasseSummoner|| pm.getClasse() instanceof ClasseElementalist|| pm.getClasse() instanceof ClasseSpellblade
 		        	     || pm.getClasse() instanceof ClasseBishop|| pm.getClasse() instanceof ClasseTemplar|| pm.getClasse() instanceof ClasseSage
 		        	     || pm.getClasse() instanceof ClasseAlchemist|| pm.getClasse() instanceof ClasseArcanist|| pm.getClasse() instanceof ClasseScholar
-		        	     || pm.getClasse() instanceof ClasseGeomancer)
+		        	     || pm.getClasse() instanceof ClasseGeomancer|| pm.getClasse() instanceof ClasseBlackmageHume|| pm.getClasse() instanceof ClasseIllusionistHume
+		        	     || pm.getClasse() instanceof ClasseTimeMageMoogle)
 		        	{
 		            	GuiUtils.drawTexturedModalRect(x, y + 15, 0, 0, 65, 13, 0);
 		    	    	GuiUtils.drawTexturedModalRect(x, y + 15, 0, 98, (int) (65.0f / pm.max_energy * pm.energy), 13, 0);
@@ -120,7 +121,9 @@ public class GuiIngameOverlay {
 		        		|| pm.getClasse() instanceof ClasseAssassin|| pm.getClasse() instanceof ClasseSniper
 		        		|| pm.getClasse() instanceof ClasseWhiteMonk|| pm.getClasse() instanceof ClasseCannoneer
 		        		|| pm.getClasse() instanceof ClasseMasterMonk|| pm.getClasse() instanceof ClasseTrickster
-		        		|| pm.getClasse() instanceof ClasseBeastmaster|| pm.getClasse() instanceof ClasseRanger)
+		        		|| pm.getClasse() instanceof ClasseBeastmaster|| pm.getClasse() instanceof ClasseRanger
+		        		|| pm.getClasse() instanceof ClasseArcherHume|| pm.getClasse() instanceof ClasseHunterHume
+		        		|| pm.getClasse() instanceof ClasseThiefMoogle)
 		        	{
 		            	GuiUtils.drawTexturedModalRect(x, y + 15, 0, 28, 65, 13, 0);
 		    	    	GuiUtils.drawTexturedModalRect(x, y + 15, 130, 84, (int) (65.0f / pm.max_energy * pm.energy), 13, 0);
@@ -130,7 +133,7 @@ public class GuiIngameOverlay {
 		        			|| pm.getClasse() instanceof ClasseSamurai|| pm.getClasse() instanceof ClasseWarrior|| pm.getClasse() instanceof ClasseDragoon
 		        			|| pm.getClasse() instanceof ClasseDefender|| pm.getClasse() instanceof ClasseGladiator|| pm.getClasse() instanceof ClasseBerserker
 		        			|| pm.getClasse() instanceof ClasseLanista|| pm.getClasse() instanceof ClasseViking|| pm.getClasse() instanceof ClasseRaptor
-		        			|| pm.getClasse() instanceof ClasseRavager)
+		        			|| pm.getClasse() instanceof ClasseRavager|| pm.getClasse() instanceof ClasseChocoboKnight|| pm.getClasse() instanceof ClasseMoogleKnight)
 		        	{
 	            	GuiUtils.drawTexturedModalRect(x, y + 15, 0, 14, 65, 13, 0);
 	    	    	GuiUtils.drawTexturedModalRect(x, y + 15, 65, 70, (int) (65.0f / pm.max_energy * pm.energy), 13, 0);

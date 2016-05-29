@@ -1,5 +1,6 @@
 package fr.toss.FF7Philtres;
 
+import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
@@ -9,6 +10,7 @@ import net.minecraft.world.World;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import fr.toss.FF7.ItemRegistry1;
+import fr.toss.client.gui.GuiSelectHumeClass;
 
 public class Aquagelac extends Item
 	{
@@ -26,7 +28,10 @@ public class Aquagelac extends Item
 	
 	public ItemStack onItemRightClick(ItemStack par1ItemStack, World par2World, EntityPlayer par3EntityPlayer) {
 		par3EntityPlayer.addPotionEffect(new PotionEffect(ItemRegistry1.customPotion.id, 20, 0));
+		
 		return par1ItemStack;
+		
+		
 		}
 	
 	

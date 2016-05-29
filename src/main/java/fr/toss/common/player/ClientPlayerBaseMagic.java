@@ -103,8 +103,19 @@ public class ClientPlayerBaseMagic extends ClientPlayerBase
 	public float strength;
 	public float agility;
 	public float endurance;
+	public float fire;
+	public float ice;
+	public float lightning;
+	public float earth;
+	public float wind;
+	public float water;
 	public float holy;
-	public double hp;
+	public float shadow;
+	public float magic;
+	public float projectile;
+	public float physical;
+	public boolean hasEffect;
+public double hp;
 	
 	public long last_hit;
 
@@ -148,8 +159,22 @@ public class ClientPlayerBaseMagic extends ClientPlayerBase
 			this.strength = 0;
 			this.agility = 0;
 			this.endurance = 0;
+			this.fire = 0;
+			this.ice = 0;
+			this.lightning = 0;
+			this.earth = 0;
+			this.wind = 0;
+			this.water = 0;
 			this.holy = 0;
-		}
+			this.shadow = 0;
+			this.magic = 0;
+			this.projectile = 0;
+			this.physical = 0;
+			
+			
+			
+			
+			}
 	}
 	
 	@Override
@@ -234,7 +259,17 @@ public class ClientPlayerBaseMagic extends ClientPlayerBase
 						 this.strength += ((ItemArmorM)item).strength;
 						 this.agility += ((ItemArmorM)item).agility;
 						 this.max_energy += ((ItemArmorM)item).mana;
+						 this.fire += ((ItemArmorM)item).fire;
+						 this.ice += ((ItemArmorM)item).ice;
+						 this.lightning += ((ItemArmorM)item).lightning;
+						 this.earth += ((ItemArmorM)item).earth;
+						 this.wind += ((ItemArmorM)item).wind;
+						 this.water += ((ItemArmorM)item).water;
 						 this.holy += ((ItemArmorM)item).holy;
+						 this.shadow += ((ItemArmorM)item).shadow;
+						 this.magic += ((ItemArmorM)item).magic;
+						 this.projectile += ((ItemArmorM)item).projectile;
+						 this.physical += ((ItemArmorM)item).physical;
 						 this.energy_regen += ((ItemArmorM)item).mana_regeneration;
 					 }
 					 this.armor[i] = item;
@@ -248,9 +283,22 @@ public class ClientPlayerBaseMagic extends ClientPlayerBase
 					 this.endurance -= ((ItemArmorM)this.armor[i]).endurance;
 					 this.strength -= ((ItemArmorM)this.armor[i]).strength;
 					 this.agility -= ((ItemArmorM)this.armor[i]).agility;
-					 this.holy -= ((ItemArmorM)this.armor[i]).holy;
 					 this.max_energy -= ((ItemArmorM)this.armor[i]).mana;
 					 this.energy_regen -= ((ItemArmorM)this.armor[i]).mana_regeneration;
+					 this.fire -= ((ItemArmorM)this.armor[i]).fire;
+					 this.ice += ((ItemArmorM)this.armor[i]).ice;
+					 this.lightning -= ((ItemArmorM)this.armor[i]).lightning;
+					 this.earth -= ((ItemArmorM)this.armor[i]).earth;
+					 this.wind -= ((ItemArmorM)this.armor[i]).wind;
+					 this.water -= ((ItemArmorM)this.armor[i]).water;
+					 this.holy -= ((ItemArmorM)this.armor[i]).holy;
+					 this.shadow -= ((ItemArmorM)this.armor[i]).shadow;
+					 this.magic -= ((ItemArmorM)this.armor[i]).magic;
+					 this.projectile -= ((ItemArmorM)this.armor[i]).projectile;
+					 this.physical -= ((ItemArmorM)this.armor[i]).physical;
+				 
+				 
+				 
 				 }
 				 this.armor[i] = null;
 			 }
@@ -268,7 +316,21 @@ public class ClientPlayerBaseMagic extends ClientPlayerBase
 					 this.endurance += ((ItemSwordM)item).endurance;
 					 this.strength += ((ItemSwordM)item).strength;
 					 this.agility += ((ItemSwordM)item).agility;
+					 this.fire += ((ItemSwordM)item).fire;
+					 this.ice += ((ItemSwordM)item).ice;
+					 this.lightning += ((ItemSwordM)item).lightning;
+					 this.earth += ((ItemSwordM)item).earth;
+					 this.wind += ((ItemSwordM)item).wind;
+					 this.water += ((ItemSwordM)item).water;
 					 this.holy += ((ItemSwordM)item).holy;
+					 this.shadow += ((ItemSwordM)item).shadow;
+					 this.magic += ((ItemSwordM)item).magic;
+					 this.projectile += ((ItemSwordM)item).projectile;
+					 this.physical += ((ItemSwordM)item).physical;
+					 
+					 
+					 
+					 
 					 if (this.getClasse() instanceof ClasseNecromancer || this.getClasse() instanceof ClasseMage)
 						 this.max_energy += ((ItemSwordM)item).mana;
 					 this.energy_regen += ((ItemSwordM)item).mana_regeneration;
@@ -284,7 +346,22 @@ public class ClientPlayerBaseMagic extends ClientPlayerBase
 				 this.endurance -= ((ItemSwordM)this.armor[4]).endurance;
 				 this.strength -= ((ItemSwordM)this.armor[4]).strength;
 				 this.agility -= ((ItemSwordM)this.armor[4]).agility;
+				 this.fire -= ((ItemSwordM)this.armor[4]).fire;
+				 this.ice += ((ItemSwordM)this.armor[4]).ice;
+				 this.lightning -= ((ItemSwordM)this.armor[4]).lightning;
+				 this.earth -= ((ItemSwordM)this.armor[4]).earth;
+				 this.wind -= ((ItemSwordM)this.armor[4]).wind;
+				 this.water -= ((ItemSwordM)this.armor[4]).water;
 				 this.holy -= ((ItemSwordM)this.armor[4]).holy;
+				 this.shadow -= ((ItemSwordM)this.armor[4]).shadow;
+				 this.magic -= ((ItemSwordM)this.armor[4]).magic;
+				 this.projectile -= ((ItemSwordM)this.armor[4]).projectile;
+				 this.physical -= ((ItemSwordM)this.armor[4]).physical;
+			 
+				 
+				 
+				 
+				 
 				 if (this.getClasse() instanceof ClasseNecromancer || this.getClasse() instanceof ClasseMage)
 					 this.max_energy -= ((ItemSwordM)this.armor[4]).mana;
 				 this.energy_regen -= ((ItemSwordM)this.armor[4]).mana_regeneration;

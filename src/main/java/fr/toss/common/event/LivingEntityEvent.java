@@ -8,6 +8,7 @@ import net.minecraft.util.EntityDamageSource;
 import net.minecraftforge.event.entity.living.LivingDeathEvent;
 import net.minecraftforge.event.entity.living.LivingDropsEvent;
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
+import fr.toss.FF7.ItemRegistry1;
 import fr.toss.common.entity.EntityBossOrc;
 import fr.toss.common.entity.EntityMageOrc;
 import fr.toss.common.entity.EntityOrc;
@@ -32,6 +33,9 @@ public class LivingEntityEvent {
 			EntityItem e;
 			
 			e = new EntityItem(event.entityLiving.worldObj, event.entityLiving.posX, event.entityLiving.posY, event.entityLiving.posZ, new ItemStack(ItemRegister.getRandomArmor(), 1));
+			e = new EntityItem(event.entityLiving.worldObj, event.entityLiving.posX, event.entityLiving.posY, event.entityLiving.posZ, new ItemStack(ItemRegistry1.bagdrop, 1));
+			
+			
 			event.drops.add(e);
 		}
 	}

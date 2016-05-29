@@ -236,7 +236,7 @@ public class ArmorRegistry {
 		Templarshield = new Templarshield(TUTORIAL_ARMOR, 1, 1);
 		Thunderrobe = new Thunderrobe(TUTORIAL_ARMOR, 1, 1);
 		Whiterobe = new Whiterobe(TUTORIAL_ARMOR, 1, 1);
-		Wygar = new Wygar(TUTORIAL_ARMOR, 1, 1);
+		Wygar = new Wygar(TUTORIAL_ARMOR, 1, 1).setshadow(2000);
 		
 		Angelring = new Adamantarmor(TUTORIAL_ARMOR, 1, 1);
 		Armguards = new Adamantarmor(TUTORIAL_ARMOR, 1, 1);

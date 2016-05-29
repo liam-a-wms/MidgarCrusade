@@ -24,10 +24,10 @@ public class GuiSelectHumeClass extends GuiScreen {
 	{
 		GuiButton buttons[];
 		
-		buttons = new GuiButton[12];
+		buttons = new GuiButton[2];
 		
 		
-		buttons[0] = new GuiButton(48, this.width / 2 - 40, this.height / 2 + 132,80, 20, ChatColor.RESET + I18n.format("classe.Thief"));
+		/*buttons[0] = new GuiButton(48, this.width / 2 - 40, this.height / 2 + 132,80, 20, ChatColor.RESET + I18n.format("classe.Thief"));
 		
 		buttons[1] = new GuiButton(49, this.width / 2 - 40, this.height / 2 + 110, 80, 20, ChatColor.RESET + I18n.format("classe.Blackmage"));
 
@@ -46,10 +46,10 @@ public class GuiSelectHumeClass extends GuiScreen {
 		buttons[8] = new GuiButton(56, this.width / 2 - 40, this.height / 2 - 44, 80, 20, ChatColor.RESET + I18n.format("classe.Seer"));
 		
 		buttons[9] = new GuiButton(57, this.width / 2 - 40, this.height / 2 - 66,80, 20, ChatColor.RESET + I18n.format("classe.Ninja"));
+*/
+		buttons[0] = new GuiButton(101, this.width / 2 - 40, this.height / 2 - 88, 80, 20, ChatColor.RESET + I18n.format("classe.Soldier"));
 
-		buttons[10] = new GuiButton(101, this.width / 2 - 40, this.height / 2 - 88, 80, 20, ChatColor.RESET + I18n.format("classe.Soldier"));
-
-		buttons[11] = new GuiButton(102, this.width / 2 - 40, this.height / 2 - 110, 80, 20, ChatColor.RESET + I18n.format("classe.Whitemage"));
+		buttons[1] = new GuiButton(102, this.width / 2 - 40, this.height / 2 - 110, 80, 20, ChatColor.RESET + I18n.format("classe.Whitemage"));
 
 		
 		for (GuiButton b : buttons)
@@ -121,7 +121,7 @@ public class GuiSelectHumeClass extends GuiScreen {
 		String classe;
 		String description[];
 		String advices[];
-    	if  (b.id == 48)
+    /*	if  (b.id == 48)
     	{
     		description = new String[1];
     		advices = new String[4];
@@ -287,8 +287,8 @@ public class GuiSelectHumeClass extends GuiScreen {
     		gui = new GuiClasseInformation(classe, description, advices, 2, 1, Integer.MAX_VALUE, 52);
     		this.mc.displayGuiScreen(gui);
     	}
-    	
-    	 	else if (b.id == 101)
+    	*/
+    	 	if (b.id == 101)
     	{
     		description = new String[1];
     		advices = new String[4];

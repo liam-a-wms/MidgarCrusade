@@ -346,7 +346,7 @@ classe.Whitemage.slogan=Class Incomplete
 classe.Whitemage.line1=Class Incomplete, expect bugs, missing spells, and other problems
  
 classe.Blackmage=Black Mage
-classe.Blackmage.slogan=Class Incomplete
+classe.Blackmage.slogan=Black Mages wield the elemental powers of fire, ice, and lightning to decimate foes.
 classe.Blackmage.line1=Class Incomplete, expect bugs, missing spells, and other problems
  
 classe.Paladin=Paladin
@@ -418,12 +418,16 @@ classe.Geomancer.slogan=Class Incomplete
 classe.Geomancer.line1=Class Incomplete, expect bugs, missing spells, and other problems
  
 classe.Thief=Thief
-classe.Thief.slogan=Class Incomplete
-classe.Thief.line1=Class Incomplete, expect bugs, missing spells, and other problems
- 
+classe.Thief.slogan=Dexterous and nimble, thieves excel at stealing from unwary and evading blows.
+classe.Thief.line1=The Thief allows the user to steal various loot from an enemy, including gil and accessories.
+classe.Thief.line2=Thieves are fast and have high evasion, but still have passable attack and magick stats
+classe.Thief.line3=making it an ideal side class choice for any character who needs a speed boost.  
+
+
 classe.Archer=Archer
 classe.Archer.slogan=Class Incomplete
 classe.Archer.line1=Class Incomplete, expect bugs, missing spells, and other problems
+ 
  
 classe.Hunter=Hunter
 classe.Hunter.slogan=Class Incomplete

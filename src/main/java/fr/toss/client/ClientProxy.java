@@ -163,6 +163,7 @@ public class ClientProxy extends CommonProxy
 		 MinecraftForgeClient.registerItemRenderer(ItemRegistry1.Defender, new Rendertreyslongbow());
 		 MinecraftForgeClient.registerItemRenderer(ItemRegistry1.Demonbell, new Renderyuna());
 		 MinecraftForgeClient.registerItemRenderer(ItemRegistry1.Diabolique, new Renderzacksword());
+		// MinecraftForgeClient.registerItemRenderer(ItemRegistry1.classcard1, new Rendercard());
 		 
     	
     	

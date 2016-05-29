@@ -24,15 +24,11 @@ public class GuiSelectGriaClass extends GuiScreen {
 	{
 		GuiButton buttons[];
 		
-		buttons = new GuiButton[4];
+		buttons = new GuiButton[1];
 		
-		buttons[0] = new GuiButton(92, this.width / 2- 40, this.height / 2 - 44, 80, 20, ChatColor.RESET + I18n.format("classe.Raptor"));
+		
+		buttons[0] = new GuiButton(93, this.width / 2- 40, this.height / 2 - 22, 80, 20, ChatColor.RESET + I18n.format("classe.Hunter"));
 
-		buttons[1] = new GuiButton(93, this.width / 2- 40, this.height / 2 - 22, 80, 20, ChatColor.RESET + I18n.format("classe.Hunter"));
-
-		buttons[2] = new GuiButton(94, this.width / 2- 40, this.height / 2 - 0, 80, 20, ChatColor.RESET + I18n.format("classe.Ravager"));
-
-		buttons[3] = new GuiButton(95, this.width / 2- 40, this.height / 2 + 22, 80, 20, ChatColor.RESET + I18n.format("classe.Geomancer"));
 		
 		for (GuiButton b : buttons)
 			this.buttonList.add(b);
@@ -103,22 +99,7 @@ public class GuiSelectGriaClass extends GuiScreen {
 		String classe;
 		String description[];
 		String advices[];
-		if (b.id == 92)
-    	{
-    		description = new String[1];
-    		advices = new String[4];
-    		classe = ChatColor.WHITE + I18n.format("classe.Raptor.slogan");
-    		description[0] = I18n.format("classe.Raptor.line1");
-    		//description[1] = I18n.format("classe.Raptor.line2");
-    		//description[2] = I18n.format("classe.Raptor.line3");
-    		advices[0] = ChatColor.GREEN + "+ " + I18n.format("stats.mana");
-    		advices[1] = ChatColor.GREEN + "+ " + I18n.format("stats.clarity");
-    		advices[2] = ChatColor.GREEN + "+" + I18n.format("stats.mana_regen");
-    		advices[3] = ChatColor.RED + "- " + I18n.format("stats.strength");
-    		gui = new GuiClasseInformation(classe, description, advices, 2, 1, Integer.MAX_VALUE, 51);
-    		this.mc.displayGuiScreen(gui);
-    	}
-    	else if (b.id == 93)
+		 if (b.id == 93)
     	{
     		description = new String[1];
     		advices = new String[4];
@@ -133,36 +114,7 @@ public class GuiSelectGriaClass extends GuiScreen {
     		gui = new GuiClasseInformation(classe, description, advices, 2, 1, Integer.MAX_VALUE, 52);
     		this.mc.displayGuiScreen(gui);
     	}
-    	else if (b.id == 94)
-    	{
-    		description = new String[1];
-    		advices = new String[4];
-    		classe = ChatColor.WHITE + I18n.format("classe.Ravager.slogan");
-    		description[0] = I18n.format("classe.Ravager.line1");
-    		//description[1] = I18n.format("classe.Ravager.line2");
-    		//description[2] = I18n.format("classe.Ravager.line3");
-    		advices[0] = ChatColor.GREEN + "+ " + I18n.format("stats.mana");
-    		advices[1] = ChatColor.GREEN + "+ " + I18n.format("stats.clarity");
-    		advices[2] = ChatColor.GREEN + "+" + I18n.format("stats.mana_regen");
-    		advices[3] = ChatColor.RED + "- " + I18n.format("stats.strength");
-    		gui = new GuiClasseInformation(classe, description, advices, 2, 1, Integer.MAX_VALUE, 53);
-    		this.mc.displayGuiScreen(gui);
-    	}
-    	else if (b.id == 95)
-    	{
-    		description = new String[1];
-    		advices = new String[4];
-    		classe = ChatColor.WHITE + I18n.format("classe.Geomancer.slogan");
-    		description[0] = I18n.format("classe.Geomancer.line1");
-    		//description[1] = I18n.format("classe.Geomancer.line2");
-    		//description[2] = I18n.format("classe.Geomancer.line3");
-    		advices[0] = ChatColor.GREEN + "+ " + I18n.format("stats.mana");
-    		advices[1] = ChatColor.GREEN + "+ " + I18n.format("stats.clarity");
-    		advices[2] = ChatColor.GREEN + "+" + I18n.format("stats.mana_regen");
-    		advices[3] = ChatColor.RED + "- " + I18n.format("stats.strength");
-    		gui = new GuiClasseInformation(classe, description, advices, 2, 1, Integer.MAX_VALUE, 54);
-    		this.mc.displayGuiScreen(gui);
-    	}
+    	
     	}
     }
 

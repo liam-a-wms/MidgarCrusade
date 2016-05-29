@@ -112,7 +112,6 @@ public class GuiSelectClass extends GuiScreen {
 
 		buttons[42] = new GuiButton(84, this.width / 1 - 400, this.height + 0 + 1 - 188, 80, 20, ChatColor.RESET + I18n.format("classe.Sage"));
 
-		buttons[43] = new GuiButton(85, this.width / 1 - 400, this.height + 0 + 1 - 166, 80, 20, ChatColor.RESET + I18n.format("classe.Alchemist"));
 
 		buttons[44] = new GuiButton(86, this.width / 1 - 400, this.height + 0 + 1 - 144, 80, 20, ChatColor.RESET + I18n.format("classe.Arcanist"));
 		

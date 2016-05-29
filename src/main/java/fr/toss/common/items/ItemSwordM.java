@@ -21,7 +21,17 @@ public class ItemSwordM extends ItemSword {
 	public float mana;
 	public float endurance;
 	public float mana_regeneration;
+	public float fire;
+	public float ice;
+	public float lightning;
+	public float earth;
+	public float wind;
+	public float water;
 	public float holy;
+	public float shadow;
+	public float magic;
+	public float projectile;
+	public float physical;
 	public boolean hasEffect;
 
 	public ItemSwordM(ToolMaterial material)
@@ -54,8 +64,28 @@ public class ItemSwordM extends ItemSword {
     		list.add(ChatColor.GREEN + "+ " + this.clarity + " Clarity");
     	if (this.mana_regeneration != 0)
     		list.add(ChatColor.GREEN + "+ " + this.mana_regeneration + " Mana Regen.");
+    	if (this.fire != 0)
+    		list.add(ChatColor.GREEN + "+ " + this.fire + " Fire damage");
+    	if (this.ice != 0)
+    		list.add(ChatColor.GREEN + "+ " + this.ice + " Ice damage");
+    	if (this.lightning != 0)
+    		list.add(ChatColor.GREEN + "+ " + this.lightning + " Lightning damage");
+    	if (this.earth != 0)
+    		list.add(ChatColor.GREEN + "+ " + this.earth + " Earth damage");
+    	if (this.wind != 0)
+    		list.add(ChatColor.GREEN + "+ " + this.wind + " Wind damage");
+    	if (this.water != 0)
+    		list.add(ChatColor.GREEN + "+ " + this.water + " Water damage");
     	if (this.holy != 0)
-    		list.add(ChatColor.GREEN + "+ " + this.holy + " Holy Damage.");
+    		list.add(ChatColor.GREEN + "+ " + this.holy + " Holy damage");
+    	if (this.shadow != 0)
+    		list.add(ChatColor.GREEN + "+ " + this.shadow + " Shadow damage");
+    	if (this.magic != 0)
+    		list.add(ChatColor.GREEN + "+ " + this.magic + " Magic damage");
+    	if (this.projectile != 0)
+    		list.add(ChatColor.GREEN + "+ " + this.projectile + " Projectile damage");
+    	if (this.physical != 0)
+    		list.add(ChatColor.GREEN + "+ " + this.physical + " Physical damage");
     }
     
     
@@ -68,12 +98,6 @@ public class ItemSwordM extends ItemSword {
 	public ItemSwordM setAgility(float i)
 	{
 		this.agility = i;
-		return (this);
-	}
-	
-	public ItemSwordM setholy(float i)
-	{
-		this.holy = i;
 		return (this);
 	}
 	
@@ -106,6 +130,75 @@ public class ItemSwordM extends ItemSword {
 		this.mana_regeneration = i;
 		return (this);
 	}
+	
+	
+	public ItemSwordM setfire(float i)
+	{
+		this.fire = i;
+		return (this);
+	}
+	
+	public ItemSwordM setice(float i)
+	{
+		this.ice = i;
+		return (this);
+	}
+	
+	public ItemSwordM setlightning(float i)
+	{
+		this.lightning = i;
+		return (this);
+	}
+	
+	public ItemSwordM setearth(float i)
+	{
+		this.earth = i;
+		return (this);
+	}
+	
+	public ItemSwordM setwind(float i)
+	{
+		this.wind = i;
+		return (this);
+	}
+	
+	public ItemSwordM setwater(float i)
+	{
+		this.water = i;
+		return (this);
+	}
+	
+	public ItemSwordM setholy(float i)
+	{
+		this.holy = i;
+		return (this);
+	}
+	
+	public ItemSwordM setshadow(float i)
+	{
+		this.shadow = i;
+		return (this);
+	}
+	
+	public ItemSwordM setmagic(float i)
+	{
+		this.magic = i;
+		return (this);
+	}
+	
+	public ItemSwordM setprojectile(float i)
+	{
+		this.projectile = i;
+		return (this);
+	}
+	
+	public ItemSwordM setphysical(float i)
+	{
+		this.physical = i;
+		return (this);
+	}
+	
+	
 	
 	public ItemSwordM setHasEffect()
 	{

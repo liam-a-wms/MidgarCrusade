@@ -24,7 +24,7 @@ public class GuiSelectMoogleClass extends GuiScreen {
 	{
 		GuiButton buttons[];
 		
-		buttons = new GuiButton[10];
+		buttons = new GuiButton[3];
 		
 		buttons[0] = new GuiButton(58, this.width / 2 - 40, this.height / 2 - 110, 80, 20, ChatColor.RESET + I18n.format("classe.Animist"));
 
@@ -32,19 +32,6 @@ public class GuiSelectMoogleClass extends GuiScreen {
 		
 		buttons[2] = new GuiButton(49, this.width / 2 - 40, this.height /  2 - 66, 80, 20, ChatColor.RESET + I18n.format("classe.Blackmage"));
 		
-		buttons[3] = new GuiButton(59, this.width / 2 - 40, this.height / 2 - 44, 80, 20, ChatColor.RESET + I18n.format("classe.MoogleKnight"));
-		
-		buttons[4] = new GuiButton(60, this.width / 2 - 40, this.height / 2 - 22, 80, 20, ChatColor.RESET + I18n.format("classe.Fusilier"));
-
-		buttons[5] = new GuiButton(61, this.width / 2 - 40, this.height / 2 - 0, 80, 20, ChatColor.RESET + I18n.format("classe.Juggler"));
-
-		buttons[6] = new GuiButton(62, this.width / 2 - 40, this.height / 2 + 22, 80, 20, ChatColor.RESET + I18n.format("classe.Tinker"));
-
-		buttons[7] = new GuiButton(63, this.width / 2 - 40, this.height / 2 + 44, 80, 20, ChatColor.RESET + I18n.format("classe.TimeMage"));
-
-		buttons[8] = new GuiButton(64, this.width / 2 - 40, this.height / 2 + 66, 80, 20, ChatColor.RESET + I18n.format("classe.ChocoboKnight"));
-
-		buttons[9] = new GuiButton(65, this.width / 2 - 40, this.height / 2 + 88, 80, 20, ChatColor.RESET + I18n.format("classe.Flintlock"));
 		
 
 		for (GuiButton b : buttons)
@@ -162,95 +149,6 @@ public class GuiSelectMoogleClass extends GuiScreen {
     		gui = new GuiClasseInformation(classe, description, advices, 2, 1, Integer.MAX_VALUE, 17);
     		this.mc.displayGuiScreen(gui);
     	}
-    	else if (b.id == 59)
-    	{
-    		description = new String[1];
-    		advices = new String[4];
-    		classe = ChatColor.WHITE + I18n.format("classe.Moogleknight.slogan");
-    		description[0] = I18n.format("classe.Moogleknight.line1");
-    		//description[1] = I18n.format("classe.Moogleknight.line2");
-    		//description[2] = I18n.format("classe.Moogleknight.line3");
-    		advices[0] = ChatColor.GREEN + "+ " + I18n.format("stats.mana");
-    		advices[1] = ChatColor.GREEN + "+ " + I18n.format("stats.clarity");
-    		advices[2] = ChatColor.GREEN + "+" + I18n.format("stats.mana_regen");
-    		advices[3] = ChatColor.RED + "- " + I18n.format("stats.strength");
-    		gui = new GuiClasseInformation(classe, description, advices, 2, 1, Integer.MAX_VALUE, 18);
-    		this.mc.displayGuiScreen(gui);
-    	}
-    	else if (b.id == 60)
-    	{
-    		description = new String[1];
-    		advices = new String[4];
-    		classe = ChatColor.WHITE + I18n.format("classe.Fusilier.slogan");
-    		description[0] = I18n.format("classe.Fusilier.line1");
-    		//description[1] = I18n.format("classe.Fusilier.line2");
-    		//description[2] = I18n.format("classe.Fusilier.line3");
-    		advices[0] = ChatColor.GREEN + "+ " + I18n.format("stats.mana");
-    		advices[1] = ChatColor.GREEN + "+ " + I18n.format("stats.clarity");
-    		advices[2] = ChatColor.GREEN + "+" + I18n.format("stats.mana_regen");
-    		advices[3] = ChatColor.RED + "- " + I18n.format("stats.strength");
-    		gui = new GuiClasseInformation(classe, description, advices, 2, 1, Integer.MAX_VALUE, 19);
-    		this.mc.displayGuiScreen(gui);
-    	}
-    	else if (b.id == 61)
-    	{
-    		description = new String[1];
-    		advices = new String[4];
-    		classe = ChatColor.WHITE + I18n.format("classe.Juggler.slogan");
-    		description[0] = I18n.format("classe.Juggler.line1");
-    		//description[1] = I18n.format("classe.Juggler.line2");
-    		//description[2] = I18n.format("classe.Juggler.line3");
-    		advices[0] = ChatColor.GREEN + "+ " + I18n.format("stats.energy");
-    		advices[1] = ChatColor.GREEN + "+ " + I18n.format("stats.clarity");
-    		advices[2] = ChatColor.GREEN + "+" + I18n.format("stats.mana_regen");
-    		advices[3] = ChatColor.RED + "- " + I18n.format("stats.strength");
-    		gui = new GuiClasseInformation(classe, description, advices, 2, 1, Integer.MAX_VALUE, 20);
-    		this.mc.displayGuiScreen(gui);
-    	}
-    	else if (b.id == 62)
-    	{
-    		description = new String[1];
-    		advices = new String[4];
-    		classe = ChatColor.WHITE + I18n.format("classe.Tinker.slogan");
-    		description[0] = I18n.format("classe.Tinker.line1");
-    		//description[1] = I18n.format("classe.Tinker.line2");
-    		//description[2] = I18n.format("classe.Tinker.line3");
-    		advices[0] = ChatColor.GREEN + "+ " + I18n.format("stats.mana");
-    		advices[1] = ChatColor.GREEN + "+ " + I18n.format("stats.clarity");
-    		advices[2] = ChatColor.GREEN + "+" + I18n.format("stats.mana_regen");
-    		advices[3] = ChatColor.RED + "- " + I18n.format("stats.strength");
-    		gui = new GuiClasseInformation(classe, description, advices, 2, 1, Integer.MAX_VALUE, 21);
-    		this.mc.displayGuiScreen(gui);
-    	}
-    	else if (b.id == 63)
-    	{
-    		description = new String[1];
-    		advices = new String[4];
-    		classe = ChatColor.WHITE + I18n.format("classe.TimeMage.slogan");
-    		description[0] = I18n.format("classe.TimeMage.line1");
-    		//description[1] = I18n.format("classe.TimeMage.line2");
-    		//description[2] = I18n.format("classe.TimeMage.line3");
-    		advices[0] = ChatColor.GREEN + "+ " + I18n.format("stats.mana");
-    		advices[1] = ChatColor.GREEN + "+ " + I18n.format("stats.clarity");
-    		advices[2] = ChatColor.GREEN + "+" + I18n.format("stats.mana_regen");
-    		advices[3] = ChatColor.RED + "- " + I18n.format("stats.strength");
-    		gui = new GuiClasseInformation(classe, description, advices, 2, 1, Integer.MAX_VALUE, 22);
-    		this.mc.displayGuiScreen(gui);
-    	}
-    	else if (b.id == 64)
-    	{
-    		description = new String[1];
-    		advices = new String[4];
-    		classe = ChatColor.WHITE + I18n.format("classe.ChocoboKnight.slogan");
-    		description[0] = I18n.format("classe.ChocoboKnight.line1");
-    		//description[1] = I18n.format("classe.ChocoboKnight.line2");
-    		//description[2] = I18n.format("classe.ChocoboKnight.line3");
-    		advices[0] = ChatColor.GREEN + "+ " + I18n.format("stats.mana");
-    		advices[1] = ChatColor.GREEN + "+ " + I18n.format("stats.clarity");
-    		advices[2] = ChatColor.GREEN + "+" + I18n.format("stats.mana_regen");
-    		advices[3] = ChatColor.RED + "- " + I18n.format("stats.strength");
-    		gui = new GuiClasseInformation(classe, description, advices, 2, 1, Integer.MAX_VALUE, 23);
-    		this.mc.displayGuiScreen(gui);
-    	}
+    	
     }
 }

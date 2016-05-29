@@ -18,7 +18,17 @@ public class ItemArmorM extends ItemArmor {
 	public float mana;
 	public float endurance;
 	public float mana_regeneration;
+	public float fire;
+	public float ice;
+	public float lightning;
+	public float earth;
+	public float wind;
+	public float water;
 	public float holy;
+	public float shadow;
+	public float magic;
+	public float projectile;
+	public float physical;
 	public boolean hasEffect;
 
 	public ItemArmorM(ArmorMaterial material, int render_index, int armor_type)
@@ -60,8 +70,28 @@ public class ItemArmorM extends ItemArmor {
     		list.add(ChatColor.GREEN + "+ " + this.clarity + " Clarity");
     	if (this.mana_regeneration != 0)
     		list.add(ChatColor.GREEN + "+ " + this.mana_regeneration + " Mana Regen.");
+    	if (this.fire != 0)
+    		list.add(ChatColor.GREEN + "+ " + this.fire + " Fire damage");
+    	if (this.ice != 0)
+    		list.add(ChatColor.GREEN + "+ " + this.ice + " Ice damage");
+    	if (this.lightning != 0)
+    		list.add(ChatColor.GREEN + "+ " + this.lightning + " Lightning damage");
+    	if (this.earth != 0)
+    		list.add(ChatColor.GREEN + "+ " + this.earth + " Earth damage");
+    	if (this.wind != 0)
+    		list.add(ChatColor.GREEN + "+ " + this.wind + " Wind damage");
+    	if (this.water != 0)
+    		list.add(ChatColor.GREEN + "+ " + this.water + " Water damage");
     	if (this.holy != 0)
     		list.add(ChatColor.GREEN + "+ " + this.holy + " Holy damage");
+    	if (this.shadow != 0)
+    		list.add(ChatColor.GREEN + "+ " + this.shadow + " Shadow damage");
+    	if (this.magic != 0)
+    		list.add(ChatColor.GREEN + "+ " + this.magic + " Magic damage");
+    	if (this.projectile != 0)
+    		list.add(ChatColor.GREEN + "+ " + this.projectile + " Projectile damage");
+    	if (this.physical != 0)
+    		list.add(ChatColor.GREEN + "+ " + this.physical + " Physical damage");
     }
 	
 	public ItemArmorM setAgility(float i)
@@ -100,11 +130,73 @@ public class ItemArmorM extends ItemArmor {
 		return (this);
 	}
 	
+	public ItemArmorM setfire(float i)
+	{
+		this.fire = i;
+		return (this);
+	}
+	
+	public ItemArmorM setice(float i)
+	{
+		this.ice = i;
+		return (this);
+	}
+	
+	public ItemArmorM setlightning(float i)
+	{
+		this.lightning = i;
+		return (this);
+	}
+	
+	public ItemArmorM setearth(float i)
+	{
+		this.earth = i;
+		return (this);
+	}
+	
+	public ItemArmorM setwind(float i)
+	{
+		this.wind = i;
+		return (this);
+	}
+	
+	public ItemArmorM setwater(float i)
+	{
+		this.water = i;
+		return (this);
+	}
+	
 	public ItemArmorM setholy(float i)
 	{
 		this.holy = i;
 		return (this);
 	}
+	
+	public ItemArmorM setshadow(float i)
+	{
+		this.shadow = i;
+		return (this);
+	}
+	
+	public ItemArmorM setmagic(float i)
+	{
+		this.magic = i;
+		return (this);
+	}
+	
+	public ItemArmorM setprojectile(float i)
+	{
+		this.projectile = i;
+		return (this);
+	}
+	
+	public ItemArmorM setphysical(float i)
+	{
+		this.physical = i;
+		return (this);
+	}
+	
+	
 	
 	public ItemArmorM setHasEffect()
 	{

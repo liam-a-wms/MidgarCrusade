@@ -31,7 +31,7 @@ public class ClasseSoldier extends Classe {
 	{	
 		this.CLASSE_SPELL.clear();
 
-		this.CLASSE_SPELL.add(new Drainspeed_1());
+		this.CLASSE_SPELL.add(new Rendspeed_1());
 		this.CLASSE_SPELL.add(new Drainattack_1());
 		this.CLASSE_SPELL.add(new Berserk_1());
 		this.CLASSE_SPELL.add(new Firstaid_1());

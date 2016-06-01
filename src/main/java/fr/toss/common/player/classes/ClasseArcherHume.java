@@ -35,9 +35,9 @@ public class ClasseArcherHume extends Classe {
 	public void defineClasseSpells()
 	{	
 		this.CLASSE_SPELL.clear();
-		this.CLASSE_SPELL.add(new Immobilizeshot_1());
-		this.CLASSE_SPELL.add(new Powershot_1());
-		this.CLASSE_SPELL.add(new Blindshot_1());
+		this.CLASSE_SPELL.add(new Legshot());
+		this.CLASSE_SPELL.add(new Focus());
+		this.CLASSE_SPELL.add(new Blackout());
 		this.CLASSE_SPELL.add(new Poison_4());
 		this.CLASSE_SPELL.add(new Vision_5());
 		this.CLASSE_SPELL.add(new FeatherFalling_6());

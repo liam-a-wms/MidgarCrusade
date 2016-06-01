@@ -4,8 +4,7 @@ public class iteml132 extends FF7itemslbase {
 
 	public iteml132(int id) {
 		super(id);
-		
-		 setUnlocalizedName("iteml132");
+		// TODO Auto-generated constructor stub
 	}
 
 }

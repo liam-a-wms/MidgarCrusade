@@ -1,4 +1,4 @@
-package fr.toss.FF7itemsl;
+package fr.toss.FF7;
 
 import java.util.List;
 
@@ -12,15 +12,13 @@ import fr.toss.FF7.ItemRegistry1;
 import fr.toss.common.command.ChatColor;
 import fr.toss.common.items.ItemArmorM;
 
-public class FF7itemslbase extends Item 
+public class FF7itemslbase2 extends ItemArmorM 
 {
 
-	public FF7itemslbase(int id)
-
-	{
-		
-	  super();
-	
+	public FF7itemslbase2(ArmorMaterial material, int render_index,
+			int armor_type) {
+		super(material, render_index, armor_type);
+		// TODO Auto-generated constructor stub
 		  setCreativeTab(ItemRegistry1.FF7itemsL);
 		  
 		  
@@ -84,104 +82,104 @@ public class FF7itemslbase extends Item
 		    }
 		
 		
-		public FF7itemslbase setAgility(float i)
+		public FF7itemslbase2 setAgility(float i)
 		{
 			this.agility = i;
 			return (this);
 		}
 		
-		public FF7itemslbase setStrenght(float i)
+		public FF7itemslbase2 setStrenght(float i)
 		{
 			this.strength = i;
 			return (this);
 		}
 		
-		public FF7itemslbase setClarity(float i)
+		public FF7itemslbase2 setClarity(float i)
 		{
 			this.clarity = i;
 			return (this);
 		}
 		
-		public FF7itemslbase setMana(float i)
+		public FF7itemslbase2 setMana(float i)
 		{
 			this.mana = i;
 			return (this);
 		}
 		
-		public FF7itemslbase setEndurance(float i)
+		public FF7itemslbase2 setEndurance(float i)
 		{
 			this.endurance = i;
 			return (this);
 		}
 		
-		public FF7itemslbase setManaRegen(int i)
+		public FF7itemslbase2 setManaRegen(int i)
 		{
 			this.mana_regeneration = i;
 			return (this);
 		}
 		
 		
-		public FF7itemslbase setfire(float i)
+		public FF7itemslbase2 setfire(float i)
 		{
 			this.fire = i;
 			return (this);
 		}
 		
-		public FF7itemslbase setice(float i)
+		public FF7itemslbase2 setice(float i)
 		{
 			this.ice = i;
 			return (this);
 		}
 		
-		public FF7itemslbase setlightning(float i)
+		public FF7itemslbase2 setlightning(float i)
 		{
 			this.lightning = i;
 			return (this);
 		}
 		
-		public FF7itemslbase setearth(float i)
+		public FF7itemslbase2 setearth(float i)
 		{
 			this.earth = i;
 			return (this);
 		}
 		
-		public FF7itemslbase setwind(float i)
+		public FF7itemslbase2 setwind(float i)
 		{
 			this.wind = i;
 			return (this);
 		}
 		
-		public FF7itemslbase setwater(float i)
+		public FF7itemslbase2 setwater(float i)
 		{
 			this.water = i;
 			return (this);
 		}
 		
-		public FF7itemslbase setholy(float i)
+		public FF7itemslbase2 setholy(float i)
 		{
 			this.holy = i;
 			return (this);
 		}
 		
-		public FF7itemslbase setshadow(float i)
+		public FF7itemslbase2 setshadow(float i)
 		{
 			this.shadow = i;
 			return (this);
 		}
 		
-		public FF7itemslbase setmagic(float i)
+		public FF7itemslbase2 setmagic(float i)
 		{
 			this.magic = i;
 			return (this);
 		}
 		
-		public FF7itemslbase setprojectile(float i)
+		public FF7itemslbase2 setprojectile(float i)
 		{
 			this.projectile = i;
 			return (this);
 		}
 		
-		public FF7itemslbase setphysical(float i)
+		public FF7itemslbase2 setphysical(float i)
 		{
 			this.physical = i;
 			return (this);
@@ -189,7 +187,7 @@ public class FF7itemslbase extends Item
 		
 		
 		
-		public FF7itemslbase setHasEffect()
+		public FF7itemslbase2 setHasEffect()
 		{
 			this.hasEffect = true;
 			return (this);

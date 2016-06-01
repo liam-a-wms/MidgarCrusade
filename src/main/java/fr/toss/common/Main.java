@@ -16,6 +16,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.crafting.CraftingManager;
 import net.minecraft.item.crafting.IRecipe;
 import net.minecraft.potion.Potion;
+import net.minecraft.util.DamageSource;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.common.config.Configuration;
 import api.player.client.IClientPlayerAPI;
@@ -63,7 +64,7 @@ public class Main
     //Set the version of the mod.
     public static final String MODVER = "0.0.0";
 
-	
+    public static DamageSource Earth = new DamageSource("Earth");
 	
 	
 	

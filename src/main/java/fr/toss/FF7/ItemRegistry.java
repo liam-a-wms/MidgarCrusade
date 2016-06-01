@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemArmor.ArmorMaterial;
+import net.minecraftforge.common.util.EnumHelper;
 import cpw.mods.fml.common.registry.GameRegistry;
 import fr.toss.FF7itemsa.*;
 import fr.toss.FF7itemsb.*;
@@ -21,6 +23,7 @@ import fr.toss.FF7itemsl.*;
 public class ItemRegistry {
 
 	
+	public static ArmorMaterial TUTORIAL_ARMOR = EnumHelper.addArmorMaterial("TUTORIAL_ARMOR", 16, new int[] {3, 8, 6, 3}, 30);
 	
 	
 	
@@ -11019,7 +11022,7 @@ public class ItemRegistry {
 	    GameRegistry.registerItem(iteml81, "iteml81");
 	    iteml82= new iteml82(iteml82ID);
 	    GameRegistry.registerItem(iteml82, "iteml82");
-	    iteml83= new iteml83(iteml83ID);
+	    iteml83= new iteml83(TUTORIAL_ARMOR, 1, 0).setshadow(50);
 	    GameRegistry.registerItem(iteml83, "iteml83");
 	    iteml84= new iteml84(iteml84ID);
 	    GameRegistry.registerItem(iteml84, "iteml84");

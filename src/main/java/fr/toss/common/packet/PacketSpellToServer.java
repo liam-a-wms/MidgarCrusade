@@ -235,8 +235,12 @@ public class PacketSpellToServer implements IMessage {
 				ServerSpellHandler.handle_gigaflare(message, world, sender);
 			else if (message.spell_id == 98)
 				ServerSpellHandler.handle_bio(message, world, sender);
-			
-			
+			else if (message.spell_id == 99)
+				ServerSpellHandler.handle_scream(message, world);			
+			else if (message.spell_id == 100)
+				ServerSpellHandler.	handle_furore(message, world, sender);			
+			else if (message.spell_id == 101)
+				ServerSpellHandler.	handle_smiteofrage(message, world, sender, null);			
 			
 			
 			

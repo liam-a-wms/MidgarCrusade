@@ -7,6 +7,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.ChatComponentText;
 import api.player.client.ClientPlayerAPI;
 import api.player.client.ClientPlayerBase;
+import fr.toss.FF7itemsl.FF7itemslbase;
 import fr.toss.client.event.SoundEventM;
 import fr.toss.client.gui.GuiSelectClass;
 import fr.toss.client.gui.GuiSelectRace;
@@ -271,6 +272,7 @@ public double hp;
 						 this.projectile += ((ItemArmorM)item).projectile;
 						 this.physical += ((ItemArmorM)item).physical;
 						 this.energy_regen += ((ItemArmorM)item).mana_regeneration;
+						
 					 }
 					 this.armor[i] = item;
 				 }	 
@@ -296,7 +298,7 @@ public double hp;
 					 this.magic -= ((ItemArmorM)this.armor[i]).magic;
 					 this.projectile -= ((ItemArmorM)this.armor[i]).projectile;
 					 this.physical -= ((ItemArmorM)this.armor[i]).physical;
-				 
+					
 				 
 				 
 				 }

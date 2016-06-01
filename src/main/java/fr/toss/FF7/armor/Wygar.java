@@ -25,8 +25,7 @@ public class Wygar extends ItemArmorM
 		this.setTextureName(Main.MODID + ":" + getUnlocalizedName());
 		Random rand = new Random();
 
-		int  n = rand.nextInt(50) + 1;
-		this.setClarity(n);
+		
 		
 		
 		

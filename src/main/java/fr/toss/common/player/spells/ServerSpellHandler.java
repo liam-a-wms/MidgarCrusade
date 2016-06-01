@@ -1,12 +1,15 @@
 package fr.toss.common.player.spells;
 
 import java.util.List;
+import java.util.Random;
 
+import net.minecraft.client.Minecraft;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.monster.EntityMob;
 import net.minecraft.entity.passive.EntityWolf;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.entity.projectile.EntityArrow;
@@ -24,11 +27,14 @@ import net.minecraft.potion.PotionEffect;
 import net.minecraft.util.ChatComponentText;
 import net.minecraft.util.DamageSource;
 import net.minecraft.world.World;
+import fr.toss.common.Main;
+import fr.toss.common.command.ChatColor;
 import fr.toss.common.entity.EntitySummonZombie;
 import fr.toss.common.packet.PacketSpellToServer;
+import fr.toss.common.player.spells.archer.RandomBoolean;
 
 public class ServerSpellHandler {
-	
+	public static int rare;
 	/** Grab du champion */
 	public static void handle_grab(PacketSpellToServer message, World world, EntityPlayerMP sender)
 	{
@@ -502,14 +508,14 @@ Entity e;
 	
 	public static void handle_shockwave(PacketSpellToServer message, World world, EntityPlayerMP sender)
 	{
-		world.createExplosion(sender, sender.posX + 3, sender.posY, sender.posZ + 3, 1.0f, true);
-		world.createExplosion(sender, sender.posX + 3, sender.posY, sender.posZ - 3, 1.0f, true);
-		world.createExplosion(sender, sender.posX - 3, sender.posY, sender.posZ + 3, 1.0f, true);
-		world.createExplosion(sender, sender.posX - 3, sender.posY, sender.posZ - 3, 1.0f, true);
-		world.createExplosion(sender, sender.posX + 3, sender.posY, sender.posZ, 1.0f, true);
-		world.createExplosion(sender, sender.posX - 3, sender.posY, sender.posZ, 1.0f, true);
-		world.createExplosion(sender, sender.posX, sender.posY, sender.posZ + 3, 1.0f, true);
-		world.createExplosion(sender, sender.posX, sender.posY, sender.posZ - 3, 1.0f, true);
+		world.createExplosion(sender, sender.posX + 3, sender.posY, sender.posZ + 3, 1.0f, false);
+		world.createExplosion(sender, sender.posX + 3, sender.posY, sender.posZ - 3, 1.0f, false);
+		world.createExplosion(sender, sender.posX - 3, sender.posY, sender.posZ + 3, 1.0f, false);
+		world.createExplosion(sender, sender.posX - 3, sender.posY, sender.posZ - 3, 1.0f, false);
+		world.createExplosion(sender, sender.posX + 3, sender.posY, sender.posZ, 1.0f, false);
+		world.createExplosion(sender, sender.posX - 3, sender.posY, sender.posZ, 1.0f, false);
+		world.createExplosion(sender, sender.posX, sender.posY, sender.posZ + 3, 1.0f, false);
+		world.createExplosion(sender, sender.posX, sender.posY, sender.posZ - 3, 1.0f, false);
 	}
 
 	/** Poison shot du Dragon slayer */
@@ -1463,15 +1469,144 @@ public static void handle_blizzaga(PacketSpellToServer message, World world, Ent
 }
 
 
+public static void handle_scream(PacketSpellToServer message, World world)
+{
+	Entity e;
+	
+	e = world.getEntityByID(message.data);
+	if (e != null)
+	{
+		if (e.isBurning())
+			e.extinguish();
+		if (e instanceof EntityLivingBase)
+		{
+			if (((EntityLivingBase) e).isPotionActive(Potion.resistance))
+				((EntityLivingBase) e).removePotionEffect(Potion.resistance.id);
+			if (((EntityLivingBase) e).isPotionActive(Potion.regeneration))
+				((EntityLivingBase) e).removePotionEffect(Potion.regeneration.id);
+			if (((EntityLivingBase) e).isPotionActive(Potion.damageBoost))
+				((EntityLivingBase) e).removePotionEffect(Potion.damageBoost.id);
+			if (((EntityLivingBase) e).isPotionActive(Potion.moveSpeed))
+				((EntityLivingBase) e).removePotionEffect(Potion.moveSpeed.id);
+			if (((EntityLivingBase) e).isPotionActive(Potion.jump))
+				((EntityLivingBase) e).removePotionEffect(Potion.jump.id);
+			if (((EntityLivingBase) e).isPotionActive(Potion.heal))
+				((EntityLivingBase) e).removePotionEffect(Potion.heal.id);
+			if (((EntityLivingBase) e).isPotionActive(Potion.fireResistance))
+				((EntityLivingBase) e).removePotionEffect(Potion.fireResistance.id);
+			if (((EntityLivingBase) e).isPotionActive(Potion.invisibility))
+				((EntityLivingBase) e).removePotionEffect(Potion.invisibility.id);
+			if (((EntityLivingBase) e).isPotionActive(Potion.nightVision))
+				((EntityLivingBase) e).removePotionEffect(Potion.nightVision.id);
+			if (((EntityLivingBase) e).isPotionActive(Potion.digSpeed))
+				((EntityLivingBase) e).removePotionEffect(Potion.digSpeed.id);
+			
+			}		
+	}
+}
 
 
+public static void handle_furore(PacketSpellToServer message, World world, EntityPlayerMP sender)
+{
+	Entity e;
+	
+	e = world.getEntityByID(message.data);
+	if (e != null)
+	{
+		
+		if (e instanceof EntityLivingBase)
+		((EntityLivingBase)e).attackEntityFrom(DamageSource.magic, 2);
+		((EntityLivingBase) e).knockBack(sender, 0, 0, 10);
+	}
+}
+
+public static void handle_groundshaker(PacketSpellToServer message, World world, EntityPlayerMP sender)
+{
+	Entity e;
+	
+	e = world.getEntityByID(message.data);
+	if (e != null)
+	{
+		
+		if (e instanceof EntityLivingBase)
+		((EntityLivingBase)e).attackEntityFrom(Main.Earth, 20);
+		((EntityLivingBase) e).knockBack(sender, 0, 0, 10);
+	}
+}
+
+
+public static int handle_smiteofrage(PacketSpellToServer message, World world, EntityPlayerMP sender,Random random)
+{
+	EntityPlayer p;
+	Entity e;
+	
+	e = world.getEntityByID(message.data);
+	if (e != null)
+	{
+		
+Random rand;
+		
+		rand = new Random();
+		
+		switch (rand.nextInt(8))
+		{
+		
+/**--------------------------------------------------------------------------------------*/
+			 case 0 :
+				 ((EntityLivingBase)e).addPotionEffect(new PotionEffect(Potion.poison.id, 100, 1000));
+				 ((EntityLivingBase)e).attackEntityFrom(Main.Earth, 20);
+				    System.out.printf( "%-15s %10s %n", " case 0 ", "poison");
+				    return rand.nextInt(8);
+			case 1 :
+				 ((EntityLivingBase)e).addPotionEffect(new PotionEffect(Potion.blindness.id, 100, 1000));
+				 ((EntityLivingBase)e).attackEntityFrom(DamageSource.onFire, 20);
+				    System.out.printf( "%-15s %10s %n", "case 1", "blind");
+				    return rand.nextInt(8);
+			case 2 :
+				 ((EntityLivingBase)e).addPotionEffect(new PotionEffect(Potion.confusion.id, 100, 1000));
+				 ((EntityLivingBase)e).attackEntityFrom(DamageSource.onFire, 20);
+				    System.out.printf( "%-15s %10s %n", "case 2", "confusion");
+				    return rand.nextInt(8);
+			case 3 :
+				 ((EntityLivingBase)e).addPotionEffect(new PotionEffect(Potion.hunger.id, 100, 1000));
+				 ((EntityLivingBase)e).attackEntityFrom(DamageSource.onFire, 20);
+				    System.out.printf( "%-15s %10s %n", "case 3", "hunger");
+				    return rand.nextInt(8);
+			case 4 :
+				 ((EntityLivingBase)e).addPotionEffect(new PotionEffect(Potion.moveSlowdown.id, 100, 1000));
+				 ((EntityLivingBase)e).attackEntityFrom(DamageSource.onFire, 20);
+				    System.out.printf( "%-15s %10s %n", "Exam_Name", "moveslowdown");
+				    return rand.nextInt(8);
+			case 5 :
+				 ((EntityLivingBase)e).addPotionEffect(new PotionEffect(Potion.wither.id, 100, 1000));
+				 ((EntityLivingBase)e).attackEntityFrom(DamageSource.onFire, 20);
+				    System.out.printf( "%-15s %10s %n", "Exam_Name", "wither");
+				    return rand.nextInt(8);
+			case 6 :
+				 ((EntityLivingBase)e).addPotionEffect(new PotionEffect(Potion.weakness.id, 100, 1000));
+				 ((EntityLivingBase)e).attackEntityFrom(DamageSource.onFire, 20);
+				    System.out.printf( "%-15s %10s %n", "Exam_Name", "weakness");
+				    return rand.nextInt(8);
+			case 7 :
+				 ((EntityLivingBase)e).addPotionEffect(new PotionEffect(Potion.jump.id, 100, 150));
+				 ((EntityLivingBase)e).attackEntityFrom(DamageSource.onFire, 20);
+				    System.out.printf( "%-15s %10s %n", "Exam_Name", "jump");
+				    return rand.nextInt(8);
+			
+		}
+		return rare;
+
+
+	}
+	return rare;
+}
 
 
 
 
 
 	}
-	
+
 		
 	
 

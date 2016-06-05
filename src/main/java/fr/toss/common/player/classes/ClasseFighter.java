@@ -38,7 +38,7 @@ public class ClasseFighter extends Classe {
 		this.CLASSE_SPELL.add(new Rush_1());
 		this.CLASSE_SPELL.add(new Wildswing_1());
 		this.CLASSE_SPELL.add(new Airrender_1());
-		this.CLASSE_SPELL.add(new Auroblast_1());
+		this.CLASSE_SPELL.add(new Aurablast_1());
 		this.CLASSE_SPELL.add(new Backdraft_1());
 		
 	}

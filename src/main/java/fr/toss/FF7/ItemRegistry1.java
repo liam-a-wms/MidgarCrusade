@@ -1197,6 +1197,8 @@ public class ItemRegistry1 {
     public static Item viking;
     private static int whitemageID;
     public static Item whitemage;
+    private static int whitemonkID;
+    public static Item whitemonk;
      
     
     
@@ -2373,7 +2375,8 @@ public class ItemRegistry1 {
 	    GameRegistry.registerItem(trickster, "trickster");
 	    viking= new viking(vikingID);
 	    GameRegistry.registerItem(viking, "viking");
-	    
+	    whitemonk= new whitemonk(whitemonkID);
+	    GameRegistry.registerItem(whitemonk, "whitemonk");
 	   
 	   
  	    

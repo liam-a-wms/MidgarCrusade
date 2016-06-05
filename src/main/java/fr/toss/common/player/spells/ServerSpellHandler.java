@@ -7,6 +7,7 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.entity.EnumCreatureAttribute;
 import net.minecraft.entity.monster.EntityMob;
 import net.minecraft.entity.passive.EntityWolf;
 import net.minecraft.entity.player.EntityPlayer;
@@ -27,6 +28,7 @@ import net.minecraft.potion.PotionEffect;
 import net.minecraft.util.ChatComponentText;
 import net.minecraft.util.DamageSource;
 import net.minecraft.world.World;
+import fr.toss.FF7.ItemRegistry1;
 import fr.toss.common.Main;
 import fr.toss.common.command.ChatColor;
 import fr.toss.common.entity.EntitySummonZombie;
@@ -141,11 +143,17 @@ public class ServerSpellHandler {
 		Entity e;
 		
 		e = world.getEntityByID(message.data);
+		
+		if(((EntityLivingBase) e).getCreatureAttribute()==EnumCreatureAttribute.UNDEAD){
+		
+		((EntityLivingBase)e).attackEntityFrom(DamageSource.generic, 4.0f + (message.data2 / 20.0f));
+		}
 		if (e instanceof EntityLivingBase && !(e instanceof EntityMob))
 		{
 			((EntityLivingBase)e).heal(3.0f + message.data2 / 30); //30 clarity pour 1 coeur en plus
 		}
 	}
+	
 	
 	public static void handle_Cura(PacketSpellToServer message, World world)
 	{
@@ -156,6 +164,11 @@ public class ServerSpellHandler {
 		{
 			((EntityLivingBase)e).heal(6.0f + message.data2 / 30); //30 clarity pour 1 coeur en plus
 		}
+		if(((EntityLivingBase) e).getCreatureAttribute()==EnumCreatureAttribute.UNDEAD){
+			
+			((EntityLivingBase)e).attackEntityFrom(DamageSource.generic, 8.0f + (message.data2 / 20.0f));
+		}
+		
 	}
 	
 	public static void handle_Curaga(PacketSpellToServer message, World world)
@@ -166,6 +179,11 @@ public class ServerSpellHandler {
 		if (e instanceof EntityLivingBase && !(e instanceof EntityMob))
 		{
 			((EntityLivingBase)e).heal(9.0f + message.data2 / 30); //30 clarity pour 1 coeur en plus
+		}
+		
+		if(((EntityLivingBase) e).getCreatureAttribute()==EnumCreatureAttribute.UNDEAD){
+			
+			((EntityLivingBase)e).attackEntityFrom(DamageSource.generic, 12.0f + (message.data2 / 20.0f));
 		}
 	}
 	
@@ -329,8 +347,6 @@ Entity e;
 			
 		}
 	}
-	
-	
 	
 	
 	
@@ -1535,6 +1551,47 @@ public static void handle_groundshaker(PacketSpellToServer message, World world,
 }
 
 
+public static void handle_chakra(PacketSpellToServer message, World world)
+{
+	Entity e;
+	
+	e = world.getEntityByID(message.data);
+	if (e != null)
+	{
+		if (e.isBurning())
+			e.extinguish();
+		if (e instanceof EntityLivingBase)
+		{
+			if (((EntityLivingBase) e).isPotionActive(Potion.blindness))
+				((EntityLivingBase) e).removePotionEffect(Potion.blindness.id);
+			if (((EntityLivingBase) e).isPotionActive(Potion.poison))
+				((EntityLivingBase) e).removePotionEffect(Potion.poison.id);
+			if (((EntityLivingBase) e).isPotionActive(Potion.digSlowdown))
+				((EntityLivingBase) e).removePotionEffect(Potion.digSlowdown.id);
+			if (((EntityLivingBase) e).isPotionActive(Potion.confusion))
+				((EntityLivingBase) e).removePotionEffect(Potion.confusion.id);
+			if (((EntityLivingBase) e).isPotionActive(Potion.hunger))
+				((EntityLivingBase) e).removePotionEffect(Potion.hunger.id);
+			if (((EntityLivingBase) e).isPotionActive(Potion.blindness))
+				((EntityLivingBase) e).removePotionEffect(Potion.blindness.id);
+			if (((EntityLivingBase) e).isPotionActive(Potion.moveSlowdown))
+				((EntityLivingBase) e).removePotionEffect(Potion.moveSlowdown.id);
+			if (((EntityLivingBase) e).isPotionActive(Potion.wither))
+				((EntityLivingBase) e).removePotionEffect(Potion.wither.id);
+			if (((EntityLivingBase) e).isPotionActive(Potion.weakness))
+				((EntityLivingBase) e).removePotionEffect(Potion.weakness.id);
+			((EntityLivingBase)e).heal(15.0f + message.data2 / 30); //30 clarity pour 1 coeur en plus
+			
+		}		
+
+	
+	
+	}
+		
+	
+
+	}
+
 public static int handle_smiteofrage(PacketSpellToServer message, World world, EntityPlayerMP sender,Random random)
 {
 	EntityPlayer p;
@@ -1605,8 +1662,40 @@ Random rand;
 
 
 
-	}
-
-		
+public static void handle_holysign(PacketSpellToServer message, World world)
+{
+	Entity e;
 	
+	e = world.getEntityByID(message.data);
+	if (e != null)
+	{
+		if (e.isBurning())
+			e.extinguish();
+		if (e instanceof EntityLivingBase)
+		{
+			if (((EntityLivingBase) e).isPotionActive(Potion.resistance))
+				((EntityLivingBase) e).removePotionEffect(Potion.resistance.id);
+			if (((EntityLivingBase) e).isPotionActive(Potion.regeneration))
+				((EntityLivingBase) e).removePotionEffect(Potion.regeneration.id);
+			if (((EntityLivingBase) e).isPotionActive(Potion.damageBoost))
+				((EntityLivingBase) e).removePotionEffect(Potion.damageBoost.id);
+			if (((EntityLivingBase) e).isPotionActive(Potion.moveSpeed))
+				((EntityLivingBase) e).removePotionEffect(Potion.moveSpeed.id);
+			if (((EntityLivingBase) e).isPotionActive(Potion.jump))
+				((EntityLivingBase) e).removePotionEffect(Potion.jump.id);
+			if (((EntityLivingBase) e).isPotionActive(Potion.heal))
+				((EntityLivingBase) e).removePotionEffect(Potion.heal.id);
+			if (((EntityLivingBase) e).isPotionActive(Potion.fireResistance))
+				((EntityLivingBase) e).removePotionEffect(Potion.fireResistance.id);
+			if (((EntityLivingBase) e).isPotionActive(Potion.invisibility))
+				((EntityLivingBase) e).removePotionEffect(Potion.invisibility.id);
+			if (((EntityLivingBase) e).isPotionActive(Potion.nightVision))
+				((EntityLivingBase) e).removePotionEffect(Potion.nightVision.id);
+			if (((EntityLivingBase) e).isPotionActive(Potion.digSpeed))
+				((EntityLivingBase) e).removePotionEffect(Potion.digSpeed.id);
+			
+			}		
+	}
+}
+}
 

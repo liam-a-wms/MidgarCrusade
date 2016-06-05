@@ -1,10 +1,12 @@
 package fr.toss.common.packet;
 
+import fr.toss.FF7.ItemRegistry1;
 import fr.toss.common.Main;
 import fr.toss.common.player.ServerPlayerBaseMagic;
 import fr.toss.common.player.spells.ServerSpellHandler;
 import fr.toss.common.player.spells.rogue.Speed_2;
 import io.netty.buffer.ByteBuf;
+import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.potion.Potion;
 import net.minecraft.potion.PotionEffect;
@@ -241,8 +243,12 @@ public class PacketSpellToServer implements IMessage {
 				ServerSpellHandler.	handle_furore(message, world, sender);			
 			else if (message.spell_id == 101)
 				ServerSpellHandler.	handle_smiteofrage(message, world, sender, null);			
-			
-			
+			else if (message.spell_id == 102)
+				ServerSpellHandler.handle_chakra(message, world);
+			else if (message.spell_id == 103)
+				ServerSpellHandler.handle_holysign(message, world);		
+			else if (message.spell_id == 104)
+				sender.addPotionEffect(new PotionEffect(ItemRegistry1.customPotion.id, 200, 1000));	
 			
 			
 			

@@ -12,7 +12,7 @@ public class Potioneventhandlers {
 public void onEntityUpdate(LivingUpdateEvent event) {
 if (event.entityLiving.isPotionActive(ItemRegistry1.customPotion)) {
 if (event.entityLiving.worldObj.rand.nextInt(20) == 0) {
-event.entityLiving.attackEntityFrom(DamageSource.generic, 2);
+
 }
 }
 }

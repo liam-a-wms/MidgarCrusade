@@ -38,7 +38,7 @@ public class ClasseWhitemage extends Classe {
 		this.CLASSE_SPELL.add(new Cure_1());
 		this.CLASSE_SPELL.add(new Cura_1());
 		this.CLASSE_SPELL.add(new Curaga_1());
-		this.CLASSE_SPELL.add(new Cleanse_1());
+		this.CLASSE_SPELL.add(new Esuna_1());
 		this.CLASSE_SPELL.add(new Purification_1());
 	}
 	

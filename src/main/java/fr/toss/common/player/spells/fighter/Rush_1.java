@@ -12,6 +12,7 @@ import net.minecraft.world.World;
 import fr.toss.client.render.particles.EntityFX_Colored;
 import fr.toss.common.command.ChatColor;
 import fr.toss.common.packet.PacketParticleEffectToServer;
+import fr.toss.common.packet.PacketSpellToServer;
 import fr.toss.common.packet.Packets;
 import fr.toss.common.player.spells.Spell;
 
@@ -55,7 +56,7 @@ public class Rush_1 extends Spell {
 	public boolean onUse()
 	{
 		
-	
+		PacketSpellToServer packet;
 		Entity e;
 		
 		e = this.getLookingEntity(10.0d);
@@ -68,7 +69,10 @@ public class Rush_1 extends Spell {
 		player.getPlayer().motionX = vec.xCoord * 2.5d;
 		player.getPlayer().motionY += 0.2d;
 		player.getPlayer().motionZ = vec.zCoord * 2.5d;
+		packet = new PacketSpellToServer(getUniqueID(), e.getEntityId(), this.player.clarity / 20);
+		Packets.network.sendToServer(packet);
 		return (true);
+		
 		}
 		else
 			player.getPlayer().addChatComponentMessage(new ChatComponentText(ChatColor.RED + "No target available." + ChatColor.RESET));

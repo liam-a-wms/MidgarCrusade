@@ -10,11 +10,11 @@ import fr.toss.common.packet.PacketSpellToServer;
 import fr.toss.common.packet.Packets;
 import fr.toss.common.player.spells.Spell;
 
-public class Skyfuryblade_1 extends Spell {
+public class Shimmeringblade_1 extends Spell {
 
 	public static int getUniqueID()
 	{
-		return 108;
+		return 106;
 	}
 	
 	@Override
@@ -45,7 +45,7 @@ public class Skyfuryblade_1 extends Spell {
 	@Override
 	public String getName()
 	{
-		return I18n.format("spell.samurai.skyfuryblade");
+		return I18n.format("spell.samurai.shimmeringblade");
 	}
 
 	@Override

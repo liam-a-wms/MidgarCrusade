@@ -1,13 +1,15 @@
-package fr.toss.common.player.spells.berserker;
+package fr.toss.common.player.spells.dragoon;
 
 import java.util.List;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.particle.EntityFX;
 import net.minecraft.entity.Entity;
+import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.item.EntityItem;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.util.ChatComponentText;
+import net.minecraft.util.Vec3;
 import net.minecraft.world.World;
 import fr.toss.client.render.particles.EntityFX_Colored;
 import fr.toss.common.command.ChatColor;
@@ -17,11 +19,11 @@ import fr.toss.common.packet.PacketSpellToServer;
 import fr.toss.common.packet.Packets;
 import fr.toss.common.player.spells.Spell;
 
-public class HelmsmashW extends Spell {
+public class Bangaacry extends Spell {
 
 	public static int getUniqueID()
 	{
-		return 105;
+		return 111;
 	}
 	
 	@Override
@@ -39,7 +41,7 @@ public class HelmsmashW extends Spell {
 	@Override
 	public String getName()
 	{
-		return "Helm Smash";
+		return "Bangaacry";
 	}
 
 	
@@ -59,25 +61,27 @@ public class HelmsmashW extends Spell {
 	@Override
 	public boolean onUse()
 	{
-		
-List list;
-		
-PacketSpellToServer packet;
-Entity e;
-
-e = this.getLookingEntity(10d);
-if (e != null)
-{
-	this.sendEffectToServer(e);
-	packet = new PacketSpellToServer(getUniqueID(), e.getEntityId(), this.player.clarity / 20);
-	Packets.network.sendToServer(packet);
-	return (true);
-		}
-		else
-			player.getPlayer().addChatComponentMessage(new ChatComponentText(ChatColor.RED + "No ennemis around." + ChatColor.RESET));
-		return (false);
+	PacketSpellToServer packet;
+	Entity e;
+	
+	e = this.getLookingEntity(10d);
+	if (e != null)
+	{
+		this.sendEffectToServer(e);
+		packet = new PacketSpellToServer(getUniqueID(), e.getEntityId(), this.player.clarity / 20);
+		Packets.network.sendToServer(packet);
+		return (true);
 	}
-	@Override
+	else
+		player.getPlayer().addChatComponentMessage(new ChatComponentText(ChatColor.RED + "No target available." + ChatColor.RESET));
+
+	return (false);
+}
+
+
+
+
+@Override
 	public void sendEffectToServer(Object ... obj)
 	{
 		PacketParticleEffectToServer packet;

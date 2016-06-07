@@ -154,6 +154,8 @@ public class ItemRegistry1 {
     
     private static int plasmaID;
     public static Item plasma;
+    private static int airrenderID;
+    public static Item airrender;
     
     //-------------register cloth here--------------//
     
@@ -2267,7 +2269,11 @@ public class ItemRegistry1 {
         
 	    plasma = new fr.toss.FF7.projectile.items.plasma(plasmaID);
 	    GameRegistry.registerItem(plasma, "Plasmabolt");
+	    airrender = new fr.toss.FF7.projectile.items.airrender(airrenderID);
+	    GameRegistry.registerItem(airrender, "airrender");
 	   
+	    
+	    
 	    subwayparts= new fr.toss.FF7recipeitems.subwayparts(subwaypartsID);
 	    GameRegistry.registerItem(subwayparts, "subwayparts");
 	    darklabparts= new fr.toss.FF7recipeitems.darklabparts(darklabpartsID);

@@ -32,6 +32,7 @@ public class ClasseBerserker extends Classe {
 		this.CLASSE_SPELL.add(new FuroreT());
 		this.CLASSE_SPELL.add(new ScreamT());
 		this.CLASSE_SPELL.add(new SmiteofrageT());
+		this.CLASSE_SPELL.add(new HelmsmashW());
 		
 	}
 	

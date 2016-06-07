@@ -42,9 +42,8 @@ import fr.toss.FF7.ItemRegistry1;
 import fr.toss.FF7.Potioneventhandlers;
 import fr.toss.FF7.reciperegister;
 import fr.toss.FF7.inits.PotionYourmod;
-import fr.toss.FF7.items.Helicopter;
-import fr.toss.FF7.items.PhoenixFeather;
-import fr.toss.FF7.projectiles.entities.EntityEnergyBall;
+import fr.toss.FF7.items.*;
+import fr.toss.FF7.projectiles.entities.*;
 import fr.toss.common.command.CommandLoader;
 import fr.toss.common.game.ServerMagic;
 import fr.toss.common.packet.Packets;
@@ -65,6 +64,10 @@ public class Main
     public static final String MODVER = "0.0.0";
 
     public static DamageSource Earth = new DamageSource("Earth");
+    public static DamageSource Shadow = new DamageSource("Shadow");
+    public static DamageSource Lightning = new DamageSource("Lightning");
+    public static DamageSource Fire = new DamageSource("Fire");
+    public static DamageSource Ice = new DamageSource("Ice");
 	
 	
 	
@@ -226,7 +229,8 @@ public class Main
  	   
  	    int modEntityID = 0;
  	   
- 	    EntityRegistry.registerModEntity(EntityEnergyBall.class, "Energyball", ++modEntityID, this, 64, 10, false);
+ 	   EntityRegistry.registerModEntity(EntityEnergyBall.class, "Energyball", ++modEntityID, this, 64, 10, false);
+ 	   EntityRegistry.registerModEntity(Entityairrender.class, "airrender", ++modEntityID, this, 64, 10, false);
 
  	   
  	    

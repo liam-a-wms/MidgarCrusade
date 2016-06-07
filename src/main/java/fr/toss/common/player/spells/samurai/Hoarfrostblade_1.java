@@ -14,7 +14,7 @@ public class Hoarfrostblade_1 extends Spell {
 
 	public static int getUniqueID()
 	{
-		return 76;
+		return 107;
 	}
 	
 	@Override

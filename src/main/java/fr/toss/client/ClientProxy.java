@@ -11,11 +11,8 @@ import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.registry.GameRegistry;
 import fr.toss.FF7.ItemRegistry1;
 import fr.toss.FF7.Tileentities.*;
-
-import fr.toss.FF7.projectiles.entities.EntityEnergyBall;
-import fr.toss.FF7.projectiles.entities.EntityJavelin;
+import fr.toss.FF7.projectiles.entities.*;
 import fr.toss.FF7.renderers.*;
-
 import fr.toss.client.event.GuiIngameOverlay;
 import fr.toss.client.event.SoundEventM;
 import fr.toss.client.registry.RenderRegistry;
@@ -106,6 +103,7 @@ public class ClientProxy extends CommonProxy
         
          RenderingRegistry.registerEntityRenderingHandler(EntityEnergyBall.class, new RenderSnowball(ItemRegistry1.plasma));  
 		 RenderingRegistry.registerEntityRenderingHandler(EntityJavelin.class, new RenderSnowball(ItemRegistry1.Javelin));   
+		 RenderingRegistry.registerEntityRenderingHandler(Entityairrender.class, new RenderSnowball(ItemRegistry1.airrender));  
 		 
 		  
 		 MinecraftForgeClient.registerItemRenderer(ItemRegistry1.Adamantblade, new RenderRedscythe());

@@ -319,7 +319,7 @@ Entity e;
 					((EntityLivingBase) e).removePotionEffect(Potion.weakness.id);
 				((EntityLivingBase) e).addPotionEffect(new PotionEffect(Potion.moveSpeed.id, 40, 2));
 				((EntityLivingBase)e).heal(40.0f + message.data2 / 30); //30 clarity pour 1 coeur en plus
-				sender.addPotionEffect(new PotionEffect(Potion.harm.id, 200, 40));
+				sender.addPotionEffect(new PotionEffect(Potion.harm.id, 200, 4000));
 			}		
 		}
 	}
@@ -411,8 +411,18 @@ Entity e;
 		}
 	}
 
-	
-	
+	public static void handle_lancet(PacketSpellToServer message, World world, EntityPlayerMP sender)
+	{
+		Entity e;
+		
+		e = world.getEntityByID(message.data);
+		if (e instanceof EntityLivingBase)
+		{
+			((EntityLivingBase)e).attackEntityFrom(DamageSource.causePlayerDamage(sender), 4.0f + (message.data2 / 20.0f));
+			sender.heal(4.0f + (message.data2 / 40));
+		}
+	}
+
 	
 	
 	public static void handle_drainspeed(PacketSpellToServer message, World world, EntityPlayerMP sender)
@@ -770,6 +780,26 @@ Entity e;
 		}
 	}
 	
+	
+	
+	
+	
+	
+	public static void handle_whirlburst(PacketSpellToServer message, World world, EntityPlayerMP sender)
+	{
+		Entity e;
+		
+		e = world.getEntityByID(message.data);
+		if (e != null)
+		{
+			
+			if (e instanceof EntityLivingBase)
+				((EntityLivingBase)e).attackEntityFrom(DamageSource.magic, 2);
+				((EntityLivingBase)e).knockBack(e, 0, 0, 10);
+			}
+	}
+	
+	
 
 	/** Fireland du necromancer */
 	public static void handle_fireland(PacketSpellToServer message, World world, EntityPlayerMP sender)
@@ -850,8 +880,9 @@ Entity e;
 		{
 			if (e instanceof EntityLivingBase)
 			{
-				e.attackEntityFrom(DamageSource.causePlayerDamage(sender), 4 + message.data2);
 				
+				e.attackEntityFrom(DamageSource.causePlayerDamage(sender), 4 + message.data2);
+				((EntityLivingBase) e).knockBack(sender, 0, 0, 10);
 					
 			}
 		}
@@ -1658,10 +1689,142 @@ Random rand;
 	return rare;
 }
 
+public static int handle_iaiblow(PacketSpellToServer message, World world, EntityPlayerMP sender,Random random)
+{
+	EntityPlayer p;
+	Entity e;
+	
+	e = world.getEntityByID(message.data);
+	if (e != null)
+	{
+		
+Random rand;
+		
+		rand = new Random();
+		
+		switch (rand.nextInt(3))
+		{
+		
+/**--------------------------------------------------------------------------------------*/
+			 case 0 :
+				 ((EntityLivingBase)e).setHealth(0);
+				  System.out.printf( "%-15s %10s %n", "case 1", "dead");
+				    return rand.nextInt(3);
+			case 1 :
+				  ((EntityLivingBase)e).attackEntityFrom(DamageSource.generic, 20);
+				  System.out.printf( "%-15s %10s %n", "case 1", "survive");
+				    return rand.nextInt(3);
 
 
+		}
+		return rare;
+	}
+	return rare;
+}
+
+public static int handle_bangaacry(PacketSpellToServer message, World world, EntityPlayerMP sender,Random random)
+{
+	EntityPlayer p;
+	Entity e;
+	
+	e = world.getEntityByID(message.data);
+	if (e != null)
+	{
+		
+Random rand;
+		
+		rand = new Random();
+		
+		switch (rand.nextInt(3))
+		{
+		
+/**--------------------------------------------------------------------------------------*/
+			 case 0 :
+				 ((EntityLivingBase)e).attackEntityFrom(DamageSource.generic, 4.0f + (message.data2 / 20.0f));
+				 ((EntityLivingBase)e).addPotionEffect(new PotionEffect(Potion.confusion.id,100, 10)); //30 clarity pour 1 coeur en plus
+					
+				  System.out.printf( "%-15s %10s %n", "case 1", "dead");
+				    return rand.nextInt(3);
+			case 1 :
+				((EntityLivingBase)e).attackEntityFrom(DamageSource.generic, 4.0f + (message.data2 / 20.0f));
+				  System.out.printf( "%-15s %10s %n", "case 1", "survive");
+				    return rand.nextInt(3);
 
 
+		}
+		return rare;
+	}
+	return rare;
+}
+
+
+public static void handle_lifethreadblade(PacketSpellToServer message, World world, EntityPlayerMP sender)
+{
+	Entity e;
+	
+	e = world.getEntityByID(message.data);
+	if (e instanceof EntityLivingBase)
+	{
+		((EntityLivingBase)e).attackEntityFrom(Main.Shadow, 4.0f + (message.data2 / 20.0f));
+		
+	}
+}
+
+public static void handle_skyfuryblade(PacketSpellToServer message, World world, EntityPlayerMP sender)
+{
+	Entity e;
+	
+	e = world.getEntityByID(message.data);
+	if (e instanceof EntityLivingBase)
+	{
+		((EntityLivingBase)e).attackEntityFrom(Main.Lightning, 4.0f + (message.data2 / 20.0f));
+		((EntityLivingBase)e).addPotionEffect(new PotionEffect(Potion.damageBoost.id,100, 10)); //30 clarity pour 1 coeur en plus
+		((EntityLivingBase)e).addPotionEffect(new PotionEffect(Potion.moveSpeed.id, 200, 4)); //30 clarity pour 1 coeur en plus
+		
+	}
+}
+
+public static void handle_shimmeringblade(PacketSpellToServer message, World world, EntityPlayerMP sender)
+{
+	Entity e;
+	
+	e = world.getEntityByID(message.data);
+	if (e instanceof EntityLivingBase)
+	{
+		((EntityLivingBase)e).attackEntityFrom(Main.Fire, 4.0f + (message.data2 / 20.0f));
+		((EntityLivingBase)e).addPotionEffect(new PotionEffect(Potion.confusion.id,100, 10)); //30 clarity pour 1 coeur en plus
+		
+	}
+}
+
+public static void handle_hoarfrostblade(PacketSpellToServer message, World world, EntityPlayerMP sender)
+{
+	Entity e;
+	
+	e = world.getEntityByID(message.data);
+	if (e instanceof EntityLivingBase)
+	{
+		((EntityLivingBase)e).attackEntityFrom(Main.Ice, 4.0f + (message.data2 / 20.0f));
+		((EntityLivingBase)e).addPotionEffect(new PotionEffect(Potion.moveSlowdown.id,100, 10)); //30 clarity pour 1 coeur en plus
+		
+	}
+}
+
+public static void handle_bodyslam(PacketSpellToServer message, World world, EntityPlayerMP sender)
+{
+	Entity e;
+	
+	e = world.getEntityByID(message.data);
+	if (e != null)
+	{
+		if (e instanceof EntityLivingBase)
+		{
+			
+			e.attackEntityFrom(DamageSource.causePlayerDamage(sender), 40 + message.data2);
+			sender.addPotionEffect(new PotionEffect(Potion.harm.id, 1, 10));
+		}
+	}
+}
 public static void handle_holysign(PacketSpellToServer message, World world)
 {
 	Entity e;
@@ -1696,6 +1859,11 @@ public static void handle_holysign(PacketSpellToServer message, World world)
 			
 			}		
 	}
+	
+	
+	
+	
+	
 }
 }
 

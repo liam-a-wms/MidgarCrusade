@@ -137,6 +137,8 @@ public class PacketSpellToServer implements IMessage {
 			else if (message.spell_id == 45)
 				ServerSpellHandler.handle_fireball(world, sender);
 			
+			else if(message.spell_id == 115)
+				sender.setAbsorptionAmount(10000);
 			else if(message.spell_id == 51)
 				ServerSpellHandler.handle_speed_rogue(sender);
 			else if(message.spell_id == 52)
@@ -249,11 +251,32 @@ public class PacketSpellToServer implements IMessage {
 				ServerSpellHandler.handle_holysign(message, world);		
 			else if (message.spell_id == 104)
 				sender.addPotionEffect(new PotionEffect(ItemRegistry1.customPotion.id, 200, 1000));	
+			else if (message.spell_id == 105)
+				ServerSpellHandler.handle_lifethreadblade(message, world, sender);
+			else if (message.spell_id == 106)
+				ServerSpellHandler.handle_shimmeringblade(message, world, sender);
+			else if (message.spell_id == 107)
+				ServerSpellHandler.handle_hoarfrostblade(message, world, sender);
+			else if (message.spell_id == 108)
+				ServerSpellHandler.handle_skyfuryblade(message, world, sender);
+			else if (message.spell_id == 109)
+				ServerSpellHandler.handle_iaiblow(message, world, sender, null);
+			else if (message.spell_id == 110)
+				ServerSpellHandler.handle_bodyslam(message, world, sender);
+			else if (message.spell_id == 111)
+				ServerSpellHandler.handle_iaiblow(message, world, sender, null);
+			else if (message.spell_id == 112)
+				ServerSpellHandler.handle_lancet(message, world, sender);
+			else if (message.spell_id == 113)
+				ServerSpellHandler.handle_whirlburst(message, world, sender);
+			else if (message.spell_id == 114)
+				sender.addPotionEffect(new PotionEffect(ItemRegistry1.customPotion.id, 200, 1000));	
+				sender.addPotionEffect(new PotionEffect(Potion.regeneration.id, 20, 200));	
 			
 			
-			
-			
-			
+				
+				
+				
 			return (null);
 		}
     }

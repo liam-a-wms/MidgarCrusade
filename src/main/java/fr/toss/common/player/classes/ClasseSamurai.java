@@ -35,11 +35,13 @@ public class ClasseSamurai extends Classe {
 	{	
 		this.CLASSE_SPELL.clear();
 		
-		this.CLASSE_SPELL.add(new Bladebash_1());
-		this.CLASSE_SPELL.add(new Shimmieringblade_1());
 		this.CLASSE_SPELL.add(new Windslash_1());
-		this.CLASSE_SPELL.add(new Hoarfrostblade_1());
+		this.CLASSE_SPELL.add(new Iaiblow());
+		this.CLASSE_SPELL.add(new Bladebash_1());
+		this.CLASSE_SPELL.add(new Shimmeringblade_1());
+	    this.CLASSE_SPELL.add(new Hoarfrostblade_1());
 		this.CLASSE_SPELL.add(new Skyfuryblade_1());
+		this.CLASSE_SPELL.add(new Lifethreadblade());
 		this.CLASSE_SPELL.add(new Unburdensoul_1());
 		
 	}

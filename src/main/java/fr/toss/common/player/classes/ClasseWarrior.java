@@ -30,9 +30,7 @@ public class ClasseWarrior extends Classe {
 		this.CLASSE_SPELL.clear();
 
 		this.CLASSE_SPELL.add(new Firstaid_1());
-		this.CLASSE_SPELL.add(new Rendmagick());
 		this.CLASSE_SPELL.add(new Rendpower_1());
-		this.CLASSE_SPELL.add(new RendMP());
 		this.CLASSE_SPELL.add(new Rendspeed_1());
 		
 	}

@@ -33,12 +33,12 @@ http://finalfantasy.wikia.com/wiki/Soldier_%28Tactics_A2%29
 [T] Rend Speed
 [X] Mug Gil 
 [T] Provoke
-[X ] Gauge -- will need clarification on what you want done with this
+[X] Gauge -- will need clarification on what you want done with this
 ----------------------------------------------------------------
                           Fighter
 http://finalfantasy.wikia.com/wiki/Fighter_%28Tactics_A2%29
 ----------------------------------------------------------------
-[W] Rush , needs knockback
+[T] Rush , 
 [T] Wild Swing 
 [N] Beat Down
 [N] Blitz
@@ -51,55 +51,55 @@ http://finalfantasy.wikia.com/wiki/Fighter_%28Tactics_A2%29
 http://finalfantasy.wikia.com/wiki/Parivir_%28Tactics_A2%29
 ----------------------------------------------------------------
 [E] Wind Slash
-[H] Iai Blow
+[T] Iai Blow
 [T] Blade Bash
 [T] Shimmering Blade
-[H] Hoarfrost Blade
-[H] Skyfury Blade
-[H] Lifethread Blade
-[H] Unburden Soul
+[T] Hoarfrost Blade
+[T] Skyfury Blade
+[T] Lifethread Blade
+[T] Unburden Soul
 ----------------------------------------------------------------
                           Warrior
 http://finalfantasy.wikia.com/wiki/Warrior_%28Tactics_A2%29
 ----------------------------------------------------------------
-[ ] First Aid
-[ ] Rend Power
-[ ] Rend Magick
-[ ] Rend MP
-[ ] Rend Speed
-[ ] Body Slam
-[ ] Greased Lightning
-[ ] Lifetap
+[T] First Aid
+[T Rend Power
+[X] Rend Magick
+[X] Rend MP
+[T] Rend Speed
+[T] Body Slam
+[X] Greased Lightning
+[X] Lifetap
 ----------------------------------------------------------------
                           Dragoon
 http://finalfantasy.wikia.com/wiki/Dragoon_%28Tactics_A2%29
 ----------------------------------------------------------------
-[ ] Jump
-[ ] Fire Breath
-[ ] Ice Breath
-[ ] Thunder Breath
-[ ] Bangaa Cry
-[ ] Wyrmtamer
-[ ] Wyrmkiller
-[ ] Lancet
+[W] Jump
+[X] Fire Breath
+[X] Ice Breath
+[X] Thunder Breath
+[T] Bangaa Cry
+[X] Wyrmtamer
+[X] Wyrmkiller
+[T] Lancet
 ----------------------------------------------------------------
                           Defender
 http://finalfantasy.wikia.com/wiki/Defender_%28Tactics_A2%29
 ----------------------------------------------------------------
-[ ] Whirl Burst
-[ ] Meltdown
-[ ] Defense
-[ ] Rend Weapon
-[ ] Hibernate
-[ ] Mow Down
-[ ] Aura 	Lohengrin
-[ ] Bulwark
+[T] Whirl Burst
+[X] Meltdown
+[T] Defense
+[X] Rend Weapon
+[X] Hibernate
+[T] Mow Down
+[T] Aura 	Lohengrin
+[T] Bulwark
 ----------------------------------------------------------------
                           Gladiator
 http://finalfantasy.wikia.com/wiki/Gladiator_%28Tactics_A2%29
 ----------------------------------------------------------------
-[W] Rush ----needs knockback
-[O] Wild Swing
+[T] Rush
+[T] Wild Swing
 [X] Beat Down
 [X] Blitz
 [E] Fire Soul
@@ -110,14 +110,14 @@ http://finalfantasy.wikia.com/wiki/Gladiator_%28Tactics_A2%29
                           Berserker
 http://finalfantasy.wikia.com/wiki/Berserker_%28Tactics_A2%29
 ----------------------------------------------------------------
-[ ] Scream
-[ ] Hone Senses
-[ ] Furore
-[ ] Ground Shaker
-[ ] Smite of Rage
-[ ] Inner Calm
-[ ] Helm Smash
-[ ] Smash
+[T] Scream
+[W] Hone Senses
+[T] Furore
+[W] Ground Shaker
+[T] Smite of Rage
+[W] Inner Calm
+[X] Helm Smash
+[X] Smash
 ----------------------------------------------------------------
                           Lanista
 http://finalfantasy.wikia.com/wiki/Lanista_%28Tactics_A2%29
@@ -170,14 +170,14 @@ http://finalfantasy.wikia.com/wiki/Ravager_%28Tactics_A2%29
                           White Mage
 http://finalfantasy.wikia.com/wiki/White_Mage_%28Tactics_A2%29
 ----------------------------------------------------------------
-[W] Cure [just need to apply dmg to undead]
-[W] Cura [just need to apply dmg to undead]
-[W] Curaga [just need to apply dmg to undead]
-[O] Esuna
+[T] Cure 
+[T] Cura 
+[T] Curaga 
+[T] Esuna
 [X] Raise
 [X] Arise
 [X] Reraise
-[O] Refresh 	
+[T] Refresh 	
 ----------------------------------------------------------------
                           Black Mage
 http://finalfantasy.wikia.com/wiki/Black_Mage_%28Tactics_A2%29
@@ -205,7 +205,7 @@ http://finalfantasy.wikia.com/wiki/Paladin_%28Tactics_A2%29
 [H] Saint Cross
 [H] Holy Blade
 [W] Sanctify
-[O] War Cry
+[T] War Cry
 ----------------------------------------------------------------
                           Blue Mage [Skip This For Now Too Many Spells]
 http://finalfantasy.wikia.com/wiki/Blue_Mage_%28Tactics_A2%29

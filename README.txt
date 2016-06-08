@@ -134,14 +134,14 @@ http://finalfantasy.wikia.com/wiki/Lanista_%28Tactics_A2%29
                           Viking
 http://finalfantasy.wikia.com/wiki/Viking_%28Tactics_A2%29
 ----------------------------------------------------------------
-[ ] Thunder
-[ ] Thundara
-[ ] Thundaga
-[ ] Pickpocket
-[ ] Strong-Arm
-[ ] Pillage
-[ ] War Cry
-[ ] Tsunami
+[T] Thunder
+[T] Thundara
+[T] Thundaga
+[X] Pickpocket
+[X] Strong-Arm
+[X] Pillage
+[T] War Cry
+[X] Tsunami
 ----------------------------------------------------------------
                           Raptor
 http://finalfantasy.wikia.com/wiki/Raptor_%28Tactics_A2%29
@@ -174,9 +174,9 @@ http://finalfantasy.wikia.com/wiki/White_Mage_%28Tactics_A2%29
 [T] Cura 
 [T] Curaga 
 [T] Esuna
-[X] Raise
-[X] Arise
-[X] Reraise
+[X] Raise---unsure if this one can be achieved atm
+[X] Arise---unsure if this one can be achieved atm
+[T] Reraise
 [T] Refresh 	
 ----------------------------------------------------------------
                           Black Mage
@@ -200,7 +200,7 @@ http://finalfantasy.wikia.com/wiki/Paladin_%28Tactics_A2%29
 ----------------------------------------------------------------
 [T] Nurse
 [XN] Defend
-[O] Cover
+[T] Cover
 [X] Parley [Clarify] A random chance to tp the target higher chance with lower hp to spawn ( or a certain        number of blocks away(however that can cause wall suffocations ? if not this idea not sure how to implement
 [H] Saint Cross
 [H] Holy Blade
@@ -559,14 +559,14 @@ http://finalfantasy.wikia.com/wiki/Sniper_%28Tactics_A2%29
                           White Monk
 http://finalfantasy.wikia.com/wiki/White_Monk_%28Tactics_A2%29
 ----------------------------------------------------------------
-[ ] Roundhouse
-[ ] Air Render
-[ ] Earth Render
-[ ] Aurablast
-[ ] Chakra
-[ ] Revive
-[ ] Exorcise
-[ ] Holy Sign
+[T] Roundhouse
+[E] Air Render
+[E] Earth Render
+[E] Aurablast
+[T] Chakra
+[T] Revive
+[T] Exorcise
+[T] Holy Sign
 ----------------------------------------------------------------
                           Cannoneer
 http://finalfantasy.wikia.com/wiki/Cannoneer_%28Tactics_A2%29

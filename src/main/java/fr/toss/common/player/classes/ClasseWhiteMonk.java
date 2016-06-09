@@ -9,7 +9,7 @@ import fr.toss.common.player.spells.rogue.Invisible_3;
 import fr.toss.common.player.spells.rogue.Poison_4;
 import fr.toss.common.player.spells.rogue.Speed_2;
 import fr.toss.common.player.spells.rogue.Vision_5;
-import fr.toss.common.player.spells.whitemonk.Ironskin_3;
+import fr.toss.common.player.spells.whitemonk.Revive;
 
 public class ClasseWhiteMonk extends Classe {
 
@@ -35,7 +35,7 @@ public class ClasseWhiteMonk extends Classe {
 	public void defineClasseSpells()
 	{	
 		this.CLASSE_SPELL.clear();
-		this.CLASSE_SPELL.add(new Ironskin_3());
+		this.CLASSE_SPELL.add(new Revive());
 		this.CLASSE_SPELL.add(new Speed_2());
 		this.CLASSE_SPELL.add(new Invisible_3());
 		this.CLASSE_SPELL.add(new Poison_4());

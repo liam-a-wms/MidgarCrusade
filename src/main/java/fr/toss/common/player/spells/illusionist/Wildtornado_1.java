@@ -20,7 +20,7 @@ public class Wildtornado_1 extends Spell {
 
 	public static int getUniqueID()
 	{
-		return 97;
+		return 130;
 	}
 	
 	@Override

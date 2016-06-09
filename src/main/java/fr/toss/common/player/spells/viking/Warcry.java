@@ -1,4 +1,4 @@
-package fr.toss.common.player.spells.illusionist;
+package fr.toss.common.player.spells.viking;
 
 import java.util.List;
 
@@ -16,11 +16,11 @@ import fr.toss.common.packet.PacketSpellToServer;
 import fr.toss.common.packet.Packets;
 import fr.toss.common.player.spells.Spell;
 
-public class Rockfall_1 extends Spell {
+public class Warcry extends Spell {
 
 	public static int getUniqueID()
 	{
-		return 129;
+		return 116;
 	}
 	
 	@Override
@@ -32,24 +32,21 @@ public class Rockfall_1 extends Spell {
 	@Override
 	public int getCost()
 	{
-		return 50;
+		return 500;
 	}
 	
 	@Override
 	public String getName()
 	{
-		return I18n.format("spell.illusionist.rockfall");
+		return I18n.format("spell.viking.warcry");
 	}
 
 	@Override
 	public boolean onUse()
 	{
 		List list;
-		Entity e;
 		
-	
-		list = this.getEntitiesAround2(6.0d, false);
-		
+		list = this.getEntitiesAround(6.0d, false);
 		if (list.size() > 0)
 		{
 			this.sendEffectToServer();

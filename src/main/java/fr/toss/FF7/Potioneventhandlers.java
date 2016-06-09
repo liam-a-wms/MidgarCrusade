@@ -14,6 +14,22 @@ if (event.entityLiving.isPotionActive(ItemRegistry1.customPotion)) {
 if (event.entityLiving.worldObj.rand.nextInt(20) == 0) {
 
 }
+
+if (event.entityLiving.isPotionActive(ItemRegistry1.customPotion2)) {
+if (event.entityLiving.worldObj.rand.nextInt(20) == 0) {
+
+}
+}
+if (event.entityLiving.isPotionActive(ItemRegistry1.customPotion3)) {
+if (event.entityLiving.worldObj.rand.nextInt(20) == 0) {
+
+}
+}
+if (event.entityLiving.isPotionActive(ItemRegistry1.customPotion4)) {
+if (event.entityLiving.worldObj.rand.nextInt(20) == 0) {
+
+}
+}
 }
 }
 }

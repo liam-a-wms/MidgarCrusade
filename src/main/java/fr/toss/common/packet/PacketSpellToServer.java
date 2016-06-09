@@ -137,8 +137,14 @@ public class PacketSpellToServer implements IMessage {
 			else if (message.spell_id == 45)
 				ServerSpellHandler.handle_fireball(world, sender);
 			
-			else if(message.spell_id == 115)
-				sender.setAbsorptionAmount(10000);
+			
+			
+			
+			
+			
+			
+			
+			
 			else if(message.spell_id == 51)
 				ServerSpellHandler.handle_speed_rogue(sender);
 			else if(message.spell_id == 52)
@@ -270,14 +276,48 @@ public class PacketSpellToServer implements IMessage {
 			else if (message.spell_id == 113)
 				ServerSpellHandler.handle_whirlburst(message, world, sender);
 			else if (message.spell_id == 114)
-				sender.addPotionEffect(new PotionEffect(ItemRegistry1.customPotion.id, 200, 1000));	
+				{sender.addPotionEffect(new PotionEffect(ItemRegistry1.customPotion.id, 200, 1000));	
 				sender.addPotionEffect(new PotionEffect(Potion.regeneration.id, 20, 200));	
-			
-			
-				
-				
-				
-			return (null);
 		}
+			else if(message.spell_id == 115)
+				sender.setAbsorptionAmount(10000);
+			else if (message.spell_id == 116)
+				ServerSpellHandler.handle_warcry(message, world);
+			else if (message.spell_id == 117)
+				sender.addPotionEffect(new PotionEffect(ItemRegistry1.customPotion.id, 200, 1000));	
+			else if (message.spell_id == 118)
+				ServerSpellHandler.handle_haste(message, world);
+			else if (message.spell_id == 119)
+				ServerSpellHandler.handle_hastega(message, world);
+			else if (message.spell_id == 120)
+				ServerSpellHandler.handle_timemageslow(message, world);
+			else if (message.spell_id == 121)
+			{sender.addPotionEffect(new PotionEffect(ItemRegistry1.customPotion2.id, 200, 1000));	
+			}
+			
+			else if (message.spell_id == 121)
+				ServerSpellHandler.handle_stop(message, world);
+			else if (message.spell_id == 122)
+				ServerSpellHandler.handle_extend(message, world);
+			else if (message.spell_id == 123)
+				ServerSpellHandler.handle_prominence(message, world, sender);
+			else if (message.spell_id == 124)
+				ServerSpellHandler.handle_tempest(message, world, sender);
+			else if (message.spell_id == 125)
+				ServerSpellHandler.handle_freezeblink(message, world, sender);
+			else if (message.spell_id == 126)
+				ServerSpellHandler.handle_starcross(message, world, sender);
+			else if (message.spell_id == 127)
+				ServerSpellHandler.handle_stardust(message, world, sender);
+			else if (message.spell_id == 128)
+				ServerSpellHandler.handle_deluge(message, world, sender);
+			else if (message.spell_id == 129)
+				ServerSpellHandler.handle_rockfall(message, world, sender);
+			else if (message.spell_id == 130)
+				ServerSpellHandler.handle_wildtornado(message, world, sender);
+			
+			
+			return (null);
     }
+}
 }

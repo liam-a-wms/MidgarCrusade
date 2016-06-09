@@ -201,6 +201,9 @@ public class ItemRegistry1 {
     private static int WyvernwingID;
     public static Item Wyvernwing;
     public static Potion customPotion;
+    public static Potion customPotion2;
+    public static Potion customPotion3;
+    public static Potion customPotion4;
     
     //------------------------------------------------//
     

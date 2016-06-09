@@ -20,7 +20,7 @@ public class Deluge_1 extends Spell {
 
 	public static int getUniqueID()
 	{
-		return 97;
+		return 128;
 	}
 	
 	@Override

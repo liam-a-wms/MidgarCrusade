@@ -68,6 +68,9 @@ public class Main
     public static DamageSource Lightning = new DamageSource("Lightning");
     public static DamageSource Fire = new DamageSource("Fire");
     public static DamageSource Ice = new DamageSource("Ice");
+    public static DamageSource Wind = new DamageSource("Wind");
+    public static DamageSource Water = new DamageSource("Water");
+    public static DamageSource Holy = new DamageSource("Holy");
 	
 	
 	
@@ -140,8 +143,11 @@ public class Main
 
  	    config.save();
  	
- 	    ItemRegistry1.customPotion = (new PotionYourmod(31, false, 0)).setIconIndex(0, 0).setPotionName("potion.customPotion");
- 	  
+ 	    ItemRegistry1.customPotion = (new PotionYourmod(31, false, 0)).setIconIndex(0, 0).setPotionName("potion.customPotion1");
+ 	   ItemRegistry1.customPotion2 = (new PotionYourmod(31, false, 0)).setIconIndex(0, 0).setPotionName("potion.customPotion2");
+ 	  ItemRegistry1.customPotion3 = (new PotionYourmod(31, false, 0)).setIconIndex(0, 0).setPotionName("potion.customPotion3");
+ 	 ItemRegistry1.customPotion4 = (new PotionYourmod(31, false, 0)).setIconIndex(0, 0).setPotionName("potion.customPotion4");
+	  
  	    //------------------------------------------register items here -----------------------------------------------//
  	    
  	    if (allowPFeather)

@@ -20,7 +20,7 @@ public class Tempest_1 extends Spell {
 
 	public static int getUniqueID()
 	{
-		return 97;
+		return 124;
 	}
 	
 	@Override

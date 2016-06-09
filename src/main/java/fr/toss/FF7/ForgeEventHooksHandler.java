@@ -5,9 +5,11 @@ import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 import fr.toss.common.Main;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.potion.Potion;
 import net.minecraft.potion.PotionEffect;
 import net.minecraftforge.event.entity.living.LivingDeathEvent;
+import net.minecraftforge.event.entity.living.LivingHurtEvent;
 
 
 public class ForgeEventHooksHandler {
@@ -62,5 +64,29 @@ public void reviveEffect(LivingDeathEvent lde)
         lde.setCanceled(true);
       }
     }
-  }
-}
+    }
+  
+    @SubscribeEvent
+    public void reflecteffect(LivingHurtEvent lde,EntityPlayerMP sender)
+      {
+        if ((Main.allowPFeather) && ((lde.entityLiving instanceof EntityPlayer)))
+        {
+          EntityPlayer ep = (EntityPlayer)lde.entityLiving;
+      	if (((EntityLivingBase) ep).isPotionActive(ItemRegistry1.customPotion2))
+          {
+            if (!ep.worldObj.isRemote)
+            {
+            	 lde.setCanceled(true);
+            	 
+              ep.worldObj.playSoundAtEntity(ep, "fireworks.launch", 5.0F, 1.0F);
+              ep.worldObj.playSoundAtEntity(ep, "assets.speedboost", 0.4F, 0.3F);
+              ((EntityLivingBase) ep).removePotionEffect(ItemRegistry1.customPotion2.id);
+            }
+           
+           
+          }
+        }
+      }
+     
+    }
+

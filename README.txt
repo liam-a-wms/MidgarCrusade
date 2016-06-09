@@ -235,40 +235,39 @@ http://finalfantasy.wikia.com/wiki/Blue_Mage_%28Tactics_A2%29
 http://finalfantasy.wikia.com/wiki/Illusionist_%28Tactics_A2%29
 ----------------------------------------------------------------
 
-All illusionist spells have acheived the desired result just missing the enviroment stats like holy, wind etc
 
-[O] Prominence
-[H] Tempest
-[H] Freezeblink
-[H] Star Cross
-[O] Stardust
-[w] Deluge
-[H] Rockfall
-[H] Wild Tornado
+[T] Prominence
+[T] Tempest
+[T] Freezeblink
+[T] Star Cross
+[T] Stardust
+[T] Deluge
+[T] Rockfall
+[T] Wild Tornado
 ----------------------------------------------------------------
                           Seer
 http://finalfantasy.wikia.com/wiki/Seer_%28Tactics_A2%29
 ----------------------------------------------------------------
-[ ] Recharge
-[ ] Magick Frenzy
-[ ] Cura
-[ ] Esuna
-[ ] Raise
-[ ] Fira
-[ ] Thundara
-[ ] Blizzara
+[X] Recharge
+[X] Magick Frenzy
+[T] Cura
+[T] Esuna
+[T] Raise
+[T] Fira
+[E] Thundara
+[E] Blizzara
 ----------------------------------------------------------------
                           Time Mage
 http://finalfantasy.wikia.com/wiki/Time_Mage_%28Tactics_A2%29
 ----------------------------------------------------------------
-[ ] Haste
-[ ] Hastega
-[ ] Quicken
-[ ] Slow
-[ ] Reflect
-[ ] Stop
-[ ] Extend
-[ ] Undo
+[T] Haste
+[T] Hastega
+[] Quicken
+[T] Slow
+[T] Reflect --- currently only blocks the attack , need to figure out how to reflect it with custom potion spell etc
+[T] Stop
+[T] Extend
+[X] Undo
 ----------------------------------------------------------------
                           Summoner
 http://finalfantasy.wikia.com/wiki/Summoner_%28Tactics_A2%29
